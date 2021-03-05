@@ -1,0 +1,12 @@
+# example netlify.toml
+[build]
+  command = "netlify-lambda build ./netlify/functions &&npm run generate"
+  functions = "netlify-functions" 
+  publish = "dist"
+
+[[redirects]]
+  from = "/help/knowledgebase"
+  to = "https://youthful-raman-36935d.netlify.com"
+  status = 200
+  force = true
+  headers = {path = "/help/knowledgebase/"}
