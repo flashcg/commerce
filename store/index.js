@@ -68,23 +68,31 @@ export const actions = {
       for (let i = 0; i < handleSetting.length; i++) {
 
         const item = await this.$content('pages/' + handleSetting[i].path).only(['abbrName', 'handleName', 'name', 'type', 'boxes', 'desc']).fetch();
-
+        
         if (Array.isArray(item)) {
           item = await this.$content('pages/' + handleSetting[i].path + '/index').only(['abbrName', 'handleName', 'name', 'type', 'boxes', 'desc']).fetch();
         }
-        const releaseData = await this.$content('release/' + handleSetting[i].path).fetch();
-
+        
+        const releaseFn =()=> {
+          return new Promise((resolve, reject)=>{
+            let data = this.$content('release/' + handleSetting[i].path).fetch()
+            resolve(data);
+            reject()
+          })
+        }
+        let releaseData = await releaseFn().then((res)=>res,(err)=>undefined)
         Object.assign(item, {
           handle: handleSetting[i]
         }, {
-          release: releaseData.release && releaseData.release[0]
+          release: releaseData&&releaseData.release && releaseData.release[0]
         });
         productData.push(item)
       }
+
     }
 
 
-
+    
     productData = await this.app.$initMD(productData, 'base');
     commit('_localData', productData)
   },

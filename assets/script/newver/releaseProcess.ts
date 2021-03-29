@@ -248,8 +248,13 @@ class NewverZipCreator {
         let outStream = fs.createWriteStream(path.join(cachePath, itemDirName, imgFilename));
         res.pipe(outStream)
         outStream.on('close', () => {
+          console.log('Box image has been downloaded'); 
           this.zipCreator()
         })
+      })
+      .on('error',()=>{
+        console.log('Box image has NOT been downloaded, Old version will be used'); 
+        this.zipCreator()
       })
   }
 }

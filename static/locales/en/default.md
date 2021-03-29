@@ -14,6 +14,8 @@ handleSetting:
   #   path: openCloner-ultrabox
   - handleName: Blue-Cloner
     path: blue-cloner
+  - handleName: Stream-Cloner Lite
+    path: stream-cloner-lite 
   # - handleName: Blue-Cloner Diamond
   #   path: blue-cloner-diamond
 globalName:
