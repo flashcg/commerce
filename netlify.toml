@@ -1,7 +1,6 @@
 # example netlify.toml
 [build]
-  command = "netlify-lambda build ./netlify/functions &&npm run generate"
-  functions = "netlify-functions" 
+  command = "npm run generate"
   publish = "dist"
 
 [[redirects]]
