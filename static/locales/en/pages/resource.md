@@ -16,7 +16,7 @@ jumbotronAreasTop:
     imageUrl: resource_banner.jpg
     height: 700
     title: Resource
-    titleClass: font-size-xxl
+    titleClass: fs-2
     text: Get to know our business more
     additionClass: text-center
     bgStyle:

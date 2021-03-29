@@ -1,18 +1,20 @@
 ---
-title: ClonerAlliance - MP4-Cloner, Trim, combine, convert and burn MP4 videos recorded with video capture devices. 
+title: DVD/Blu-ray copy software - DVD-Cloner 
 metaItems: # seo 内容
   - name: description
-    content: MP4-Cloner is a versatile program to edit MP4 video files recorded with our video capture tool. It enables you to trim, combine, convert and burn your MP4 videos (H.264 encoding).
+    content: Blu-ray copy software free download, DVD-Cloner backs up DVD/Blu-ray movies easily, perfect 1:1 DVD Copy
   - name: keywords
-    content: cloneralliance, video, recorder, capture, hdmi, software, 4k, live stream, mp4-cloner
+    content: Blu-ray copy, DVD copy software, DVD-Cloner
 layout: fluid
 template: product
 pagify: true #页面化
 abbrName: DC
 handleName: DVD-Cloner
 name: DVD-Cloner 2021
-box:
-  imageUrl: dc2021-box.png
+type: DVD Copy
+boxes:
+  - imageUrl: dc2021-box.png #默认盒子图
+  - imageUrl: dc2021-box-ref.png #带阴影盒子图
 desc:
   shortText: A one-click solution to copy/backup/decrypt/rip your DVD/Blu-ray/4K UHD Blu-ray movies.
   longText: |
@@ -81,6 +83,7 @@ WhyChoose:
   iconGird: 6  
 youtubeArea:
   name: Video Guide
+  active: true
   container: container-fluid
   title: Video Guide
   additionClass: position-relative text-center text-light
@@ -92,8 +95,9 @@ youtubeArea:
   iconGird: 2
   iconClass: 
   iconWidth: 75 #25 50 75 100 默认是100       
-systemReq:
+systemRequirements:
   name: System Requirements 
+  active: true
   title: System Requirements
   container: container
   additionClass: position-relative
@@ -116,7 +120,7 @@ systemReq:
             <li>A Blu-ray burner</li>
             <li>Windows 10</li>
             <li><a href="/uhd-video-copy-recording/">A UHD friendly drive</a></li></ul>
-           <p><img src="{imageUrl}macos.png" style="max-width:80px"><a href="/dvd-copy-for-mac/">Click here to copy DVD on Mac OS</a></p>'      
+           <p><img src="{imageUrl}macos.png" style="max-width:80px"><a href="/dvd-copy-for-mac/">Click here to copy DVD on Mac OS</a></p>'          
 ---
 
 ## Features

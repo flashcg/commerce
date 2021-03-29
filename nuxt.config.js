@@ -84,9 +84,9 @@ export default {
     {
       src: '@/plugins/priceRules'
     },
-    {
+/*     {
       src: '@/plugins/global-components.js'
-    },    
+    }, */    
     {
       src: '@/plugins/yamlPages'
     },
@@ -142,7 +142,8 @@ export default {
   ],
   bootstrapVue: {
     bootstrapCSS: false, // or `css`
-    bootstrapVueCSS: false // or `bvCSS`
+    bootstrapVueCSS: false, // or `bvCSS`
+    components: ['BIcon','BImg','BBreadcrumb','BAlert','BLink','BButton','BButtonGroup','BBadge','BBtn','BForm','BModal','BEmbed','BContainer','BRow','BCol','BNavbar','BNavbarBrand','BNavbarToggle','BSidebar','BCollapse','BTab','BInputGroup','BInputGroupAppend','BFormInput','BFormGroup','BFormInvalidFeedback','BFormSelect','BFormText','BFormTextarea','BTabs','BFormFile','BSpinner','BIconArrowLeft','BIconArrowRight']
   },
   content:{
     dir:'static/locales/en'

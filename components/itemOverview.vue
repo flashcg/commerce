@@ -7,7 +7,8 @@
           <b-img :src="itemInfo.boxSrc" fluid />
           <b-img v-if="!standard" class="lifetime-icon" fluid src="~static/images/vip_lifetime.png" />
         </b-col>
-        <b-col sm="9">     
+        <b-col sm="9">
+          <client-only>    
           <p v-if="data.topAdditionText"  class="whiteSpace-preline" v-html="data.topAdditionText"></p>
           <p v-html="itemInfo.desc"  class="whiteSpace-preline"></p>
           <p v-if="data.bottomAdditionText"  class="whiteSpace-preline" v-html="data.bottomAdditionText"></p>
@@ -24,16 +25,17 @@
             </div>          
           </template>
           
-          <p class="font-size-lg">{{standard?$t('softwareInfo.currency')+itemSaleInfo.standard.price:$t('softwareInfo.currency')+itemSaleInfo.lifetime.price}} <b-link v-if="!standard" class="font-size-sm text-red-light">{{$t('globalName.get50off')}} </b-link>
+          <p class="fs-4" v-if="itemSaleInfo.standard">{{standard?$t('softwareInfo.currency')+itemSaleInfo.standard.price:$t('softwareInfo.currency')+itemSaleInfo.lifetime.price}} <b-link v-if="!standard" href="/special-offer/" class="fs-6 text-red-light" sc>{{$t('globalName.get50off')}} </b-link>
           
           </p>
+          
+          <b-button v-if="itemSaleInfo.standard" squared variant="danger" size="lg" :href="standard?itemSaleInfo.standard.buyLink:itemSaleInfo.lifetime.buyLink" class="mt-2">{{$t("globalName.buy")}} </b-button>
+          <b-button v-if="itemSaleInfo.downloadUrl" squared variant="success" size="lg" :href="itemSaleInfo.downloadUrl" class="mt-2">{{$t("globalName.download")}} </b-button>
+          <b-button v-if="itemSaleInfo.upgradeUrl" squared variant="outline-light" size="lg" :to="itemSaleInfo.upgradeUrl" class="mt-2">{{$t("globalName.upgrade")}} </b-button>          
 
-          <b-button squared variant="danger" size="lg" :href="standard?itemSaleInfo.standard.buyLink:itemSaleInfo.lifetime.buyLink">{{$t("globalName.buy")}} </b-button>
-          <b-button v-if="itemSaleInfo.downloadUrl" squared variant="success" size="lg" :href="itemSaleInfo.downloadUrl">{{$t("globalName.download")}} </b-button>
-          <b-button v-if="itemSaleInfo.upgradeUrl" squared variant="outline-light" size="lg" :to="itemSaleInfo.upgradeUrl">{{$t("globalName.upgrade")}} </b-button>          
-
-          <p v-if="data.button.additionText" v-html="data.button.additionText"></p>
-          <p><b-img fluid src="~static/images/credit_cards.gif" style="max-width:300px"  /> </p>
+          <p v-if="data.button&&data.button.additionText" v-html="data.button.additionText"></p>
+          <p v-if="itemSaleInfo.standard"><b-img fluid src="~static/images/credit_cards.gif" style="max-width:300px"  /> </p>
+        </client-only> 
         </b-col>
       </b-row>      
     </b-container>  
@@ -73,8 +75,9 @@ export default Vue.extend({
   },
   computed:{
     ...mapState({softwareInfo: (state:any) =>state.i18n.messages.softwareInfo}),
-    itemSaleInfo():object{
-      return this.softwareInfo.items.find((res: { handleName: string; })=>res.handleName.toLowerCase() == this.itemInfo.handleName.toLowerCase())
+    itemSaleInfo(){
+      let outData = this.softwareInfo.items.find((res: { handleName: string; })=>res.handleName.toLowerCase() == this.itemInfo.handleName.toLowerCase())||{}  
+      return outData
     },
     backgroundStyle():object|void{      
     if (this.data.bgStyle&&typeof(this.data.bgStyle)=='object') {        
@@ -88,21 +91,23 @@ export default Vue.extend({
       }
     },
     backgroundClass():string|void{
-      if (typeof(this.data.bgStyle)=='string') {
-        return 'bg-'+this.data.bgStyle+' position-absolute '+this.bgPosition(this.data.bgPosition)
-      } else if (typeof(this.data.bgStyle)=='object') {
-        return 'bg-'+this.data.bgStyle.default+' position-absolute '+this.bgPosition(this.data.bgPosition)
-      }        
-    }    
-  },
-  methods: {
-    bgPosition(data:string|undefined) :string{
+      let bgPosition = (data:string|undefined) :string=>{
       if (data == "half") {
         return "fill-md-half-position";
       } else {
         return "fill-position";
       }
-    },
+    }
+      if (typeof(this.data.bgStyle)=='string') {
+        return 'bg-'+this.data.bgStyle+' position-absolute '+bgPosition(this.data.bgPosition)
+      } else if (typeof(this.data.bgStyle)=='object') {
+        return 'bg-'+this.data.bgStyle.default+' position-absolute '+bgPosition(this.data.bgPosition)
+      }        
+    }    
+  },
+  mounted() {
+
+    
   }
 });
 </script>

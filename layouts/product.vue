@@ -3,15 +3,16 @@
   <headerNav className="fixed-top" template="product"/>
   <main>
     <nuxt />
+    <item-tab :data="$t('productRecommend')"></item-tab>
   </main>
   <footer-block />
-      <cookie-notice />
 </div>
 
 </template>
 
 <script>
 import headerNav from "@/components/headerNav";
+import itemTab from "@/components/itemTab";
 import footerBlock from "@/components/footerBlock.vue";
 export default {
   head() {
@@ -23,9 +24,10 @@ export default {
   },
   components: {
     headerNav,
-    footerBlock,    
+    footerBlock, itemTab   
   },
   mounted() {
+    
     this.$store.dispatch('shopifyData')
 
   }

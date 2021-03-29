@@ -6,7 +6,6 @@
     <nuxt />
   </main>
   <footer-block />
-  <cookie-notice />
 </div>
 </template>
 

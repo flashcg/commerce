@@ -1,7 +1,7 @@
 <template>
     <div>
         <b-img class="mr-md-4" :src="releaseData.iconUrl"  :title="releaseData.title" style="width:80px" />
-       <h3 class="d-md-inline font-size-md align-middle">{{releaseData.title}}</h3>
+       <h3 class="d-md-inline fs-5 align-middle">{{releaseData.title}}</h3>
        
        <b-table class="mt-4" striped hover :items="releaseData.releaseList" :fields="fields">           
         <template v-slot:cell(description)="data">         

@@ -5,7 +5,6 @@
     <b-container class="my-6"><nuxt /></b-container>
   </main>
   <footer-block />
-  <cookie-notice />
 </div>
 
 </template>

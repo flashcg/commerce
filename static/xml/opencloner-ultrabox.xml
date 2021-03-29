@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>3.10</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>PADGen 3.1.0.41 http://www.padgen.org</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>OpenCloner Inc.</Company_Name>
+		<Address_1 />
+		<Address_2 />
+		<City_Town />
+		<State_Province />
+		<Zip_Postal_Code />
+		<Country />
+		<Company_WebSite_URL>http://www.opencloner.com</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name>OpenCloner</Author_First_Name>
+			<Author_Last_Name>OpenCloner</Author_Last_Name>
+			<Author_Email>market@dvd-cloner.com</Author_Email>
+			<Contact_First_Name>OpenCloner</Contact_First_Name>
+			<Contact_Last_Name>OpenCloner</Contact_Last_Name>
+			<Contact_Email>simba@dvd-cloner.com</Contact_Email>
+		</Contact_Info>
+		<Support_Info>
+			<Sales_Email>simba@dvd-cloner.com</Sales_Email>
+			<Support_Email>support@dvd-cloner.com</Support_Email>
+			<General_Email>support@dvd-cloner.com</General_Email>
+			<Sales_Phone />
+			<Support_Phone />
+			<General_Phone />
+			<Fax_Phone />
+		</Support_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>OpenCloner UltraBox</Program_Name>
+		<Program_Version>2.90.236</Program_Version>
+		<Program_Release_Month>03</Program_Release_Month>
+		<Program_Release_Day>02</Program_Release_Day>
+		<Program_Release_Year>2021</Program_Release_Year>
+		<Program_Cost_Dollars>199.99</Program_Cost_Dollars>
+		<Program_Cost_Other_Code />
+		<Program_Cost_Other />
+		<Program_Type>Shareware</Program_Type>
+		<Program_Release_Status>Minor Update</Program_Release_Status>
+		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
+		<Program_OS_Support>Win7 x32, Win7 x64, WinVista x32, WinVista x64, WinXP, Win8, Win10</Program_OS_Support>
+		<Program_Language>English</Program_Language>
+		<Program_Change_Info>Upgraded DVD-Cloner to V14.20 and Blue-Cloner to V7.00.</Program_Change_Info>
+		<Program_Specific_Category>Video</Program_Specific_Category>
+		<Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
+		<Program_System_Requirements />
+		<File_Info>
+			<File_Size_Bytes>158609528</File_Size_Bytes>
+			<File_Size_K>155127</File_Size_K>
+			<File_Size_MB>147</File_Size_MB>
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Count />
+			<Expire_Based_On>Days</Expire_Based_On>
+			<Expire_Other_Info />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Keywords>OpenCloner UltraBox, DVD-Cloner, Open DVD ripper, Open SmartBurner, Blue-Cloner, Open Blu-ray ripper, Stream-Cloner, DVD/Blu-ray copy/rip/burn, download/capture online videos</Keywords>
+			<Char_Desc_45>OpenCloner UltraBox is all-in-one software.</Char_Desc_45>
+			<Char_Desc_80>All-in-one software which can be operated conveniently on the main interface.</Char_Desc_80>
+			<Char_Desc_250>OpenCloner UltraBox is all-in-one software to copy, rip and burn DVD/Blu-ray movies. It also enables you to download/capture online movies and convert them to various video and audio formats.
+</Char_Desc_250>
+			<Char_Desc_450>OpenCloner UltraBox is all-in-one software to copy, rip and burn DVD/Blu-ray movies. It also enables you to download/capture online movies and convert them to various video and audio formats. It has six programs including DVD-Cloner, Blue-Cloner, Open DVD ripper, Open Blu-ray ripper, Open SmartBurner and Stream-Cloner. They can be operated conveniently on OpenCloner UltraBox's main interface without downloading again.
+</Char_Desc_450>
+			<Char_Desc_2000>OpenCloner UltraBox is all-in-one software to copy, rip and burn DVD/Blu-ray movies. It also enables you to download/capture online movies and convert them to various video and audio formats. It has six programs including DVD-Cloner, Blue-Cloner, Open DVD ripper, Open Blu-ray ripper, Open SmartBurner and Stream-Cloner. They can be operated conveniently on OpenCloner UltraBox's main interface without downloading again. Once OpenCloner UltraBox is registered successfully, the six programs included will be registered automatically.<br/>
+DVD-Cloner<br/>
+The latest version enables you to copy latest DVD movies with much higher speed. Without any third party DVD decrypter, DVD-Cloner 2017 has unlimited access to all region codes and copy protection systems. It removes all known DVD protections such as CSS, CPPM, APS, UOPs, Sony ARccOS, RipGuard, RPC-I/RPC-II/RCE, Disney's Fake, etc.<br/>
+Copies DVD-5 to DVD-5, DVD-9 to DVD-9 in 1:1 ratio.<br/>
+Copy DVD to ISO or burn ISO to DVD<br/>
+Blue-Cloner<br/>
+Perfect 1:1 Blu-ray copy<br/>
+Movie-only copy – copies the main movie only.<br/>
+Compresses the main movie with MPEG-2 or H.264 1080p to a BD-R/RE (25G).<br/>
+Open DVD ripper<br/>
+Rips DVD movies to various video and audio formats.<br/>
+Converts 2D to 3D movies with high quality.<br/>
+With the GPU acceleration, the conversion speed is much higher than before.<br/>
+Open Blu-ray ripper<br/>
+Rips Blu-ray movies to various video and audio formats.<br/>
+The Express and Expert interfaces.<br/>
+Converts 2D to 3D movies with perfect quality.<br/>
+Open SmartBurner<br/>
+Burns data files to a DVD/Blu-ray data disc.<br/>
+Makes a DVD/Blu-ray video disc from video files.<br/>
+Burns the existing ISO file on the hard disk to a DVD/Blu-ray disc.<br/>
+Stream-Cloner<br/>
+Downloads online movies, streaming videos, audio files, pictures, etc.<br/>
+Captures anything playing on your PC whenever you want.<br/>
+Plays back the downloaded or captured videos directly with the built-in video player.</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>https://www.dvd-cloner.com/opencloner-ultrabox.html</Application_Info_URL>
+			<Application_Order_URL>https://www.dvd-cloner.com/order.html</Application_Order_URL>
+			<Application_Screenshot_URL>https://www.dvd-cloner.com/images/ocub_screenshot.jpg</Application_Screenshot_URL>
+			<Application_Icon_URL>https://www.dvd-cloner.com/images/ocub_ico.jpg</Application_Icon_URL>
+			<Application_XML_File_URL>http://www.dvd-cloner.com/opencloner-ultrabox.xml</Application_XML_File_URL>
+		</Application_URLs>
+		<Download_URLs>
+			<Primary_Download_URL>https://www.dvd-cloner.com/download/?p=ou</Primary_Download_URL>
+			<Secondary_Download_URL>http://www.opencloner.com/download/OpenCloner_UltraBox.exe</Secondary_Download_URL>
+			<Additional_Download_URL_1 />
+			<Additional_Download_URL_2 />
+		</Download_URLs>
+	</Web_Info>
+	<Permissions>
+		<Distribution_Permissions />
+		<EULA />
+	</Permissions>
+	<Affiliates>
+		<Affiliates_FORM>Y</Affiliates_FORM>
+		<Affiliates_VERSION>1.4</Affiliates_VERSION>
+		<Affiliates_URL>http://www.asp-shareware.org/pad/extensions/Affiliates.htm</Affiliates_URL>
+		<Affiliates_Information_Page />
+		<Affiliates_Avangate_Order_Page>https://secure.avangate.com/order/checkout.php?PRODS=4623143&amp;QTY=1&amp;CART=1</Affiliates_Avangate_Order_Page>
+		<Affiliates_Avangate_Vendor_ID>OPENCLON</Affiliates_Avangate_Vendor_ID>
+		<Affiliates_Avangate_Product_ID>4623143</Affiliates_Avangate_Product_ID>
+		<Affiliates_Avangate_Maximum_Commission_Rate>30</Affiliates_Avangate_Maximum_Commission_Rate>
+		<Affiliates_BMTMicro_Order_Page />
+		<Affiliates_BMTMicro_Vendor_ID />
+		<Affiliates_BMTMicro_Product_ID />
+		<Affiliates_BMTMicro_Maximum_Commission_Rate />
+		<Affiliates_Cleverbridge_Order_Page />
+		<Affiliates_Cleverbridge_Vendor_ID />
+		<Affiliates_Cleverbridge_Product_ID />
+		<Affiliates_Cleverbridge_Maximum_Commission_Rate />
+		<Affiliates_clixGalore_Order_Page />
+		<Affiliates_clixGalore_Vendor_ID />
+		<Affiliates_clixGalore_Product_ID />
+		<Affiliates_clixGalore_Maximum_Commission_Rate />
+		<Affiliates_CommissionJunction_Order_Page />
+		<Affiliates_CommissionJunction_Vendor_ID />
+		<Affiliates_CommissionJunction_Product_ID />
+		<Affiliates_CommissionJunction_Maximum_Commission_Rate />
+		<Affiliates_DigiBuy_Order_Page />
+		<Affiliates_DigiBuy_Vendor_ID />
+		<Affiliates_DigiBuy_Product_ID />
+		<Affiliates_DigiBuy_Maximum_Commission_Rate />
+		<Affiliates_DigitalCandle_Order_Page />
+		<Affiliates_DigitalCandle_Vendor_ID />
+		<Affiliates_DigitalCandle_Product_ID />
+		<Affiliates_DigitalCandle_Maximum_Commission_Rate />
+		<Affiliates_Emetrix_Order_Page />
+		<Affiliates_Emetrix_Vendor_ID />
+		<Affiliates_Emetrix_Product_ID />
+		<Affiliates_Emetrix_Maximum_Commission_Rate />
+		<Affiliates_eSellerate_Order_Page />
+		<Affiliates_eSellerate_Vendor_ID />
+		<Affiliates_eSellerate_Product_ID />
+		<Affiliates_eSellerate_Maximum_Commission_Rate />
+		<Affiliates_Kagi_Order_Page />
+		<Affiliates_Kagi_Vendor_ID />
+		<Affiliates_Kagi_Product_ID />
+		<Affiliates_Kagi_Maximum_Commission_Rate />
+		<Affiliates_LinkShare_Order_Page />
+		<Affiliates_LinkShare_Vendor_ID />
+		<Affiliates_LinkShare_Product_ID />
+		<Affiliates_LinkShare_Maximum_Commission_Rate />
+		<Affiliates_NorthStarSol_Order_Page />
+		<Affiliates_NorthStarSol_Vendor_ID />
+		<Affiliates_NorthStarSol_Product_ID />
+		<Affiliates_NorthStarSol_Maximum_Commission_Rate />
+		<Affiliates_OneNetworkDirect_Order_Page />
+		<Affiliates_OneNetworkDirect_Vendor_ID />
+		<Affiliates_OneNetworkDirect_Product_ID />
+		<Affiliates_OneNetworkDirect_Maximum_Commission_Rate />
+		<Affiliates_Order1_Order_Page />
+		<Affiliates_Order1_Vendor_ID />
+		<Affiliates_Order1_Product_ID />
+		<Affiliates_Order1_Maximum_Commission_Rate />
+		<Affiliates_Osolis_Order_Page />
+		<Affiliates_Osolis_Vendor_ID />
+		<Affiliates_Osolis_Product_ID />
+		<Affiliates_Osolis_Maximum_Commission_Rate />
+		<Affiliates_Plimus_Order_Page />
+		<Affiliates_Plimus_Vendor_ID />
+		<Affiliates_Plimus_Product_ID />
+		<Affiliates_Plimus_Maximum_Commission_Rate />
+		<Affiliates_Regnet_Order_Page />
+		<Affiliates_Regnet_Vendor_ID />
+		<Affiliates_Regnet_Product_ID />
+		<Affiliates_Regnet_Maximum_Commission_Rate />
+		<Affiliates_Regnow_Order_Page>https://shopper.mycommerce.com/checkout/cart/add/8959-25</Affiliates_Regnow_Order_Page>
+		<Affiliates_Regnow_Vendor_ID>8959</Affiliates_Regnow_Vendor_ID>
+		<Affiliates_Regnow_Product_ID>8959-25</Affiliates_Regnow_Product_ID>
+		<Affiliates_Regnow_Maximum_Commission_Rate>30</Affiliates_Regnow_Maximum_Commission_Rate>
+		<Affiliates_Regsoft_Order_Page />
+		<Affiliates_Regsoft_Vendor_ID />
+		<Affiliates_Regsoft_Product_ID />
+		<Affiliates_Regsoft_Maximum_Commission_Rate />
+		<Affiliates_ShareIt_Order_Page />
+		<Affiliates_ShareIt_Vendor_ID />
+		<Affiliates_ShareIt_Product_ID />
+		<Affiliates_ShareIt_Maximum_Commission_Rate />
+		<Affiliates_Shareasale_Order_Page />
+		<Affiliates_Shareasale_Vendor_ID />
+		<Affiliates_Shareasale_Product_ID />
+		<Affiliates_Shareasale_Maximum_Commission_Rate />
+		<Affiliates_SWReg_Order_Page>https://www.swreg.org/cgi-bin/s.cgi?s=4680&amp;p=4680-ou1&amp;q=1&amp;v=0&amp;d=0</Affiliates_SWReg_Order_Page>
+		<Affiliates_SWReg_Vendor_ID>4680</Affiliates_SWReg_Vendor_ID>
+		<Affiliates_SWReg_Product_ID>4680-ou1</Affiliates_SWReg_Product_ID>
+		<Affiliates_SWReg_Maximum_Commission_Rate>30</Affiliates_SWReg_Maximum_Commission_Rate>
+		<Affiliates_V-Share_Order_Page />
+		<Affiliates_V-Share_Vendor_ID />
+		<Affiliates_V-Share_Product_ID />
+		<Affiliates_V-Share_Maximum_Commission_Rate />
+		<Affiliates_VFree_Order_Page />
+		<Affiliates_VFree_Vendor_ID />
+		<Affiliates_VFree_Product_ID />
+		<Affiliates_VFree_Maximum_Commission_Rate />
+		<Affiliates_Yaskifo_Order_Page />
+		<Affiliates_Yaskifo_Vendor_ID />
+		<Affiliates_Yaskifo_Product_ID />
+		<Affiliates_Yaskifo_Maximum_Commission_Rate />
+	</Affiliates>
+	<ASP>
+		<ASP_FORM>Y</ASP_FORM>
+		<ASP_Member>N</ASP_Member>
+		<ASP_Member_Number />
+	</ASP>
+</XML_DIZ_INFO>

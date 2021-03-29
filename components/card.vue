@@ -2,7 +2,7 @@
   <div v-if="cardData&&cardData.active" :id="handleName(cardData.name)" :class="'cardBlock cardBlock-'+handleName(cardData.name)+' overflow-hidden position-relative bg-'+cardData.bgStyle">  
       <div :class="'cardBlock-body '+textColor(cardData)+' '+cardData.additionClass+' '+cardData.container">
         <div v-if="cardData.title" class="pt-6">
-          <h3 class="font-size-xl ">{{cardData.title}}</h3>
+          <h3 class="fs-3 ">{{cardData.title}}</h3>
           <hr class="divider">
         </div>
         <div v-if="cardData.topArea" :class="'row pt-6 bg-'+cardData.topArea.bgStyle"><b-img class="mx-auto" fluid v-if="cardData.topArea.imageUrl" :src="cardData.topArea.imageUrl" /></div>
@@ -23,10 +23,10 @@
               <div v-if="item.productModel">
                <h2>{{item.title}}</h2>               
               <hr class="divider">              
-              <h3  class="font-size-xxxl">{{item.productName?item.productName:$getItemData(item.productModel,'name')}}</h3>
+              <h3  class="fs-1">{{item.productName?item.productName:$getItemData(item.productModel,'name')}}</h3>
               </div>
 
-  <!--          <p v-if="priceCatch(item.productModel)" class="font-size-md">        
+  <!--          <p v-if="priceCatch(item.productModel)" class="fs-5">        
                 <span class="text-light text-line-through">${{priceCatch(item.productModel,'compare')}}</span> 
                 <span class="text-warning">${{priceCatch(item.productModel)}}</span>
               </p> -->
@@ -42,12 +42,12 @@
             <div v-if="item.productModel">
             <h3>{{item.productName?item.productName:$getItemData(item.productModel,'name')}}</h3>
 
-               <p v-if="priceCatch(item)&&item.discount.code" class="font-size-md">       
+               <p v-if="priceCatch(item)&&item.discount.code" class="fs-5">       
                 {{$t('cart.price')}}: <span class=" text-line-through">${{priceCatch(item,'compare')}}</span><br /> 
                 {{$t('cart.discount_salePrice')}}: <span class="text-danger">${{priceCatch(item,'discount') }}</span>
               </p>
 
-               <p v-else-if="priceCatch(item)" class="font-size-md">        
+               <p v-else-if="priceCatch(item)" class="fs-5">        
                 {{$t('cart.price')}}: <span class=" text-line-through">${{priceCatch(item,'compare')}}</span><br /> 
                 {{$t('cart.salePrice')}}: <span class="text-danger">${{priceCatch(item) }}</span>
               </p>              
@@ -56,7 +56,7 @@
             </div>
     
           <p>{{item.text}}</p>
-          <p><b-badge class="font-size-xs" v-if="item.badge" pill :variant="item.badge.variant||'primary'">{{item.badge.text}}</b-badge></p>
+          <p><b-badge class="fs-7" v-if="item.badge" pill :variant="item.badge.variant||'primary'">{{item.badge.text}}</b-badge></p>
                 <buynow :product="$productCatch(item.productModel)" :discount="item.discount" :variant="cardData.bottonVariant"/>
                <!-- <p v-if="inventoryCatch(item.productModel) == 0" class="mt-3"><a class="smooth-scroll" href="#newsletter" v-smooth-scroll>{{$t("cart.soldOutMessage")}}</a></p> -->
           </div>
@@ -68,10 +68,10 @@
             <h3>{{item.productName}}</h3> 
             <p>{{$getSoftwareData(item.productName).shortText}}</p>
             
-            <p v-if="item.price" class="font-size-md">       
+            <p v-if="item.price" class="fs-5">       
                 {{$t('cart.price')}}: <span class="text-danger">${{item.price}}</span>
               </p>   
-            <p v-if="item.badge"><b-badge class="font-size-xs"  pill :variant="item.badge.variant||'primary'">{{item.badge.text}}</b-badge></p>
+            <p v-if="item.badge"><b-badge class="fs-7"  pill :variant="item.badge.variant||'primary'">{{item.badge.text}}</b-badge></p>
             <b-button v-if="$getSoftwareData(item.productName).jumbotronAreasTop[0].button.buy" squared size="xl" :href="$getSoftwareData(item.productName).jumbotronAreasTop[0].button.buy.buyLink" :variant="cardData.bottonVariant">{{$t('globalName.buy')}} </b-button>
             </div>
           </div>

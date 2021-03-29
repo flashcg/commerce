@@ -1,6 +1,6 @@
 
 <template> 
-  <div class="breadcrumb-wrap bg-gray-light">    
+  <div class="breadcrumb-wrap bg-dark-optcity-2">    
     <b-breadcrumb class="container justify-content-end mb-0" :items="breadcrumb(data)"></b-breadcrumb> 
   </div> 
        

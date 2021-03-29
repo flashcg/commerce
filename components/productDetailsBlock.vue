@@ -44,7 +44,7 @@ export default {
           type:"bullets",
           clickable: true,
           renderBullet(index, className) {
-            return `<span class="${className} font-size-sm py-2 px-3 swiper-pagination-custom">${controlName[index].name}</span>`;
+            return `<span class="${className} fs-6 py-2 px-3 swiper-pagination-custom">${controlName[index].name}</span>`;
           }
         }
       }

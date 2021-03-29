@@ -5,7 +5,7 @@ export default ({
   store,
   $content
 }) => {
-  Vue.prototype.$handlify=(name)=> {
+  Vue.prototype.$handlify=(name='dvd-cloner')=> {
     let _name = name.replace(/\s/g, "-");
     return _name.toLowerCase();
   }
@@ -162,21 +162,38 @@ export default ({
       }
     }
   }
+  
+  Vue.prototype.$fetchItem=(itemName)=>{
+
+    let productData = store&&store.state.localData.productData;
+
+    if (productData.length>0) {
+      let item =  productData.find(res=>res.handleName == itemName) 
+    
+      return item
+    }    
+  }
 
   //inject $initMD to context.app
   if (app) app.$initMD = async (data, method = 'page') => {
 
     let pathData = await $content('default').only(['imagesPath', 'KB_basePath', 'download_basePath', 'manual_basePath', 'video_basePath', 'videoProduct_basePath']).fetch();
-
+    let pathHandle=(value,globalPath)=>{
+      if(value.substr(0,4) == 'http'){
+        return value
+      } else {
+        return globalPath+value
+      }
+    } 
     // 给指定变量加上全局定义
     function foreachObj(obj) {
       for (let key in obj) {
-        key == 'imageUrl' || key == 'iconUrl' ? obj[key] = pathData.imagesPath + obj[key] : '';
-        key == 'kbUrl' ? obj[key] = pathData.KB_basePath + obj[key] : '';
-        key == 'downloadUrl' ? obj[key] = pathData.download_basePath + obj[key] : '';
-        key == 'videoUrl' ? obj[key] = pathData.video_basePath + obj[key] : '';
-        key == 'videoProductUrl' ? obj[key] = pathData.videoProduct_basePath + obj[key] : '';
-        key == 'manualUrl' ? obj[key] = pathData.manual_basePath + obj[key] : '';
+        key == 'imageUrl' || key == 'iconUrl' ?obj[key]= pathHandle(obj[key],pathData.imagesPath): '';
+        key == 'kbUrl' ? obj[key]= pathHandle(obj[key],pathData.KB_basePath): '';
+        key == 'downloadUrl' ?obj[key]= pathHandle(obj[key],pathData.download_basePath): '';
+        key == 'videoUrl' ?obj[key]= pathHandle(obj[key],pathData.video_basePath): '';
+        key == 'videoProductUrl' ?obj[key]= pathHandle(obj[key],pathData.videoProduct_basePath): '';
+        key == 'manualUrl' ?obj[key]= pathHandle(obj[key],pathData.manual_basePath): '';
         if (typeof (obj[key]) == 'object') {
           foreachObj(obj[key]);
         }

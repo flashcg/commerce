@@ -2,11 +2,10 @@
 <div id="Page">
   <headerNav /> 
   <breadcrumb :data="$route.path" />
-  <main>
-    <b-container class="my-6"><nuxt /></b-container>
+  <main class="bg-light">
+    <b-container><nuxt /></b-container>
   </main>
   <footer-block />
-  <cookie-notice />
 </div>
 
 </template>

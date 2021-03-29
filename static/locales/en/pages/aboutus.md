@@ -17,8 +17,8 @@ topTextBlock:
   - template: overlay
     title: Bring simplicity to the entertainment life
     text: Every dynamic moment deserves to be remembered. Our ultimate goal is to make sure every precious memory is permanently recorded and shared, without regrets.
-    titleClasss: font-size-xl
-    additionClass: font-size-md text-center
+    titleClasss: fs-3
+    additionClass: fs-5 text-center
     blockBgStyle: white
     bgStyle:
       color: white

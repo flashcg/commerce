@@ -7,142 +7,121 @@ metaItems:
   - name: keywords
     content: cloneralliance, video, recorder, capture, hdmi, software, 4k, live stream
 layout: fluid
-heroCarousels: #首页主banner  
+heroCarousels: #首页主banner 
+  name: main-banner
   loop: true
   overflow: hidden
   allowTouchMove: true
   block:
     - name: Home recoding
-      
-      title: Standalone Recording
-      subtitle: Record Your Frames. Free Up Your PC.
+      title: Blu-ray and DVD copy - Perfect 1:1 copy
+      subtitle: 
+      icons:
+        - imageUrl: icon/banner-dc-bd.png
+        - imageUrl: icon/banner-dc-dvd.png
+        - imageUrl: icon/banner-dc-bd.png
       button:
-        text: Shop Now
-        path: store 
+        text: More Info
+        path: dvd-cloner 
         variant: primary
-      additionClass: position-relative w-100 text-md-right text-light mt-10 pr-md-5
+      additionClass: position-relative w-100  text-center text-md-right text-light mt-10 pr-md-5
       height: screen
+      bgMobileStyle: dark
       bgStyle:
-        imageUrl: poster/cloneralliance_box_pro_banner_1080.jpg
-        color: dark
+        imageUrl: banner-dc-hero.png
+        color: 
         video:
-          videoUrl: cloneralliance_box_pro_banner_1080.mp4
-          poster: 
-            imageUrl: poster/cloneralliance_box_pro_banner_1080.jpg
-    - name: Home recoding
-      
-      title: Capture and Streaming
-      subtitle: Go Live and Capture Your Moments. Be Different.
+          layout: bottom
+          videoUrl: background_burning_dc.mp4
+    - name: Home recoding      
+      title: 
+      subtitle: Strip HDCP and Record 4K UHD Streaming  Videos from Standalone Video Recorders.
       button:
-        text: Shop Now
+        text: More Info
         path: store 
         variant: primary
-      additionClass: position-relative text-white w-100 text-center text-md-right mt-10 pr-md-5
+      additionClass: d-flex text-white w-100 text-center text-md-right pr-md-5 align-items-md-center justify-content-md-end
       bgMobileStyle: dark
       height: screen
       bgStyle:
-        imageUrl: poster/cloneralliance_game_style_1080.jpg
-        color: dark
-        video:
-          videoUrl: cloneralliance_game_style_1080.mp4
-          poster: 
-            imageUrl: poster/cloneralliance_game_style_1080.jpg  
-   
-jumbotronAreas:
-  - name: Standalone Recording
-    template: overlay #jumbotron 样式
-    imageUrl: ca_feature_recording.jpg
-    title: Standalone Recording
-    text: Free up your PC from now on! With the built-in H.264 encoder, our HDMI video recorders make it possible to record any video and game to your USB storage device without taking up your PC resources.
-    button:
-      text: Shop Now
-      path: store
-      variant: primary
-      additionClass:
-    additionClass: position-relative text-center w-md-50
-    height: screen
-    bgStyle: 
-      color: dark
-    blockSpacing: 2
-  - name: Capture
-    template: left #jumbotron 样式
-    imageUrl: ca_feature_capture.jpg
-    title: Capture
-    text: Capture your 4K game video footage while playing your high-fidelity Xbox One X and PS4 Pro games as intended. Or turn your camcorder/DSLR as a webcam, then capture and live your content creation instantly.
-    button:
-      text: Shop Now
-      path: store
-      variant: primary
-      additionClass:
-    additionClass: position-relative text-center
-    height: 
-    bgStyle:
-      color: gray-light
-    blockSpacing: 2
-  - name: Streaming
-    template: right #jumbotron 样式
-    imageUrl: ca_feature_streaming.jpg
-    title: Streaming
-    text: Show your skills! Connect your PC or Mac to gaming console with our UVC game capture card, and enjoy ultra-low latency 1080p@60fps live streaming and recording. Take it with you wherever you go thanks to its compact size.
-    button:
-      text: Shop Now
-      path: store
-      variant: primary      
-      additionClass:
-    additionClass: position-relative text-center
-    height: 
-    bgStyle: 
-      color: dark
-    blockSpacing: 2
-iconBlock_productIdea:
-  name: Product Idea
-  container: container
+        imageUrl: banner-passdcp.jpg
+        color:
+    - name: Home recoding
+      title: Rip, Convert and Remove DRM of All Latest DVD/Blu-ray/iTunes Movies to any platforms.
+      subtitle: All-in-One Video Ripper Solution.
+      button:
+        text: More Info
+        path: dvd-cloner 
+        variant: primary
+      additionClass: d-flex text-white w-100 text-center text-md-left pr-md-5 align-items-md-center
+      height: screen
+      bgMobileStyle: dark
+      bgStyle:
+        imageUrl: banner_dvdripper.jpg
+        color: 
+advertising:
+  name: advertising
+  container: container-fluid
   title: 
-  textTop: Beautiful moments should not be instantaneous, but preserved forever. Recording should be done in one go, without too many complicated operations. Were you at home or not, recording would continue without interruption. Yes! That's what we've been doing.
+  textTop: 
   textBottom: 
   button:
+  paddingY: 0
   additionClass: position-relative text-center
   bgStyle: gray-light
   icon:
-    - iconUrl: ca_product_concept_1.png
-      title: Straightforward
-      text: Achieve your recording work in a very easy way. Just press one button to start recording.
-      additionClass:
-    - iconUrl: ca_product_concept_2.png
-      title: Flexible
-      text: Expand your storage ways. Record videos to your USB storage device or PC/laptop. The choice is yours!
-      additionClass:
-    - iconUrl: ca_product_concept_3.png
-      title: Compatible
-      text: Stream your gaming moments and share with your subscribers at ease. Superb compatibility makes you feel freely on different platforms.
-      additionClass:
-  iconGird: 3
-iconBlock_service:
-  name: Product Idea
-  container: container
-  title: Service
+    - iconUrl: special-offer-ad.png
+      title: 
+      text: Take the excellent chance to get the time-limited offer!
+      additionClass: py-6 bg-dark-opacity-1
+      path: special-offer
+    - iconUrl: front-ad-bundle.png
+      title: 
+      path: order
+      hash: order-bundles
+      text: Get up to 32% OFF for various bundles to enjoy excellent functions!
+      additionClass: py-6
+  iconGird: 2   
+WhyChoose:
+  name: Overview-Why
+  active: true
+  container: container-fluid
+  title: Why Choose DVD-Cloner?
   textTop: 
-  textBottom: Your complete satisfaction is our greatest motivation. We have a professional technical team at your service. If you have any question about pre-sales inquiries, orders, shipment and product usage, please feel free to drop us a message, our technical experts will happily assist you.
-  button:
-      text: Get Help
-      path: help
-      variant: 
-      additionClass:
-  additionClass: position-relative text-center
-  bgStyle: white
+  textBottom: 
+  button: 
+    text: Learn More
+    path: dvd-cloner
+    variant: outline-danger
+  additionClass: position-relative text-center text-red-light
+  bgStyle: 
+    default: dark
+    imageUrl: oc-what-bg.jpg
+    attachment: fixed
+    positionY: 50%
+    positionX:
   icon:
-    - iconUrl: ca_service_support.jpg
-      title: Responsive Technical Support
-      text: 
-      additionClass:
-    - iconUrl: ca_service_express.png
-      title: Free Delivery
-      text: 
-      additionClass:
-    - iconUrl: ca_service_brand.png
-      title: Satisfaction Guaranteed
-      text: 
-      additionClass:
-  iconGird: 3  
-  iconClass: rounded-circle
+    - iconUrl: dc-icon3.png
+      text: Copy DVD/Blu-ray/4K UHD to blank disc or rip them to MKV format
+    - iconUrl: dc-icon4.png
+      text: Rip UHD to MKV (HDR 10+) format, keeping original HDR and Dolby effect.
+    - iconUrl: dc-icon6.png
+      text: Lightning Blu-ray/UHD copy speed
+    - iconUrl: dc-icon2.png
+      text: 6 diverse copy modes
+    - iconUrl: dc-icon1.png
+      text: Easy to use, just as easy as ABC
+    - iconUrl: dc-icon5.png
+      text: Output lossless quality  
+  iconGird: 6                   
+
+carouselRecommend:
+  name: recommend
+  container: container-fluid
+  title: DVD-Cloner Earns Reputation from Millions of Users Worldwide
+  additionClass: 
+  itemContainer: container
+  items:
+    - html: '<p class="lead">DVD-Cloner does much more than make copies of DVDs. It also allows you to compress, customize and archive your movies. Its dual-mode interface offers both the simplicity of starting a copy in one click and the control of customizing the exact DVD you want to burn. The end results are excellent.</p><p class="text-muted font-italic text-right">- from TopTenReviews.com</P>' 
+    - html: '<p class="lead">DVD-Cloner has gained prestige in the DVD software category with its versatile engine that allows you to copy, decrypt and burn DVD data. This application is renowned for its ability to remove copy protections and to deliver high quality at very good speed.</P><p class="text-muted font-italic text-right">- from Softpedia.com</P>' 
 ---

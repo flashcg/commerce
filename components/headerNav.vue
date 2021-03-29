@@ -1,25 +1,79 @@
 <template>
 <header>
-	<b-navbar type="dark" variant="dark" toggleable="lg" :class="isMobile?'mobile-nav '+className:className">
+	<b-navbar id="headNav" type="dark" ref="nav" variant="dark" toggleable="lg" :class="isMobile?'mobile-nav '+className:className" :style="'transition:0.2s;top:'+-topHeight+'px'">
 		
-		<b-navbar-brand :to="localePath('index')" :title="$t('name')"><img src="/logo.png" width="260" />
+		<b-navbar-brand :to="localePath('index')" :title="$t('name')"><b-img src="/logo.png" style="max-width:260px" fluid  />
     </b-navbar-brand>
+    <b-navbar-toggle v-if="isMobile" id="switch" target="sidebar" v-b-toggle.sidebar> </b-navbar-toggle>
+    <b-sidebar v-if="isMobile" id="sidebar" title="" backdrop shadow body-class="bg-dark-opacity-8" header-class="bg-dark-opacity-8" :class="'bg-dark-opacity-9'" bg-variant="transparent" text-variant="light">
+      <div class="px-3 py-2">
+        <ul class="navbar-nav">
+          <li v-for="(object,objectIndex) in $t('menuTop')" :key="objectIndex" >
+            
+           <b-link v-if="object.path" v-b-toggle="'subList-'+objectIndex" class="d-flex" :to="object.path?'/'+object.path+'/':object.path"> {{object.name}} </b-link>
 
-		<b-collapse id="nav-collapse" is-nav>
+           <b-link v-else v-b-toggle="'subList-'+objectIndex"><span>{{object.name}}</span> 
+           <i class="d-flex align-items-center" >
+             <svg v-if="!menuState['item'+objectIndex+'_isVisible']" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-plus fa-w-14 fa-md"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" class=""></path></svg>
+
+             <svg v-else aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-plus fa-w-14 fa-md"><path fill="currentColor" d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" class=""></path></svg>             
+           </i>             
+           </b-link>
+
+
+
+            <b-collapse v-model="menuState['item'+objectIndex+'_isVisible']" :id="'subList-'+objectIndex" v-if="object.items" accordion="mobileNav" role="tabpanel">
+              <ul  v-for="(subList,subIndex) in object.items" :key="subIndex">
+                <li v-for="(item,itemIndex) in subList.children" :key="itemIndex" >
+                  <template v-if="typeof(item)=='string'">
+                  <b-link v-if="$fetchItem(item)" :to="'/'+$fetchItem(item).handle.path+'/'"> {{$fetchItem(item).handleName}}
+                  </b-link>
+                  </template>
+                  <template v-else-if="typeof(item)=='object'">
+                    <b-link v-if="item.path" :to="'/'+item.path+'/'">                  
+                      {{item.name}}
+                    </b-link>	
+                    <b-link v-else :href="item.href">                  
+                      {{item.name}}
+                    </b-link>                     
+                  </template>
+                  </li>
+              </ul>
+            </b-collapse>
+          </li>
+        </ul>
+      </div>
+    </b-sidebar>
+		<b-collapse  is-nav>
 		<ul v-if="!isMobile" class="navbar-nav ml-auto">
-			<li class="dropdown" v-for="(object,index) in $t('menuTop1')"  @mouseover="overAction($event,index)" @mouseleave="leaveAction($event,index)" :key="index">
-				<a class="level1">{{object.name}}</a>
+			<li :class="`dropdown ${object.additionClass?object.additionClass:''}`" v-for="(object,index) in $t('menuTop')"  @mouseover="overAction($event,index)" @mouseleave="leaveAction($event,index)" :key="index">
+				<b-link class="level1" :to="object.path?'/'+object.path+'/':object.path">{{object.name}}</b-link>
         <div class="subNavbar-nav position-md-fixed fill-to-up-position">
           <a class="arrow arrow-right align-items-center justify-content-end" href="#" @click="navNext($event)"><b-img fluid src="~static/images/chevron-compact-right.png" /></a>
-          <div :ref="'subNav'+index" :style="'transform:translateX('+stepWidth+'px)'" class=" d-flex justify-content-center pt-4 pt-md-9 "> 
+          <div v-if="object.items" :ref="'subNav'+index" :style="'transform:translateX('+stepWidth+'px)'" class=" d-flex justify-content-center pt-4 pt-md-9 "> 
             
-            <ul class="navbar-nav flex-fill justify-content-center flex-wrap pb-2" v-for="(subList,subIndex) in object.items" :key="subIndex" :ref="'subList'+subIndex">              
-              <li class="nav-item flex-fill" v-for="(item,itemIndex) in subList.children" :key="itemIndex">
-                <b-link :to="'/'+fetchPath(subList)+'/'" class="nav-link" @click="clickAction($event)">
-                  {{item}}
-                  <b-img fluid class="d-none d-md-inline-block" :src="$thumb($getItemData(subList,'imgPath'))" />
-                  <p>{{$getItemData(subList,'name')}} </p>
-                </b-link>							
+            <ul class="navbar-nav text-light flex-fill justify-content-center flex-wrap pb-2" v-for="(subList,subIndex) in object.items" :key="subIndex" :ref="'subList'+subIndex">              
+              <li :class="object.template == 'product'?'nav-item flex-fill':'nav-item'" v-for="(item,itemIndex) in subList.children" :key="itemIndex" >
+                
+                <template v-if="typeof(item)=='string'">
+                  
+                <b-link v-if="$fetchItem(item)" :to="'/'+$fetchItem(item).handle.path+'/'" class="nav-link" @click="clickAction($event)">                  
+                  <p><b-img fluid class="d-none d-md-inline-block" :src="$fetchItem(item).boxes[0].imageUrl" style="max-height:180px" /></p>
+                  <p>{{$fetchItem(item).handleName}}</p>
+                </b-link>	
+                </template>
+
+                <template v-else-if="typeof(item)=='object'">
+                  <b-link v-if="item.path" :to="'/'+item.path+'/'" class="nav-link" @click="clickAction($event)">                  
+                    <p><b-img fluid class="d-none d-md-inline-block" :src="item.iconUrl" style="max-height:180px" /></p>
+                    <p>{{item.name}}</p>
+                  </b-link>	
+                  <b-link v-else :href="item.href" class="nav-link" @click="clickAction($event)">                  
+                    <p><b-img fluid class="d-none d-md-inline-block" :src="item.iconUrl" style="max-height:180px" /></p>
+                    <p>{{item.name}}</p>
+                  </b-link>                  
+                </template>
+                <p v-if="subList.text" v-html="subList.text"></p>                
               </li> 
 
 
@@ -33,74 +87,28 @@
             </div>
 
             </ul>
-
           </div>
-<!-- 				<ul v-if="item.children&&item.type=='software'" :ref="'subNav'+index" class="navbar-nav justify-content-center pt-4 pt-md-9 pb-2"  >
-          
-					<li class="nav-item mx-4" v-for="(subList,index) in item.children" :key="index" >
-						<b-link :to="'/'+subList.path+'/'" class="nav-link" @click="clickAction($event)">	
-              <b-img fluid class="d-none d-md-inline-block w-75" :src="$getSoftwareData(subList.name)&&$getSoftwareData(subList.name).details.imageUrl" />
-							<p>{{subList.name}}</p>
-						</b-link>							
-					</li>          
-				</ul> -->
-        
-<!--         <div  v-if="item.groupButtons||item.promotion" class="pb-4 d-none d-md-block">
-          <hr style="opacity:0.3" />
-
-          <div v-if="item.groupButtons&&item.promotion"  class="d-flex align-items-center">
-            <div class="col-4 border-right border-light-less" v-if="item.promotion">            
-            <b-link @click="clickAction($event)" :to="item.promotion.hash?'/'+item.promotion.path+'/#'+$toLower(item.promotion.hash):'/'+item.promotion.path+'/'"><b-img fluid :src="item.promotion.imageUrl" /></b-link>
-            </div>          
-            <div class="col-8">
-            <b-button @click="clickAction($event)" v-for="(groupButton,groupButtonIndex) in item.groupButtons" :key="groupButtonIndex"   :variant="groupButton.variant?groupButton.variant:'outline-light'" class="rounded-0 mr-2" size="lg" :to="groupButton.hash?'/'+groupButton.path+'/#'+$toLower(groupButton.hash):'/'+groupButton.path+'/'">{{ groupButton.text }} </b-button>
-            </div>
-          </div> 
-
-          <div v-else-if="item.groupButtons"  class="d-flex align-items-center">       
-            <div class="col-12">
-            <b-button @click="clickAction($event)" v-for="(groupButton,groupButtonIndex) in item.groupButtons" :key="groupButtonIndex"   :variant="groupButton.variant?groupButton.variant:'outline-light'" class="rounded-0 mr-2" size="lg" :to="groupButton.hash?'/'+groupButton.path+'/#'+$toLower(groupButton.hash):'/'+groupButton.path+'/'">{{ groupButton.text }} </b-button>
-            </div>
-          </div> 
-
-          <div v-else class="d-flex align-items-center justify-content-center">
-            <div class="col-4" v-if="item.promotion">
-            <b-link @click="clickAction($event)" :to="item.promotion.hash?'/'+item.promotion.path+'/#'+$toLower(item.promotion.hash):'/'+item.promotion.path+'/'"><b-img fluid :src="item.promotion.imageUrl" /></b-link> 
-            </div>                 
-          </div>
-        </div> -->
-
-      </div>
-            
+      </div>            
 			</li>
 		</ul>
-<!-- 		<ul class="navbar-nav normal-nav ml-xl-5">
-      <li :class="item.children?'dropdown':''" v-for="(item,index) in $t('menuTop2')" @mouseover="overAction($event)" @mouseleave="leaveAction($event)" :key="index">
-        
-<svg v-if="item.children" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="icon-link d-inline-block d-md-none svg-inline--fa fa-angle-right fa-w-8"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" class=""></path></svg>
-
-        <b-link v-if="item.path" :to="item.path+'/'" :class="item.children?'level1':'nav-link'">{{item.name}}</b-link>
-        <a v-else  :class="item.children?'level1':'nav-link'">{{item.name}}</a>
-				<ul v-if="item.children" class="navbar-nav flex-column position-md-fixed subNavbar-nav pt-4 pt-md-7 pb-4" >
-          <li class="nav-item mx-4" v-for="(subList,index) in item.children" :key="index" >
-            <b-link class="nav-link" v-if="subList.method == 'href'" :href="subList.path"><p>{{subList.name}}</p> </b-link> 
-            <b-link class="nav-link" v-else :to="subList.path+'/'"><p>{{subList.name}}</p> </b-link> 
-          </li>
-				</ul>        
-      </li>
-		</ul> -->
 		
 		</b-collapse>
-	</b-navbar>	
+	</b-navbar>
+  
 </header>
 </template>
  
 <script>
-
+import {mapState} from 'vuex'
 import { setTimeout } from "timers";
 export default {
   name: "headerNav",
   data() {
+    const menuTop = this.$store.state.i18n.messages.menuTop
+    let menuState = {};
+    for (let i = 0; i < menuTop.length; i++) {
+      if (menuTop[i].items&& menuTop[i].items.length >0) menuState['item'+[i]+'_isVisible'] = false
+    }
     return {
       hover: false,
       hoverTime: null,
@@ -109,21 +117,22 @@ export default {
       isMobile: null,
       screenWidth: null,
       itemWidth: 325,
-      stepWidth: 0
+      stepWidth: 0,
+      topHeight:0,
+      menuState
     };
   },
-  props: ["className"],
+  props: {className:String,
+  template:{
+    type:String,
+    default:'default'
+  }},
+  computed:{
+    ...mapState({product:(state)=>state.localData.productData})
+
+  },
   methods: {
 
-    fetchPath(model) {
-      let path;
-      this.$t("handleSetting").map(res => {
-        if (res.model == model) {
-          path = res.path;
-        }
-      });
-      return path;
-    },
     overAction(event, index) {
       let subNav = event.currentTarget.children[1];
       this.hover = true;
@@ -137,20 +146,9 @@ export default {
         setTimeout(() => {
           this.droppedWaiting = true;
         }, 1000);
-        /* let addClass = function() {
-          
-           let x = document.getElementsByClassName("subNavbar-nav");
-          for (let i = 0; i < x.length; i++) {
-            x[i].classList.add("dropped-prepare");
-          } */
-      }
-      /*         event.currentTarget.children[1].addEventListener(
-          "animationend",
-          addClass,
-          false
-        ); */
 
-      //  event.currentTarget.children[1].removeEventListener("animationend",addClass,false)
+      }
+
     },
     leaveAction(event, index) {
       let subNav = event.currentTarget.children[1];
@@ -163,21 +161,6 @@ export default {
       if (event.currentTarget.children[2]) {
         event.currentTarget.children[2].children[1].style.transform = "translateX(0px)";
       }
-      
-      
-
-      /* else if (subNav) {
-        event.currentTarget.classList.remove("active");
-
-        let x = document.getElementsByClassName("subNavbar-nav");
-
-        let removeClass = function() {
-          for (let i = 0; i < x.length; i++) {
-            x[i].classList.remove("dropped-prepare");
-          }
-        };
-        setTimeout(removeClass, 400);
-      } */
     },
     clickAction(event) {
       let currentDom = event.currentTarget;
@@ -234,9 +217,10 @@ export default {
   },
 
   mounted() {
+
     this.isMobile = this.$isMobile();
     this.screenWidth = this.$isMobile("width");
-    
+    let nav = document.getElementById('headNav')
     var arrowInit = ()=> {
       for (let i in this.$refs) {
         let element = this.$refs[i][0],
@@ -260,6 +244,19 @@ export default {
       this.screenWidth = this.$isMobile("width");
       arrowInit()
     });
+
+    //如果是产品页，nav下拉时收起
+    let navFold=()=>{
+      this.template=='product'&&window.scrollY>120?this.topHeight = nav.offsetHeight:this.topHeight = 0
+    }    
+    navFold();
+    window.addEventListener('scroll',()=>{
+      navFold()
+    })    
+
+
+    
+    
 
     if (this.isMobile) {
       //jquery code

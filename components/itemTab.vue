@@ -2,9 +2,7 @@
   <div
     v-if="data"
     :id="$handlify(data.name)"
-    :class="'py-lg-8 py-6 ' + data.additionClass"
-    :ref="$handlify(data.name)"
-  >
+    :class="'py-lg-8 py-6 ' + data.additionClass">
     <div
       v-if="data.title || !data.title == null"
       class="mb-4"
@@ -25,11 +23,16 @@
         v-for="(item, itemIndex) in data.items"
         :key="itemIndex"
       > <b-row>
-        <b-col md="auto"          
+        <b-col md="auto" :class="col.additionClass"         
           v-for="(col, colIndex) in item.cols"
           :key="colIndex"         
         >
-        <b-img v-if="col.imageUrl" :src="col.imageUrl"></b-img>
+        <template v-if="col.imageUrl&&col.path">
+        <b-link :href="col.path"><b-img v-if="col.imageUrl" :src="col.imageUrl" fluid></b-img></b-link>
+        </template>
+        <template v-else-if="col.imageUrl">
+          <b-img v-if="col.imageUrl" :src="col.imageUrl" fluid></b-img>
+        </template>
         <div v-html="col.text"></div>
         </b-col>
         </b-row>
@@ -58,13 +61,13 @@ export default Vue.extend({
     return {};
   },
   components: {},
-  props: { data: { type: Object as () => DataSetting, required: true } },
+  props: { data: { type: Object as () => DataSetting|undefined } },
   computed: {},
   methods: {},
 
   mounted() {
     let node = document.querySelector(
-      "#" + (this as any).$handlify(this.data.name)
+      "#" + (this as any).$handlify(this.data?.name)
     );
 
     //traversal current element parents are used for confirming bg color

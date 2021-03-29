@@ -1,21 +1,15 @@
 <template>  
   <div>
-   <heroCarousel :heroCarousels="mddata.heroCarousels"/>
+   <hero-carousel :heroCarousels="mddata.heroCarousels"/>
    <jumbotron :jumbotronData="$t('jumbotronPromotion')" />   
-   <iconBlock :iconData="mddata.iconBlock_productIdea" />
-
-   <jumbotron :jumbotronData="mddata.jumbotronAreas" />
-   
-   <iconBlock :iconData="mddata.iconBlock_service" />
-   
+   <iconBlock :iconData="mddata.advertising" />
+   <icon-block  :iconData="mddata.WhyChoose" /> 
+   <carousel :data="mddata.carouselRecommend" /> 
 
   </div>
 </template>
 
 <script>
-import heroCarousel from "@/components/heroCarousel";
-import jumbotron from "@/components/jumbotron";
-import iconBlock from "@/components/iconBlock";
 
 export default {
   async asyncData({ app, $content }) {
@@ -27,7 +21,7 @@ export default {
     return this.mddata.head;
   },
   layout: "fluid",
-  components: { heroCarousel, jumbotron, iconBlock },
+  
 
 };
 </script>

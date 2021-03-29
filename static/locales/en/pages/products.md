@@ -14,8 +14,8 @@ jumbotronAreasTop:
     height: 500   
     imageUrl: products_banner.jpg
     title: ClonerAlliance Products
-    titleClasss: font-size-xxxl
-    additionClass: text-white text-center font-size-lg
+    titleClasss: fs-1
+    additionClass: text-white text-center fs-4
     bgStyle:
       color: dark
       positionY: 50

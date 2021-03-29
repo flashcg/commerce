@@ -47,7 +47,7 @@
     <h5>{{$t('cart.buyPartners')}} </h5>
     <p v-if="validPlatformOptions"><span class="small" v-html="ipResultData.auto?locatedInfo($t('buyFromPartner.message.autoPlatform')):locatedInfo($t('buyFromPartner.message.manualPlatform'))"></span> <b-button size="sm" variant="primary" @click="clickChangeModal()">Change</b-button> </p>
 
-    <div class="d-flex align-items-end justify-content-center font-size-sm">
+    <div class="d-flex align-items-end justify-content-center fs-6">
       <div v-for="(value,key,index) in initPlatform" :key="index" class="p-2">
         <p v-if="ishasPlatform(value)">
         <b-link :href="platform(key,value,'link')"><b-img style="max-width:120px" :title="$t('cart.storeAddToCart')" fluid :src="platform(key,value,'logo')" /></b-link>

@@ -6,16 +6,16 @@ handleSetting:
     path: dvd-cloner
   - handleName: DVD-Cloner Gold
     path: dvd-cloner-gold
-  - handleName: DVD-Cloner Platinum
-    path: dvd-cloner-platinum
-  - handleName: DVD-Cloner for Mac
-    path: dvd-copy-for-mac  
-  - handleName: OpenCloner UltraBox
-    path: openCloner-ultrabox
+  # - handleName: DVD-Cloner Platinum
+  #   path: dvd-cloner-platinum
+  # - handleName: DVD-Cloner for Mac
+  #   path: dvd-copy-for-mac  
+  # - handleName: OpenCloner UltraBox
+  #   path: openCloner-ultrabox
   - handleName: Blue-Cloner
     path: blue-cloner
-  - handleName: Blue-Cloner Diamond
-    path: blue-cloner-diamond
+  # - handleName: Blue-Cloner Diamond
+  #   path: blue-cloner-diamond
 globalName:
   ok: OK
   submit: Submit
@@ -47,12 +47,14 @@ globalName:
   clickToSee: Click to see more
   buildVersion: Build Version
   howToUpgrade: how To Upgrade
+  release: Release
   releaseDate: Release Date
   standard: Standard
   lifetime: Lifetime
   license: License
-menuTop1: 
+menuTop: 
   - name: Blu-ray and DVD Copy
+    template: product
     promotion:
       imageUrl: pr/ca2020nov/nav_poptup_bar.gif
       path: store
@@ -64,11 +66,10 @@ menuTop1:
             variant: #primary
         children: #handleName
           - DVD-Cloner
+          - DVD-Cloner Gold
           - DVD-Cloner
           - DVD-Cloner
-          - DVD-Cloner
-          - DVD-Cloner    
-        bgstyle:
+        additionClass: bg-red
       - groupButtons: # hash(页面锚点) variant（按钮样式）属性可用
           - text: More Blu-ray Copy
             path: unsupported-content
@@ -76,87 +77,127 @@ menuTop1:
         children: #handleName
           - Blue-Cloner
           - DVD-Cloner
-        bgstyle:           
-# menuTop2: 
-#   - name: Help
-#     active: false
-#     children:
-#     - name: Help Center
-#       path: /help
-#     - name: Knowledge Base
-#       path: https://www.cloner-alliance.com/help/knowledgebase
-#       method: href
-#     - name: Download
-#       path: /help/download
-#     - name: Contact Support
-#       path: /help/contact
-#     - name: Warranty & RMA
-#       path: /help/warranty_rma
-#   - name: Store
-#     path: /store
-#     active: false
-#     children:
+        additionClass:   
+  - name: Video Ripper and Converter
+    template: product
+    items:
+      - groupButtons: # hash(页面锚点) variant（按钮样式）属性可用
+          - text: More DVD Copy
+            path: unsupported-content
+            variant: #primary
+        children: #handleName
+          - DVD-Cloner
+          - DVD-Cloner Gold
+          - DVD-Cloner
+          - DVD-Cloner
+        additionClass: 
+      - groupButtons: # hash(页面锚点) variant（按钮样式）属性可用
+          - text: More Blu-ray Copy
+            path: unsupported-content
+            variant: #primary
+        children: #handleName
+          - Blue-Cloner
+          - DVD-Cloner
+        additionClass: 
+  - name: UHD Solutions
+    items:
+      - children: #handleName
+          - DVD-Cloner
+        text: Remove HDCP Protection from 4K/UHD Video Capature Devices
+      - children: 
+          - name: UHD Friendly Drives and Softwware Copying
+            iconUrl: uhd-friendly-drives-and-softwware-copying.png
+            path: uhd-video-copy-recording         
+  - name: Download
+    additionClass: ml-xl-4
+    template: normal
+    path: download
+  - name: Order
+    template: normal
+    path: order                 
+  - name: Support
+    template: normal
+    promotion:
+      imageUrl: pr/ca2020nov/nav_poptup_bar.gif
+      path: store
+      hash: Promo Area
+    items:
+      - children: 
+          - name: Knowledge Base
+            iconUrl: knowledge-base.png
+            href: https://www.dvd-cloner.com/knowledge/
+          - name: Video Guide
+            iconUrl: video-guide.png
+            path: video-guide
+          - name: Upgrade Center
+            iconUrl: upgrade-center.png
+            path: upgrade-center
+          - name: Contact Us
+            iconUrl: contact-us.png
+            path: contact   
 menuFooter: 
-#   - name: Company
-#     children: 
-#     - name: About Us
-#       path: aboutus
-#     - name: Affiliate
-#       path: affiliate
-#     - name: Blog
-#       path: https://blog.cloner-alliance.com/
-#       method: href
-#     - name: Partner
-#       path: partner
-#   - name: Business Cooperation
-#     children: 
-#     - name: Products
-#       path: products
-#     - name: Solutions
-#       path: solutions          
-#     - name: Success Story
-#       path: success_story
-#     - name: Get in Touch
-#       path: get_in_touch
-#     - name: Become a Retailer
-#       path: become_retailer
-#     - name: Resource 
-#       path: resource
-#   - name: Help
-#     children:
-#     - name: Help Center
-#       path: help
-#     - name: Knowledge Base
-#       path: https://www.cloner-alliance.com/help/knowledgebase
-#       method: href
-#     - name: Download
-#       path: help-download
-#     - name: Contact Support
-#       path: help-contact
-#     - name: Warranty & RMA
-#       path: help-warranty_rma
-#   - name: Legals
-#     children: 
-#     - name: Terms of Service
-#       path: terms
-#     - name: Privacy Policy
-#       path: privacy_policy
-#     - name: Refund Policy
-#       path: refund_policy
-#     - name: Shipping Policy
-#       path: shipping_policy
-#     - name: Product usage warning
-#       path: unsupported-content            
+  - name: Company
+    children: 
+    - name: About
+      path: aboutus
+    - name: Affiliate
+      path: affiliate
+    - name: Blog
+      path: blog
+    - name: Contact Us
+      path: contact
+  - name: Products
+    path: products
+    children: 
+    - name: Order
+      path: order
+    - name: Download
+      path: download          
+    - name: Release
+      path: release
+  - name: Featured
+    children:
+    - name: DVD Copy
+      path: dvd-copy
+    - name: Blu-ray Copy
+      path: blu-ray-copy
+    - name: 4K UHD Copy
+      path: uhd-video-copy-recording
+    - name: DVD Ripper
+      path: dvd-ripper
+    - name: Blu-ray Ripper
+      path: blu-ray-ripper
+    - name: Video Converter
+      path: video-converter
+    - name: Video Capture Recording
+      path: video-capture-recording      
+  - name: Support
+    children: 
+    - name: Knowledge Base
+      href: https://www.dvd-cloner.com/knowledge/
+    - name: Upgrade Center
+      path: upgrade
+    - name: Video Guide
+      path: video-guide       
 social:
   - name: facebook
     url: https://www.facebook.com/ClonerAlliance
   - name: twitter
     url: https://twitter.com/ClonerAlliance
-  - name: youtube
-    url: https://www.youtube.com/c/ClonerAlliance
+bottomItems:
+  - name: Home
+    path: index
+  - name: Blu-ray Copy
+    path: blu-ray-copy
+  - name: 4K UHD Copy
+    path: uhd-video-copy-recording
+  - name: DVD Ripper
+    path: dvd-ripper
+  - name: Blu-ray Ripper
+    path: blu-ray-ripper  
 copyright: 
   textA: Copyright &copy; 
-  textB: Cloner Alliance Limited. All rights reserved
+  textB: OpenCloner&#8482; Inc. All rights Reserved
 
 
 
@@ -165,8 +206,11 @@ imagesPath: http://192.168.31.206:5000/img/
 KB_basePath: https://www.cloner-alliance.com/help/knowledgebase/
 download_basePath: https://static.cloner-alliance.com/download/
 manual_basePath: https://static.cloner-alliance.com/manual/
-video_basePath: /static/source/video/
+video_basePath: http://192.168.31.206:5000/video/
 videoProduct_basePath: https://static.cloner-alliance.com/video/products/
+
+
+newverValidDay: 3
 
 #页面通用组件定义区
 jumbotronPromotion:
@@ -196,28 +240,31 @@ cookieNotice:
   text: |
     We use cookies to enhance site navigation, analyze site usage, and assist us to improve your website experience.
   button: Allow
-productLowest:
-  name: product recommend
+productRecommend:
+  name: Recommend
   container: container
-  additionClass: position-relative
+  additionClass: position-relative bg-gray-light
   items:
-    - title: Windows
+    - title: Recommend
+      cols: 
+        - imageUrl: recommend-dg-2021_banner.jpg
+          path: /dvd-cloner-gold/
+          additionClass: mb-2
+        - imageUrl: bundle-2021.jpg
+          path: /order/#bundles        
+    - title: Tips
       cols:
-        - additionClass: 
-          imageUrl: win10.png
         - additionClass:
-          text: '<p>Minimum configuration:</p>
-          <ul><li>Intel Core2</li>
-            <li>2GB of RAM</li>
-            <li>50GB free hard disk space (NTFS partition)</li>
-            <li>Windows 7</li>
-            <li>A DVD or Blu-ray disc drive</li>
-          </ul><p>Recommended configuration:</p>
-          <ul><li>Intel i5 or a faster processor</li>
-            <li>8GB of RAM</li>
-            <li>500GB free hard disk space (NTFS partition)</li>
-            <li>A Blu-ray burner</li>
-            <li>Windows 10</li>
-            <li><a href="/uhd-video-copy-recording/">A UHD friendly drive</a></li></ul>
-           <p><img src="{imageUrl}macos.png" style="max-width:80px"><a href="/dvd-copy-for-mac/">Click here to copy DVD on Mac OS</a></p>' 
+          text: '<p><a class="btn rounded-0 btn-outline-dark" href="/dvd-cloner/faqs-dvd-cloner/">FAQs of DVD-Cloner earlier version.</a></p>
+          <p><a href="/dvd-copy-for-mac/">DVD copy for Mac</a>, <a href="/dvd-cloner/">DVD-Cloner</a>, <a href="/dvd-cloner/dvd-cloner-5/">DVD-Cloner 5</a>, <a href="/dvd-cloner/dvd-cloner-4/">DVD-Cloner 4</a>, <a href="/dvd-cloner/dvd-cloner-3/">DVD-Cloner 3</a>, <a href="/dvd-cloner/dvd-cloner-2/">DVD-Cloner 2</a>, <a href="/blu-ray-to-dvd/index/">Blu-ray copy Tools</a>, <a href="/knowledge/">DVD-Cloner Knowledge Base</a>, <a href="/dvd-cloner/bonus/">Bonus</a>, <a href="/dvd-cloner/vista/">Windows 10 test</a>, <a href="/antivirus_report/">Antivirus Report</a>, <a href="/dvd-cloner/upgrade/">Upgrade</a>, <a href="/dvd-cloner/resource/">Resource</a>, <a href="http://www.stream-cloner.com/">download online movies</a>, <a href="/dvd-cloner/dvd-cloner-screenshot-express/">Express Screenshot</a>, <a href="/dvd-cloner/dvd-cloner-screenshot-expert/">Expert Screenshot</a>, <a href="/dvd-cloner/dvd-to-avi/">DVD to AVI</a>, <a href="/dvd-cloner/dvd-to-mpeg/">DVD to MPEG</a>, <a href="/dvd-cloner/dvd-to-svcd/">DVD to SVCD</a>, <a href="/dvd-cloner/articles/digital-rights-management/">Digital rights Management</a>, <a href="/dvd-cloner/articles/how-will-the-film-or-video-into-a-dvd-format/">How to burn video files into the DVD format</a>, <a href="/dvd-cloner/articles/what-benefits-does-blu-ray-offer-compared-to-hd-dvd/">What benefits does Blu-ray offer compared to HD-DVD?</a>, <a href="/dvd-cloner/articles/what-is-blu-ray-disc/">What is Blu-ray Disc?</a></p>' 
+    - title: Related Sites
+      cols:
+        - text: '     
+      <p><a href="/dvd-to-ipod-converter/"><strong>iPod-Cloner</strong></a> - Easily converts all  kinds of DVD to iPod compatible formats</p>
+      <p><a href="/blu-ray-to-dvd/"><strong>Blu-ray to DVD II Pro</strong></a></p>
+      <ul>
+        <li>Copy a Blu-ray movie to DVD(s) </li>
+        <li>Copy a Blu-ray movie to AVCHD DVD(s)</li>
+        <li>Totally the same picture quality to the original</li>
+      </ul>'
 ---

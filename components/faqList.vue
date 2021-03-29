@@ -6,7 +6,7 @@
           <hr class="divider">
         </div>
         
-        <ul class="font-size-sm text-left">
+        <ul class="fs-6 text-left">
             <li v-for="(item,index) in listData.lists" :key="index" class="mb-2">
                 <a :href="item.kbUrl" >{{item.title}}</a>
             </li>

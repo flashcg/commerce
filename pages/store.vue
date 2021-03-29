@@ -7,7 +7,7 @@
   <iconBlock :iconData="mddata.iconRow" />
   
     <div :id="collection.name" v-for="collection in collectionSettled(mddata.topTimeLimited.collections)" :key="collection.index" class="my-5 text-center overflow-hidden" >   
-    <h3 class="font-size-xxl">{{collection.name}}</h3>
+    <h3 class="fs-2">{{collection.name}}</h3>
     <hr class="divider">
     <p v-if="topTimeLimited.tips&&topTimeLimited.tips.title"><b-link id="tips" class="text-secondary" >{{topTimeLimited.tips.title}} </b-link> </p>
       <b-tooltip custom-class="policy-tips" variant="light" v-if="topTimeLimited.tips" target="tips" triggers="hover">
@@ -26,9 +26,9 @@
         <b-badge variant="warning" v-if="product.variants[0].inventory_quantity == 0">{{$t("cart.soldOut")}} </b-badge>
         </p>
         <p>{{$t("cart.inventory")}}: {{product.variants[0].inventory_quantity}}</p> 
-        <p class="font-size-md">{{$t('cart.price')}}: <span v-if="product.variants[0].compare_at_price" class="text-muted text-line-through">${{product.variants[0].compare_at_price}}</span> 
+        <p class="fs-5">{{$t('cart.price')}}: <span v-if="product.variants[0].compare_at_price" class="text-muted text-line-through">${{product.variants[0].compare_at_price}}</span> 
          {{$t('cart.salePrice')}}: <span class="text-danger">${{product.variants[0].price}}</span></p>
-         <p class="font-size-md">{{product.title}}</p>
+         <p class="fs-5">{{product.title}}</p>
 <!--         <p  v-if="cartBtnDisable(product)"><a href="#newsletter" v-smooth-scroll>{{$t("cart.soldOutMessage")}}</a></p> 
          <b-button size="xl" variant="danger" class="rounded-0" @click="pushData(product)" 
         :disabled='cartBtnDisable(product.variants[0].inventory_quantity)'>{{cartBtnDisable(product.variants[0].inventory_quantity) == 0 ?$t("cart.buynow"):$t("cart.soldOut")}}</b-button> -->
@@ -66,7 +66,7 @@
         </p>
         <p class="lead">{{product.title}}</p>
         <!-- <p>{{$t("cart.inventory")}}: {{product.variants[0].inventory_quantity}}</p>  -->
-        <p class="font-size-md"><span  v-if="product.variants[0].compare_at_price">{{$t('cart.price')}}:  <span class="text-muted text-line-through">${{product.variants[0].compare_at_price}}</span> </span>
+        <p class="fs-5"><span  v-if="product.variants[0].compare_at_price">{{$t('cart.price')}}:  <span class="text-muted text-line-through">${{product.variants[0].compare_at_price}}</span> </span>
         {{$t('cart.salePrice')}}: <span class="text-danger">${{product.variants[0].price}}</span></p>
 
         <buynow :product="$productCatch(product.productModel)"  :variant="'outline-dark'"/>

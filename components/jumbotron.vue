@@ -13,7 +13,7 @@
         <h2>{{item.title}}</h2>
         <hr v-if="item.title&&item.text" class="divider">
         
-        <p class="lead font-size-md">{{item.text}}</p>
+        <p class="lead fs-5">{{item.text}}</p>
         <div v-if="item.button&&item.button.template == 'softwareForBuy'">
           <b-button v-if="item.button.buy" size="xl" :href="item.button.buy.buyLink+'/'" :class="'rounded-0 mt-3 '+item.button.additionClass" :variant="item.button.buy.variant">{{$t('globalName.buy')}}</b-button>
           <b-button v-if="item.button.download" size="xl" :to="item.button.download.path+'/'" :class="'rounded-0 mt-3 '+item.button.download.additionClass" :variant="item.button.download.variant">{{$t('globalName.download')}}</b-button>          
@@ -36,7 +36,7 @@
             </b-input-group-append>
             
         </b-input-group>
-        <div v-if="item.overlayBody.quickSearch" class="font-size-md">
+        <div v-if="item.overlayBody.quickSearch" class="fs-5">
          <b-badge v-for="(list,listKey) in item.overlayBody.quickSearch" :key="listKey" variant="dark" :href="searchKb(list,'href')" class="mr-2">{{list}}</b-badge>
         </div>
         
@@ -47,9 +47,9 @@
       <div v-else-if="item.overlayBody&&item.overlayBody.template == 'half'" :style="'height:'+item.overlayBody.height+'%'"
       :class="'jumbotron-bod position-relative w-100 px-3 py-6 '+ halfPosition(item.overlayBody.postion)+' '+addClass(item)+' text-'+item.overlayBody.template+' '+textColor(item)+' bg-'+item.bgStyle.color+'-transparent1 '+item.additionClass">
          <div class="w-md-50 mx-auto">
-        <h2  class="font-size-xxxl" v-html="item.title"></h2>
+        <h2  class="fs-1" v-html="item.title"></h2>
         <hr v-if="item.text"  class="divider">        
-        <p v-if="item.text" class="lead font-size-md ">{{item.text}}</p> 
+        <p v-if="item.text" class="lead fs-5 ">{{item.text}}</p> 
         <b-button v-if="item.button" size="xl" :to="'/'+item.button.path+'/'" :class="'rounded-0 mt-3 '+item.button.additionClass" :variant="item.button.variant">{{item.button.text}}</b-button>        
         </div> 
       </div> 
@@ -57,9 +57,9 @@
       <div v-else-if="item.overlayBody&&item.overlayBody.template == 'half-right-slant'"
       :class="'jumbotron-body  w-100 px-4 py-6 my-auto '+addClass(item)+' text-'+item.overlayBody.align+' '+textColor(item)+' ' +item.additionClass">
          <div class="w-md-50 mt-md-8 pr-md-4 position-relative" :class="item.overlayBody.align=='right'?'ml-auto':'mr-auto'" style="z-index:2">
-        <h2  class="font-size-xxxl" v-html="item.title"></h2>
+        <h2  class="fs-1" v-html="item.title"></h2>
         <hr v-if="item.text"  class="divider">
-        <p v-if="item.text" class="lead font-size-md ">{{item.text}}</p> 
+        <p v-if="item.text" class="lead fs-5 ">{{item.text}}</p> 
         <b-button v-if="item.button" size="xl" :to="item.button.path+'/'" :class="'rounded-0 mt-3 '+item.button.additionClass" :variant="item.button.variant">{{item.button.text}}</b-button>        
         </div>
         <div :class="'position-absolute rotate30-right-md-position bg-'+item.bgStyle.color+'-transparent1 '+slantClass(item.overlayBody.border,item.overlayBody.align)"></div>
@@ -85,7 +85,7 @@
           <b-col v-for="(title,titleIndex) in item.title" :key="titleIndex" :md="12/item.title.length" >
           <h2 class="bg-blue-transparent inline px-4 py-2"> {{title}} </h2>
           <hr v-if="item.title&&item.text" class="divider">
-          <p class="lead font-size-md">{{item.text}}</p>
+          <p class="lead fs-5">{{item.text}}</p>
           <b-button v-if="item.button" size="xl" :to="item.button.path+'/'" :class="'rounded-0 mt-3 '+item.button.additionClass" :variant="item.button.variant">{{item.button.text}}</b-button>        
           </b-col>
         </div>
@@ -105,7 +105,7 @@
 
         <h2 :class="item.titleClasss">{{item.title}}</h2>
         <hr v-if="item.title&&item.text" class="divider">
-        <p class="lead font-size-md">{{item.text}}</p>
+        <p class="lead fs-5">{{item.text}}</p>
         <buynow class="d-inline-block mb-sm-0 mb-3" v-if="item.button&&item.button.template == 'addToCart'" :product="$productCatch(item.productModel)" :discount="item.discount"/>
         
         <b-button v-else-if="item.button" size="xl" :to="'/'+item.button.path+'/'" :class="'rounded-0 mt-3 '+item.button.additionClass" :variant="item.button.variant">{{item.button.text}}</b-button>

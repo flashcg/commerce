@@ -3,7 +3,7 @@
     <jumbotron :jumbotronData="mddata.jumbotronAreasTop" />
     <jumbotron :jumbotronData="$t('jumbotronPromotion')" />
     <div class="container my-8">
-      <p class="lead font-size-md">{{ mddata.description }}</p>
+      <p class="lead fs-5">{{ mddata.description }}</p>
     </div>
     <jumbotron :jumbotronData="mddata.jumbotronBlock" />
     <iconBlock :iconData="mddata.iconBlock_more" />

@@ -3,7 +3,7 @@
   <jumbotron :jumbotronData="mddata.jumbotronAreasTop" />
   <jumbotron :jumbotronData="$t('jumbotronPromotion')" />   
   <div class="py-6 bg-gray-light">
-    <p class="lead container font-size-lg">{{mddata.describeText}} </p>
+    <p class="lead container fs-4">{{mddata.describeText}} </p>
   </div>
     <div class="container py-6 resource-content content">
 

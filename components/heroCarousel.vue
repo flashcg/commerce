@@ -1,50 +1,36 @@
 <template>
 
-        <div v-swiper:swiperGallery="swiperOption" ref="swiperTop" :style="'overflow:'+heroCarousels.overflow">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide d-flex justify-content-center" v-for="(item,index) in heroCarousels.block" :key="index" :class="item.handleName" :style="{backgroundImage:'url(' + item.bgStyle.imageUrl + ')',backgroundPositionY:item.bgStyle.positionY+'%',backgroundSize:'cover',height: jHeight(item.height)}">
-
-             <div v-if="item.template == 'store'" :class="'slide-body my-auto px-md-5 px-3 '+item.additionClass" style="z-index:2">
-              <h2 class="font-size-xxxl font-sm-size-lg"><span class="text-green-yellow">{{item.title}} </span> <span class="text-blue-green text-nowrap"> 
-                {{$getItemData(item.productModel,'name')}} </span></h2>
-              <hr class="divider">
-              <h4 v-if="item.subtitle">{{item.subtitle}}</h4> 
-              
-                <div>
-                  <!-- <h4>{{$t('cart.couponCode')}} : {{item.discount.code}}</h4> -->
-                <!-- <b-input-group class="mb-2"> -->
-                  <buynow :product="$productCatch(item.productModel)" :discount="item.discount" />                 
-                  <!-- <b-form-input :placeholder="$t('cart.couponCode')" v-model="currentCode" size="lg" class="rounded-0 col-sm-3" style="background:rgba(255,255,255,0.5);color:black"></b-form-input>    -->               
-                <!-- </b-input-group> -->
-                <!-- <b-alert fade :show="currentCodeErrorMessage" class="d-inline-block rounded-0" variant="danger">{{currentCodeErrorMessage}}</b-alert> -->
-
-                </div>  
-                  <div v-if="item.anchor" class="position-md-absolute col-md-4 col-xs-3 col-5 mx-auto mt-md-7 mt-3">
-                    <a v-smooth-scroll :href="'#'+item.anchor.target"><b-img fluid :title="item.anchor.title?item.anchor.title:''" :src="item.anchor.imageUrl" style="max-width:200px" /> </a>
-                  </div>          
-            </div>
+        <div :id="$handlify(heroCarousels.name)" v-swiper:swiperGallery="swiperOption" ref="swiperTop" :style="'overflow:'+heroCarousels.overflow">
+        <div class="swiper-wrapper bg-dark">
+          <div class="swiper-slide d-flex justify-content-center" v-for="(item,index) in heroCarousels.block" :key="index" :class="item.handleName" :style="{height: jHeight(item.height)}">
                     
             
             
-             <div v-else :class="'slide-body w-100 mt-10 px-md-5 px-3 '+item.additionClass" style="z-index:2">
-              <h2>{{item.title}}</h2>
-              <div><hr class="divider"></div>
+             <div :class="'slide-body w-100 mt-10 px-md-5 px-3 '+item.additionClass" style="z-index:2">
+               <div>
+              <h2 v-if="item.title">{{item.title}}</h2>
+              <hr v-if="item.title" class="divider">
               <h4 v-if="item.subtitle">{{item.subtitle}}</h4>
+
+              <div v-if="item.icons&&item.icons.length>0" class="d-flex justify-content-md-end"><p v-for=" (icon,iconIndex) in item.icons" :key="iconIndex" class="d-inline-block" style="max-width:120px"><b-img :src="icon.imageUrl" fluid ></b-img></p></div>
+                           
               <b-button v-if="item.button" size="xl" :to="'/'+item.button.path+'/'" class="rounded-0 mt-4 ml-md-4" :variant="item.button.variant">{{item.button.text}}</b-button>
+              </div>
             </div>
+            <div class="position-absolute fill-position" :style="{backgroundImage:'url(' + item.bgStyle.imageUrl + ')',backgroundPositionY:item.bgStyle.positionY+'%',backgroundSize:'cover',zIndex:item.bgStyle.video&&item.bgStyle.video.layout&&item.bgStyle.video.layout=='bottom'?'1':'auto'}"></div>
 
-
-            <div v-if="item.bgStyle&&item.bgStyle.video" class="position-absolute fill-position"> 
+            <div v-if="item.bgStyle&&item.bgStyle.video" class="d-xxl-block d-none position-absolute fill-position"> 
         
-              <video muted :src="item.bgStyle.video.videoUrl" class="videoPlayer" autoplay :poster="item.bgStyle.video.poster.imageUrl"></video>
+              <video muted :src="item.bgStyle.video.videoUrl" class="videoPlayer" autoplay :poster="item.bgStyle.video.poster&&item.bgStyle.video.poster.imageUrl" style="width:100%"></video>
             </div>
+
             
             <div v-if="item.productInfo" class="col-6 col-xl-4 mt-auto d-lg-block d-none" style="z-index:2"><b-img style="margin-bottom:-150px" fluid :src="item.productInfo.imageUrl" /> </div>   
 
 
-            <div v-if="item.bgStyle" :class="'bg-'+item.bgStyle.color+'-transparent position-absolute fill-position'"></div>
-            <div v-if="item.bgMobileStyle == 'dark'" class="bg-md-dark-transparent position-absolute fill-position"></div>
-            <div v-else-if="item.bgMobileStyle == 'light'" class="bg-md-light-transparent position-absolute fill-position"></div> 
+            <div v-if="item.bgStyle" :class="'bg-'+item.bgStyle.color+'-transparent position-absolute fill-position'" style="z-index:1"></div>
+            <div v-if="item.bgMobileStyle == 'dark'" class="bg-md-dark-transparent position-absolute fill-position"  style="z-index:1"></div>
+            <div v-else-if="item.bgMobileStyle == 'light'" class="bg-md-light-transparent position-absolute fill-position"  style="z-index:1"></div> 
           </div>
         </div>
           <div class="swiper-pagination" slot="pagination"></div>
