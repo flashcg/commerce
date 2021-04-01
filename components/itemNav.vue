@@ -47,6 +47,7 @@ interface DataConfig {
   youtubeArea?: DataAny;
   body: DataAny;
   systemRequirements?: DataAny;
+  bonus?:DataAny
 }
 
 
@@ -65,7 +66,7 @@ export default defineComponent({
     if(data.youtubeArea && data.youtubeArea.active) showData.push({name:data.youtubeArea.name,active:false})
     if(data.body.children.length > 0) showData.push({name:'Features',active:false})
     if(data.systemRequirements && data.systemRequirements.active) showData.push({name:data.systemRequirements.name,active:false})
-
+    if(data.bonus && data.bonus.active) showData.push({name:data.bonus.name,active:false})
     const releaseFn = ()=>{
       if(productData.value && productData.value.release) { 
         let ishasRelease = showData.find(res=>res.name == releaseTitle.value) 

@@ -1,6 +1,6 @@
 const templateDefault= (path:string) =>{
 return `<template>
-<nuxt-content class="container content py-6" :document="mddata" />
+<nuxt-content class="py-6" :document="mddata" />
 </template>
 <script>
 export default {
@@ -13,7 +13,7 @@ head() {
  return this.mddata.head
 },
 mounted() {
-  window.$nuxt.setLayout(this.layout)
+  window.$nuxt.setLayout(this.mddata.layout)
 }
 };
 </script>`},
@@ -22,13 +22,14 @@ templateProduct=(path:string) =>{
 <div v-if="mddata" :id="$handlify(mddata.handleName)">
   <item-overview :data="mddata.areaTop" :itemInfo="{boxSrc:(mddata.boxes[1]&&mddata.boxes[1].imageUrl)||mddata.boxes[0].imageUrl,name:mddata.name,desc:mddata.desc.longText,handleName:mddata.handleName}" />
   <item-nav :data="mddata" />
-  <icon-block  :iconData="mddata.screenshot" /> 
+  <carousel :data="mddata.screenshot" /> 
   <icon-block  :iconData="mddata.WhyChoose" /> 
   <icon-block  :iconData="mddata.youtubeArea" />
   <div id="features" class="bg-dark-opacity-8">
   <nuxt-content class="container py-6 text-light" :document="mddata" />
   </div>
   <item-tab :data="mddata.systemRequirements" />
+  <item-bonus :data="mddata.bonus" />
   <item-release :data="{handleName:mddata.handleName,name:mddata.name}" />
 </div>
 </template>

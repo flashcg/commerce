@@ -168,7 +168,7 @@ export default ({
     let productData = store&&store.state.localData.productData;
 
     if (productData.length>0) {
-      let item =  productData.find(res=>res.handleName == itemName) 
+      let item =  productData.find(res=>res.handleName.toLowerCase() == itemName.toLowerCase()) 
     
       return item
     }    

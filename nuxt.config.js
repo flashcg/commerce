@@ -143,7 +143,10 @@ export default {
   bootstrapVue: {
     bootstrapCSS: false, // or `css`
     bootstrapVueCSS: false, // or `bvCSS`
-    components: ['BIcon','BImg','BBreadcrumb','BAlert','BLink','BButton','BButtonGroup','BBadge','BBtn','BForm','BModal','BEmbed','BContainer','BRow','BCol','BNavbar','BNavbarBrand','BNavbarToggle','BSidebar','BCollapse','BTab','BInputGroup','BInputGroupAppend','BFormInput','BFormGroup','BFormInvalidFeedback','BFormSelect','BFormText','BFormTextarea','BTabs','BFormFile','BSpinner','BIconArrowLeft','BIconArrowRight']
+    components: ['BIcon','BImg','BBreadcrumb','BAlert','BLink','BButton','BButtonGroup','BBadge','BBtn','BForm','BEmbed','BContainer','BRow','BCol','BNavbar','BNavbarBrand','BNavbarToggle','BSidebar','BCollapse','BTab','BInputGroup','BInputGroupAppend','BFormInput','BFormGroup','BFormInvalidFeedback','BFormSelect','BFormText','BFormTextarea','BTabs','BFormFile','BSpinner','BIconArrowLeft','BIconArrowRight'],
+    componentPlugins: [
+      'ModalPlugin','ListGroupPlugin','VBTogglePlugin'
+    ],
   },
   content:{
     dir:'static/locales/en'

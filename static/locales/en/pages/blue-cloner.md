@@ -17,107 +17,15 @@ boxes:
 desc:
   shortText: A one-click solution to copy/backup/decrypt/rip your DVD/Blu-ray/4K UHD Blu-ray movies.
   longText: |
-    DVD-Cloner 2021 is a widely-acclaimed professional DVD copy software with perfect output image quality. It can decrypt DVD and clone DVD to any blank disc with diverse copy modes for playback on many media devices including PS4, Xbox, Blu-ray player, etc. Besides, it can copy DVD to your Windows computer as an ISO file or DVD folders.The newest generation DVD-Cloner 2021, with optimized HST function, allows you to copy Blu-ray/UHD movies with only about three hours, which greatly improved the copy speed.
+    DVD-Cloner sssss 2021 is a widely-acclaimed professional DVD copy software with perfect output image quality. It can decrypt DVD and clone DVD to any blank disc with diverse copy modes for playback on many media devices including PS4, Xbox, Blu-ray player, etc. Besides, it can copy DVD to your Windows computer as an ISO file or DVD folders.The newest generation DVD-Cloner 2021, with optimized HST function, allows you to copy Blu-ray/UHD movies with only about three hours, which greatly improved the copy speed.
 areaTop:
   name: DC Desc
-  title: Perfect 1:1 DVD/Blu-ray Copy - DVD-Cloner #默认为 productName
+  title: #默认为 productName
   topAdditionText: This DVD/Blu-ray/UHD copy software enables you to make perfect 1:1 copy of your favorite videos.
-  bottomAdditionText: <a href="/dvd-cloner/dvd-copy-64bit/" class="btn rounded-0 btn-outline-light">Achieve 20% higher copy speed with DVD-Cloner 64-bit </a>
   bgStyle: 
     default: dark
     imageUrl: product-info-bg.jpg
-  button:
-    additionText: |
-      After purchasing DVD-Cloner, you could <a class="text-red-light" href="https://www.blue-cloner.com/dc_discountorder.html">get 10% discount to buy Blue-Cloner here</a>, and enjoy wonderful HD movies!
-      
-      Note: You can get both DVD-Cloner and DVD-Cloner 64-bit with one order!
-screenshot:
-  name: Overview
-  active: true
-  container: container-fluid
-  title: Express and Expert Interface
-  textTop: 
-  textBottom: 
-  button:
-  additionClass: position-relative text-center text-light
-  bgStyle: dark-opacity-8
-  icon:
-    - iconUrl: dc-2021_screenshot_1.png
-      text: One click to make 1:1 DVD copy or compress one DVD-9 movie to a DVD-5 DVD±R/RW disc.
-      url: /dvd-cloner/dvd-cloner-screenshot-express
-      additionClass:
-    - iconUrl: dc-2021_screenshot_2.png
-      text: Movie complete copy, Full 1:1 DVD disc copy, Movie-only copy, Split copy and Movie customized copy.
-      url: /dvd-cloner/dvd-cloner-screenshot-expert
-      additionClass:
-  iconGird: 2
-WhyChoose:
-  name: Overview-Why
-  active: true
-  container: container-fluid
-  title: Why Choose DVD-Cloner?
-  textTop: 
-  textBottom: 
-  button:
-  additionClass: position-relative text-center text-red-light
-  bgStyle: 
-    default: dark
-    imageUrl: oc-what-bg.jpg
-    attachment: fixed
-    positionY: 50%
-    positionX:
-  icon:
-    - iconUrl: dc-icon3.png
-      text: Copy DVD/Blu-ray/4K UHD to blank disc or rip them to MKV format
-    - iconUrl: dc-icon4.png
-      text: Rip UHD to MKV (HDR 10+) format, keeping original HDR and Dolby effect.
-    - iconUrl: dc-icon6.png
-      text: Lightning Blu-ray/UHD copy speed
-    - iconUrl: dc-icon2.png
-      text: 6 diverse copy modes
-    - iconUrl: dc-icon1.png
-      text: Easy to use, just as easy as ABC
-    - iconUrl: dc-icon5.png
-      text: Output lossless quality          
-  iconGird: 6  
-youtubeArea:
-  name: Video Guide
-  container: container-fluid
-  title: Video Guide
-  additionClass: position-relative text-center text-light
-  bgStyle: 
-    default: dark
-    imageUrl: blue-creative-bg.gif  
-  icon:
-    - youtubeID: 8UtHJRzhpXg
-  iconGird: 2
-  iconClass: 
-  iconWidth: 75 #25 50 75 100 默认是100       
-systemReq:
-  name: System Requirements 
-  title: System Requirements
-  container: container
-  additionClass: position-relative
-  items:
-    - title: Windows
-      cols:
-        - additionClass: 
-          imageUrl: win10.png
-        - additionClass:
-          text: '<p>Minimum configuration:</p>
-          <ul><li>Intel Core2</li>
-            <li>2GB of RAM</li>
-            <li>50GB free hard disk space (NTFS partition)</li>
-            <li>Windows 7</li>
-            <li>A DVD or Blu-ray disc drive</li>
-          </ul><p>Recommended configuration:</p>
-          <ul><li>Intel i5 or a faster processor</li>
-            <li>8GB of RAM</li>
-            <li>500GB free hard disk space (NTFS partition)</li>
-            <li>A Blu-ray burner</li>
-            <li>Windows 10</li>
-            <li><a href="/uhd-video-copy-recording/">A UHD friendly drive</a></li></ul>
-           <p><img src="{imageUrl}macos.png" style="max-width:80px"><a href="/dvd-copy-for-mac/">Click here to copy DVD on Mac OS</a></p>'      
+  button: 
 ---
 
 ## Features

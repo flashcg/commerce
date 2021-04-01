@@ -23,7 +23,7 @@
           <p class="bg-gray-light p-3"><strong class="text-danger">{{$t('globalName.warning')}} :</strong> <span v-html="$t('globalName.firmwareWarningText')"></span></p>
              
             <b-form-checkbox :ref="'checkbox'+listIndex" v-model="list.checkboxStatus" :id="'checkbox'+listIndex"><strong>{{$t('globalName.firmwareIAmSureText')}}</strong></b-form-checkbox>         
-            <b-btn class="mt-4" :href="list.downloadUrl" :disabled="!list.checkboxStatus" variant="success" size="lg">{{$t('globalName.firmwareDownload')}}</b-btn>
+            <b-button class="mt-4" :href="list.downloadUrl" :disabled="!list.checkboxStatus" variant="success" size="lg">{{$t('globalName.firmwareDownload')}}</b-button>
         </div>
         <div class="col-12" v-if="firmwareData.lists.length-1 !== listIndex"><hr class="my-6"></div>      
       </div>

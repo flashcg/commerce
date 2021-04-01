@@ -382,9 +382,12 @@ a.disabled{ pointer-events: none
 
 /**  Dividers*/
 
-.divider{width:60px;height:0;padding:0;margin:1.2rem 0 2rem 0;border-top-width: 2px;opacity:1;display: inline-block;border-color: inherit;}
+.divider{width:60px;height:0;padding:0;margin:1.2rem 0 2rem 0;border-top-width: 2px;opacity:1;display: inline-block;border-color: inherit;
+  &.divider-fluid{width: 100%; border-top-width: 1px;opacity: 0.6;}
+}
 .divider-vertical{width:2px;height:20px}
 .divider-sm{width:30px}
+
 
 /* width and height */
 @include media-breakpoint-up(sm) { 

@@ -72,7 +72,7 @@ export default {
     });
 
     //zoho's live chat code
-    if ($('.zls-sptwndw').length<=0) {
+/*     if ($('.zls-sptwndw').length<=0) {
       var $zoho = $zoho || { livedesk: { values: {}, ready: function() {} } };
       var d = document;
       var s = d.createElement("script");
@@ -83,7 +83,7 @@ export default {
       var t = d.getElementsByTagName("script")[0];
 
       t.parentNode.insertBefore(s, t);
-    }
+    } */
   }
 };
 </script>

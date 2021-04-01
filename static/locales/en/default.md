@@ -16,13 +16,18 @@ handleSetting:
     path: blue-cloner
   - handleName: Stream-Cloner Lite
     path: stream-cloner-lite 
+  - handleName: Open DVD Ripper Lite
+    path: open-dvd-ripper-lite    
   # - handleName: Blue-Cloner Diamond
   #   path: blue-cloner-diamond
+  - handleName: OpenCloner Ripper
+    path: open-cloner-ripper     
 globalName:
   ok: OK
   submit: Submit
   confirm: Confirm
   cancel: Cancel
+  search: Search
   pageNotFound: Page not found
   backHome: Back to home
   backToHelp: Return to help page
@@ -32,7 +37,7 @@ globalName:
   productDetail: Product Detail
   comparsion: What's different?
   coupon: Coupon
-  more: More
+  more: More Info
   buy: Buy Now
   download: Download
   downloadGoogle: Download from Google Play
@@ -54,6 +59,7 @@ globalName:
   standard: Standard
   lifetime: Lifetime
   license: License
+  searchPlaceholder: Enter your keywords
 menuTop: 
   - name: Blu-ray and DVD Copy
     template: product
@@ -204,11 +210,11 @@ copyright:
 
 
 #网站通用变量区
-imagesPath: http://192.168.31.206:5000/img/
+imagesPath: https://s1.occld.com/images/
 KB_basePath: https://www.cloner-alliance.com/help/knowledgebase/
 download_basePath: https://static.cloner-alliance.com/download/
 manual_basePath: https://static.cloner-alliance.com/manual/
-video_basePath: http://192.168.31.206:5000/video/
+video_basePath: https://s1.occld.com/videos/
 videoProduct_basePath: https://static.cloner-alliance.com/video/products/
 
 

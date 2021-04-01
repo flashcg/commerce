@@ -74,8 +74,8 @@
         <hr class="divider"> 
         <h3 class="mb-4">{{item.overlayBody.phone.name}}: {{item.overlayBody.phone.number}} </h3>
         
-          <b-btn variant="outline-light" size="xl" class="rounded-0 mr-sm-2" :to="item.overlayBody.liveChat.url+'/'">{{item.overlayBody.liveChat.text}}</b-btn>
-          <b-btn variant="outline-light" size="xl" class="rounded-0" :to="item.overlayBody.ticket.url+'/'">{{item.overlayBody.ticket.text}}</b-btn>
+          <b-button variant="outline-light" size="xl" class="rounded-0 mr-sm-2" :to="item.overlayBody.liveChat.url+'/'">{{item.overlayBody.liveChat.text}}</b-button>
+          <b-button variant="outline-light" size="xl" class="rounded-0" :to="item.overlayBody.ticket.url+'/'">{{item.overlayBody.ticket.text}}</b-button>
         
       </div> 
     

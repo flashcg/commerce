@@ -9,6 +9,7 @@
   <nuxt-content class="container py-6 text-light" :document="mddata" />
   </div>
   <item-tab :data="mddata.systemRequirements" />
+  <item-bonus :data="mddata.bonus" />
   <item-release :data="{handleName:mddata.handleName,name:mddata.name}" />
 </div>
 </template>

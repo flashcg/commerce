@@ -8,10 +8,11 @@ newver:
         fontColor: '#fff'
         bgColor: '#353535'
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级      
-release:
+release: 
     - version: 18.20.1463
       date: Feb.05, 2021      
       topText:
+      size: 64.2 #MB
       list:
         - Supported the newest released DVD/Blu-ray movies.
         - Provided selection options for multiple versions of the main movie.

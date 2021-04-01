@@ -3,8 +3,8 @@ import { dirOperate, writeLog } from './other';
 import { FileCreator, FilesProcess } from './vueProcess';
 
 const fs = require('fs'), archiver = require('archiver'), request = require('request'),
-  path = require('path'), myDate = new Date(), mdBasePath = "./static/locales/",
-  yamlFront = require("yaml-front-matter"), xml2js = require('xml2js');
+  path = require('path'), myDate = new Date(), mdBasePath = "./static/locales/", zipBasePath = "./static/", xmlBasePath = "./static/xml/",
+  yamlFront = require("yaml-front-matter"), xml2js = require('xml2js'), releaseJsonPath = `${zipBasePath}releaseState.json`;
 
 interface DefaultData {
   handleSetting: { [prop: string]: string }[];
@@ -45,6 +45,10 @@ interface mdDataConfig {
     [propName: string]: any;
   };
   [propName: string]: any;
+}
+interface releaseJsonConfig {
+  path: string;
+  mTime: Date | string;
 }
 /**
  * release process (extends FilesProcess class)
@@ -93,13 +97,61 @@ class ReleaseProcess extends FilesProcess {
     }
 
   }
+  releaseJson(item: releaseJsonConfig, jsonArray?: releaseJsonConfig[],method = 'add') {
+    
+    switch (method) {
+      case 'update':        
+        break;    
+      case 'create':
+        jsonArray?.push(item)
+        break;          
+      default:
+        jsonArray?.push(item)
+        break;
+    }
+    fs.writeFileSync(releaseJsonPath, JSON.stringify(jsonArray))
+    writeLog('Updata ' + releaseJsonPath)
+  }
   /**
-   * 根据 当前build 日期与 release MD文件日期 间隔 判断是否生成压缩文件
+   * 根据 zip 修改时间与 release MD文件修改时间 间隔 判断是否生成压缩文件
    */
-  isToArchive(fileName: string) {
-    let mdTime: Date = fs.statSync(mdBasePath + this.locale + '/release/' + fileName).mtime, hourDiff = (myDate.getTime() - mdTime.getTime()) / (1000 * 3600);
+  isToArchive(fileName: string, zipPath: string) {
 
-    return hourDiff > 72 ? false : true
+
+    const ishasZip = fs.existsSync(zipPath), path = fileName.substring(0, fileName.indexOf('.')),
+      releaseMdMtime: Date = fs.statSync(mdBasePath + this.locale + '/release/' + fileName).mtime,newItem = { path, mTime: releaseMdMtime };;
+    //this.releaseJson(fileName,mdTime)    
+    
+    const jsonFn = () => {
+      if (fs.existsSync(releaseJsonPath)) {
+        let jsonArray: releaseJsonConfig[] = JSON.parse(fs.readFileSync(releaseJsonPath)),
+          jsonItem = jsonArray.find(res => res.path == path);
+        if (jsonItem) {
+          let jsonMtime = new Date(jsonItem.mTime)
+         // console.log(jsonMtime,releaseMdMtime,jsonMtime.toString() == releaseMdMtime.toString());
+          if(jsonMtime.toString() != releaseMdMtime.toString()){           
+            jsonItem.mTime = releaseMdMtime;            
+            this.releaseJson(newItem, jsonArray,'update')
+            return true
+          }
+          return false
+        } else {
+          this.releaseJson(newItem,jsonArray)
+          return true
+        }
+
+      } else {
+        this.releaseJson(newItem,[],'create')
+        return true
+      }
+    }
+
+    if (ishasZip) {
+      return jsonFn()
+    } else {
+      return true
+    }
+
   }
   /**
    * reWrite original -FilesProcess- fileProcess
@@ -110,7 +162,8 @@ class ReleaseProcess extends FilesProcess {
 
       let mdFileFullPath = this.mdFileFullPath({ mdDirPath: this.mdDirPath, fileName: resFileName }),
         mdJson: mdDataConfig = new FileCreator({ mdPath: mdFileFullPath }).jsonData;
-      if (this.isToArchive(resFileName) && mdJson.newver.source) {
+
+      if (mdJson.newver.source) {
 
         let handleName = mdJson.newver.source
         //取item 对应的path
@@ -124,12 +177,11 @@ class ReleaseProcess extends FilesProcess {
         delete sourceJson.handleName;
         sourceJson.newver.size = mdJson.newver.size;
         Object.assign(mdJson, sourceJson);
-        //console.log(mdJson);
+
 
       }
-
       //stat 状态中有两个函数一个是stat中有isFile ,isisDirectory 判断是文件还是文件夹     
-      if (this.isToArchive(resFileName) && fs.statSync(mdFileFullPath).isFile()) {
+      if (fs.statSync(mdFileFullPath).isFile()) {
 
         let newverDataToFiles = () => {
 
@@ -139,10 +191,13 @@ class ReleaseProcess extends FilesProcess {
 
           mdJson.newver.release && Object.assign(newverData, mdJson.newver.release);
           Object.assign(newverData, productData, { link: mdJson.newver.link }, mdJson.newver.style);
-
           const newverCreator = new NewverZipCreator(newverData);
-          newverCreator.launch()
-          newverCreator.xmlUpdate()
+
+          if (this.isToArchive(resFileName, newverCreator.zipPath)) {
+            newverCreator.launch()
+            newverCreator.xmlUpdate()
+          }
+
         }
 
         mdJson.newver && mdJson.newver.active && newverDataToFiles()
@@ -167,30 +222,37 @@ class NewverZipCreator {
     }
     return `<ul style="padding-left: 10px;">${outData}</ul>`
   }
+  get zipPath() {
+    if (this.data.handleName == 'DVD-Cloner') {
+      return `${zipBasePath}newver.zip`;
+    } else {
+      return `${zipBasePath}newver-${this.data.abbrName.toLowerCase()}.zip`;
+    }
+  }
   /**
    * Updata XML files
    */
   xmlUpdate() {
-    const xmlPath = './static/xml/'+this.data.path + '.xml',
+    const xmlPath = './static/xml/' + this.data.path + '.xml',
       xmlData = fs.readFileSync(xmlPath, 'utf8');
 
     xml2js.parseString(xmlData.replace(/&(?!(?:apos|quot|[gl]t|amp);|#)/g, '&amp;'),
-      (err: any, res: any) =>{
-        let outData = res,time = new Date(this.data.date)
+      (err: any, res: any) => {
+        let outData = res, time = new Date(this.data.date)
         outData.XML_DIZ_INFO.Program_Info[0].Program_Name = this.data.name;
         outData.XML_DIZ_INFO.Program_Info[0].Program_Version = this.data.version;
         outData.XML_DIZ_INFO.Program_Info[0].Program_Release_Day = time.getDay();
-        outData.XML_DIZ_INFO.Program_Info[0].Program_Release_Month = time.getMonth()+1;
+        outData.XML_DIZ_INFO.Program_Info[0].Program_Release_Month = time.getMonth() + 1;
         outData.XML_DIZ_INFO.Program_Info[0].Program_Release_Year = time.getFullYear();
         outData.XML_DIZ_INFO.Program_Info[0].File_Info[0].File_Size_MB = this.data.size;
-        outData.XML_DIZ_INFO.Program_Info[0].File_Info[0].File_Size_K = this.data.size&&this.data.size*1024;
-        outData.XML_DIZ_INFO.Program_Info[0].File_Info[0].File_Size_Bytes = this.data.size&&this.data.size*1024*1024;
-        
-        const builder = new xml2js.Builder(),xml = builder.buildObject(outData);
+        outData.XML_DIZ_INFO.Program_Info[0].File_Info[0].File_Size_K = this.data.size && this.data.size * 1024;
+        outData.XML_DIZ_INFO.Program_Info[0].File_Info[0].File_Size_Bytes = this.data.size && this.data.size * 1024 * 1024;
 
-        fs.writeFileSync(xmlPath,xml);
-        writeLog('Updata '+xmlPath)
-        
+        const builder = new xml2js.Builder(), xml = builder.buildObject(outData);
+
+        fs.writeFileSync(xmlPath, xml);
+        writeLog('Updata ' + xmlPath)
+
       });
 
   }
@@ -201,13 +263,7 @@ class NewverZipCreator {
     const cachePath = this.cachePath, itemDirName = this.data.path;
     /* 建立压缩文件 */
     const archive = archiver('zip');
-    let zipPath: string;
-
-    if (this.data.handleName == 'DVD-Cloner') {
-      zipPath = './static/newver.zip';
-    } else {
-      zipPath = './static/newver-' + this.data.abbrName.toLowerCase() + '.zip';
-    }
+    let zipPath = this.zipPath;
 
     // 创建文件输出流
     let output = fs.createWriteStream(zipPath);
@@ -232,14 +288,13 @@ class NewverZipCreator {
     archive.finalize()
   }
   launch() {
-    let cachePath = this.cachePath, itemDirName = this.data.path,
-      zipTargetDir = './static';
+    let cachePath = this.cachePath, itemDirName = this.data.path;
     const imgFilename = 'box.png';
     //建立缓存目录
     dirOperate(cachePath);
     dirOperate(path.join(cachePath, itemDirName));
     //建立缓存文件
-    fs.writeFileSync(path.join(cachePath, itemDirName, 'index.html'), newverCode(this.data, this.newverData))
+    fs.writeFileSync(path.join(cachePath, itemDirName, 'newver.html'), newverCode(this.data, this.newverData))
 
     //存储图片文件 建立zip文件
     request
@@ -248,12 +303,12 @@ class NewverZipCreator {
         let outStream = fs.createWriteStream(path.join(cachePath, itemDirName, imgFilename));
         res.pipe(outStream)
         outStream.on('close', () => {
-          console.log('Box image has been downloaded'); 
+          console.log('Box image has been downloaded');
           this.zipCreator()
         })
       })
-      .on('error',()=>{
-        console.log('Box image has NOT been downloaded, Old version will be used'); 
+      .on('error', () => {
+        console.log('Box image has NOT been downloaded, Old version will be used');
         this.zipCreator()
       })
   }

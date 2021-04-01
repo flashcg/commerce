@@ -28,11 +28,12 @@
           <p class="fs-4" v-if="itemSaleInfo.standard">{{standard?$t('softwareInfo.currency')+itemSaleInfo.standard.price:$t('softwareInfo.currency')+itemSaleInfo.lifetime.price}} <b-link v-if="!standard" href="/special-offer/" class="fs-6 text-red-light" sc>{{$t('globalName.get50off')}} </b-link>
           
           </p>
-          
+          <p>
           <b-button v-if="itemSaleInfo.standard" squared variant="danger" size="lg" :href="standard?itemSaleInfo.standard.buyLink:itemSaleInfo.lifetime.buyLink" class="mt-2">{{$t("globalName.buy")}} </b-button>
           <b-button v-if="itemSaleInfo.downloadUrl" squared variant="success" size="lg" :href="itemSaleInfo.downloadUrl" class="mt-2">{{$t("globalName.download")}} </b-button>
+          <b-button v-if="itemSaleInfo.download_64Bit" squared variant="success" size="lg" :href="itemSaleInfo.download_64Bit.downloadUrl" class="mt-2">{{`${$t("globalName.download")} 64 Bit`}} </b-button>          
           <b-button v-if="itemSaleInfo.upgradeUrl" squared variant="outline-light" size="lg" :to="itemSaleInfo.upgradeUrl" class="mt-2">{{$t("globalName.upgrade")}} </b-button>          
-
+          </p>
           <p v-if="data.button&&data.button.additionText" v-html="data.button.additionText"></p>
           <p v-if="itemSaleInfo.standard"><b-img fluid src="~static/images/credit_cards.gif" style="max-width:300px"  /> </p>
         </client-only> 

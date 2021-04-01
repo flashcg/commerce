@@ -12,6 +12,9 @@ abbrName: DC
 handleName: DVD-Cloner
 name: DVD-Cloner 2021
 type: DVD Copy
+logo:
+  iconUrl: icon/dc-2021.png
+  imageUrl: dc-logo-2021.png
 boxes:
   - imageUrl: dc2021-box.png #默认盒子图
   - imageUrl: dc2021-box-ref.png #带阴影盒子图
@@ -120,7 +123,15 @@ systemRequirements:
             <li>A Blu-ray burner</li>
             <li>Windows 10</li>
             <li><a href="/uhd-video-copy-recording/">A UHD friendly drive</a></li></ul>
-           <p><img src="{imageUrl}macos.png" style="max-width:80px"><a href="/dvd-copy-for-mac/">Click here to copy DVD on Mac OS</a></p>'          
+           <p><img src="{imageUrl}macos.png" style="max-width:80px"><a href="/dvd-copy-for-mac/">Click here to copy DVD on Mac OS</a></p>'  
+bonus: 
+  name: Free Software
+  active: true
+  title: DVD-Cloner's Bonus Software
+  additionClass:
+  items:
+    - handleName: Open DVD Ripper Lite
+    - handleName: Stream-Cloner Lite
 ---
 
 ## Features

@@ -9,7 +9,7 @@
         </template>
         <template v-slot:cell(download)="data">   
           <p v-for="(list,listIndex) in data.value" :key="listIndex">
-         <b-btn class="rounded-0" variant="success" :href="list.downloadUrl?list.downloadUrl:list.externalUrl">{{list.text?list.text:$t('globalName.download')}}</b-btn>
+         <b-button class="rounded-0" variant="success" :href="list.downloadUrl?list.downloadUrl:list.externalUrl">{{list.text?list.text:$t('globalName.download')}}</b-button>
           </p>
         </template>
        </b-table>

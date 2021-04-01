@@ -88,3 +88,5 @@ netlify-functions
 cache
 .env
 compiledJS
+releaseState.json
+static/source/

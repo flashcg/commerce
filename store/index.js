@@ -40,10 +40,10 @@ export const mutations = {
     state.localData.productData = data
     localStorage.localData = JSON.stringify(state.localData);
   },
-  _localDataPush(state) {            
-      state.localData.productData.push(JSON.parse(localStorage.localData).productData)
-      console.log('local data has stored to state');
-      console.log(state.localData.productData);
+  _localDataPush(state) {
+    state.localData.productData.push(JSON.parse(localStorage.localData).productData)
+    console.log('local data has stored to state');
+    console.log(state.localData.productData);
   },
   youtubeDataToState(state, data) {
     state.youtubeData.find(res => res.id == data.id) ? '' : state.youtubeData.push(data)
@@ -60,31 +60,31 @@ export const actions = {
     state
   }) {
     //if(state.localData.productData.length<=0)commit('_localDataPush')
-    
+
     let handleSetting = await this.$content('default').only('handleSetting').fetch(),
       productData = new Array;
     handleSetting = handleSetting.handleSetting;
     if (handleSetting) {
       for (let i = 0; i < handleSetting.length; i++) {
 
-        const item = await this.$content('pages/' + handleSetting[i].path).only(['abbrName', 'handleName', 'name', 'type', 'boxes', 'desc']).fetch();
-        
+        const item = await this.$content('pages/' + handleSetting[i].path).only(['abbrName', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc']).fetch();
+
         if (Array.isArray(item)) {
-          item = await this.$content('pages/' + handleSetting[i].path + '/index').only(['abbrName', 'handleName', 'name', 'type', 'boxes', 'desc']).fetch();
+          item = await this.$content('pages/' + handleSetting[i].path + '/index').only(['abbrName', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc']).fetch();
         }
-        
-        const releaseFn =()=> {
-          return new Promise((resolve, reject)=>{
+
+        const releaseFn = () => {
+          return new Promise((resolve, reject) => {
             let data = this.$content('release/' + handleSetting[i].path).fetch()
-            resolve(data);
-            reject()
+            data?resolve(data):reject();            
           })
         }
-        let releaseData = await releaseFn().then((res)=>res,(err)=>undefined)
+        let releaseData = await releaseFn().then(res => res).catch(err => undefined)
+
         Object.assign(item, {
           handle: handleSetting[i]
         }, {
-          release: releaseData&&releaseData.release && releaseData.release[0]
+          release: releaseData && releaseData.release && releaseData.release[0]
         });
         productData.push(item)
       }
@@ -92,7 +92,7 @@ export const actions = {
     }
 
 
-    
+
     productData = await this.app.$initMD(productData, 'base');
     commit('_localData', productData)
   },

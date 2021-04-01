@@ -15,7 +15,7 @@ type:
 boxes:
   - imageUrl: sc_lite_bonus_box.png #默认盒子图
 desc:
-  shortText: 
+  shortText: Free to convert DVD movies to AVI, MPEG and SVCD formats.
   longText: |
     Stream-Cloner Lite is a smart stream downloader to download and capture streaming video/audio from the Internet. With Stream-Cloner Lite, you can save and play back the downloaded and captured streaming video/audio directly on your PC. It enables you to download and play back multiple tasks at one time and adjust the parameters of the downloaded or captured movies. Now let's take this valuable opportunity to get Stream-Cloner Lite worth $39.99 for free!
 

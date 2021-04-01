@@ -3,7 +3,6 @@ softwareInfo:
   currency: $
   items:   
     - handleName: DVD-Cloner
-      type: DVD Copy
       downloadUrl: dcloner.exe
       upgradeUrl: /dvd-cloner/upgrade/    
       standard:
@@ -13,8 +12,7 @@ softwareInfo:
       lifetime:
         price: 299.99
         buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965249]=1
-    - handleName: DVD-Cloner Gold
-      type: DVD Copy      
+    - handleName: DVD-Cloner Gold   
       downloadUrl: dvdcloner_gold.exe
       download_64Bit:
         downloadUrl: dvd-cloner-gold_x64.exe
@@ -25,4 +23,12 @@ softwareInfo:
       lifetime:
         price: 399.99
         buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965254]=1        
+    - handleName: OpenCloner Ripper 
+      upgradeUrl: /open-cloner-ripper/upgrade/
+      download_64Bit:
+        downloadUrl: opencloner-ripper.exe
+      standard:
+        comparePrice:
+        price: 59.99
+        buyLink: https://www.dvd-cloner.com/cgi-bin/orderlink.cgi?ocr=y  
 ---

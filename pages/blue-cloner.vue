@@ -2,7 +2,7 @@
 <div v-if="mddata" :id="$handlify(mddata.handleName)">
   <item-overview :data="mddata.areaTop" :itemInfo="{boxSrc:mddata.boxes[1].imageUrl||mddata.boxes[0].imageUrl,name:mddata.name,desc:mddata.desc.longText,handleName:mddata.handleName}" />
   <item-nav :data="mddata" />
-  <icon-block  :iconData="mddata.screenshot" /> 
+  <carousel :data="mddata.screenshot" />
   <icon-block  :iconData="mddata.WhyChoose" /> 
   <icon-block  :iconData="mddata.youtubeArea" />
   <div id="features" class="bg-dark-opacity-8">

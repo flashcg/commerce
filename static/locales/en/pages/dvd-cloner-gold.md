@@ -37,7 +37,14 @@ screenshot:
   items:
     - imageUrl: dc-2021-gold_screenshot.png
     - imageUrl: os_screenshot.png
- 
+bonus: 
+  name: Free Software
+  active: true
+  title: DVD-Cloner's Bonus Software
+  additionClass:
+  items:
+    - handleName: Open DVD Ripper Lite
+    - handleName: Stream-Cloner Lite 
         
 ---
 
