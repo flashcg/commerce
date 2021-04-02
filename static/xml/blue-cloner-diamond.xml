@@ -1,0 +1,230 @@
+<?xml version="1.0" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>3.10</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>PADGen 3.1.0.41 http://www.padgen.org</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>OpenCloner Inc.</Company_Name>
+		<Address_1 />
+		<Address_2 />
+		<City_Town />
+		<State_Province />
+		<Zip_Postal_Code />
+		<Country />
+		<Company_WebSite_URL>http://www.opencloner.com</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name>OpenCloner Inc.</Author_First_Name>
+			<Author_Last_Name>OpenCloner Inc.</Author_Last_Name>
+			<Author_Email>affiliate-admin@opencloner.com</Author_Email>
+			<Contact_First_Name>OpenCloner Inc.</Contact_First_Name>
+			<Contact_Last_Name>OpenCloner Inc.</Contact_Last_Name>
+			<Contact_Email>affiliate-admin@opencloner.com</Contact_Email>
+		</Contact_Info>
+		<Support_Info>
+			<Sales_Email>affiliate-admin@opencloner.com</Sales_Email>
+			<Support_Email>blue-cloner@dvd-cloner.com</Support_Email>
+			<General_Email>affiliate-admin@opencloner.com</General_Email>
+			<Sales_Phone />
+			<Support_Phone />
+			<General_Phone />
+			<Fax_Phone />
+		</Support_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>Blue-Cloner Diamond</Program_Name>
+		<Program_Version>10.00.838</Program_Version>
+		<Program_Release_Month>03</Program_Release_Month>
+		<Program_Release_Day>032</Program_Release_Day>
+		<Program_Release_Year>2020</Program_Release_Year>
+		<Program_Cost_Dollars>79.99</Program_Cost_Dollars>
+		<Program_Cost_Other_Code />
+		<Program_Cost_Other />
+		<Program_Type>Shareware</Program_Type>
+		<Program_Release_Status>Minor Update</Program_Release_Status>
+		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
+		<Program_OS_Support>Win10, Win8, Win7 x32, Win7 x64, WinVista, WinVista x64, WinXP</Program_OS_Support>
+		<Program_Language>English</Program_Language>
+		<Program_Change_Info>Improved the function of finding the main title in some movie discs. Optimized the decryption algorithm, and supports latest Blu-ray movies. Improved the function of HST acceleration on some PCs. Improved the function of splitting a Blu-ray movie.</Program_Change_Info>
+		<Program_Specific_Category>Audio</Program_Specific_Category>
+		<Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
+		<Program_System_Requirements>Minimum configuration: Pentium-IV 1.0 GHz, 512MB of RAM, 50GB free hard disk space (NTFS partition), Windows XP, A Blu-ray disc drive Recommended configuration: Intel Core2 1.86GHz or a faster processor, 2048MB of RAM, 50GB free hard disk space (NTFS partition), A Blu-ray burner, Windows Vista, 7, 8, 8.1, 10, A Blu-ray disc drive, An NVIDIA video card or an AMD video card
+</Program_System_Requirements>
+		<File_Info>
+			<File_Size_Bytes>90151704</File_Size_Bytes>
+			<File_Size_K>85122</File_Size_K>
+			<File_Size_MB>84.1</File_Size_MB>
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Count />
+			<Expire_Based_On>Days</Expire_Based_On>
+			<Expire_Other_Info />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Keywords>Blu-ray copy/burn/decryption/conversion software, burn data files, burn video files, Blu-ray ripping, Blue-Cloner Diamond</Keywords>
+			<Char_Desc_45>Blu-ray copy/burn/decryption/conversion.</Char_Desc_45>
+			<Char_Desc_80>Powerful Blu-ray copy/burn/decryption/conversion software.</Char_Desc_80>
+			<Char_Desc_250>Blue-Cloner Diamond is powerful Blu-ray copy/burn/decryption/conversion software. It has all the features of Blue-Cloner plus the ability to burn data/video files to DVD or Blu-ray discs and rip Blu-ray movies to various video and audio formats.</Char_Desc_250>
+			<Char_Desc_450>Blue-Cloner Diamond is powerful Blu-ray copy/burn/decryption/conversion software. It has all the features of Blue-Cloner plus the ability to burn data/video files to DVD or Blu-ray discs and rip Blu-ray movies to various video and audio formats for enjoying on popular media devices. It enables you to copy Blu-ray movies to blank Blu-ray/DVD discs or to the hard disk and convert 2D movies to 3D format.</Char_Desc_450>
+			<Char_Desc_2000>Blue-Cloner Diamond is powerful Blu-ray copy/burn/decryption/conversion software. It has all the features of Blue-Cloner plus the ability to burn data/video files to DVD or Blu-ray discs and rip Blu-ray movies to various video and audio formats for enjoying on popular media devices. <br/>
+Blue-Cloner Diamond contains three products: Blue-Cloner, Open SmartBurner and Open Blu-ray ripper<br/>
+Blue-Cloner 6 is top-rated Blu-ray copy/backup/burn/decryption software which can copy Blu-ray movies to blank Blu-ray/DVD/AVCHD discs or to the hard disk as Blu-ray folders and Blu-ray ISO image files.<br/>
+Key features:<br/>
+Removes all Blu-ray copy protections including AACS, BD+, newest MKB v26, bus encryption, BD-Live and UOPs.<br/>
+Note: Internet connection is necessary for Blu-ray disc backup.<br/>
+Supports all regions (A, B, C). <br/>
+Perfect 1:1 Blu-ray copy<br/>
+Movie-only copy<br/>
+Splits one Blu-ray movie (50G) to two blank BD-R/REs (25G).<br/> 
+Customized copy<br/>
+Compatible with Windows 10 and Windows 8.1.<br/>
+Open SmartBurner is a brand-new tool to burn data files and video files to DVD/Blu-ray discs. It enables you to burn data files, software, pictures, music, videos, etc to a DVD or Blu-ray disc for archiving.<br/>
+Key features:<br/>
+Burns data files to a DVD/Blu-ray data disc.<br/>
+Makes a DVD/Blu-ray video disc from video files.<br/>
+Burns the existing ISO file on the hard disk to a DVD/Blu-ray disc.<br/>
+Open Blu-ray ripper is an all-in-one Blu-ray ripping tool with powerful functions. It can rip Blu-ray movies to popular audio and video formats for you freely watching on various devices. The brand-new Express and Expert interfaces are designed to meet new and professional users' different needs. Besides, Open Blu-ray ripper has the function of converting 2D to 3D movies and setting 3D features.<br/>
+Key features:<br/>
+Converts Blu-ray movies to various video and audio formats.<br/>
+Compatible with popular media devices.<br/>
+Converts 2D movies to 3D format.</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>https://www.blue-cloner.com/blue-cloner-diamond.html</Application_Info_URL>
+			<Application_Order_URL>https://www.blue-cloner.com/order.html</Application_Order_URL>
+			<Application_Screenshot_URL>https://www.blue-cloner.com/images/bcd_screenshot.jpg</Application_Screenshot_URL>
+			<Application_Icon_URL>https://www.blue-cloner.com/bcd_ico.jpg</Application_Icon_URL>
+			<Application_XML_File_URL>https://www.blue-cloner.com/blue-cloner-diamond.xml</Application_XML_File_URL>
+		</Application_URLs>
+		<Download_URLs>
+			<Primary_Download_URL>https://www.blue-cloner.com/download/blue-cloner-diamond.exe</Primary_Download_URL>
+			<Secondary_Download_URL>http://www.opencloner.com/download/Blue-Cloner-Diamond.exe</Secondary_Download_URL>
+			<Additional_Download_URL_1 />
+			<Additional_Download_URL_2 />
+		</Download_URLs>
+	</Web_Info>
+	<Permissions>
+		<Distribution_Permissions />
+		<EULA />
+	</Permissions>
+	<Affiliates>
+		<Affiliates_FORM>Y</Affiliates_FORM>
+		<Affiliates_VERSION>1.4</Affiliates_VERSION>
+		<Affiliates_URL>http://www.asp-shareware.org/pad/extensions/Affiliates.htm</Affiliates_URL>
+		<Affiliates_Information_Page />
+		<Affiliates_Avangate_Order_Page>https://secure.avangate.com/order/checkout.php?PRODS=4619914&QTY=1&CART=1</Affiliates_Avangate_Order_Page>
+		<Affiliates_Avangate_Vendor_ID>OPENCLON</Affiliates_Avangate_Vendor_ID>
+		<Affiliates_Avangate_Product_ID>4619914</Affiliates_Avangate_Product_ID>
+		<Affiliates_Avangate_Maximum_Commission_Rate>30</Affiliates_Avangate_Maximum_Commission_Rate>
+		<Affiliates_BMTMicro_Order_Page />
+		<Affiliates_BMTMicro_Vendor_ID />
+		<Affiliates_BMTMicro_Product_ID />
+		<Affiliates_BMTMicro_Maximum_Commission_Rate />
+		<Affiliates_Cleverbridge_Order_Page />
+		<Affiliates_Cleverbridge_Vendor_ID />
+		<Affiliates_Cleverbridge_Product_ID />
+		<Affiliates_Cleverbridge_Maximum_Commission_Rate />
+		<Affiliates_clixGalore_Order_Page />
+		<Affiliates_clixGalore_Vendor_ID />
+		<Affiliates_clixGalore_Product_ID />
+		<Affiliates_clixGalore_Maximum_Commission_Rate />
+		<Affiliates_CommissionJunction_Order_Page />
+		<Affiliates_CommissionJunction_Vendor_ID />
+		<Affiliates_CommissionJunction_Product_ID />
+		<Affiliates_CommissionJunction_Maximum_Commission_Rate />
+		<Affiliates_DigiBuy_Order_Page />
+		<Affiliates_DigiBuy_Vendor_ID />
+		<Affiliates_DigiBuy_Product_ID />
+		<Affiliates_DigiBuy_Maximum_Commission_Rate />
+		<Affiliates_DigitalCandle_Order_Page />
+		<Affiliates_DigitalCandle_Vendor_ID />
+		<Affiliates_DigitalCandle_Product_ID />
+		<Affiliates_DigitalCandle_Maximum_Commission_Rate />
+		<Affiliates_Emetrix_Order_Page />
+		<Affiliates_Emetrix_Vendor_ID />
+		<Affiliates_Emetrix_Product_ID />
+		<Affiliates_Emetrix_Maximum_Commission_Rate />
+		<Affiliates_eSellerate_Order_Page />
+		<Affiliates_eSellerate_Vendor_ID />
+		<Affiliates_eSellerate_Product_ID />
+		<Affiliates_eSellerate_Maximum_Commission_Rate />
+		<Affiliates_Kagi_Order_Page />
+		<Affiliates_Kagi_Vendor_ID />
+		<Affiliates_Kagi_Product_ID />
+		<Affiliates_Kagi_Maximum_Commission_Rate />
+		<Affiliates_LinkShare_Order_Page />
+		<Affiliates_LinkShare_Vendor_ID />
+		<Affiliates_LinkShare_Product_ID />
+		<Affiliates_LinkShare_Maximum_Commission_Rate />
+		<Affiliates_NorthStarSol_Order_Page />
+		<Affiliates_NorthStarSol_Vendor_ID />
+		<Affiliates_NorthStarSol_Product_ID />
+		<Affiliates_NorthStarSol_Maximum_Commission_Rate />
+		<Affiliates_OneNetworkDirect_Order_Page />
+		<Affiliates_OneNetworkDirect_Vendor_ID />
+		<Affiliates_OneNetworkDirect_Product_ID />
+		<Affiliates_OneNetworkDirect_Maximum_Commission_Rate />
+		<Affiliates_Order1_Order_Page />
+		<Affiliates_Order1_Vendor_ID />
+		<Affiliates_Order1_Product_ID />
+		<Affiliates_Order1_Maximum_Commission_Rate />
+		<Affiliates_Osolis_Order_Page />
+		<Affiliates_Osolis_Vendor_ID />
+		<Affiliates_Osolis_Product_ID />
+		<Affiliates_Osolis_Maximum_Commission_Rate />
+		<Affiliates_Plimus_Order_Page />
+		<Affiliates_Plimus_Vendor_ID />
+		<Affiliates_Plimus_Product_ID />
+		<Affiliates_Plimus_Maximum_Commission_Rate />
+		<Affiliates_Regnet_Order_Page />
+		<Affiliates_Regnet_Vendor_ID />
+		<Affiliates_Regnet_Product_ID />
+		<Affiliates_Regnet_Maximum_Commission_Rate />
+		<Affiliates_Regnow_Order_Page>https://shopper.mycommerce.com/checkout/cart/add/8959-23</Affiliates_Regnow_Order_Page>
+		<Affiliates_Regnow_Vendor_ID>8959</Affiliates_Regnow_Vendor_ID>
+		<Affiliates_Regnow_Product_ID>8959-23</Affiliates_Regnow_Product_ID>
+		<Affiliates_Regnow_Maximum_Commission_Rate>30</Affiliates_Regnow_Maximum_Commission_Rate>
+		<Affiliates_Regsoft_Order_Page />
+		<Affiliates_Regsoft_Vendor_ID />
+		<Affiliates_Regsoft_Product_ID />
+		<Affiliates_Regsoft_Maximum_Commission_Rate />
+		<Affiliates_ShareIt_Order_Page />
+		<Affiliates_ShareIt_Vendor_ID />
+		<Affiliates_ShareIt_Product_ID />
+		<Affiliates_ShareIt_Maximum_Commission_Rate />
+		<Affiliates_Shareasale_Order_Page />
+		<Affiliates_Shareasale_Vendor_ID />
+		<Affiliates_Shareasale_Product_ID />
+		<Affiliates_Shareasale_Maximum_Commission_Rate />
+		<Affiliates_SWReg_Order_Page>https://www.swreg.org/cgi-bin/s.cgi?s=4680&p=4680-2bluecloner&q=1&v=1&d=0</Affiliates_SWReg_Order_Page>
+		<Affiliates_SWReg_Vendor_ID>4680</Affiliates_SWReg_Vendor_ID>
+		<Affiliates_SWReg_Product_ID>4680-2bluecloner</Affiliates_SWReg_Product_ID>
+		<Affiliates_SWReg_Maximum_Commission_Rate>30</Affiliates_SWReg_Maximum_Commission_Rate>
+		<Affiliates_V-Share_Order_Page />
+		<Affiliates_V-Share_Vendor_ID />
+		<Affiliates_V-Share_Product_ID />
+		<Affiliates_V-Share_Maximum_Commission_Rate />
+		<Affiliates_VFree_Order_Page />
+		<Affiliates_VFree_Vendor_ID />
+		<Affiliates_VFree_Product_ID />
+		<Affiliates_VFree_Maximum_Commission_Rate />
+		<Affiliates_Yaskifo_Order_Page />
+		<Affiliates_Yaskifo_Vendor_ID />
+		<Affiliates_Yaskifo_Product_ID />
+		<Affiliates_Yaskifo_Maximum_Commission_Rate />
+	</Affiliates>
+	<ASP>
+		<ASP_FORM>Y</ASP_FORM>
+		<ASP_Member>N</ASP_Member>
+		<ASP_Member_Number />
+	</ASP>
+</XML_DIZ_INFO>
