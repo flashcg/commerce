@@ -63,29 +63,61 @@ export const actions = {
 
     let handleSetting = await this.$content('default').only('handleSetting').fetch(),
       productData = new Array;
-    handleSetting = handleSetting.handleSetting;
+    handleSetting = handleSetting.handleSetting;    
     if (handleSetting) {
       for (let i = 0; i < handleSetting.length; i++) {
 
-        const item = await this.$content('pages/' + handleSetting[i].path).only(['abbrName', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc']).fetch();
+        const item = await this.$content('pages/' + handleSetting[i].path).only(['abbrName', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc']).fetch(),
+          saleData = await this.$content('salePlatform').fetch();
 
         if (Array.isArray(item)) {
           item = await this.$content('pages/' + handleSetting[i].path + '/index').only(['abbrName', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc']).fetch();
         }
-
-        const releaseFn = () => {
+        
+        const releaseFn = (path =handleSetting[i].path ) => {
           return new Promise((resolve, reject) => {
-            let data = this.$content('release/' + handleSetting[i].path).fetch()
+            let data = this.$content('release/' + path).fetch()
+            
             data?resolve(data):reject();            
           })
-        }
-        let releaseData = await releaseFn().then(res => res).catch(err => undefined)
+        },  releaseState = await this.$axios('/_content/releaseState.json');
 
+        let ishasRelease = releaseState.data.some(res=>handleSetting[i].path == res.path)
+        ,releaseData,
+        saleItem = saleData.softwareInfo.items.find(res=>res.handleName.toLowerCase() == handleSetting[i].handleName.toLowerCase())
+
+        if(ishasRelease)releaseData = await releaseFn().then(res => {          
+          return res
+        }).catch(err => undefined);
+        
+        const releaseTransfer = async (data)=> {          
+          if(data&&data.newver&&data.newver.source){
+          let sourceHandle =  handleSetting.find(res=>res.handleName.toLowerCase() == data.newver.source.toLowerCase()),
+          sourceItem = await releaseFn(sourceHandle.path)
+          data.currentVer =  sourceItem.release[0].version
+          } else if (data&&data.release) {
+            data.currentVer =  data.release[0].version
+          }
+        }
+
+        await releaseTransfer(releaseData);
+        
         Object.assign(item, {
           handle: handleSetting[i]
         }, {
           release: releaseData && releaseData.release && releaseData.release[0]
         });
+        
+        if(releaseData){
+          
+          item.currentVer = releaseData.currentVer;
+          if(releaseData.currentSize) item.currentSize = releaseData.currentSize
+          if(releaseData.currentSize_64bit) item.currentSize_64bit = releaseData.currentSize_64bit
+          if(releaseData.systemRequirement) item.systemRequirement = releaseData.systemRequirement
+        }
+
+        if(saleItem) item.saleInfo = saleItem
+
         productData.push(item)
       }
 

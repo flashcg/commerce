@@ -1,5 +1,7 @@
 ---
 handleName: Blue-Cloner
+currentSize: 35.7 #MB
+systemRequirement: Windows 10/7/Vista
 newver:
     active: true
     link:

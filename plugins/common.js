@@ -191,6 +191,7 @@ export default ({
         key == 'imageUrl' || key == 'iconUrl' ?obj[key]= pathHandle(obj[key],pathData.imagesPath): '';
         key == 'kbUrl' ? obj[key]= pathHandle(obj[key],pathData.KB_basePath): '';
         key == 'downloadUrl' ?obj[key]= pathHandle(obj[key],pathData.download_basePath): '';
+        key == 'downloadUrl_64bit' ?obj[key]= pathHandle(obj[key],pathData.download_basePath): '';
         key == 'videoUrl' ?obj[key]= pathHandle(obj[key],pathData.video_basePath): '';
         key == 'videoProductUrl' ?obj[key]= pathHandle(obj[key],pathData.videoProduct_basePath): '';
         key == 'manualUrl' ?obj[key]= pathHandle(obj[key],pathData.manual_basePath): '';

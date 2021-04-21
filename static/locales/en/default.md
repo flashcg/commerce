@@ -21,7 +21,7 @@ handleSetting:
   # - handleName: Blue-Cloner Diamond
   #   path: blue-cloner-diamond
   - handleName: OpenCloner Ripper
-    path: open-cloner-ripper     
+    path: open-cloner-ripper   
 globalName:
   ok: OK
   submit: Submit
@@ -59,6 +59,7 @@ globalName:
   standard: Standard
   lifetime: Lifetime
   license: License
+  totalResults: Total Results
   searchPlaceholder: Enter your keywords
 menuTop: 
   - name: Blu-ray and DVD Copy
@@ -94,7 +95,7 @@ menuTop:
             path: unsupported-content
             variant: #primary
         children: #handleName
-          - DVD-Cloner
+          - OpenCloner Ripper
           - DVD-Cloner Gold
           - DVD-Cloner
           - DVD-Cloner
@@ -139,7 +140,7 @@ menuTop:
             path: video-guide
           - name: Upgrade Center
             iconUrl: upgrade-center.png
-            path: upgrade-center
+            path: upgrade
           - name: Contact Us
             iconUrl: contact-us.png
             path: contact   
@@ -218,8 +219,6 @@ video_basePath: https://s1.occld.com/video/dc_com_web
 videoProduct_basePath: https://s1.occld.com/video/products/
 
 
-newverValidDay: 3
-
 #页面通用组件定义区
 jumbotronPromotion:
   - template: overlay
@@ -234,20 +233,11 @@ jumbotronPromotion:
     bgStyle:
       color: white
       opacity: false
-newsletter:
-  name: Newsletter
-  container: container
-  title: ClonerAlliance Newsletters
-  textTop: 
-  buttonText: Subscribe
-  textBottom: Subscribe to receive the latest ClonerAlliance information via email. You can receive news about our latest releases or promotion, or be advised when updates are available for the hardware you are interested in.
 productDesTable:
   name: Name
   data: Data       
-cookieNotice:
-  text: |
-    We use cookies to enhance site navigation, analyze site usage, and assist us to improve your website experience.
-  button: Allow
+formInfo:
+  fillOut: Please fill out the form
 productRecommend:
   name: Recommend
   container: container

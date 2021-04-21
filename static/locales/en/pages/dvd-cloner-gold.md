@@ -12,6 +12,8 @@ abbrName: DG
 handleName: DVD-Cloner Gold
 name: DVD-Cloner Gold
 type: DVD Copy 
+logo:
+  iconUrl: icon/dc2021-gold.png
 boxes:
   - imageUrl: dc2021-gold-box.png #默认盒子图
   - imageUrl: dc2021-gold-box-ref.png #带阴影盒子图

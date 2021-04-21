@@ -15,7 +15,7 @@
       active-nav-item-class="border-gray font-weight-bold"
       content-class="mt-3"
       :class="data.container"
-    >
+    ><slot :items="Array.isArray(data)?data:data.items">
       <b-tab
         :title="item.title"
         title-link-class="border-bottom-colorNone bg-transparent rounded-0"
@@ -37,6 +37,7 @@
         </b-col>
         </b-row>
       </b-tab>
+      </slot>
     </b-tabs>
   </div>
 </template>

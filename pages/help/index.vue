@@ -33,7 +33,6 @@
 <script>
 import jumbotron from "@/components/jumbotron";
 import iconBlock from "@/components/iconBlock";
-import newsletter from "@/components/newsletter";
 
 export default {
   async asyncData({ app, $content }) {
@@ -45,7 +44,7 @@ export default {
     return this.head;
   },
   layout: "fluid",
-  components: { jumbotron, iconBlock, newsletter },
+  components: { jumbotron, iconBlock },
   data() {
     
     return { activeTabName: "", currentPath1: "",currentPath2: "" };

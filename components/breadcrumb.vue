@@ -24,16 +24,28 @@ export default {
         let currentArray = [];
 
         pathArray.map((res, index) => {
-          rePathArray.push("/" + pathArray[index]);
+          rePathArray.push("/" + pathArray[index]+"/");
           rePath = rePathArray.join("");
           let string = this.$retoLower(res, "-")
-          currentArray.push({ text: this.$retoLower(string, "_"), to: rePath });
+          switch (string) {
+            case 'dvd cloner':
+              string = 'DVD-Cloner'
+              break;          
+            case 'blue cloner':
+              string = 'Blue-Cloner'
+              break;       
+          }
+          currentArray.push({ text: string, to: rePath });
+      
+
         })
        // this.breadcrumbData.push(currentArray);
         return this.breadcrumbData.concat(currentArray)
       }
     }
   },
-  mounted() {}
+  mounted() {
+
+  }
 };
 </script>

@@ -4,7 +4,8 @@ softwareInfo:
   items:   
     - handleName: DVD-Cloner
       downloadUrl: dcloner.exe
-      upgradeUrl: /dvd-cloner/upgrade/    
+      downloadUrl_64bit: dcloner64bit.exe
+      upgradeUrl: /dvd-cloner/upgrade 
       standard:
         comparePrice:
         price: 59.99
@@ -14,8 +15,7 @@ softwareInfo:
         buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965249]=1
     - handleName: DVD-Cloner Gold   
       downloadUrl: dvdcloner_gold.exe
-      download_64Bit:
-        downloadUrl: dvd-cloner-gold_x64.exe
+      downloadUrl_64bit: dvd-cloner-gold_x64.exe
       standard:
         comparePrice:
         price: 79.99
@@ -24,9 +24,8 @@ softwareInfo:
         price: 399.99
         buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965254]=1        
     - handleName: OpenCloner Ripper 
-      upgradeUrl: /open-cloner-ripper/upgrade/
-      download_64Bit:
-        downloadUrl: opencloner-ripper.exe
+      upgradeUrl: /open-cloner-ripper/upgrade
+      downloadUrl_64bit: opencloner-ripper.exe
       standard:
         comparePrice:
         price: 59.99

@@ -19,7 +19,7 @@
             </div>
             <div class="position-absolute fill-position" :style="{backgroundImage:'url(' + item.bgStyle.imageUrl + ')',backgroundPositionY:item.bgStyle.positionY+'%',backgroundSize:'cover',zIndex:item.bgStyle.video&&item.bgStyle.video.layout&&item.bgStyle.video.layout=='bottom'?'1':'auto'}"></div>
 
-            <div v-if="item.bgStyle&&item.bgStyle.video" class="d-xxl-block d-none position-absolute fill-position"> 
+            <div v-if="item.bgStyle&&item.bgStyle.video" class="d-xl-block d-none position-absolute fill-position"> 
         
               <video muted :src="item.bgStyle.video.videoUrl" class="videoPlayer" autoplay :poster="item.bgStyle.video.poster&&item.bgStyle.video.poster.imageUrl" style="width:100%"></video>
             </div>

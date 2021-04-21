@@ -89,4 +89,4 @@ cache
 .env
 compiledJS
 releaseState.json
-static/source/
+source

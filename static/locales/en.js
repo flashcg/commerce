@@ -14,6 +14,7 @@ function foreachObj(obj) {
       key == 'imageUrl' && obj[key]|| key == 'iconUrl'  ? obj[key] = imagesPathData + obj[key] : '';          
       key == 'kbUrl'  && obj[key]? obj[key] = kbUrlData + obj[key] : '';
       key == 'downloadUrl'  && obj[key] ? obj[key] = downloadUrlData + obj[key] : '';
+      key == 'downloadUrl_64bit'  && obj[key] ? obj[key] = downloadUrlData + obj[key] : '';
       if (typeof (obj[key]) == 'object') {
         foreachObj(obj[key]);
       }
