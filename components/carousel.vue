@@ -12,12 +12,14 @@
         <template v-for="(item,itemIndex) in  data.items">
         <div class="swiper-slide"  :key="itemIndex" >
             <div :class="data.itemContainer">
-                <p v-if="item.html" v-html="item.html"></p>
+                <p v-if="data.imageLink == 'self'"><b-link @click="lightBoxIndex = itemIndex"><b-img :src="item.imageUrl" fluid></b-img></b-link> </p>              
+                <p v-else-if="item.html" v-html="item.html"></p>
                 <p v-else-if="item.text">{{item.text}} </p>
+
                 <p v-else-if="item.imageUrl"><b-img :src="item.imageUrl" fluid></b-img> </p>
             </div>
         </div>
-      </template>
+      </template>       
       </client-only>
       </div>
       <!-- If we need pagination -->
@@ -27,13 +29,21 @@
       <div class="swiper-button-prev" slot="button-prev"></div>
       <div class="swiper-button-next" slot="button-next"></div>
     </div>
+        <CoolLightBox v-if="data.imageLink == 'self'"
+          :items="images" 
+          :index="lightBoxIndex"
+          @close="lightBoxIndex = null">
+        </CoolLightBox>     
   </div>
 </template>
  
 <script >
+import CoolLightBox from 'vue-cool-lightbox'
+import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 export default {
   data() {
     return {
+      lightBoxIndex:null,
       swiperOption: {
         autoplay: {
           delay:5000
@@ -48,8 +58,14 @@ export default {
       },
     };
   },
+  components: { CoolLightBox},
   props: {data:{type:Object,require:true}},
-
+  computed:{
+    images(){
+      console.log(this.data.items);
+      return this.data.items.map(res=> res.imageUrl || res.iconUrl)
+    }
+  },
   methods: {},
 };
 </script>

@@ -45,14 +45,13 @@ screenshot:
   button:
   additionClass: position-relative text-center text-light
   bgStyle: dark-opacity-8
+  iconLink: self
   icon:
     - iconUrl: dc-2021_screenshot_1.png
       text: One click to make 1:1 DVD copy or compress one DVD-9 movie to a DVD-5 DVD±R/RW disc.
-      url: /dvd-cloner/dvd-cloner-screenshot-express
       additionClass:
     - iconUrl: dc-2021_screenshot_2.png
       text: Movie complete copy, Full 1:1 DVD disc copy, Movie-only copy, Split copy and Movie customized copy.
-      url: /dvd-cloner/dvd-cloner-screenshot-expert
       additionClass:
   iconGird: 2
 WhyChoose:
@@ -128,7 +127,7 @@ bonus:
   name: Free Software
   active: true
   title: DVD-Cloner's Bonus Software
-  additionClass:
+  additionClass: bg-dark-opacity-1
   items:
     - handleName: Open DVD Ripper Lite
     - handleName: Stream-Cloner Lite

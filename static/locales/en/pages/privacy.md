@@ -13,7 +13,7 @@ breadcrumb: Privacy Policy
 
 This privacy policy sets out how OpenCloner uses and protects any information that you give OpenCloner when you use this website.
 
-OpenCloner Inc. is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, and then you can be assured that it will only be used in accordance with GDPR. For details on our EU Data Protection policies and GDPR compliance, please see here: [https://www.dvd-cloner.com/privacy-for-GDPR.html](privacy-for-GDPR.html)
+OpenCloner Inc. is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, and then you can be assured that it will only be used in accordance with GDPR. For details on our EU Data Protection policies and GDPR compliance, please see here: [https://www.dvd-cloner.com/privacy-for-GDPR](/privacy-for-GDPR/)
 
 **Information Collected**
 

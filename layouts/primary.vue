@@ -2,7 +2,7 @@
 <div id="Page">
   <headerNav /> 
   <breadcrumb :data="$route.path" />
-  <main>
+  <main class="bg-light">
     <nuxt />
   </main>
   <footer-block />

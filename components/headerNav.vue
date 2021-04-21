@@ -1,6 +1,22 @@
 <template>
-<header>
-	<b-navbar id="headNav" type="dark" ref="nav" variant="dark" toggleable="lg" :class="isMobile?'mobile-nav '+className:className" :style="'transition:0.2s;top:'+-topHeight+'px'">
+
+<header :class="isMobile?'mobile-nav '+className:className" :style="'transition:0.2s;top:'+-topHeight+'px'">
+  <div id="header-search" class="bg-gray position-relative"> 
+  <div class="d-flex flex-sm-row flex-column text-light bg-dark-opacity-4 justify-content-end">
+    <b-form @submit.prevent="searchSubmit">
+    <b-form-group class="m-2" label="Search" label-for="searchKey" label-cols="3" label-size="sm">      
+        <b-input-group size="sm">
+          <b-form-input id="searchKey" v-model="searchKey" size="sm" name="searchKey" class="search-top"></b-form-input>
+        <b-input-group-append>
+      <b-button variant="secondary" type="submit" size="sm"><b-icon icon="search"></b-icon></b-button>
+
+    </b-input-group-append>
+  </b-input-group>
+      </b-form-group>
+      </b-form>
+    </div>
+    </div>
+	<b-navbar id="headNav" type="dark" ref="nav" variant="dark"  toggleable="lg" >
 		
 		<b-navbar-brand :to="localePath('index')" :title="$t('name')"><b-img src="/logo.png" style="max-width:260px" fluid  />
     </b-navbar-brand>
@@ -49,10 +65,10 @@
 			<li :class="`dropdown ${object.additionClass?object.additionClass:''}`" v-for="(object,index) in $t('menuTop')"  @mouseover="overAction($event,index)" @mouseleave="leaveAction($event,index)" :key="index">
 				<b-link class="level1" :to="object.path?'/'+object.path+'/':object.path">{{object.name}}</b-link>
         <div class="subNavbar-nav position-md-fixed fill-to-up-position">
-          <a class="arrow arrow-right align-items-center justify-content-end" href="#" @click="navNext($event)"><b-img fluid src="~static/images/chevron-compact-right.png" /></a>
-          <div v-if="object.items" :ref="'subNav'+index" :style="'transform:translateX('+stepWidth+'px)'" class=" d-flex justify-content-center pt-4 pt-md-9 "> 
+   
+          <div v-if="object.items" :ref="'subNav'+index" :style="'transform:translateX('+stepWidth+'px)'" class=" d-flex justify-content-center pt-4 pt-md-10 "> 
             
-            <ul class="navbar-nav text-light flex-fill justify-content-center flex-wrap pb-2" v-for="(subList,subIndex) in object.items" :key="subIndex" :ref="'subList'+subIndex">              
+            <ul class="navbar-nav text-light flex-fill justify-content-center flex-wrap pt-4 pb-2" v-for="(subList,subIndex) in object.items" :key="subIndex" :ref="'subList'+subIndex">              
               <li :class="object.template == 'product'?'nav-item flex-fill':'nav-item'" v-for="(item,itemIndex) in subList.children" :key="itemIndex" >
                 
                 <template v-if="typeof(item)=='string'">
@@ -110,6 +126,7 @@ export default {
       if (menuTop[i].items&& menuTop[i].items.length >0) menuState['item'+[i]+'_isVisible'] = false
     }
     return {
+      searchKey:'',
       hover: false,
       hoverTime: null,
       droppedWaiting: false,
@@ -132,7 +149,9 @@ export default {
 
   },
   methods: {
-
+    searchSubmit(){
+      this.$router.push({path:'/search/',query:{searchKey:this.searchKey}})
+    },
     overAction(event, index) {
       let subNav = event.currentTarget.children[1];
       this.hover = true;
@@ -171,31 +190,7 @@ export default {
           currentDom = currentDom.parentNode;
       }
     },
-    navNext(event) {
-      let currentDom = event.currentTarget.nextElementSibling,
-       translateWidth = Math.abs(Number(currentDom.style.transform.split('(')[1].slice(0,-3))),
-       distance = Math.abs(Number(currentDom.style.transform.split('(')[1].slice(0,-3)))+this.itemWidth+48; 
 
-
-      var outWidth =()=>{
-        let hideWidth = currentDom.clientWidth-translateWidth-this.screenWidth;       
-        console.log(hideWidth,translateWidth);
-        
-
-        if (hideWidth>0 && hideWidth>this.screenWidth/2) {
-          
-          return (this.screenWidth+translateWidth)*0.75
-          
-        } else if(hideWidth>0){
-          
-           return hideWidth+translateWidth+50
-        } else if (hideWidth<=0) {
-          
-        }
-      }
-      
-      currentDom.style.transform = "translateX(" + (-outWidth()) + "px)";
-    }
   },
   watch: {
     hover(curVal, oldVal) {
@@ -220,36 +215,34 @@ export default {
 
     this.isMobile = this.$isMobile();
     this.screenWidth = this.$isMobile("width");
-    let nav = document.getElementById('headNav')
-    var arrowInit = ()=> {
-      for (let i in this.$refs) {
-        let element = this.$refs[i][0],
-          screenWidth = this.screenWidth;
-
-        if (screenWidth < (element&&element.clientWidth)) {
-          let parent = element.parentNode.parentNode;
-
-          parent.classList.add("is-scrollable");
-          //console.log(parent.classList);
-        } else {
-          element&&element.parentNode.classList.remove("is-scrollable");
-        }
-      } 
-    }
-    arrowInit()
-
+    let nav = document.getElementById('headNav'),search = document.getElementById('header-search');
 
     window.addEventListener("resize", () => {
       this.isMobile = this.$isMobile();
-      this.screenWidth = this.$isMobile("width");
-      arrowInit()
+
     });
 
     //如果是产品页，nav下拉时收起
-    let navFold=()=>{
-      this.template=='product'&&window.scrollY>120?this.topHeight = nav.offsetHeight:this.topHeight = 0
-    }    
-    navFold();
+    const navFold=()=>{
+      let scrollY = window.scrollY;
+      if (this.template=='product') {
+        if (scrollY>0 && scrollY<120) {
+          this.topHeight = search.offsetHeight
+        } else if(scrollY>120) {
+          this.topHeight = search.offsetHeight + nav.offsetHeight
+        } else {
+          this.topHeight = 0
+        }
+      } else {
+        if (scrollY>0) {
+          this.topHeight = search.offsetHeight
+        } else {
+          this.topHeight = 0
+        }
+      }
+
+    }
+    navFold()
     window.addEventListener('scroll',()=>{
       navFold()
     })    

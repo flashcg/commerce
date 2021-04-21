@@ -1,5 +1,8 @@
 ---
 handleName: DVD-Cloner
+currentSize: 64.2
+currentSize_64bit: 69.4
+systemRequirement: Windows 10/7/Vista
 newver:
     active: true
     link:

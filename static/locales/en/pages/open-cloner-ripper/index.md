@@ -18,8 +18,8 @@ logo:
   iconUrl: icon/ocr-2020.png
   imageUrl: dc-logo-2021.png
 boxes:
-  - imageUrl: dc2021-box.png #默认盒子图
-  - imageUrl: ocr2020-box-ref.png #带阴影盒子图
+  - imageUrl: ocr2021-box.png #默认盒子图
+  - imageUrl: ocr2021-box-ref.png #带阴影盒子图
 desc:
   shortText: All-In-One solution to rip DVD/Blu-ray/UHD movies, convert video files and rip iTunes movies.
   longText: |
@@ -40,6 +40,7 @@ screenshot:
   active: true
   container: container-fluid
   title: OpenCloner Ripper Screenshoot
+  imageLink: self
   additionClass: software-interface bg-dark-opacity-2
   itemContainer: container
   items:

@@ -1,13 +1,14 @@
 <template>
-<div v-if="data" :id="$handlify(data.name)" class="products-info position-relative py-lg-8 py-6 bg-dark text-light">  
+<div v-if="data" :id="$handlify(data.name)" class="products-info position-relative py-lg-8 py-6 " :class="`${data.additionClass||`bg-dark text-light`}`">  
    <b-container class="position-relative zIndex">
-      <b-row>
-        <b-col sm="12"><h2 class="mb-4 text-left">{{data.title||itemInfo.name}} </h2></b-col>
+      <b-row :class="data.type == 'download'?'flex-row-reverse':''">
+        <b-col sm="12"><h2 :class="`mb-4 text-left ${data.type == 'download'?'text-danger':''}`">{{data.title||itemInfo.name}} </h2></b-col>
         <b-col sm="3" align-self="start">
           <b-img :src="itemInfo.boxSrc" fluid />
           <b-img v-if="!standard" class="lifetime-icon" fluid src="~static/images/vip_lifetime.png" />
         </b-col>
-        <b-col sm="9">
+
+        <b-col sm="9" v-if="data.type != 'download'">
           <client-only>    
           <p v-if="data.topAdditionText"  class="whiteSpace-preline" v-html="data.topAdditionText"></p>
           <p v-html="itemInfo.desc"  class="whiteSpace-preline"></p>
@@ -19,25 +20,44 @@
               $t("globalName.standard")+' '+$t("globalName.license")
               :$t("globalName.lifetime")+' '+$t("globalName.license")}} </span><br />
             <b-button-group size="md" >
-              <b-button squared variant="outline-warning" :pressed="standard" @click="standard=true">{{$t("globalName.standard")}} </b-button>
-              <b-button squared variant="outline-warning" :pressed="!standard" @click="standard=false">{{$t("globalName.lifetime")}}</b-button>
+              <b-button squared :variant="data.type=='order'?'outline-dark':'outline-warning'" :pressed="standard" @click="standard=true">{{$t("globalName.standard")}} </b-button>
+              <b-button squared :variant="data.type=='order'?'outline-dark':'outline-warning'" :pressed="!standard" @click="standard=false">{{$t("globalName.lifetime")}}</b-button>
             </b-button-group>
             </div>          
           </template>
           
-          <p class="fs-4" v-if="itemSaleInfo.standard">{{standard?$t('softwareInfo.currency')+itemSaleInfo.standard.price:$t('softwareInfo.currency')+itemSaleInfo.lifetime.price}} <b-link v-if="!standard" href="/special-offer/" class="fs-6 text-red-light" sc>{{$t('globalName.get50off')}} </b-link>
-          
+          <p class="fs-4" v-if="itemSaleInfo.standard">{{standard?$t('softwareInfo.currency')+itemSaleInfo.standard.price:$t('softwareInfo.currency')+itemSaleInfo.lifetime.price}} <b-link v-if="!standard" to="/special-offer/" class="fs-6 text-red-light" sc>{{$t('globalName.get50off')}} </b-link>          
           </p>
           <p>
-          <b-button v-if="itemSaleInfo.standard" squared variant="danger" size="lg" :href="standard?itemSaleInfo.standard.buyLink:itemSaleInfo.lifetime.buyLink" class="mt-2">{{$t("globalName.buy")}} </b-button>
+          <b-button v-if="itemSaleInfo.standard" squared variant="danger" :size="data.type=='order'?'xl':'lg'" :href="standard?itemSaleInfo.standard.buyLink:itemSaleInfo.lifetime.buyLink" class="mt-2">{{$t("globalName.buy")}} </b-button>
+          <template v-if="data.type!='order'">
           <b-button v-if="itemSaleInfo.downloadUrl" squared variant="success" size="lg" :href="itemSaleInfo.downloadUrl" class="mt-2">{{$t("globalName.download")}} </b-button>
           <b-button v-if="itemSaleInfo.download_64Bit" squared variant="success" size="lg" :href="itemSaleInfo.download_64Bit.downloadUrl" class="mt-2">{{`${$t("globalName.download")} 64 Bit`}} </b-button>          
-          <b-button v-if="itemSaleInfo.upgradeUrl" squared variant="outline-light" size="lg" :to="itemSaleInfo.upgradeUrl" class="mt-2">{{$t("globalName.upgrade")}} </b-button>          
+          <b-button v-if="itemSaleInfo.upgradeUrl" squared variant="outline-light" size="lg" :to="`${itemSaleInfo.upgradeUrl}/`" class="mt-2">{{$t("globalName.upgrade")}} </b-button> 
+          </template>         
           </p>
-          <p v-if="data.button&&data.button.additionText" v-html="data.button.additionText"></p>
+          <p v-if="data.button&&data.button.additionText" class="whiteSpace-preline" v-html="data.button.additionText"></p>
           <p v-if="itemSaleInfo.standard"><b-img fluid src="~static/images/credit_cards.gif" style="max-width:300px"  /> </p>
         </client-only> 
         </b-col>
+
+        <b-col sm="9" v-else>
+          <h3>{{`${itemInfo.name} V${itemInfo.release.version}`}}  </h3>
+          <h5 >Size:  <span class="lead">{{itemInfo.currentSize}}MB</span></h5>
+          <h5>System Requirements: <span class="lead">{{itemInfo.systemRequirement}}</span> </h5>
+          <h5><span class="lead">{{data.button.additionText}}</span> </h5>
+          <p><b-button v-if="itemSaleInfo.downloadUrl" squared variant="success" size="xl" :href="itemSaleInfo.downloadUrl" class="mt-2">{{$t("globalName.download")}} </b-button></p>
+          <h3>{{`${itemInfo.name} 64Bit V${itemInfo.release.version}`}}  </h3>
+          <h5>Size:  <span class="lead">{{itemInfo.currentSize_64bit}}MB</span></h5>  
+          <p><b-button v-if="itemSaleInfo.downloadUrl_64bit" squared variant="success" size="xl" :href="itemSaleInfo.downloadUrl_64bit" class="mt-2">{{$t("globalName.download")}} 64BIT</b-button></p>                  
+        </b-col>
+        <b-col sm="12" v-if="data.button&&data.button.extraItem">
+
+        <hr class="dark-opacity-1" />
+        <b-button v-for="(item,index) in data.button.extraItem" :key="index" :to="`/${item.path}/`" :href="item.kbUrl" variant="outline-dark" class="mr-2">{{item.text}} </b-button> 
+
+        </b-col>
+
       </b-row>      
     </b-container>  
     <div v-if="data.bgStyle " :class="backgroundClass" :style="backgroundStyle"></div>
@@ -108,7 +128,6 @@ export default Vue.extend({
   },
   mounted() {
 
-    
   }
 });
 </script>

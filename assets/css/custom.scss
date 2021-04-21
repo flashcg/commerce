@@ -64,6 +64,7 @@ $theme-colors: (
   "gray": rgb(128, 128, 128),
   "gray-light": rgb(170, 170, 170),
   "red-light": #ff6170,
+  "red-dark": #5f0a12,
   "gray-more-light": rgba(0, 0, 0, 0.1),
   "blue-dark": rgba(50,52,60,1),
   "blue-less-dark" : #0c3e73,
@@ -77,6 +78,7 @@ $theme-colors: (
   "dark-opacity-8": rgba(0, 0, 0, 0.8),
   "dark-opacity-7": rgba(0, 0, 0, 0.7),
   "dark-opacity-6": rgba(0, 0, 0, 0.6),
+  "dark-opacity-5": rgba(0, 0, 0, 0.5),
   "dark-opacity-4": rgba(0, 0, 0, 0.4),
   "dark-opacity-3": rgba(0, 0, 0, 0.3),
   "dark-opacity-2": rgba(0, 0, 0, 0.2),
@@ -93,13 +95,53 @@ $modal-inner-padding:  1.75rem 1rem;
 $modal-footer-border-width: 0;
 $transition-color:color 0.3s;
 
+
 @import 'bootstrap/scss/bootstrap.scss';
 @import 'bootstrap-vue/src/index.scss';
+
+$enable-responsive-font-sizes:true;
+
+h1, .h1 { @include font-size($h1-font-size); }
+h2, .h2 { @include font-size($h2-font-size); }
+h3, .h3 { @include font-size($h3-font-size); }
+h4, .h4 { @include font-size($h4-font-size); }
+h5, .h5 { @include font-size($h5-font-size); }
+h6, .h6 { @include font-size($h6-font-size); }
 
 body{
   background-color: #e4e4e4;
 }
+
+
+  .shadow-box {
+    background-color: rgba(0, 0, 0, 0.05);
+    position: relative;
+    padding: 1rem;
+    height: 100%;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid map-get($theme-colors ,"dark-opacity-1");
+    transition: all 0.3s ease-in-out;
+   &:hover{
+    box-shadow: 0px 0px 10px rgba(78, 78, 78, 0.1);
+    background-color: #fff;
+   } 
+}
+
+.card-deck .card{
+  &[class *=col-]{
+    flex:auto;
+  }
+  
+}
 /* overrides navbar */
+input{
+  &.search-top{
+    width: auto;
+    
+  }
+}
 
 [class *=text-] .nav-link{color: inherit;transition: $transition-color}
 .text-white .nav-link:hover{color: rgba($color:$white, $alpha: 0.5)}
@@ -112,6 +154,10 @@ body{
   .nav-link{padding: 0.5rem ;}
   &>li>a.nav-link{    padding: 0;}
 }
+
+
+  #header-search{z-index: 11;}
+
 
 .navbar-dark svg.icon-link{transition: all 0.2s ease-in;transform:rotate(0deg)}
 .navbar-dark .dropped svg.icon-link{transform:rotate(90deg)}
@@ -218,7 +264,7 @@ transition: top 0.5s ease-in-out;white-space: pre-line;
     color: rgba($white,.7);
   }
 }
-.fixed-top.navbar.bg-dark{ background: rgba(17,17,21,.7) !important}
+.fixed-top .bg-dark{ background: rgba(36, 36, 36, 0.9) !important}
 .badge.corner{position: absolute;top: 0;right: -8px;}
 .navbar{font-size: 1rem;z-index:10}
 
@@ -281,7 +327,7 @@ blockquote {
     > p {margin: 0;}
 }
 
-hr {border: 0;    border-top: 1px solid #eaecef}
+
 strong {font-weight: 600}
 h1,h2,h3,h4,h5,h6 {line-height: 1.25}
 /* h1,h2{color: black;} */
@@ -327,22 +373,15 @@ a.disabled{ pointer-events: none
 
 
 /* The default style of documents */
-.fs-1{font-size:2.75rem !important}
-.fs-2{font-size: 2.25rem !important}
-.fs-3{font-size: 2rem !important}
-.fs-4{font-size: 1.75rem !important}
-.fs-5{font-size: 1.50rem !important}
-.fs-6{font-size: 1.25rem !important}
-.fs-7{font-size: 1.125rem !important}
+.fs-1{@include responsive-font-size(2.5rem ,true)}
+.fs-2{@include responsive-font-size(2.25rem ,true)}
+.fs-3{@include responsive-font-size(2rem ,true)}
+.fs-4{@include responsive-font-size(1.75rem ,true)}
+.fs-5{@include responsive-font-size(1.5rem ,true)}
+.fs-6{@include responsive-font-size(1.25rem ,true)}
+.fs-7{@include responsive-font-size(1rem ,true)}
 
 .text-bold{font-weight: bold}
-
-
-@include media-breakpoint-down(md){
-  .fs-1{font-size: 2.25rem !important}
-  .fs-2{font-size: 1.85rem !important}
-  .fs-3{font-size: 1.5rem !important}
-}
 
 
 

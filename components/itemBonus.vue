@@ -2,7 +2,7 @@
   <div
     v-if="data&&data.active"
     :id="$handlify(data.name)"
-    :class="`py-lg-8 py-6 bg-dark-opacity-1 ${data.additionClass}`"
+    :class="`py-lg-8 py-6 ${data.additionClass}`"
   >
     <b-container>
       <h2 v-if="data.title">{{ data.title }}</h2>
@@ -42,7 +42,7 @@ interface DataConfig {
 
 export default defineComponent({
   name: "item-bonus",
-  props: { data: { type: Object as PropType<DataConfig>, required: true } },
+  props: { data: { type: Object as PropType<DataConfig> } },
   setup(props) {
      const {state} = useStore() as any,products = computed((res)=>state.localData.productData as ProductDataConfig[]|undefined);
      const itemFn = (handleName:string)=>{

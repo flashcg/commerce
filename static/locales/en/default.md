@@ -21,7 +21,7 @@ handleSetting:
   # - handleName: Blue-Cloner Diamond
   #   path: blue-cloner-diamond
   - handleName: OpenCloner Ripper
-    path: open-cloner-ripper     
+    path: open-cloner-ripper   
 globalName:
   ok: OK
   submit: Submit
@@ -59,6 +59,7 @@ globalName:
   standard: Standard
   lifetime: Lifetime
   license: License
+  totalResults: Total Results
   searchPlaceholder: Enter your keywords
 menuTop: 
   - name: Blu-ray and DVD Copy
@@ -94,7 +95,7 @@ menuTop:
             path: unsupported-content
             variant: #primary
         children: #handleName
-          - DVD-Cloner
+          - OpenCloner Ripper
           - DVD-Cloner Gold
           - DVD-Cloner
           - DVD-Cloner
@@ -139,7 +140,7 @@ menuTop:
             path: video-guide
           - name: Upgrade Center
             iconUrl: upgrade-center.png
-            path: upgrade-center
+            path: upgrade
           - name: Contact Us
             iconUrl: contact-us.png
             path: contact   
@@ -210,15 +211,13 @@ copyright:
 
 
 #网站通用变量区
-imagesPath: https://s1.occld.com/images/
+imagesPath: http://192.168.31.206:5000/img/
 KB_basePath: https://www.cloner-alliance.com/help/knowledgebase/
 download_basePath: https://static.cloner-alliance.com/download/
 manual_basePath: https://static.cloner-alliance.com/manual/
-video_basePath: https://s1.occld.com/videos/
+video_basePath: http://192.168.31.206:5000/video/
 videoProduct_basePath: https://static.cloner-alliance.com/video/products/
 
-
-newverValidDay: 3
 
 #页面通用组件定义区
 jumbotronPromotion:
@@ -234,20 +233,11 @@ jumbotronPromotion:
     bgStyle:
       color: white
       opacity: false
-newsletter:
-  name: Newsletter
-  container: container
-  title: ClonerAlliance Newsletters
-  textTop: 
-  buttonText: Subscribe
-  textBottom: Subscribe to receive the latest ClonerAlliance information via email. You can receive news about our latest releases or promotion, or be advised when updates are available for the hardware you are interested in.
 productDesTable:
   name: Name
   data: Data       
-cookieNotice:
-  text: |
-    We use cookies to enhance site navigation, analyze site usage, and assist us to improve your website experience.
-  button: Allow
+formInfo:
+  fillOut: Please fill out the form
 productRecommend:
   name: Recommend
   container: container

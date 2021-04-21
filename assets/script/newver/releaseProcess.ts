@@ -4,7 +4,7 @@ import { FileCreator, FilesProcess } from './vueProcess';
 
 const fs = require('fs'), archiver = require('archiver'), request = require('request'),
   path = require('path'), myDate = new Date(), mdBasePath = "./static/locales/", zipBasePath = "./static/", xmlBasePath = "./static/xml/",
-  yamlFront = require("yaml-front-matter"), xml2js = require('xml2js'), releaseJsonPath = `${zipBasePath}releaseState.json`;
+  yamlFront = require("yaml-front-matter"), xml2js = require('xml2js'), releaseJsonPath = `${mdBasePath}en/releaseState.json`;
 
 interface DefaultData {
   handleSetting: { [prop: string]: string }[];
@@ -175,7 +175,7 @@ class ReleaseProcess extends FilesProcess {
         let sourceJson = new FileCreator({ mdPath: mdFileFullPath }).jsonData;
         //处理数据
         delete sourceJson.handleName;
-        sourceJson.newver.size = mdJson.newver.size;
+        sourceJson.currentSize = mdJson.currentSize;
         Object.assign(mdJson, sourceJson);
 
 
@@ -187,7 +187,7 @@ class ReleaseProcess extends FilesProcess {
 
           let newverData: NewverData = mdJson.release[0], productData = this.productData(mdJson.handleName);
 
-          if (mdJson.newver.size) newverData.size = mdJson.newver.size;
+          if (mdJson.currentSize) newverData.size = mdJson.currentSize;
 
           mdJson.newver.release && Object.assign(newverData, mdJson.newver.release);
           Object.assign(newverData, productData, { link: mdJson.newver.link }, mdJson.newver.style);
