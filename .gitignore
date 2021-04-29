@@ -90,3 +90,8 @@ cache
 compiledJS
 releaseState.json
 source
+package.json
+package-lock.json
+static/newver.zip
+static/newver-bc.zip
+static/newver-dg.zip
