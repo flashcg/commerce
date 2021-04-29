@@ -49,22 +49,22 @@
     <Program_Change_Info>Supports more new DVD movies. Optimized some details about the user interface.</Program_Change_Info>
     <Program_Specific_Category>Video</Program_Specific_Category>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
-    <Program_System_Requirements>Minimum configuration:&#xD;
-Pentium-II 450 MHz&#xD;
-64MB of RAM&#xD;
-5GB free hard disk space for DVD-5 (10GB free hard disk space for DVD-9)&#xD;
-DVD burners&#xD;
-Windows XP&#xD;
-Recommended configuration:&#xD;
-Intel Core2 CPU&#xD;
-2GB of RAM&#xD;
-10GB free hard disk space&#xD;
-DVD burners, Blu-ray burners&#xD;
-Windows Vista, 7, 8, 8.1, 10&#xD;
-For Blu-ray copy:&#xD;
-NTFS partition&#xD;
-A Blu-ray disc drive&#xD;
-A Blu-ray media player&#xD;
+    <Program_System_Requirements>Minimum configuration:&#xD;&#xD;
+Pentium-II 450 MHz&#xD;&#xD;
+64MB of RAM&#xD;&#xD;
+5GB free hard disk space for DVD-5 (10GB free hard disk space for DVD-9)&#xD;&#xD;
+DVD burners&#xD;&#xD;
+Windows XP&#xD;&#xD;
+Recommended configuration:&#xD;&#xD;
+Intel Core2 CPU&#xD;&#xD;
+2GB of RAM&#xD;&#xD;
+10GB free hard disk space&#xD;&#xD;
+DVD burners, Blu-ray burners&#xD;&#xD;
+Windows Vista, 7, 8, 8.1, 10&#xD;&#xD;
+For Blu-ray copy:&#xD;&#xD;
+NTFS partition&#xD;&#xD;
+A Blu-ray disc drive&#xD;&#xD;
+A Blu-ray media player&#xD;&#xD;
 50GB or more free disk space</Program_System_Requirements>
     <File_Info>
       <File_Size_Bytes>67318579.2</File_Size_Bytes>
@@ -88,16 +88,16 @@ A Blu-ray media player&#xD;
       <Char_Desc_80>A one-click solution to copy/backup/decrypt/rip your DVD/Blu-ray/4K UHD Blu-ray movies.</Char_Desc_80>
       <Char_Desc_250>DVD-Cloner is a widely-acclaimed professional DVD copy software with perfect output image quality. It can decrypt DVD and clone DVD to any blank disc with diverse copy modes for playback on many media devices including PS4, Xbox, Blu-ray player, etc. Besides, it can copy a DVD to your Windows computer as an ISO file or DVD folders.</Char_Desc_250>
       <Char_Desc_450>DVD-Cloner is a widely-acclaimed professional DVD copy software with perfect output image quality. It can decrypt DVD and clone DVD to any blank disc with diverse copy modes for playback on many media devices including PS4, Xbox, Blu-ray player, etc. Besides, it can copy DVD to your Windows computer as an ISO file or DVD folders. With DVD-Cloner  you can also copy Blu-ray/4K UHD Blu-ray movies to BD-R/REs or your computer and rip DVD/Blu-ray/UHD movies to MKV format for easy storage.</Char_Desc_450>
-      <Char_Desc_2000>
-        
-        DVD-Cloner is a widely-acclaimed professional DVD copy software with perfect output image quality. It can decrypt DVD and clone DVD to any blank disc with diverse copy modes for playback on many media devices including PS4, Xbox, Blu-ray player, etc. Besides, it can copy DVD to your Windows computer as an ISO file or DVD folders. With DVD-Cloner  you can also copy Blu-ray/4K UHD Blu-ray movies to BD-R/REs or your computer and rip DVD/Blu-ray/UHD movies to MKV format for easy storage.&#xD;
-&#xD;
-Key Features&#xD;
-Copy DVD movies to blank DVD±R/RW discs or hard disk&#xD;
-6 diverse copy modes.&#xD;
-Copy Blu-ray/4K UHD to Blu-ray Disc or rip them to MKV Format.&#xD;
-Remove various DVD/Blu-ray/UHD copy protections&#xD;
-Output lossless quality&#xD;
+      <Char_Desc_2000>&#xD;
+        &#xD;
+        DVD-Cloner is a widely-acclaimed professional DVD copy software with perfect output image quality. It can decrypt DVD and clone DVD to any blank disc with diverse copy modes for playback on many media devices including PS4, Xbox, Blu-ray player, etc. Besides, it can copy DVD to your Windows computer as an ISO file or DVD folders. With DVD-Cloner  you can also copy Blu-ray/4K UHD Blu-ray movies to BD-R/REs or your computer and rip DVD/Blu-ray/UHD movies to MKV format for easy storage.&#xD;&#xD;
+&#xD;&#xD;
+Key Features&#xD;&#xD;
+Copy DVD movies to blank DVD±R/RW discs or hard disk&#xD;&#xD;
+6 diverse copy modes.&#xD;&#xD;
+Copy Blu-ray/4K UHD to Blu-ray Disc or rip them to MKV Format.&#xD;&#xD;
+Remove various DVD/Blu-ray/UHD copy protections&#xD;&#xD;
+Output lossless quality&#xD;&#xD;
       </Char_Desc_2000>
     </English>
   </Program_Descriptions>
