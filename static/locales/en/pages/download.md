@@ -9,7 +9,7 @@ breadcrumb:
 template: primary
 areaTop:
     title: Download DVD-Cloner
-    additionClass: shadow-box 
+    additionClass: shadow-box py-lg-8 py-6
     type: download
     button:
         additionText: |    

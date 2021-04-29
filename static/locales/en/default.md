@@ -6,22 +6,23 @@ handleSetting:
     path: dvd-cloner
   - handleName: DVD-Cloner Gold
     path: dvd-cloner-gold
-  # - handleName: DVD-Cloner Platinum
-  #   path: dvd-cloner-platinum
-  # - handleName: DVD-Cloner for Mac
-  #   path: dvd-copy-for-mac  
+  - handleName: DVD-Cloner Platinum
+    path: dvd-cloner-platinum
+  - handleName: DVD-Cloner for Mac
+    path: dvd-copy-for-mac  
   # - handleName: OpenCloner UltraBox
   #   path: openCloner-ultrabox
   - handleName: Blue-Cloner
     path: blue-cloner
+  - handleName: Blue-Cloner Diamond
+    path: blue-cloner-diamond
+  - handleName: OpenCloner Ripper
+    path: open-cloner-ripper       
   - handleName: Stream-Cloner Lite
     path: stream-cloner-lite 
   - handleName: Open DVD Ripper Lite
     path: open-dvd-ripper-lite    
-  # - handleName: Blue-Cloner Diamond
-  #   path: blue-cloner-diamond
-  - handleName: OpenCloner Ripper
-    path: open-cloner-ripper   
+
 globalName:
   ok: OK
   submit: Submit

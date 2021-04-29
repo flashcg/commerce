@@ -5,7 +5,7 @@ metaItems:
     content: ClonerAlliance Inc., founded in 2014, is dedicated to the development of standalone video recorders, capture devices and software.
   - name: keywords
     content: cloneralliance, video, recorder, capture, hdmi, software, 4k, live stream
-breadcrumb: Example
+
 videoBlock:  
   video:
     endedInfo: Fast Professional Efficient

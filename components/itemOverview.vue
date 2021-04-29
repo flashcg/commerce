@@ -1,14 +1,17 @@
 <template>
-<div v-if="data" :id="$handlify(data.name)" class="products-info position-relative py-lg-8 py-6 " :class="`${data.additionClass||`bg-dark text-light`}`">  
+<div v-if="data" :id="$handlify(data.name)" class="products-info position-relative " :class="`${data.additionClass||`bg-dark text-light py-lg-8 py-6`}`">  
    <b-container class="position-relative zIndex">
       <b-row :class="data.type == 'download'?'flex-row-reverse':''">
         <b-col sm="12"><h2 :class="`mb-4 text-left ${data.type == 'download'?'text-danger':''}`">{{data.title||itemInfo.name}} </h2></b-col>
-        <b-col sm="3" align-self="start">
+        <b-col lg="3" align-self="start" class="d-none d-lg-block position-relative">
+          <div v-if="itemInfo.discount" class="discount-box text-warning fs-4" style="width:120px;height:120px;left:-40px;top:-20px">
+                  <span>{{standard?itemInfo.discount.standard:itemInfo.discount.lifetime}} <br/>OFF</span>
+          </div>          
           <b-img :src="itemInfo.boxSrc" fluid />
           <b-img v-if="!standard" class="lifetime-icon" fluid src="~static/images/vip_lifetime.png" />
         </b-col>
 
-        <b-col sm="9" v-if="data.type != 'download'">
+        <b-col lg="9" v-if="data.type != 'download'">
           <client-only>    
           <p v-if="data.topAdditionText"  class="whiteSpace-preline" v-html="data.topAdditionText"></p>
           <p v-html="itemInfo.desc"  class="whiteSpace-preline"></p>
@@ -20,20 +23,20 @@
               $t("globalName.standard")+' '+$t("globalName.license")
               :$t("globalName.lifetime")+' '+$t("globalName.license")}} </span><br />
             <b-button-group size="md" >
-              <b-button squared :variant="data.type=='order'?'outline-dark':'outline-warning'" :pressed="standard" @click="standard=true">{{$t("globalName.standard")}} </b-button>
-              <b-button squared :variant="data.type=='order'?'outline-dark':'outline-warning'" :pressed="!standard" @click="standard=false">{{$t("globalName.lifetime")}}</b-button>
+              <b-button squared :variant="data.type=='order'||data.type=='spList'?'outline-dark':'outline-warning'" :pressed="standard" @click="standard=true">{{$t("globalName.standard")}} </b-button>
+              <b-button squared :variant="data.type=='order'||data.type=='spList'?'outline-dark':'outline-warning'" :pressed="!standard" @click="standard=false">{{$t("globalName.lifetime")}}</b-button>
             </b-button-group>
             </div>          
           </template>
-          
-          <p class="fs-4" v-if="itemSaleInfo.standard">{{standard?$t('softwareInfo.currency')+itemSaleInfo.standard.price:$t('softwareInfo.currency')+itemSaleInfo.lifetime.price}} <b-link v-if="!standard" to="/special-offer/" class="fs-6 text-red-light" sc>{{$t('globalName.get50off')}} </b-link>          
+
+          <p class="fs-3" v-if="itemSaleInfo.standard">{{standard?$t('softwareInfo.currency')+itemSaleInfo.standard.price:$t('softwareInfo.currency')+itemSaleInfo.lifetime.price}} <b-link v-if="!standard&&data.type!='spList'" :to="itemInfo.spPath?itemInfo.spPath+'/':'/special-offer/'" class="fs-6 text-red-light" sc>{{$t('globalName.get50off')}} </b-link>          
           </p>
           <p>
           <b-button v-if="itemSaleInfo.standard" squared variant="danger" :size="data.type=='order'?'xl':'lg'" :href="standard?itemSaleInfo.standard.buyLink:itemSaleInfo.lifetime.buyLink" class="mt-2">{{$t("globalName.buy")}} </b-button>
           <template v-if="data.type!='order'">
-          <b-button v-if="itemSaleInfo.downloadUrl" squared variant="success" size="lg" :href="itemSaleInfo.downloadUrl" class="mt-2">{{$t("globalName.download")}} </b-button>
-          <b-button v-if="itemSaleInfo.download_64Bit" squared variant="success" size="lg" :href="itemSaleInfo.download_64Bit.downloadUrl" class="mt-2">{{`${$t("globalName.download")} 64 Bit`}} </b-button>          
-          <b-button v-if="itemSaleInfo.upgradeUrl" squared variant="outline-light" size="lg" :to="`${itemSaleInfo.upgradeUrl}/`" class="mt-2">{{$t("globalName.upgrade")}} </b-button> 
+          <b-button v-if="itemSaleInfo.downloadUrl" squared variant="success" size="lg" :href="itemSaleInfo.downloadUrl" class="mt-2">{{$t("globalName.download")}} </b-button> 
+          <b-button v-if="itemSaleInfo.downloadUrl_64bit" squared variant="success" size="lg" :href="itemSaleInfo.downloadUrl_64bit" class="mt-2">{{`${$t("globalName.download")} 64 Bit`}} </b-button>          
+          <b-button v-if="itemSaleInfo.upgradeUrl&&data.type!='spList'" squared variant="outline-light" size="lg" :to="`${itemSaleInfo.upgradeUrl}/`" class="mt-2">{{$t("globalName.upgrade")}} </b-button> 
           </template>         
           </p>
           <p v-if="data.button&&data.button.additionText" class="whiteSpace-preline" v-html="data.button.additionText"></p>
@@ -67,18 +70,20 @@
 <script lang="ts">
 import Vue from 'vue'
 import { mapState } from "vuex";
-
+import { fetchItem } from "@/assets/script/tools";
 interface ItemInfoSetting {
   boxSrc: string,
   name:string,
   desc:string,
   handleName:string,
+  saleInfo?:{[props:string]:any}
 }
 
 interface DataSetting {
   bgStyle?: string|{[bgStyleProperty: string]: string;},
   bgPosition?:string,
   imageUrl?:string,  
+  handleName:string
 }
 
 export default Vue.extend({
@@ -95,9 +100,10 @@ export default Vue.extend({
     itemInfo:{type:Object as ()=> ItemInfoSetting,required:true}
   },
   computed:{
-    ...mapState({softwareInfo: (state:any) =>state.i18n.messages.softwareInfo}),
-    itemSaleInfo(){
-      let outData = this.softwareInfo.items.find((res: { handleName: string; })=>res.handleName.toLowerCase() == this.itemInfo.handleName.toLowerCase())||{}  
+    ...mapState({items: (state:any) => state.localData.productData}),
+    itemSaleInfo(){     
+      let outData = this.items&&fetchItem(this.itemInfo.handleName,this.items)?.saleInfo||{}
+      if(this.itemInfo.saleInfo) return this.itemInfo.saleInfo
       return outData
     },
     backgroundStyle():object|void{      
@@ -128,6 +134,8 @@ export default Vue.extend({
   },
   mounted() {
 
+    
   }
+
 });
 </script>

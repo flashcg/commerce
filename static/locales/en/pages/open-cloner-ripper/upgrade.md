@@ -2,16 +2,17 @@
 title: OpenCloner Ripper Upgrade
 metaItems:
   - name: description
-    content: Opencloner - Privacy Policy
+    content: Pay to upgrade OpenCloner Ripper and enjoy one year free updates.
   - name: keywords
     content: Opencloner
-breadcrumb: Privacy Policy
+breadcrumb: 
 template: primary 
 handleName: OpenCloner Ripper
 upgrade:
   name: upgrade
   title: Upgrade
   handleName: OpenCloner Ripper
+  apiUrl: https://www.dvd-cloner.com/cgi-bin/upgradecode_api.cgi
   formItems:
     title: 'Enter your registration information'
     code: true

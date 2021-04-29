@@ -65,11 +65,12 @@
 </template>
  
 <script lang="ts">
+import Vue from 'vue'
 import {
   defineComponent,
   reactive,
   ref,
-  useRoute,
+  useRoute,useRouter,
   computed,
   useStore,
   useContext,
@@ -78,13 +79,14 @@ import {
   ComputedRef,
   watch,
 } from "@nuxtjs/composition-api";
-import { fetchItem } from "@/assets/script/tools";
+import { fetchItem,stringToObj } from "@/assets/script/tools";
 import { ProductDataConfig } from "@/assets/script/interfaceSet";
 
 interface DataConfig {
   name: string;
   title: string;
   handleName: string;
+  apiUrl:string;
   formItems: {
     title: string;
     code: boolean;
@@ -92,12 +94,13 @@ interface DataConfig {
   };
 }
 
+
 export default defineComponent({
   name: "upgradeBlock",
   props: { data: { type: Object as PropType<DataConfig>, required: true } },
   setup(props) {      
     const data = props.data,
-      route = useRoute(),
+      route = useRoute(),router =useRouter(),
       { state } = useStore() as any,
       isValid = ref(true),invalidInfo=ref(''),
       isloading = ref(false),
@@ -113,16 +116,15 @@ export default defineComponent({
         item.value = fetchItem(handleName, products.value);
       };
     itemFn();
-    watch(products, () => itemFn());  
-
-    
-    
+    watch(products, () => itemFn()); 
+   
     const queryCode = route.value.query.code as string,
       queryEmail = route.value.query.email as string;
     if (queryCode) form.code = queryCode;
     if (queryEmail) form.email = queryEmail;
 
     const onSubmit = (event: Event) => {
+      let data:{[props:string]:string};
       event.preventDefault();
       if (!form.email && !form.code) {
         isValid.value = false;
@@ -131,12 +133,34 @@ export default defineComponent({
         isValid.value = true;
         isloading.value = true;
         $axios
-          .get(
-            `https://www.dvd-cloner.com/cgi-bin/upgradecode.cgi?code=${form.code}&email=${form.email}`
-          )
+          .get(props.data.apiUrl,{params: {code: form.code,email:form.email}
+          })
           .then((res: any) => {
-            isloading.value = false;
-            console.log(res);
+            isloading.value = false;  
+            data = stringToObj(res.data);
+            console.log(data);
+            switch (data.state) {
+              case 'wrong':
+                isValid.value = false; 
+                invalidInfo.value = data.text
+                break;              
+              case 'unfound':  
+                isValid.value = false;              
+                invalidInfo.value = data.text
+                break;
+              case 'refunded':
+                isValid.value = false; 
+                invalidInfo.value = data.text
+                break  
+              case 'success':
+                router.push({ path: '../upgradecode/', query: { plan: 'private' }})
+                
+                break                          
+              default:
+                isValid.value = false; 
+                invalidInfo.value = data.toString()
+                break;
+            }
           })
           .catch((err: any) => {
             isloading.value = false;

@@ -15,7 +15,7 @@ import { fetchItem } from "@/assets/script/tools";
 import { ProductDataConfig } from "@/assets/script/interfaceSet";
 
 export default defineComponent({
-  name: "card",
+  name: "itemInfo",
   props: {
     handlename: { type: String, default: "DVD-Cloner" },
     type: { type: String, default: "name" },

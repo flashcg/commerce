@@ -125,6 +125,7 @@ export default {
       return fetchItem(this.mddata.upgrade.handleName, this.productData);
     },
   },
+
   methods: {
     launch() {
      const _this = this;

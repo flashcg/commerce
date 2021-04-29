@@ -28,7 +28,7 @@
           :key="colIndex"         
         >
         <template v-if="col.imageUrl&&col.path">
-        <b-link :href="col.path"><b-img v-if="col.imageUrl" :src="col.imageUrl" fluid></b-img></b-link>
+        <b-link :to="col.path"><b-img v-if="col.imageUrl" :src="col.imageUrl" fluid></b-img></b-link>
         </template>
         <template v-else-if="col.imageUrl">
           <b-img v-if="col.imageUrl" :src="col.imageUrl" fluid></b-img>

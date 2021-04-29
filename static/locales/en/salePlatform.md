@@ -29,5 +29,8 @@ softwareInfo:
       standard:
         comparePrice:
         price: 59.99
-        buyLink: https://www.dvd-cloner.com/cgi-bin/orderlink.cgi?ocr=y  
+        buyLink: https://www.dvd-cloner.com/cgi-bin/orderlink.cgi?ocr=y 
+      lifetime:
+        price: 220.00
+        buyLink: https://www.dvd-cloner.com/cgi-bin/orderlink.cgi?ocrlife=y           
 ---

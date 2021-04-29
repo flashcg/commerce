@@ -2,9 +2,10 @@ import Vue from 'vue'
 
 export default ({
   app,
-  store,
+  store,route,
   $content
 }) => {
+
   Vue.prototype.$handlify=(name='dvd-cloner')=> {
     let _name = name.replace(/\s/g, "-");
     return _name.toLowerCase();
@@ -146,22 +147,7 @@ export default ({
        return outData
     }
   }
-  Vue.prototype.$getItemData = (model, method) => {
-    let productsData = store&&store.state.shopifyData.productsMerged.length>0 && store.state.shopifyData.productsMerged,
-        hardwareLocal = store && store.state.localData && store.state.localData.hardware;
-    if (productsData && hardwareLocal) {
-      let data = productsData.find(res => res.productModel.toLowerCase() == model.toLowerCase()), 
-          localItem = hardwareLocal.find(res => res.productModel.toLowerCase() == model.toLowerCase()) 
-      if (data && method == 'imgPath') {
-        return data.images[0].src;
-      } else if (data && method == 'name') {
-        return data.title
-      } else if(data&&localItem) {        
-        data = Object.assign(localItem,data);
-        return data
-      }
-    }
-  }
+
   
   Vue.prototype.$fetchItem=(itemName)=>{
 

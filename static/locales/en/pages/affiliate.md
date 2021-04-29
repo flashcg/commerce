@@ -5,7 +5,7 @@ metaItems:
     content: If you are interested in ClonerAlliance affiliate program, please feel free to contact us.
   - name: keywords
     content: cloneralliance, video, recorder, capture, hdmi, software, 4k, live stream
-breadcrumb: Example
+
 jumbotronAreasTop:
   - name: affiliate
     template: overlay

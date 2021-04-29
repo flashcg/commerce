@@ -21,6 +21,7 @@
         </div>
       </template>       
       </client-only>
+      
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination" slot="pagination"></div>
@@ -29,6 +30,8 @@
       <div class="swiper-button-prev" slot="button-prev"></div>
       <div class="swiper-button-next" slot="button-next"></div>
     </div>
+
+      <b-button v-if="data.button" size="xl" :href="data.button.href" :to="data.button.path+'/'" :class="'rounded-0 mt-3 '+data.button.additionClass" :variant="data.button.variant">{{data.button.text}}</b-button>
         <CoolLightBox v-if="data.imageLink == 'self'"
           :items="images" 
           :index="lightBoxIndex"
@@ -62,7 +65,6 @@ export default {
   props: {data:{type:Object,require:true}},
   computed:{
     images(){
-      console.log(this.data.items);
       return this.data.items.map(res=> res.imageUrl || res.iconUrl)
     }
   },

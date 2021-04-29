@@ -1,5 +1,5 @@
 import { ProductDataConfig } from "@/assets/script/interfaceSet";
-export { camelCaseToWords, isMobile, toLower, fetchItem, sortFn,getDate }
+export { camelCaseToWords, isMobile, toLower, fetchItem, sortFn,getDate,stringToObj }
 
 function camelCaseToWords(field: string, targetStr: string = ' ') {
   const stringArray = field.split('') // 将字符串分割成相应的字符串数组
@@ -11,6 +11,24 @@ function camelCaseToWords(field: string, targetStr: string = ' ') {
     }
   })
   return newField
+}
+/**
+ * 将源字符串以“,” 拆分成数组，再以":" 转成对象
+ * @param string 源字符串
+ */
+function stringToObj(string: string) {
+  if (string && typeof (string) == 'string') {
+    let tempArray:string[] = string.split(','),tempObj:{[props:string]:string} = {};
+    tempArray.map(res=>{
+      let key = res.split(':',1)[0],
+      value = res.replace(key,'')
+      value = value.slice(1)      
+      tempObj[key] = value      
+    })
+    return tempObj    
+  } else {
+    return {}
+  }
 }
 function toLower(name: string, string: string) {
   if (name && typeof (name) == 'string') {
