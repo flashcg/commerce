@@ -5,7 +5,7 @@ metaItems:
     content: Pay to upgrade DVD-Cloner and enjoy one year free updates.
   - name: keywords
     content: DVD-Cloner, upgrade
-breadcrumb: Privacy Policy
+breadcrumb: Upgrade
 template: primary 
 handleName: DVD-Cloner
 upgrade:
@@ -34,13 +34,4 @@ faqList:
       kbUrl: how-do-i-change-my-registration-email_419.html
     - title: How much is the upgrade?
       kbUrl: how-much-is-the-upgrade_418.html     
-
 ---
-
-## Upgrade policy
-
-**Pay to upgrade to <item-info :handlename="handleName"></item-info> now and enjoy one-year free upgrades of its future versions!**
-
-The new customers who have purchased DVD-Cloner for less than one year can upgrade to <item-info :handlename="handleName"></item-info> or later versions for free within the year!
-
-If it exceeds one year, you need to pay for next year's upgrade service. If you do not want to upgrade, you can still use the original version without time limit!

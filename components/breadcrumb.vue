@@ -30,7 +30,10 @@ export default {
           switch (string) {
             case 'dvd cloner':
               string = 'DVD-Cloner'
-              break;          
+              break;  
+            case 'uhd video copy recording':
+              string = 'UHD Video Copy Recording'
+              break;                       
             case 'blue cloner':
               string = 'Blue-Cloner'
               break;       
@@ -45,7 +48,7 @@ export default {
     }
   },
   mounted() {
-
+    console.log(this.$router);
   }
 };
 </script>

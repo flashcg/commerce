@@ -4,6 +4,7 @@ Vue.use(common)
 export const state = () => ({
   locales: ['en'],
   locale: 'en',
+  currentBreadcrumb:'',
   modalStatus: {
 
   },
@@ -52,6 +53,9 @@ export const mutations = {
   youtubeDataPush(state) {
     state.youtubeData = JSON.parse(localStorage.youtubeData)
   },
+  toBreadcrumb(state){
+    state.currentBreadcrumb
+  }
 
 }
 export const actions = {
@@ -67,11 +71,11 @@ export const actions = {
     if (handleSetting) {
       for (let i = 0; i < handleSetting.length; i++) {
 
-        const item = await this.$content('pages/' + handleSetting[i].path).only(['abbrName', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc']).fetch(),
+        const item = await this.$content('pages/' + handleSetting[i].path).only(['abbrName', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc','youtubeArea']).fetch(),
           saleData = await this.$content('salePlatform').fetch();
 
         if (Array.isArray(item)) {
-          item = await this.$content('pages/' + handleSetting[i].path + '/index').only(['abbrName', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc']).fetch();
+          item = await this.$content('pages/' + handleSetting[i].path + '/index').only(['abbrName', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc','youtubeArea']).fetch();
         }
         
         const releaseFn = (path =handleSetting[i].path ) => {

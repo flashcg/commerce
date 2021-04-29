@@ -1,53 +1,46 @@
 ---
-title: Integrated DVD/Blu-ray/UHD ripper and video converter
+title: DVD/Blu-ray copy software - DVD-Cloner 
 metaItems: # seo 内容
   - name: description
-    content: Integrated DVD/Blu-ray/UHD ripper and video converter
+    content: Blu-ray copy software free download, DVD-Cloner backs up DVD/Blu-ray movies easily, perfect 1:1 DVD Copy
   - name: keywords
-    content: dvd ripper, blu-ray ripper, video converter, rip dvd, rip blu-ray, mp4 converter, rip itunes to mp4, m4v to mp4, remove drm, dvd decrypter, blu-ray decrypter, dvd to mp4, dvd to mkv, blu-ray to mp4, blu-ray to mkv, video transcoder, video encoder, H.264 encoder, H.265 encoder, deinterlace, denoise
+    content: Blu-ray copy, DVD copy software, DVD-Cloner
 layout: fluid
 template: product
 pagify: true #页面化
-abbrName: OCR
-handleName: OpenCloner Ripper
-name: OpenCloner Ripper 2020
-type: 
-  - DVD Ripper
-  - Blu-ray Ripper
+abbrName: MC
+handleName: DVD-Cloner for Mac
+name: DVD-Cloner for Mac 2021
+type: DVD Copy
 logo:
-  iconUrl: icon/ocr-2020.png
+  iconUrl: icon/mc-2021.png
   imageUrl: dc-logo-2021.png
 boxes:
-  - imageUrl: ocr2021-box.png #默认盒子图
-  - imageUrl: ocr2021-box-ref.png #带阴影盒子图
+  - imageUrl: dcmac2021-box.png #默认盒子图
+  - imageUrl: dcmac2021-box-ref.png #带阴影盒子图
 desc:
-  shortText: All-In-One solution to rip DVD/Blu-ray/UHD movies, convert video files and rip iTunes movies.
+  shortText: Copy/backup/decrypt/rip your DVD/Blu-ray/4K UHD Blu-ray movies on Mac.
   longText: |
-    OpenCloner Ripper 2020 is a full-featured ripping and conversion software. It can rip DVD/Blu-ray/UHD movies to standard video format, while removing various copy protections. The latest version has been optimized to support more UHD friendly drives. Meanwhile, it supports rich built-in configuration presets optimized for your device. This versatile application can also transcode video files of any encoding into MP4/MKV files, and rip downloaded iTunes movies into MP4 format, removing DRM. A variety of filters such as denoise, deinterlace, working together with video encoding, will produce excellent images for you even at a low bit rate.
-spPath: /special-offer-ocr-launch
+    DVD-Cloner for Mac 2021 is a fully upgraded professional DVD/Blu-ray/4K UHD copy/ripping/decryption software with ultra high quality. It can clone DVD to any blank disc including DVD+R/RW, DVD-R/RW, DVD+R DL and DVD-R DL with multiple copy modes. Besides, it can copy DVD to your Mac as an ISO file or DVD movie folder. The great breakthrough for DVD-Cloner for Mac 2021 is that it can copy Blu-ray/4K UHD Blu-ray movies to BD-R/REs or your Mac and rip DVD/Blu-ray/4K UHD movies to MKV format for easy storage, with Dolby Vision and the HDR10 video quality preserved.
 areaTop:
-  name: OCR Desc
-  title: #默认为 productName
-  topAdditionText: This DVD/Blu-ray/UHD copy software enables you to make perfect 1:1 copy of your favorite videos.
-  bottomAdditionText: '<p style="text-align:right"><img alt="" src="{imageUrl}/icon/ocr2020-feature-icon-disc.png" style="width: 75px; height: 75px;" /> <img alt="" src="{imageUrl}/icon/ocr2020-feature-icon-convert.png" style="width: 75px; height: 75px;" /> <img alt="" src="{imageUrl}/icon/ocr2020-feature-icon-m4v.png" style="width: 75px; height: 75px;" /></p>'
+  name: DC Desc
+  title: Perfect 1:1 DVD/Blu-ray Copy - DVD-Cloner #默认为 productName
+  topAdditionText: DVD/Blu-ray Copy and Burn Software
   bgStyle: 
     default: dark
-    imageUrl: ocrmain_poster_v3.jpg
-  button:
-    additionText: <p class="lead"><img src="{imageUrl}/icon/disconut_icon.png" style="max-width:80px" class="mr-16"> <a class="text-light" href="/special-offer-ocr-launch/" >Time-limited 50% OFF Special offer</a></p>
+    imageUrl: product-info-bg.jpg
 screenshot:
   name: Overview
   active: true
   container: container-fluid
-  title: OpenCloner Ripper Screenshoot
-  imageLink: self
+  title: DVD-Cloner Gold Screenshot
   additionClass: software-interface bg-dark-opacity-2
   itemContainer: container
   items:
-    - imageUrl: ocr2021_screenshot_1.png
-    - imageUrl: ocr2021_screenshot_2.png
-    - imageUrl: ocr2021_screenshot_3.png
-    - imageUrl: ocr2021_screenshot_4.png
+    - imageUrl: mac2021_screenshot_1.jpg
+    - imageUrl: mac2021_screenshot_2.jpg
+    - imageUrl: mac2021_screenshot_3.jpg    
+  iconGird: 2
 WhyChoose:
   name: Overview-Why
   active: true
@@ -76,21 +69,7 @@ WhyChoose:
       text: Easy to use, just as easy as ABC
     - iconUrl: dc-icon5.png
       text: Output lossless quality          
-  iconGird: 6  
-youtubeArea:
-  name: Video Guide
-  active: true
-  container: container-fluid
-  title: Video Guide
-  additionClass: position-relative text-center text-light
-  bgStyle: 
-    default: dark
-    imageUrl: blue-creative-bg.gif  
-  icon:
-    - youtubeID: 8UtHJRzhpXg
-  iconGird: 2
-  iconClass: 
-  iconWidth: 75 #25 50 75 100 默认是100       
+  iconGird: 6      
 systemRequirements:
   name: System Requirements 
   active: true

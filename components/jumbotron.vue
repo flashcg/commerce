@@ -151,7 +151,7 @@
 <div>
 
 </div>  
-<modal-video v-if="isShowVideo" v-model="isShowVideo" :url="videoUrl" type="video" />      
+<widget-modal-video v-if="isShowVideo" v-model="isShowVideo" :url="videoUrl" type="video" />      
 </div>
 
 </template>

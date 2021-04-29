@@ -54,7 +54,8 @@ export default {
 
   /** i18n  */
   router: {
-
+    middleware: ['breadcrumbTitle'],
+    trailingSlash:true
   },
   env: {
 
@@ -89,9 +90,6 @@ export default {
     }, */    
     {
       src: '@/plugins/yamlPages'
-    },
-    {
-      src: '@/plugins/axios'
     },
     {
       src: '@/plugins/vueSmoothScroll'
@@ -138,8 +136,29 @@ export default {
           }
         }
       }
-    }]
+    }],
+    '@nuxtjs/sitemap',
+    '@nuxtjs/redirect-module'
   ],
+  sitemap: {
+    hostname: 'https://www.dvd-cloner.com',
+    gzip: true,
+    exclude: [
+      '/zohoTicket.html'    
+    ],
+    filter ({ routes }) {
+      return routes.map(route => {
+        route.url = `${route.url}/`
+        return route
+      })
+    }
+  },
+  redirect: [
+    {
+        from: '^.*(?<!\/)$',
+        to: (from, req) => req.url + '/'
+    }
+],
   bootstrapVue: {
     bootstrapCSS: false, // or `css`
     bootstrapVueCSS: false, // or `bvCSS`

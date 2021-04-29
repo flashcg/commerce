@@ -19,7 +19,7 @@
 
           <div :class="`position-relative  mb-4 mx-auto w-${iconData.iconWidth}`">
             
-            <b-link v-if="item.youtubeID" @click="showVideo('https://www.youtube.com/embed/'+item.youtubeID)" class="d-flex fb-youtube align-items-center justify-content-center text-light">
+            <b-link v-if="item.youtubeID" @click="lightBoxIndex = index" class="d-flex fb-youtube align-items-center justify-content-center text-light">
             
               <div class="position-absolute" style="z-index:2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-play-circle fa-w-16 fa-4x"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z" class=""></path></svg></div>  
               <div class="position-absolute fill-position bg-dark-transparent"></div> 
@@ -61,17 +61,17 @@
         </div> 
          <p v-if="iconData.textBottom" class="lead mt-6">{{iconData.textBottom}}</p>     
         <b-button v-if="iconData.button" size="xl" :to="iconData.button.path+'/'" :class="'rounded-0 mt-3 '+iconData.button.additionClass" :variant="iconData.button.variant">{{iconData.button.text}}</b-button>
-        <CoolLightBox v-if="iconData.iconLink == 'self'"
-          :items="iconArray" 
-          :index="lightBoxIndex"
-          @close="lightBoxIndex = null">
-        </CoolLightBox>        
+        
       </div>
 
       <div v-if="iconData.bgStyle " :class="backgroundClass" :style="backgroundStyle"></div>  
 
-
-  <modal-video v-if="isShowVideo" v-model="isShowVideo" :url="videoUrl" type="iframe" />  
+  <widget-modal-video v-if="isShowVideo" v-model="isShowVideo" :url="videoUrl" type="iframe" />  
+  <CoolLightBox v-if="iconArray"
+          :items="iconArray" 
+          :index="lightBoxIndex"
+          @close="lightBoxIndex = null">
+        </CoolLightBox>        
   </div>
 </template>
  
@@ -103,7 +103,8 @@ export default {
       }
     },
     iconArray(){
-      return this.iconData.icon.map(res=>res.iconUrl)
+      
+      return this.iconData.icon&&this.iconData.icon.map(res=>res.iconUrl||'https://www.youtube.com/embed/'+res.youtubeID)
     },
     backgroundStyle(){      
     if (this.iconData.bgStyle&&typeof(this.iconData.bgStyle)=='object') {        

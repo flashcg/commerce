@@ -5,7 +5,7 @@ metaItems:
     content: All Standalone Video Recorders, Video Capture Devices, Software. 4K, 1080p, HDMI Input, Passthrough are Supported. For Game Live Stream and Competition.
   - name: keywords
     content: cloneralliance, video, recorder, capture, hdmi, software, 4k, live stream
-breadcrumb: Example
+
 jumbotronAreasTop:
   - name: mainArea
     template: overlay

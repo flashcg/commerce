@@ -1,9 +1,9 @@
 <template>
   <div v-if="data" :id="$handlify(data.name)" :class="`primary-block position-relative  ${paddingSet} ${data.additionClass} primaryBlock-${$toLower(data.name,'-')}`">
      
-      <div :class="`primaryBlock-body zIndex ${textColor(data)} ${data.rowClass} ${data.container}`">  
+      <div :class="`primaryBlock-body position-relative zIndex ${textColor(data)} ${data.rowClass} ${data.container}`">  
         <div v-if="data.title || !data.title==null">
-          <h2>{{data.title}}</h2>
+          <h2 v-html="data.title"></h2>
           <hr class="divider">
         </div>
         <p v-if="data.textTop" class="lead mb-4 whiteSpace-preline" v-html="data.textTop"></p>
@@ -21,7 +21,7 @@
             </b-col>
         </div> 
          <p v-if="data.textBottom" class="lead mt-6">{{data.textBottom}}</p>     
-        <b-button v-if="data.button" size="xl" :to="data.button.path+'/'" :class="'rounded-0 mt-3 '+data.button.additionClass" :variant="data.button.variant">{{data.button.text}}</b-button>
+        <b-button v-if="data.button" size="xl" :to="data.button.path?'/'+data.button.path+'/':''" :class="'rounded-0 mt-3 '+data.button.additionClass" :href="data.button.href?data.button.href:''" :variant="data.button.variant">{{data.button.text}}</b-button>
     
       </div>
 
@@ -30,6 +30,7 @@
 </template>
  
 <script>
+
 import { fetchItem } from "@/assets/script/tools";
 export default {
   name: "iconBlock",
@@ -41,6 +42,7 @@ export default {
   props: ["data"],
 
   computed:{
+    
     paddingSet(){
       if(typeof(this.data.paddingY) == 'number'){
         return  `py-lg-${this.data.paddingY} py-${this.data.paddingY-2}`  

@@ -16,4 +16,5 @@ interface ProductDataConfig{
     desc:{longText:string,shortText?:string};
     handle:{handleName:string,path:string};
     release?:ReleaseItem;
+    saleInfo?:{[props: string]: string;}
   }

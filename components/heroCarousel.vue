@@ -1,11 +1,11 @@
 <template>
 
-        <div :id="$handlify(heroCarousels.name)" v-swiper:swiperGallery="swiperOption" ref="swiperTop" :style="'overflow:'+heroCarousels.overflow">
+        <div :id="$handlify(heroCarousels.name)" v-swiper:swiperGallery="swiperOption" class="position-reactive" ref="swiperTop" :style="'overflow:'+heroCarousels.overflow">
         <div class="swiper-wrapper bg-dark">
           <div class="swiper-slide d-flex justify-content-center" v-for="(item,index) in heroCarousels.block" :key="index" :class="item.handleName" :style="{height: jHeight(item.height)}">
                     
             
-            
+            <slot :name="'swiper'+index" :item="item">
              <div :class="'slide-body w-100 mt-10 px-md-5 px-3 '+item.additionClass" style="z-index:2">
                <div>
               <h2 v-if="item.title">{{item.title}}</h2>
@@ -17,17 +17,18 @@
               <b-button v-if="item.button" size="xl" :to="'/'+item.button.path+'/'" class="rounded-0 mt-4 ml-md-4" :variant="item.button.variant">{{item.button.text}}</b-button>
               </div>
             </div>
+            </slot>
             <div class="position-absolute fill-position" :style="{backgroundImage:'url(' + item.bgStyle.imageUrl + ')',backgroundPositionY:item.bgStyle.positionY+'%',backgroundSize:'cover',zIndex:item.bgStyle.video&&item.bgStyle.video.layout&&item.bgStyle.video.layout=='bottom'?'1':'auto'}"></div>
 
-            <div v-if="item.bgStyle&&item.bgStyle.video" class="d-xl-block d-none position-absolute fill-position"> 
+            <div v-if="item.bgStyle&&item.bgStyle.video" class=" bg-black  position-absolute fill-position"> 
         
-              <video muted :src="item.bgStyle.video.videoUrl" class="videoPlayer" autoplay :poster="item.bgStyle.video.poster&&item.bgStyle.video.poster.imageUrl" style="width:100%"></video>
+              <video muted :src="item.bgStyle.video.videoUrl" class="videoPlayer position-absolute d-xl-block d-none" autoplay loop :poster="item.bgStyle.video.poster&&item.bgStyle.video.poster.imageUrl" style="height:100%;bottom:0;right:0"></video>
             </div>
 
             
             <div v-if="item.productInfo" class="col-6 col-xl-4 mt-auto d-lg-block d-none" style="z-index:2"><b-img style="margin-bottom:-150px" fluid :src="item.productInfo.imageUrl" /> </div>   
 
-
+            
             <div v-if="item.bgStyle" :class="'bg-'+item.bgStyle.color+'-transparent position-absolute fill-position'" style="z-index:1"></div>
             <div v-if="item.bgMobileStyle == 'dark'" class="bg-md-dark-transparent position-absolute fill-position"  style="z-index:1"></div>
             <div v-else-if="item.bgMobileStyle == 'light'" class="bg-md-light-transparent position-absolute fill-position"  style="z-index:1"></div> 
@@ -85,6 +86,7 @@ export default {
         el.play();
       }
     },
+
     
 
   },
@@ -96,31 +98,7 @@ export default {
       this.screenHeight = document.documentElement.clientHeight;
     });
 
-    let _this = this;
-    let videoPlayers = document.querySelectorAll(".videoPlayer");
-    let currentVideoPlayer = document.querySelector(
-      ".swiper-slide-active .videoPlayer"
-    );
-    let mySwiper = document.querySelector(".swiper-container").swiper;
 
-    mySwiper.on("slideChangeTransitionEnd", function() {
-      currentVideoPlayer = document.querySelector(
-        ".swiper-slide-active .videoPlayer"
-      );
-      _this.videoControl(currentVideoPlayer);
-    });
-    
-    mySwiper.allowTouchMove= this.heroCarousels.allowTouchMove;
-    if (videoPlayers) {
-      for (let i = 0; i < videoPlayers.length; i++) {
-        let el = videoPlayers[i];
-        el.addEventListener("ended", function() {
-          setTimeout(() => {
-            mySwiper.isEnd ? mySwiper.slidePrev(500) : mySwiper.slideNext(500);
-          }, 1000);
-        });
-      }
-    }
 
 
 

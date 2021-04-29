@@ -60,6 +60,7 @@ $spacers: map-merge(
 
 
 $theme-colors: (
+  "black":#000,
   "dark":#383838,
   "gray": rgb(128, 128, 128),
   "gray-light": rgb(170, 170, 170),
@@ -282,6 +283,24 @@ transition: top 0.5s ease-in-out;white-space: pre-line;
   
 }
 
+.discount-box{position: absolute;
+    background: url(~static/images/pop.png) no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    font-size: 2em;
+    padding: 20px;
+
+    font-weight: bolder;
+    transform: rotate(-20deg
+);
+    text-align: center;}
+.productBox{
+  .discount-box{
+    top: -30px;
+    left: -30px;
+  }
+}
 
 footer{font-weight: 300;  
   .nav-footer li{flex: auto;font-weight: 600; }

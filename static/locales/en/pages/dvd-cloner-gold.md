@@ -28,7 +28,7 @@ areaTop:
   topAdditionText: DVD-Cloner Gold enables you to copy and burn DVD/Blu-ray movies with ease.
   bgStyle: 
     default: dark
-    imageUrl: product-dg-bg.jpg
+    imageUrl: product-dp-bg.jpg
 screenshot:
   name: Overview
   active: true

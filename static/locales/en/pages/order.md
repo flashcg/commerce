@@ -9,7 +9,7 @@ breadcrumb: Privacy Policy
 template: primary
 areaTop:
   bottomAdditionText: <a href="/dvd-cloner/dvd-copy-64bit/" class="btn rounded-0 btn-outline-dark">Achieve 20% higher copy speed with DVD-Cloner 64-bit </a>
-  additionClass: shadow-box 
+  additionClass: shadow-box py-lg-8 py-6
   type: order
   button:
     additionText: |      

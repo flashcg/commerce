@@ -6,7 +6,7 @@
     </b-card-header>
     <b-card-body>
       <p>
-        <b-link :to="`/${item.saleInfo.upgradeUrl}/`">
+        <b-link :to="`${item.saleInfo.upgradeUrl}/`">
           <b-img-lazy :src="
               (item.boxes[1] && item.boxes[1].imageUrl) ||
               item.boxes[0].imageUrl" fluid
