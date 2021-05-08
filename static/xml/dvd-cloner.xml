@@ -49,22 +49,22 @@
     <Program_Change_Info>Supports more new DVD movies. Optimized some details about the user interface.</Program_Change_Info>
     <Program_Specific_Category>Video</Program_Specific_Category>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
-    <Program_System_Requirements>Minimum configuration:&#xD;
-Pentium-II 450 MHz&#xD;
-64MB of RAM&#xD;
-5GB free hard disk space for DVD-5 (10GB free hard disk space for DVD-9)&#xD;
-DVD burners&#xD;
-Windows XP&#xD;
-Recommended configuration:&#xD;
-Intel Core2 CPU&#xD;
-2GB of RAM&#xD;
-10GB free hard disk space&#xD;
-DVD burners, Blu-ray burners&#xD;
-Windows Vista, 7, 8, 8.1, 10&#xD;
-For Blu-ray copy:&#xD;
-NTFS partition&#xD;
-A Blu-ray disc drive&#xD;
-A Blu-ray media player&#xD;
+    <Program_System_Requirements>Minimum configuration:
+Pentium-II 450 MHz
+64MB of RAM
+5GB free hard disk space for DVD-5 (10GB free hard disk space for DVD-9)
+DVD burners
+Windows XP
+Recommended configuration:
+Intel Core2 CPU
+2GB of RAM
+10GB free hard disk space
+DVD burners, Blu-ray burners
+Windows Vista, 7, 8, 8.1, 10
+For Blu-ray copy:
+NTFS partition
+A Blu-ray disc drive
+A Blu-ray media player
 50GB or more free disk space</Program_System_Requirements>
     <File_Info>
       <File_Size_Bytes>67318579.2</File_Size_Bytes>
@@ -90,14 +90,14 @@ A Blu-ray media player&#xD;
       <Char_Desc_450>DVD-Cloner is a widely-acclaimed professional DVD copy software with perfect output image quality. It can decrypt DVD and clone DVD to any blank disc with diverse copy modes for playback on many media devices including PS4, Xbox, Blu-ray player, etc. Besides, it can copy DVD to your Windows computer as an ISO file or DVD folders. With DVD-Cloner  you can also copy Blu-ray/4K UHD Blu-ray movies to BD-R/REs or your computer and rip DVD/Blu-ray/UHD movies to MKV format for easy storage.</Char_Desc_450>
       <Char_Desc_2000>
         
-        DVD-Cloner is a widely-acclaimed professional DVD copy software with perfect output image quality. It can decrypt DVD and clone DVD to any blank disc with diverse copy modes for playback on many media devices including PS4, Xbox, Blu-ray player, etc. Besides, it can copy DVD to your Windows computer as an ISO file or DVD folders. With DVD-Cloner  you can also copy Blu-ray/4K UHD Blu-ray movies to BD-R/REs or your computer and rip DVD/Blu-ray/UHD movies to MKV format for easy storage.&#xD;
-&#xD;
-Key Features&#xD;
-Copy DVD movies to blank DVD±R/RW discs or hard disk&#xD;
-6 diverse copy modes.&#xD;
-Copy Blu-ray/4K UHD to Blu-ray Disc or rip them to MKV Format.&#xD;
-Remove various DVD/Blu-ray/UHD copy protections&#xD;
-Output lossless quality&#xD;
+        DVD-Cloner is a widely-acclaimed professional DVD copy software with perfect output image quality. It can decrypt DVD and clone DVD to any blank disc with diverse copy modes for playback on many media devices including PS4, Xbox, Blu-ray player, etc. Besides, it can copy DVD to your Windows computer as an ISO file or DVD folders. With DVD-Cloner  you can also copy Blu-ray/4K UHD Blu-ray movies to BD-R/REs or your computer and rip DVD/Blu-ray/UHD movies to MKV format for easy storage.
+
+Key Features
+Copy DVD movies to blank DVD±R/RW discs or hard disk
+6 diverse copy modes.
+Copy Blu-ray/4K UHD to Blu-ray Disc or rip them to MKV Format.
+Remove various DVD/Blu-ray/UHD copy protections
+Output lossless quality
       </Char_Desc_2000>
     </English>
   </Program_Descriptions>

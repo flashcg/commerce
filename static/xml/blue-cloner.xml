@@ -49,7 +49,7 @@
     <Program_Change_Info>Improved the function of finding the main title in some movie discs. Optimized the decryption algorithm, and supports latest Blu-ray movies. Improved the function of HST acceleration on some PCs. Improved the function of splitting a Blu-ray movie.</Program_Change_Info>
     <Program_Specific_Category>Audio</Program_Specific_Category>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
-    <Program_System_Requirements>Minimum configuration: Pentium-IV 1.0 GHz, 512MB of RAM, 50GB free hard disk space (NTFS partition), Windows XP, A Blu-ray disc drive Recommended configuration: Intel Core2 1.86GHz or a faster processor, 2048MB of RAM, 50GB free hard disk space (NTFS partition), A Blu-ray burner, Windows Vista, 7, 8, 8.1, 10, A Blu-ray disc drive, An NVIDIA video card or an AMD video card&#xD;
+    <Program_System_Requirements>Minimum configuration: Pentium-IV 1.0 GHz, 512MB of RAM, 50GB free hard disk space (NTFS partition), Windows XP, A Blu-ray disc drive Recommended configuration: Intel Core2 1.86GHz or a faster processor, 2048MB of RAM, 50GB free hard disk space (NTFS partition), A Blu-ray burner, Windows Vista, 7, 8, 8.1, 10, A Blu-ray disc drive, An NVIDIA video card or an AMD video card
 </Program_System_Requirements>
     <File_Info>
       <File_Size_Bytes>37434163.2</File_Size_Bytes>
@@ -75,27 +75,27 @@
       <Char_Desc_450>Blue-Cloner 7 is top-rated Blu-ray copy/backup/burn/decryption software which can copy Blu-ray movies to blank Blu-ray/DVD/AVCHD discs or to the hard disk as Blu-ray folders and Blu-ray ISO image files. Blue-Cloner 7 is compatible with Windows 10 and Windows 8.1. There is no need to install a third party driver, since internal UDF 2.50 parser is included to read Blu-ray.</Char_Desc_450>
       <Char_Desc_2000>
         
-        Blue-Cloner 7 is top-rated Blu-ray copy/backup/burn/decryption software which can copy Blu-ray movies to blank Blu-ray/DVD/AVCHD discs or to the hard disk as Blu-ray folders and Blu-ray ISO image files.&#xD;
-The improved interface enables both new and professional users to view all Blu-ray copy features at a glance.&#xD;
-Removes all Blu-ray copy protections including AACS, BD+, newest MKB v26, bus encryption, BD-Live and UOPs.&#xD;
-Note: Internet connection is necessary for Blu-ray disc backup.  &#xD;
-Supports all regions (A, B, C).  &#xD;
-There is no need to install a third party driver, since internal UDF 2.50 parser is included to read Blu-ray.&#xD;
-Perfect 1:1 Blu-ray copy&#xD;
-Movie-only copy &#xD;
-Splits one Blu-ray movie (50G) to two blank BD-R/REs (25G).&#xD;
-Customized copy - Select only your desired movie title(s) to copy.&#xD;
-Supports for making a perfect 1:1 copy of the original 3D Blu-ray discs.&#xD;
-Enjoy your original Blu-ray movie directly with Blue-Cloner and don't need to install other Blu-ray player software.&#xD;
-Copies home-made Blu-ray discs, backs up home-made Blu-ray folders/ISO files to BD-R/RE with various Blu-ray copy modes. &#xD;
-Copies a Blu-ray movie to a DVD/AVCHD disc (playback only in a Blu-ray player or player software such as PowerDVD) to save your valuable Blu-ray disc.&#xD;
-Supports the acceleration of CUDA and DXVA 2.&#xD;
-Supports the acceleration of latest graphics cards with higher H.264 encoding speed.&#xD;
-Compatible with Windows 10 and Windows 8.1.&#xD;
-During the copying process, you can open the "About" window, refer to the help file, minimize the window and check the log information.&#xD;
-Added the function of auto-download when there is a new version.&#xD;
-Plays back the copied Blu-ray movies on various Blu-ray disc players or on the PC with Blu-ray player software.&#xD;
-No system delay or resource hogging.&#xD;
+        Blue-Cloner 7 is top-rated Blu-ray copy/backup/burn/decryption software which can copy Blu-ray movies to blank Blu-ray/DVD/AVCHD discs or to the hard disk as Blu-ray folders and Blu-ray ISO image files.
+The improved interface enables both new and professional users to view all Blu-ray copy features at a glance.
+Removes all Blu-ray copy protections including AACS, BD+, newest MKB v26, bus encryption, BD-Live and UOPs.
+Note: Internet connection is necessary for Blu-ray disc backup.  
+Supports all regions (A, B, C).  
+There is no need to install a third party driver, since internal UDF 2.50 parser is included to read Blu-ray.
+Perfect 1:1 Blu-ray copy
+Movie-only copy 
+Splits one Blu-ray movie (50G) to two blank BD-R/REs (25G).
+Customized copy - Select only your desired movie title(s) to copy.
+Supports for making a perfect 1:1 copy of the original 3D Blu-ray discs.
+Enjoy your original Blu-ray movie directly with Blue-Cloner and don't need to install other Blu-ray player software.
+Copies home-made Blu-ray discs, backs up home-made Blu-ray folders/ISO files to BD-R/RE with various Blu-ray copy modes. 
+Copies a Blu-ray movie to a DVD/AVCHD disc (playback only in a Blu-ray player or player software such as PowerDVD) to save your valuable Blu-ray disc.
+Supports the acceleration of CUDA and DXVA 2.
+Supports the acceleration of latest graphics cards with higher H.264 encoding speed.
+Compatible with Windows 10 and Windows 8.1.
+During the copying process, you can open the "About" window, refer to the help file, minimize the window and check the log information.
+Added the function of auto-download when there is a new version.
+Plays back the copied Blu-ray movies on various Blu-ray disc players or on the PC with Blu-ray player software.
+No system delay or resource hogging.
 Shuts down the computer when the copy is finished.
       </Char_Desc_2000>
     </English>
