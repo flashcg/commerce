@@ -226,9 +226,7 @@ class NewverZipCreator {
     this.cachePath = './static/cache'
   }
   get newverData() {
-    let outData = '';
-    console.log(this.data);
-    
+    let outData = '';    
     for (let i = 0; i < this.data.list.length; i++) {
       outData += '<li>' + this.data.list[i] + '</li>';
     }
