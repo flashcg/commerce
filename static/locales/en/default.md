@@ -3,26 +3,68 @@ name: Cloner Alliance
 lang: en
 handleSetting:
   - handleName: DVD-Cloner
+    model: dc
     path: dvd-cloner
   - handleName: DVD-Cloner Gold
+    model: dg
     path: dvd-cloner-gold
   - handleName: DVD-Cloner Platinum
+    model: dp
     path: dvd-cloner-platinum
   - handleName: DVD-Cloner for Mac
+    model: mc
     path: dvd-copy-for-mac  
-  # - handleName: OpenCloner UltraBox
-  #   path: openCloner-ultrabox
+  - handleName: OpenCloner UltraBox
+    model: ou
+    path: opencloner-ultrabox
   - handleName: Blue-Cloner
+    model: bc
     path: blue-cloner
   - handleName: Blue-Cloner Diamond
+    model: bd
     path: blue-cloner-diamond
   - handleName: OpenCloner Ripper
+    model: ocr
     path: open-cloner-ripper       
   - handleName: Stream-Cloner Lite
+    model: scl
     path: stream-cloner-lite 
   - handleName: Open DVD Ripper Lite
+    model: odrl
     path: open-dvd-ripper-lite    
-
+  - handleName: Open PassDCP
+    model: ocp
+    path: open-passdcp  
+  - handleName: Open DVD Ripper
+    model: odr
+    path: open-dvd-ripper     
+  - handleName: Open DVD Ripper for Mac
+    model: odrmac
+    path: open-dvd-ripper-for-mac 
+  - handleName: Open Blu-ray ripper
+    model: obr
+    path: open-blu-ray-ripper      
+  - handleName: Open SmartBurner
+    model: osb
+    path: open-smartburner
+  - handleName: Open SuperConverter
+    model: osc
+    path: open-superconverter             
+  - handleName: Stream-Cloner
+    model: sc
+    path: stream-cloner   
+  - handleName: Blu-ray to DVD
+    model: btd
+    path: blu-ray-to-dvd
+  - handleName: Blu-ray to HDD
+    model: bth
+    path: blu-ray-to-hdd     
+  - handleName: iPod-Cloner
+    model: ic
+    path: dvd-to-ipod-converter 
+  - handleName: Game-Cloner
+    model: gc
+    path: game-cloner   
 globalName:
   ok: OK
   submit: Submit
@@ -72,47 +114,63 @@ menuTop:
     items:
       - groupButtons: # hash(页面锚点) variant（按钮样式）属性可用
           - text: More DVD Copy
-            path: unsupported-content
+            path: dvd-copy
             variant: #primary
         children: #handleName
-          - DVD-Cloner
-          - DVD-Cloner Gold
-          - DVD-Cloner
-          - DVD-Cloner
-        additionClass: bg-red
+          - dc
+          - mc  
+          - dg        
+          - dp
+          - ou
+        additionClass: bg-dark-red-opacity-5
       - groupButtons: # hash(页面锚点) variant（按钮样式）属性可用
-          - text: More Blu-ray Copy
-            path: unsupported-content
+          - text: More Blu-ray Copy 
+            path: blu-ray-copy
             variant: #primary
         children: #handleName
-          - Blue-Cloner
-          - DVD-Cloner
-        additionClass:   
+          - handleName: Blue-Cloner
+            path: blu-ray-copy
+          - handleName: Blue-Cloner Diamond
+            path: blu-ray-copy
+        additionClass: bg-dark-blue-opacity-5
   - name: Video Ripper and Converter
     template: product
     items:
       - groupButtons: # hash(页面锚点) variant（按钮样式）属性可用
-          - text: More DVD Copy
-            path: unsupported-content
-            variant: #primary
+          - text: How to choose a DVD/Blu-ray/iTunes movie ripping software?
+            href: https://www.dvd-cloner.com/knowledge/how_to_choose_a_dvd_blu-ray_itunes_movie_ripping_software_439.html
+            variant: #primary  
         children: #handleName
-          - OpenCloner Ripper
-          - DVD-Cloner Gold
-          - DVD-Cloner
-          - DVD-Cloner
-        additionClass: 
+          - model: ocr 
+            limitHeight: 225
+            path: open-cloner-ripper
+          - handleName: Open DVD Ripper
+            path: dvd-ripper
+            limitHeight: 125
+          - handleName: Open DVD Ripper for Mac 
+            path: dvd-ripper
+            limitHeight: 125
+          - handleName: Open Blu-ray ripper
+            path: blu-ray-ripper
+            limitHeight: 125
+        additionClass: bg-dark-red-opacity-5
       - groupButtons: # hash(页面锚点) variant（按钮样式）属性可用
-          - text: More Blu-ray Copy
-            path: unsupported-content
+          - text: More Video Converter Software
+            path: video-converter
             variant: #primary
         children: #handleName
-          - Blue-Cloner
-          - DVD-Cloner
-        additionClass: 
+          - model: sc
+            path: video-converter 
+          - handleName: Open SmartBurner
+            path: video-converter
+          - handleName: Open SuperConverter
+            path: video-converter
+        additionClass: bg-dark-blue-opacity-5
   - name: UHD Solutions
+    template: product 
     items:
       - children: #handleName
-          - DVD-Cloner
+          - Open PassDCP
         text: Remove HDCP Protection from 4K/UHD Video Capature Devices
       - children: 
           - name: UHD Friendly Drives and Softwware Copying
@@ -197,14 +255,12 @@ social:
 bottomItems:
   - name: Home
     path: index
-  - name: Blu-ray Copy
-    path: blu-ray-copy
-  - name: 4K UHD Copy
-    path: uhd-video-copy-recording
-  - name: DVD Ripper
-    path: dvd-ripper
-  - name: Blu-ray Ripper
-    path: blu-ray-ripper  
+  - name: Terms and Privacy
+    path: privacy
+  - name: Link
+    path: linkout
+  - name: Sitemap
+    href: /sitemap.xml
 copyright: 
   textA: Copyright &copy; 
   textB: OpenCloner&#8482; Inc. All rights Reserved
@@ -213,8 +269,8 @@ copyright:
 
 #网站通用变量区
 imagesPath: http://192.168.31.206:5000/img/
-KB_basePath: https://www.cloner-alliance.com/help/knowledgebase/
-download_basePath: https://static.cloner-alliance.com/download/
+KB_basePath: https://www.dvd-cloner.com/knowledge/
+download_basePath: https://www.opencloner.com/download/
 manual_basePath: https://static.cloner-alliance.com/manual/
 video_basePath: http://192.168.31.206:5000/video/
 videoProduct_basePath: https://static.cloner-alliance.com/video/products/

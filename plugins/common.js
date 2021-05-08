@@ -34,7 +34,7 @@ export default ({
     if (screen == 'width') return screen_width
 
     //根据屏幕分辨率判断是否是手机
-    if (screen_width < 500) {
+    if (screen_width < 992) {
       mobile_flag = true;
     }
     return mobile_flag;
@@ -149,13 +149,15 @@ export default ({
   }
 
   
-  Vue.prototype.$fetchItem=(itemName)=>{
+  Vue.prototype.$fetchItem=(model)=>{
 
     let productData = store&&store.state.localData.productData;
-
-    if (productData.length>0) {
-      let item =  productData.find(res=>res.handleName.toLowerCase() == itemName.toLowerCase()) 
     
+    if (productData.length>0) {
+      let item =  productData.find(res=>res.handleName.toLowerCase() == model.toLowerCase()) 
+      if(!item) item = productData.find(res => {
+        if(res.model) return res.model.toLowerCase() == model.toLowerCase()      
+      });
       return item
     }    
   }

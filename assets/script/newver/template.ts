@@ -70,7 +70,7 @@ let  mddata = await $content('`;
 interface ProductDataConfig {
     boxSrc: string,
     name: string,
-    abbrName: string,
+    model: string,
     handleName: string,
     path:string,
   }

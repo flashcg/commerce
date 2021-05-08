@@ -8,7 +8,7 @@ metaItems: # seo 内容
 layout: fluid
 template: product
 pagify: true #页面化
-abbrName: DP
+model: DP
 handleName: DVD-Cloner Platinum
 name: DVD-Cloner Platinum
 type: DVD Copy 

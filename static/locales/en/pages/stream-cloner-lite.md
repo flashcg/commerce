@@ -8,7 +8,7 @@ metaItems: # seo 内容
 layout: fluid
 template: product
 pagify: true #页面化
-abbrName: SCL
+model: SCL
 handleName: Stream-Cloner Lite
 name: Stream-Cloner Lite
 type: 

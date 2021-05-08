@@ -8,12 +8,15 @@ metaItems: # seo 内容
 layout: fluid
 template: product
 pagify: true #页面化
-abbrName: BC
+model: BC
 handleName: Blue-Cloner
 name: Blue-Cloner 2021
+logo:
+  iconUrl: icon/bc.png
+  imageUrl: bc-logo.png
 boxes:
-  - imageUrl: bd2021-box.png #默认盒子图
-  - imageUrl: bd2021-box-ref.png #带阴影盒子图
+  - imageUrl: bc2021-box.png #默认盒子图
+  - imageUrl: bc2021-box-ref.png #带阴影盒子图
 desc:
   shortText: Copy/backup/burn/decrypt Blu-ray/4K UHD movies to Blu-ray/DVD discs or hard disk.
   longText: |

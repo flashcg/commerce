@@ -36,22 +36,19 @@
            </i>             
            </b-link>
 
-
-
             <b-collapse v-model="menuState['item'+objectIndex+'_isVisible']" :id="'subList-'+objectIndex" v-if="object.items" accordion="mobileNav" role="tabpanel">
               <ul  v-for="(subList,subIndex) in object.items" :key="subIndex">
                 <li v-for="(item,itemIndex) in subList.children" :key="itemIndex" >
                   <template v-if="typeof(item)=='string'">
+
                   <b-link v-if="$fetchItem(item)" :to="'/'+$fetchItem(item).handle.path+'/'"> {{$fetchItem(item).handleName}}
                   </b-link>
                   </template>
                   <template v-else-if="typeof(item)=='object'">
-                    <b-link v-if="item.path" :to="'/'+item.path+'/'">                  
-                      {{item.name}}
+                    <b-link :to="item.path?'/'+item.path+'/':''" :href="item.href">                  
+                      {{item.model?$fetchItem(item.model)&&$fetchItem(item.model).handleName:item.handleName||item.name}}
                     </b-link>	
-                    <b-link v-else :href="item.href">                  
-                      {{item.name}}
-                    </b-link>                     
+                   
                   </template>
                   </li>
               </ul>
@@ -66,9 +63,9 @@
 				<b-link class="level1" :to="object.path?'/'+object.path+'/':object.path">{{object.name}}</b-link>
         <div class="subNavbar-nav position-md-fixed fill-to-up-position">
    
-          <div v-if="object.items" :ref="'subNav'+index" :style="'transform:translateX('+stepWidth+'px)'" class=" d-flex justify-content-center pt-4 pt-md-10 "> 
+          <div v-if="object.items" :ref="'subNav'+index" :style="'transform:translateX('+stepWidth+'px)'" class=" d-flex justify-content-center pt-4 pt-md-12"> 
             
-            <ul class="navbar-nav text-light flex-fill justify-content-center flex-wrap pt-4 pb-2" v-for="(subList,subIndex) in object.items" :key="subIndex" :ref="'subList'+subIndex">              
+            <ul class="navbar-nav text-light flex-fill justify-content-center flex-wrap pt-4 pb-2" :class="subList.additionClass" v-for="(subList,subIndex) in object.items" :key="subIndex" :ref="'subList'+subIndex">              
               <li :class="object.template == 'product'?'nav-item flex-fill':'nav-item'" v-for="(item,itemIndex) in subList.children" :key="itemIndex" >
                 
                 <template v-if="typeof(item)=='string'">
@@ -78,15 +75,23 @@
                   <p>{{$fetchItem(item).handleName}}</p>
                 </b-link>	
                 </template>
-
+                
                 <template v-else-if="typeof(item)=='object'">
-                  <b-link v-if="item.path" :to="'/'+item.path+'/'" class="nav-link" @click="clickAction($event)">                  
-                    <p><b-img fluid class="d-none d-md-inline-block" :src="item.iconUrl" style="max-height:180px" /></p>
+                  
+                  <b-link :to="item.path?'/'+item.path+'/':''" :href="item.href" class="nav-link" @click="clickAction($event)"> 
+
+                    <template v-if="(item.handleName||item.model)&&$fetchItem(item.handleName||item.model)">                
+                    <p><b-img fluid class="d-none d-md-inline-block" :src="$fetchItem(item.handleName||item.model).boxes[0].imageUrl" :style="`max-height:${item.limitHeight||180}px`" /></p>
+                    <p v-if="item.handleName">{{item.handleName}}</p>
+                    <p v-else-if="item.model">{{$fetchItem(item.model).handleName}}</p>
+                    </template> 
+                    
+
+                    <template v-else>                      
+                    <p><b-img fluid class="d-none d-md-inline-block" :src="item.iconUrl" :style="`max-height:${item.limitHeight||180}px`" /></p>
                     <p>{{item.name}}</p>
-                  </b-link>	
-                  <b-link v-else :href="item.href" class="nav-link" @click="clickAction($event)">                  
-                    <p><b-img fluid class="d-none d-md-inline-block" :src="item.iconUrl" style="max-height:180px" /></p>
-                    <p>{{item.name}}</p>
+                    </template>
+
                   </b-link>                  
                 </template>
                 <p v-if="subList.text" v-html="subList.text"></p>                
@@ -97,7 +102,7 @@
             <hr style="opacity:0.3" />
               <div class="d-flex align-items-center">      
                 <div class="col-12">
-                <b-button @click="clickAction($event)" v-for="(groupButton,groupButtonIndex) in subList.groupButtons" :key="groupButtonIndex"   :variant="groupButton.variant?groupButton.variant:'outline-light'" class="rounded-0 mr-2" size="lg" :to="groupButton.hash?'/'+groupButton.path+'/#'+$toLower(groupButton.hash):'/'+groupButton.path+'/'">{{ groupButton.text }} </b-button>
+                <b-button @click="clickAction($event)" v-for="(groupButton,groupButtonIndex) in subList.groupButtons" :key="groupButtonIndex"   :variant="groupButton.variant?groupButton.variant:'outline-light'" class="rounded-0 mr-2" size="lg" :to="groupButton.hash?'/'+groupButton.path+'/#'+$toLower(groupButton.hash):'/'+groupButton.path+'/'" :href="groupButton.href">{{ groupButton.text }} </b-button>
                 </div>
               </div> 
             </div>

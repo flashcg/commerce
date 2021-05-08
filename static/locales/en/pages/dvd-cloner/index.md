@@ -8,13 +8,13 @@ metaItems: # seo 内容
 layout: fluid
 template: product
 pagify: true #页面化
-abbrName: DC
+model: DC
 handleName: DVD-Cloner
 name: DVD-Cloner 2021
 type: DVD Copy
 logo:
-  iconUrl: icon/dc-2021.png
-  imageUrl: dc-logo-2021.png
+  iconUrl: icon/dc.png
+  imageUrl: dc-logo.png
 boxes:
   - imageUrl: dc2021-box.png #默认盒子图
   - imageUrl: dc2021-box-ref.png #带阴影盒子图

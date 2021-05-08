@@ -7,8 +7,7 @@
     <b-card-body>
       <p>
         <b-link :to="`${item.saleInfo.upgradeUrl}/`">
-          <b-img-lazy :src="
-              (item.boxes[1] && item.boxes[1].imageUrl) ||
+          <b-img-lazy style="max-height:320px" :src="              
               item.boxes[0].imageUrl" fluid
           ></b-img-lazy
         ></b-link>
@@ -29,8 +28,7 @@
       <b-card-body class="pb-0">
         <p class="position-relative">
           <b-link :to="`/${item.handle.path}/`">
-            <b-img :src=" 
-                (item.boxes[1] && item.boxes[1].imageUrl) ||
+            <b-img style="max-height:220px" :src="               
                 item.boxes[0].imageUrl" fluid
             ></b-img>       
             </b-link>
@@ -133,7 +131,7 @@ export default defineComponent({
         if(props.data.reWriteitem&&item.value)Object.assign(item.value,props.data.reWriteitem)
        
       };
-    itemFn(props.data.handleName);
+    itemFn(props.data.handleName||props.data.handleName);
     watch(products, () => itemFn(props.data.handleName));
     return { item,standard };
   },

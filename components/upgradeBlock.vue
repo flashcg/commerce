@@ -101,15 +101,15 @@ export default defineComponent({
   setup(props) {      
     const data = props.data,
       route = useRoute(),router =useRouter(),
-      { state } = useStore() as any,
+      store = useStore() as any,
       isValid = ref(true),invalidInfo=ref(''),
       isloading = ref(false),
       { $axios } = useContext() as any,
       form = reactive({ code: "", email: "" }),
       products = computed(
-        () => state.localData.productData as ProductDataConfig[] | undefined
+        () => store.state.localData.productData as ProductDataConfig[] | undefined
       ),formInfo = computed(
-        () => state.i18n.messages.formInfo
+        () => store.state.i18n.messages.formInfo
       ),
       item = ref<ProductDataConfig>(),
       itemFn = (handleName = props.data.handleName) => {
@@ -153,8 +153,9 @@ export default defineComponent({
                 invalidInfo.value = data.text
                 break  
               case 'success':
-                router.push({ path: '../upgradecode/', query: { plan: 'private' }})
-                
+                data.handleName = props.data.handleName;
+                store.commit('toUpgradeInfo',data) 
+                router.push({ path: '../upgradecode/', query: {  }})                
                 break                          
               default:
                 isValid.value = false; 

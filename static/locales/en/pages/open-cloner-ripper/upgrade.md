@@ -5,7 +5,6 @@ metaItems:
     content: Pay to upgrade OpenCloner Ripper and enjoy one year free updates.
   - name: keywords
     content: Opencloner
-breadcrumb: 
 template: primary 
 handleName: OpenCloner Ripper
 upgrade:

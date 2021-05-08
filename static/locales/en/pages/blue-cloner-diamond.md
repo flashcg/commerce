@@ -8,12 +8,15 @@ metaItems: # seo 内容
 layout: fluid
 template: product
 pagify: true #页面化
-abbrName: BD
+model: BD
 handleName: Blue-Cloner Diamond
 name: Blue-Cloner Diamond
+logo:
+  iconUrl: icon/bd.png
+  imageUrl: bc-logo.png
 boxes:
-  - imageUrl: bc2021-box.png #默认盒子图
-  - imageUrl: bc2021-box-ref.png #带阴影盒子图
+  - imageUrl: bd2021-box.png #默认盒子图
+  - imageUrl: bd2021-box-ref.png #带阴影盒子图
 desc:
   shortText: Powerful Blu-ray copy/burn/decryption/conversion software, with all the features of Blue-Cloner, Open Blu-ray ripper and Open SmartBurner.
   longText: |

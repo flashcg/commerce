@@ -4,8 +4,7 @@ metaItems:
   - name: description
     content: Opencloner - Privacy Policy
   - name: keywords
-    content: Opencloner
-breadcrumb: Privacy Policy    
+    content: Opencloner  
 ---
 
 

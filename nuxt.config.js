@@ -54,7 +54,7 @@ export default {
 
   /** i18n  */
   router: {
-    middleware: ['breadcrumbTitle'],
+    middleware: ['breadcrumbTitle','redirect'],
     trailingSlash:true
   },
   env: {
@@ -109,7 +109,7 @@ export default {
     '@nuxtjs/markdownit',
     '@nuxt/content',
     'bootstrap-vue/nuxt',
-    ['@nuxtjs/google-tag-manager', { id: 'GTM-P25NTJQ' }],
+   // ['@nuxtjs/google-tag-manager', { id: 'GTM-P25NTJQ' }],
     ['nuxt-i18n', {
       locales: [{
         code: 'en',
@@ -137,8 +137,7 @@ export default {
         }
       }
     }],
-    '@nuxtjs/sitemap',
-    '@nuxtjs/redirect-module'
+    '@nuxtjs/sitemap' 
   ],
   sitemap: {
     hostname: 'https://www.dvd-cloner.com',
@@ -153,18 +152,13 @@ export default {
       })
     }
   },
-  redirect: [
-    {
-        from: '^.*(?<!\/)$',
-        to: (from, req) => req.url + '/'
-    }
-],
+
   bootstrapVue: {
     bootstrapCSS: false, // or `css`
     bootstrapVueCSS: false, // or `bvCSS`
      components: ['BIcon','BBreadcrumb','BAlert','BLink','BButton','BButtonGroup','BBadge','BBtn','BEmbed','BContainer','BRow','BCol','BNavbar','BNavbarBrand','BNavbarToggle','BCollapse','BTab','BTabs','BSpinner','BIconArrowLeft','BIconArrowRight','BIconClock','BIconSearch','BIconArrowUpCircleFill'],
     componentPlugins: [
-      'ModalPlugin','ListGroupPlugin','VBTogglePlugin','CardPlugin','FormPlugin','FormInputPlugin','InputGroupPlugin','FormGroupPlugin','SidebarPlugin','FormSelectPlugin','ImagePlugin','PaginationPlugin'
+      'ModalPlugin','ListGroupPlugin','VBTogglePlugin','CardPlugin','FormPlugin','FormInputPlugin','InputGroupPlugin','FormGroupPlugin','SidebarPlugin','FormSelectPlugin','ImagePlugin','PaginationPlugin','FormRadioPlugin','OverlayPlugin'
     ], 
   },
   content:{

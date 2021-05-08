@@ -55,10 +55,16 @@ export default {
       let tempData = [];
       if (this.items && this.items.length > 0) {
          tempData = this.items.filter(res=>res.release)
+
+ 
          tempData = JSON.parse(JSON.stringify(tempData))
+
+         tempData = this.mddata.release.include.map(res=>{
+         return tempData.find(resTempData=>resTempData.handleName.toLowerCase() == res.toLowerCase())
+         })  
+
          for (let i = 0; i < tempData.length; i++) { 
-             tempData[i] = fetchItem(tempData[i].handleName,this.releaseOriginal)
-              
+           tempData[i] = fetchItem(tempData[i].handleName,this.releaseOriginal)              
          }             
       }
       return tempData;
@@ -89,7 +95,8 @@ export default {
   },
   watch: {
     options(val){
-      this.selected = val[0].value
+   
+      if(val.length>0) this.selected = val[0].value
     }
   },
   mounted() {

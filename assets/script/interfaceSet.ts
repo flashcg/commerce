@@ -7,7 +7,7 @@ interface ReleaseItem {
   list:string[]
 }
 interface ProductDataConfig{
-    abbrName:string;
+    model:string;
     handleName:string;
     name:string;
     logo?:{iconUrl:string,imageUrl:string};

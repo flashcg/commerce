@@ -15,6 +15,13 @@
           </template>
           </div>
         </b-tab>
+        <b-tab :title="data.items[1].title" title-link-class="rounded-0">
+          <div class="row">
+          <template v-for="(item,index) in data.items[1].list">
+          <widget-item-bundle :key="index" :data="item"></widget-item-bundle>
+          </template>
+          </div>
+        </b-tab>        
       </template>
     </item-tab>
     <item-bonus :data="mddata.bonus" />

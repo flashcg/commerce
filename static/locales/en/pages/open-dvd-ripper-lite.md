@@ -8,7 +8,7 @@ metaItems: # seo 内容
 layout: fluid
 template: product
 pagify: true #页面化
-abbrName: ODRL
+model: ODRL
 handleName: Open DVD Ripper Lite
 name: Open DVD Ripper Lite
 type: 

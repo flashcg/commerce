@@ -5,7 +5,6 @@ metaItems:
     content: Pay to upgrade DVD-Cloner and enjoy one year free updates.
   - name: keywords
     content: DVD-Cloner, upgrade
-breadcrumb: Privacy Policy
 template: primary 
 handleName: DVD-Cloner
 upgrade:

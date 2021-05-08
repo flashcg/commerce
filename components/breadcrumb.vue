@@ -27,28 +27,33 @@ export default {
           rePathArray.push("/" + pathArray[index]+"/");
           rePath = rePathArray.join("");
           let string = this.$retoLower(res, "-")
+          
           switch (string) {
             case 'dvd cloner':
               string = 'DVD-Cloner'
               break;  
-            case 'uhd video copy recording':
-              string = 'UHD Video Copy Recording'
-              break;                       
+                     
             case 'blue cloner':
               string = 'Blue-Cloner'
-              break;       
+              break;     
+            
           }
+          string = string.replace('dvd','DVD')
+          string = string.replace('uhd','UHD')
+          string = string.replace('blu ray','Blu-ray')
+
           currentArray.push({ text: string, to: rePath });
-      
+
 
         })
-       // this.breadcrumbData.push(currentArray);
+        if(this.$route.meta.title) currentArray[currentArray.length-1].text = this.$route.meta.title
+
         return this.breadcrumbData.concat(currentArray)
       }
     }
   },
   mounted() {
-    console.log(this.$router);
+    
   }
 };
 </script>

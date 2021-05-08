@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML_DIZ_INFO>
+  <MASTER_PAD_VERSION_INFO>
+    <MASTER_PAD_VERSION>3.10</MASTER_PAD_VERSION>
+    <MASTER_PAD_EDITOR>PADGen 3.1.0.41 http://www.padgen.org</MASTER_PAD_EDITOR>
+    <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+  </MASTER_PAD_VERSION_INFO>
+  <Company_Info>
+    <Company_Name>OpenCloner Inc.</Company_Name>
+    <Address_1/>
+    <Address_2/>
+    <City_Town/>
+    <State_Province/>
+    <Zip_Postal_Code/>
+    <Country/>
+    <Company_WebSite_URL>http://www.opencloner.com</Company_WebSite_URL>
+    <Contact_Info>
+      <Author_First_Name>OpenCloner Inc.</Author_First_Name>
+      <Author_Last_Name>OpenCloner Inc.</Author_Last_Name>
+      <Author_Email>market@opencloner.com</Author_Email>
+      <Contact_First_Name>OpenCloner</Contact_First_Name>
+      <Contact_Last_Name>OpenCloner</Contact_Last_Name>
+      <Contact_Email>affiliate-admin@opencloner.com</Contact_Email>
+    </Contact_Info>
+    <Support_Info>
+      <Sales_Email>affiliate-admin@opencloner.com</Sales_Email>
+      <Support_Email>dvd-cloner-mac@dvd-cloner.com</Support_Email>
+      <General_Email>market@opencloner.com</General_Email>
+      <Sales_Phone/>
+      <Support_Phone/>
+      <General_Phone/>
+      <Fax_Phone/>
+    </Support_Info>
+  </Company_Info>
+  <Program_Info>
+    <Program_Name>DVD-Cloner for Mac 2021</Program_Name>
+    <Program_Version>8.10.722</Program_Version>
+    <Program_Release_Month>3</Program_Release_Month>
+    <Program_Release_Day>2</Program_Release_Day>
+    <Program_Release_Year>2021</Program_Release_Year>
+    <Program_Cost_Dollars>59.99</Program_Cost_Dollars>
+    <Program_Cost_Other_Code/>
+    <Program_Cost_Other/>
+    <Program_Type>Shareware</Program_Type>
+    <Program_Release_Status>Major Update</Program_Release_Status>
+    <Program_Install_Support>Install and Uninstall</Program_Install_Support>
+    <Program_OS_Support>Mac OS X, Mac Other, Other</Program_OS_Support>
+    <Program_Language>English</Program_Language>
+    <Program_Change_Info>This best DVD copying software removes various DVD copy protections such as CSS, RC, RCE, APS, UOPs, ARccOS, etc.&#xD;
+Remove various Blu-ray protections such as AACS, BD+, Cinavia, etc.&#xD;
+Smart Analyzer technology can simulate the playback process and automatically skip bad sectors, greatly improved the copy quality.&#xD;
+Rip high-capacity DVD movies to MKV format for easy storage, with all audio tracks included, high bitrate, high quality and lower size.&#xD;
+Copy the main movie of a Blu-ray disc to a blank BD-25 or to the hard disk as an ISO image file or a Blu-ray movie folder.&#xD;
+Rip any Blu-ray movie to MKV format on the hard disk, with all audio tracks included, compatible with many playback devices.&#xD;
+Copy the main movie of UHD Blu-ray encrypted with AACS 2.0 to a blank BD-50 using a 4K UHD friendly drive. 4K, HDR features are supported.&#xD;
+With efficient H.265 codec technology, DVD-Cloner for Mac can rip UHD Blu-ray movies to MKV, keeping the same 4K/HDR image quality as the original UHD Blu-ray.&#xD;
+Optionally compress a DVD/Blu-ray movie in the ripping process by setting H.264 or H.265 as the encoder.&#xD;
+Optionally convert HD AC3, DTS audio to a normal format when you copy a Blu-ray movie.&#xD;
+Select to keep only one audio track and subtitle in the MKV ripping function, removing other unnecessary ones.&#xD;
+Send us quick feedback in real time via the shortcut window within the software.&#xD;
+Use the full version of DVD-Cloner for Mac 7 days for free before purchasing.</Program_Change_Info>
+    <Program_Specific_Category>Audio</Program_Specific_Category>
+    <Program_Category_Class>Audio &amp; Multimedia::Video &amp; DVD Tools</Program_Category_Class>
+    <Program_System_Requirements>Intel or PowerPC 1.0GHZ, 1G memory, 10GB free hard disk space, One DVD burner, Mac OS:10.10 or later versions</Program_System_Requirements>
+    <File_Info>
+      <File_Size_Bytes>26109542.4</File_Size_Bytes>
+      <File_Size_K>25497.6</File_Size_K>
+      <File_Size_MB>24.9</File_Size_MB>
+    </File_Info>
+    <Expire_Info>
+      <Has_Expire_Info>The trial version is only valid for 7 days.</Has_Expire_Info>
+      <Expire_Count/>
+      <Expire_Based_On>Days</Expire_Based_On>
+      <Expire_Other_Info/>
+      <Expire_Month/>
+      <Expire_Day/>
+      <Expire_Year/>
+    </Expire_Info>
+  </Program_Info>
+  <Program_Descriptions>
+    <English>
+      <Keywords>dvd-cloner, dvd copier, dvd copier software, dvd copy, dvd copy software, dvd copying software, best dvd copying software,&#xD;
+copy dvd, clone dvd, copy dvd to dvd, copy dvd on mac, copy dvd to mac, copy dvd to iso, copy dvd movie, backup dvd,&#xD;
+dvd decrypter, decrypt dvd, decrypt AACS, decrypt AACS 2.0, remove Cinavia, decrypt blu-ray, DVD region free, rip dvd, burn dvd, duplicate dvd, dvd copy protection, make a copy of dvd, dvd-9 to dvd-5,&#xD;
+blu-ray copy, blu-ray copy software, blu-ray copier, blu-ray cloner, copy blu-ray, copy uhd blu-ray, copy blu-ray to iso,&#xD;
+rip blu-ray, combine dvd, dvd to mkv, blu-ray to mkv, dvd burning, dvd ripper, convert dvd, uhd friendly drive, copy main movie,&#xD;
+split dvd, episodic dvd copy, H.264 encoder, H.265 encoder, blu-ray copy speed, dvd reading speed</Keywords>
+      <Char_Desc_45>DVD/Blu-ray/4K UHD copy/ripping software for Mac.</Char_Desc_45>
+      <Char_Desc_80>Copy/backup/decrypt/rip your DVD/Blu-ray/4K UHD Blu-ray movies on Mac.</Char_Desc_80>
+      <Char_Desc_450>Fully upgraded professional DVD/Blu-ray/4K UHD copy software. Remove various DVD/Blu-ray/UHD copy protections. Clone DVD to any blank disc including DVD+R/RW, DVD-R/RW, DVD+R DL and DVD-R DL with multiple copy modes. The great breakthrough for DVD-Cloner for Mac 2019 is that it can copy Blu-ray/4K UHD Blu-ray movies to BD-R/REs or your Mac and rip DVD/Blu-ray/4K UHD movies to MKV format for easy storage.</Char_Desc_450>
+      <Char_Desc_2000>
+        
+        DVD-Cloner for Mac 2019 is a fully upgraded professional DVD/Blu-ray/4K UHD copy/ripping/decryption software with ultra high quality. It can clone DVD to any blank disc including DVD+R/RW, DVD-R/RW, DVD+R DL and DVD-R DL with multiple copy modes. Besides, it can copy DVD to your Mac as an ISO file or DVD movie folder. The great breakthrough for DVD-Cloner for Mac 2019 is that it can copy Blu-ray/4K UHD Blu-ray movies to BD-R/REs or your Mac and rip DVD/Blu-ray/4K UHD movies to MKV format for easy storage.&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        <br/>
+        <p>Perfect 1:1 DVD Copy</p>
+        <p>
+          
+          This best DVD copying software removes various DVD copy protections such as CSS, RC, RCE, APS, UOPs, ARccOS, etc.&#xD;
+Copy DVD-5 to DVD-5 in 1:1 ratio.&#xD;
+Copy DVD-9 to DVD-9 in 1:1 ratio.&#xD;
+Backup DVD to a DVD movie folder for playback on the player software or TV and a DVD player is not needed anymore.&#xD;
+Backup DVD to an ISO image file on the hard disk for later burning.
+          
+          
+          
+          
+        
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+        </p>
+        <p>Movie Complete Copy</p>
+        <p>
+          
+          Compress one DVD-9 movie to a blank DVD-5 disc, keeping menus and special features.&#xD;
+Manually adjust the compression rate to define the picture quality of your DVD copies.
+          
+        
+          <br/>
+        </p>
+        <p>Movie-Only Copy</p>
+        <p>
+          
+          Copy the main movie of a DVD-9/DVD-5 to a DVD-5 disc, omitting menus and special features.&#xD;
+Intelligently recognize the main movie from the source DVD to avoid copying a fake main movie.
+          
+        
+          <br/>
+        </p>
+        <p>Split DVD Copy</p>
+        <p>
+          
+          Split one DVD-9 movie to two blank DVD-5 discs with original picture quality.&#xD;
+Optionally keep menus when splitting a DVD-9 movie to two DVD-5s.
+          
+        
+          <br/>
+        </p>
+        <p>Movie Customized Copy</p>
+        <p>
+          
+          Episodic DVD copier software - Copy only a certain range of titles, specially designed for Episodic TV series DVDs and music video DVDs.&#xD;
+Create multiple DVD copies without having to repeat the entire process again.
+          
+        
+          <br/>
+        </p>
+        <p>Rip DVD to MKV</p>
+        <p>
+          
+          Rip high-capacity DVD movies to MKV format for easy storage, with high bitrate, high quality, and lower size.&#xD;
+Optionally compress a DVD movie in the ripping process by setting H.264 or H.265 as the encoder.
+          
+        
+          <br/>
+        </p>
+        <p>Burn a DVD movie from the hard disk to a DVD±R (DL)</p>
+        <p>Burn DVD movie folders or ISO image files on the hard disk to DVD±R (DL) with diverse copy modes.</p>
+        <p>Combine 2 DVDs to one DVD±R DL</p>
+        <p>
+          
+          Combine 2 DVD movie discs onto one DVD±R DL.&#xD;
+Supports reading source DVD movie folders or ISO image files from the hard disk.&#xD;
+Select the menu template, background picture and set the movie titles.
+          
+          
+        
+          <br/>
+          <br/>
+        </p>
+        <p>Copy Blu-ray/4K UHD Blu-ray movies</p>
+        <p>
+          
+          Remove various Blu-ray protections such as AACS, BD+, Cinavia, etc.&#xD;
+Copy a Blu-ray movie to a blank BD-25 with movie-only copy mode.&#xD;
+Copy a Blu-ray movie to the hard disk as a Blu-ray movie folder or ISO image file.&#xD;
+Copy the main movie of UHD Blu-ray encrypted with AACS 2.0 to a blank BD-50 using a 4K UHD friendly drive. 4K, HDR features are supported.
+          
+          
+          
+        
+          <br/>
+          <br/>
+          <br/>
+        </p>
+        <p>Rip Blu-ray/4K UHD Blu-ray to MKV</p>
+        <p>
+          
+          Besides Blu-ray disc copy, DVD-Cloner for Mac 2019 gives you another choice to rip the main movie of a high-capacity Blu-ray disc to MKV format saved on the hard disk.&#xD;
+Optionally compress a Blu-ray movie in the ripping process by setting H.264 or H.265 as the encoder.&#xD;
+With efficient H.265 codec technology, DVD-Cloner for Mac can rip UHD Blu-ray movies to MKV, keeping the same 4K/HDR image quality as the original UHD Blu-ray.&#xD;
+Select to keep only one audio track and subtitle in the MKV ripping function, removing other unnecessary ones.
+          
+          
+          
+        
+          <br/>
+          <br/>
+          <br/>
+        </p>
+        <p>Other Features:</p>
+        <p>
+          
+          Optimized the DVD burning engine. The copied DVD discs are compatible with more playback devices including PS4, Xbox, Blu-ray player, etc.&#xD;
+Make flawless copies of scratched DVDs, so you can bring your damaged movies back to life.&#xD;
+Select to add the .dvdmedia suffix to the DVD folder on the hard disk before copying for convenient playback on the DVD player.&#xD;
+Optimized the DVD copy function, improved the video quality.&#xD;
+Send us quick feedback in real time via the shortcut window within the software.&#xD;
+Use the full version of DVD-Cloner for Mac 7 days for free before purchasing.
+          
+          
+          
+          
+          
+        
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+        </p>
+      </Char_Desc_2000>
+    </English>
+  </Program_Descriptions>
+  <Web_Info>
+    <Application_URLs>
+      <Application_Info_URL>https://www.dvd-cloner.com/dvd-copy-for-mac.html</Application_Info_URL>
+      <Application_Order_URL>https://www.dvd-cloner.com/order.html</Application_Order_URL>
+      <Application_Screenshot_URL>https://www.dvd-cloner.com/sites/dcc/files/icon/mc-2019_screenshot_1.png</Application_Screenshot_URL>
+      <Application_Icon_URL>https://www.dvd-cloner.com/sites/dcc/files/icon/mc-2019-ico.png</Application_Icon_URL>
+      <Application_XML_File_URL>http://www.dvd-cloner.com/dvd-cloner-for-mac.xml</Application_XML_File_URL>
+    </Application_URLs>
+    <Download_URLs>
+      <Primary_Download_URL>https://www.opencloner.com/download/dvd-cloner-for-mac.dmg</Primary_Download_URL>
+      <Secondary_Download_URL>https://www.opencloner.com/download/dvd-cloner-for-mac.dmg</Secondary_Download_URL>
+      <Additional_Download_URL_1/>
+      <Additional_Download_URL_2/>
+    </Download_URLs>
+  </Web_Info>
+  <Permissions>
+    <Distribution_Permissions/>
+    <EULA/>
+  </Permissions>
+  <Affiliates>
+    <Affiliates_FORM>Y</Affiliates_FORM>
+    <Affiliates_VERSION>1.4</Affiliates_VERSION>
+    <Affiliates_URL>http://www.asp-shareware.org/pad/extensions/Affiliates.htm</Affiliates_URL>
+    <Affiliates_Information_Page/>
+    <Affiliates_Avangate_Order_Page>https://secure.avangate.com/order/checkout.php?PRODS=4537843&amp;QTY=1&amp;CART=2</Affiliates_Avangate_Order_Page>
+    <Affiliates_Avangate_Vendor_ID>OPENCLON</Affiliates_Avangate_Vendor_ID>
+    <Affiliates_Avangate_Product_ID>4537843</Affiliates_Avangate_Product_ID>
+    <Affiliates_Avangate_Maximum_Commission_Rate>30</Affiliates_Avangate_Maximum_Commission_Rate>
+    <Affiliates_BMTMicro_Order_Page/>
+    <Affiliates_BMTMicro_Vendor_ID/>
+    <Affiliates_BMTMicro_Product_ID/>
+    <Affiliates_BMTMicro_Maximum_Commission_Rate/>
+    <Affiliates_Cleverbridge_Order_Page/>
+    <Affiliates_Cleverbridge_Vendor_ID/>
+    <Affiliates_Cleverbridge_Product_ID/>
+    <Affiliates_Cleverbridge_Maximum_Commission_Rate/>
+    <Affiliates_clixGalore_Order_Page/>
+    <Affiliates_clixGalore_Vendor_ID/>
+    <Affiliates_clixGalore_Product_ID/>
+    <Affiliates_clixGalore_Maximum_Commission_Rate/>
+    <Affiliates_CommissionJunction_Order_Page/>
+    <Affiliates_CommissionJunction_Vendor_ID/>
+    <Affiliates_CommissionJunction_Product_ID/>
+    <Affiliates_CommissionJunction_Maximum_Commission_Rate/>
+    <Affiliates_DigiBuy_Order_Page/>
+    <Affiliates_DigiBuy_Vendor_ID/>
+    <Affiliates_DigiBuy_Product_ID/>
+    <Affiliates_DigiBuy_Maximum_Commission_Rate/>
+    <Affiliates_DigitalCandle_Order_Page/>
+    <Affiliates_DigitalCandle_Vendor_ID/>
+    <Affiliates_DigitalCandle_Product_ID/>
+    <Affiliates_DigitalCandle_Maximum_Commission_Rate/>
+    <Affiliates_Emetrix_Order_Page/>
+    <Affiliates_Emetrix_Vendor_ID/>
+    <Affiliates_Emetrix_Product_ID/>
+    <Affiliates_Emetrix_Maximum_Commission_Rate/>
+    <Affiliates_eSellerate_Order_Page/>
+    <Affiliates_eSellerate_Vendor_ID/>
+    <Affiliates_eSellerate_Product_ID/>
+    <Affiliates_eSellerate_Maximum_Commission_Rate/>
+    <Affiliates_Kagi_Order_Page/>
+    <Affiliates_Kagi_Vendor_ID/>
+    <Affiliates_Kagi_Product_ID/>
+    <Affiliates_Kagi_Maximum_Commission_Rate/>
+    <Affiliates_LinkShare_Order_Page/>
+    <Affiliates_LinkShare_Vendor_ID/>
+    <Affiliates_LinkShare_Product_ID/>
+    <Affiliates_LinkShare_Maximum_Commission_Rate/>
+    <Affiliates_NorthStarSol_Order_Page/>
+    <Affiliates_NorthStarSol_Vendor_ID/>
+    <Affiliates_NorthStarSol_Product_ID/>
+    <Affiliates_NorthStarSol_Maximum_Commission_Rate/>
+    <Affiliates_OneNetworkDirect_Order_Page/>
+    <Affiliates_OneNetworkDirect_Vendor_ID/>
+    <Affiliates_OneNetworkDirect_Product_ID/>
+    <Affiliates_OneNetworkDirect_Maximum_Commission_Rate/>
+    <Affiliates_Order1_Order_Page/>
+    <Affiliates_Order1_Vendor_ID/>
+    <Affiliates_Order1_Product_ID/>
+    <Affiliates_Order1_Maximum_Commission_Rate/>
+    <Affiliates_Osolis_Order_Page/>
+    <Affiliates_Osolis_Vendor_ID/>
+    <Affiliates_Osolis_Product_ID/>
+    <Affiliates_Osolis_Maximum_Commission_Rate/>
+    <Affiliates_Plimus_Order_Page/>
+    <Affiliates_Plimus_Vendor_ID/>
+    <Affiliates_Plimus_Product_ID/>
+    <Affiliates_Plimus_Maximum_Commission_Rate/>
+    <Affiliates_Regnet_Order_Page/>
+    <Affiliates_Regnet_Vendor_ID/>
+    <Affiliates_Regnet_Product_ID/>
+    <Affiliates_Regnet_Maximum_Commission_Rate/>
+    <Affiliates_Regnow_Order_Page/>
+    <Affiliates_Regnow_Vendor_ID/>
+    <Affiliates_Regnow_Product_ID/>
+    <Affiliates_Regnow_Maximum_Commission_Rate/>
+    <Affiliates_Regsoft_Order_Page/>
+    <Affiliates_Regsoft_Vendor_ID/>
+    <Affiliates_Regsoft_Product_ID/>
+    <Affiliates_Regsoft_Maximum_Commission_Rate/>
+    <Affiliates_ShareIt_Order_Page/>
+    <Affiliates_ShareIt_Vendor_ID/>
+    <Affiliates_ShareIt_Product_ID/>
+    <Affiliates_ShareIt_Maximum_Commission_Rate/>
+    <Affiliates_Shareasale_Order_Page/>
+    <Affiliates_Shareasale_Vendor_ID/>
+    <Affiliates_Shareasale_Product_ID/>
+    <Affiliates_Shareasale_Maximum_Commission_Rate/>
+    <Affiliates_SWReg_Order_Page/>
+    <Affiliates_SWReg_Vendor_ID/>
+    <Affiliates_SWReg_Product_ID/>
+    <Affiliates_SWReg_Maximum_Commission_Rate/>
+    <Affiliates_V-Share_Order_Page/>
+    <Affiliates_V-Share_Vendor_ID/>
+    <Affiliates_V-Share_Product_ID/>
+    <Affiliates_V-Share_Maximum_Commission_Rate/>
+    <Affiliates_VFree_Order_Page/>
+    <Affiliates_VFree_Vendor_ID/>
+    <Affiliates_VFree_Product_ID/>
+    <Affiliates_VFree_Maximum_Commission_Rate/>
+    <Affiliates_Yaskifo_Order_Page/>
+    <Affiliates_Yaskifo_Vendor_ID/>
+    <Affiliates_Yaskifo_Product_ID/>
+    <Affiliates_Yaskifo_Maximum_Commission_Rate/>
+  </Affiliates>
+  <ASP>
+    <ASP_FORM>Y</ASP_FORM>
+    <ASP_Member>N</ASP_Member>
+    <ASP_Member_Number/>
+  </ASP>
+</XML_DIZ_INFO>

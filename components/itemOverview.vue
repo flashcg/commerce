@@ -31,13 +31,39 @@
 
           <p class="fs-3" v-if="itemSaleInfo.standard">{{standard?$t('softwareInfo.currency')+itemSaleInfo.standard.price:$t('softwareInfo.currency')+itemSaleInfo.lifetime.price}} <b-link v-if="!standard&&data.type!='spList'" :to="itemInfo.spPath?itemInfo.spPath+'/':'/special-offer/'" class="fs-6 text-red-light" sc>{{$t('globalName.get50off')}} </b-link>          
           </p>
+          
+          <p v-else-if="itemSaleInfo.years">
+
+            <b-form-group v-if="itemSaleInfo.years.length>1" label="Please choose a option" label-class="fs-5">
+              <b-form-radio-group stacked v-model="upgradeYearSelected">
+                <template v-for="(option,optionIndex) in upgradeYearOptions">                  
+                  <b-form-radio size="md" :value="option.value" :key="optionIndex" >
+                    <template >
+                      <span v-html="`<span class='text-danger font-weight-bold'>$${option.price} </span> for <span class='font-weight-bold'>${option.text}</span> free upgrade. <span class='text-danger font-weight-bold'>${saveRatio(upgradeYearOptions[0].price,option.price,optionIndex)}</span>`"></span>
+                    </template>
+                  </b-form-radio>
+<!--                    -->
+                </template>
+              </b-form-radio-group>
+            </b-form-group>  
+            <span v-else>
+              <span v-if="originalSaleInfo.standard" class="text-muted text-line-through fs-4">${{originalSaleInfo.standard.price}}</span> 
+              <span class="text-danger fs-4">${{itemSaleInfo.years[0].price}} </span>  </span>        
+          </p>
+
           <p>
-          <b-button v-if="itemSaleInfo.standard" squared variant="danger" :size="data.type=='order'?'xl':'lg'" :href="standard?itemSaleInfo.standard.buyLink:itemSaleInfo.lifetime.buyLink" class="mt-2">{{$t("globalName.buy")}} </b-button>
+            <b-button v-if="itemSaleInfo.standard" squared variant="danger" :size="data.type=='order'?'xl':'lg'" :href="standard?itemSaleInfo.standard.buyLink:itemSaleInfo.lifetime.buyLink" class="mt-2">{{$t("globalName.buy")}} </b-button>
           <template v-if="data.type!='order'">
           <b-button v-if="itemSaleInfo.downloadUrl" squared variant="success" size="lg" :href="itemSaleInfo.downloadUrl" class="mt-2">{{$t("globalName.download")}} </b-button> 
           <b-button v-if="itemSaleInfo.downloadUrl_64bit" squared variant="success" size="lg" :href="itemSaleInfo.downloadUrl_64bit" class="mt-2">{{`${$t("globalName.download")} 64 Bit`}} </b-button>          
           <b-button v-if="itemSaleInfo.upgradeUrl&&data.type!='spList'" squared variant="outline-light" size="lg" :to="`${itemSaleInfo.upgradeUrl}/`" class="mt-2">{{$t("globalName.upgrade")}} </b-button> 
-          </template>         
+          </template>
+
+          <template v-if="itemSaleInfo.years">
+            <b-button v-if="itemSaleInfo.years.length>1" :disabled="!upgradeYearSelected" squared variant="danger" size="lg" :href="upgradeYearSelected" class="mt-2">{{$t("globalName.upgrade")}} </b-button>
+
+           <b-button v-else squared variant="danger" :href="itemSaleInfo.years[0].link" size="lg" class="mt-2">{{$t("globalName.upgrade")}} </b-button> 
+          </template>
           </p>
           <p v-if="data.button&&data.button.additionText" class="whiteSpace-preline" v-html="data.button.additionText"></p>
           <p v-if="itemSaleInfo.standard"><b-img fluid src="~static/images/credit_cards.gif" style="max-width:300px"  /> </p>
@@ -57,13 +83,14 @@
         <b-col sm="12" v-if="data.button&&data.button.extraItem">
 
         <hr class="dark-opacity-1" />
-        <b-button v-for="(item,index) in data.button.extraItem" :key="index" :to="`/${item.path}/`" :href="item.kbUrl" variant="outline-dark" class="mr-2">{{item.text}} </b-button> 
+        <b-button v-for="(item,index) in data.button.extraItem" :key="index" :to="item.path?`/${item.path}/`:''" :href="item.kbUrl" variant="outline-dark" class="mr-2">{{item.text}} </b-button> 
 
         </b-col>
 
       </b-row>      
     </b-container>  
     <div v-if="data.bgStyle " :class="backgroundClass" :style="backgroundStyle"></div>
+
 </div> 
 </template>
  
@@ -90,6 +117,7 @@ export default Vue.extend({
   name: "item-overview",
   data() {
     return {
+      upgradeYearSelected: null,
       standard: true
     };
   },
@@ -101,10 +129,25 @@ export default Vue.extend({
   },
   computed:{
     ...mapState({items: (state:any) => state.localData.productData}),
+    originalSaleInfo(){
+      return this.items&&fetchItem(this.itemInfo.handleName,this.items)?.saleInfo||{}
+    },
     itemSaleInfo(){     
       let outData = this.items&&fetchItem(this.itemInfo.handleName,this.items)?.saleInfo||{}
       if(this.itemInfo.saleInfo) return this.itemInfo.saleInfo
       return outData
+    },
+    upgradeYearOptions(){
+      let _this = this as any;
+      if (_this.itemSaleInfo&&_this.itemSaleInfo.years) {
+        return _this.itemSaleInfo.years.map((res:any,index:number)=>{
+          return {
+            text:res.name,
+            price:res.price,  
+            value:res.link+_this.itemInfo.code
+          }
+        })
+      }
     },
     backgroundStyle():object|void{      
     if (this.data.bgStyle&&typeof(this.data.bgStyle)=='object') {        
@@ -131,6 +174,18 @@ export default Vue.extend({
         return 'bg-'+this.data.bgStyle.default+' position-absolute '+bgPosition(this.data.bgPosition)
       }        
     }    
+  },
+  methods:{
+    saveRatio(basePrice:number,currentPrice:number,i:number){
+      if (i == 0) {
+        return ''
+      } else if (i == 3) {
+        return 'Saving 40%!'
+      } else {
+        return 'Saving '+Math.ceil(100*(1-currentPrice/(basePrice*(i+1))))+'%!'
+      }
+      
+    }
   },
   mounted() {
 

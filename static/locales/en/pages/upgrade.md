@@ -5,7 +5,7 @@ metaItems:
     content: Upgrade - DVD-Cloner
   - name: keywords
     content: Upgrade
-breadcrumb: Privacy Policy   
+breadcrumb:   
 template: primary
 entrances:
   name: entrances
@@ -21,6 +21,7 @@ entrances:
   bgStyle: 
   items:
     - handleName: DVD-Cloner
+    - handleName: DVD-Cloner for Mac
     - handleName: OpenCloner Ripper
   iconGird: 3   
 ---

@@ -68,10 +68,13 @@ function isMobile(screen: string) {
 }
 
 
-function fetchItem(itemName: string, items: ProductDataConfig[] | undefined) {
-
+function fetchItem(model: string, items: ProductDataConfig[] | undefined) {
+  
   if (items && items.length > 0) {
-    let item = items.find(res => res.handleName.toLowerCase() == itemName.toLowerCase())
+    let item = items.find(res => res.handleName.toLowerCase() == model.toLowerCase());
+    if(!item) item = items.find(res => {
+      if(res.model) return res.model.toLowerCase() == model.toLowerCase()      
+    });
     return item
   }
 }

@@ -8,14 +8,14 @@ metaItems: # seo 内容
 layout: fluid
 template: product
 pagify: true #页面化
-abbrName: OCR
+model: OCR
 handleName: OpenCloner Ripper
 name: OpenCloner Ripper 2020
 type: 
   - DVD Ripper
   - Blu-ray Ripper
 logo:
-  iconUrl: icon/ocr-2020.png
+  iconUrl: icon/ocr.png
   imageUrl: dc-logo-2021.png
 boxes:
   - imageUrl: ocr2021-box.png #默认盒子图

@@ -8,13 +8,13 @@ metaItems: # seo 内容
 layout: fluid
 template: product
 pagify: true #页面化
-abbrName: MC
+model: MC
 handleName: DVD-Cloner for Mac
 name: DVD-Cloner for Mac 2021
 type: DVD Copy
 logo:
-  iconUrl: icon/mc-2021.png
-  imageUrl: dc-logo-2021.png
+  iconUrl: icon/mc.png
+  imageUrl: mc-logo.png
 boxes:
   - imageUrl: dcmac2021-box.png #默认盒子图
   - imageUrl: dcmac2021-box-ref.png #带阴影盒子图
@@ -77,25 +77,16 @@ systemRequirements:
   container: container
   additionClass: position-relative
   items:
-    - title: Windows
+    - title: Mac
       cols:
         - additionClass: 
-          imageUrl: win10.png
+          imageUrl: macos.png
         - additionClass:
-          text: '<p>Minimum configuration:</p>
-          <ul><li>Intel Core2</li>
-            <li>2GB of RAM</li>
-            <li>50GB free hard disk space (NTFS partition)</li>
-            <li>Windows 7</li>
-            <li>A DVD or Blu-ray disc drive</li>
-          </ul><p>Recommended configuration:</p>
-          <ul><li>Intel i5 or a faster processor</li>
-            <li>8GB of RAM</li>
-            <li>500GB free hard disk space (NTFS partition)</li>
-            <li>A Blu-ray burner</li>
-            <li>Windows 10</li>
-            <li><a href="/uhd-video-copy-recording/">A UHD friendly drive</a></li></ul>
-           <p><img src="{imageUrl}macos.png" style="max-width:80px"><a href="/dvd-copy-for-mac/">Click here to copy DVD on Mac OS</a></p>'  
+          text: 'Intel CPU
+            1G of RAM
+            5G free hard disk space
+            One DVD drive
+            Mac OS X 10.5 or later'  
 ---
 
 ## Features

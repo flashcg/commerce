@@ -40,10 +40,14 @@ interface fileSetting {
      * create vue file
      */
     writeVueFile() {
-      let ishasFile: boolean = false;
+      let ishasFile: boolean = false,pagify:boolean = true;
+      
       fs.existsSync(this.pagesFiles) ? ishasFile = true : ishasFile = false;
-      if (!ishasFile) {
-        fs.writeFile(this.pagesFiles, this.templateCode, (err: any) => {
+      if(this.jsonData.pagify === false) pagify = false;     
+      
+      if (!ishasFile&&pagify) {
+        
+       fs.writeFile(this.pagesFiles, this.templateCode, (err: any) => {
           writeLog('created file - .' + this.pagesFiles);
           if (err) console.log(err);
         })

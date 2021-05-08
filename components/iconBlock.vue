@@ -10,7 +10,7 @@
         <template v-if="iconData.template == 'card'">
   
           <b-card-group deck >
-          <card v-for="(item,itemIndex) in iconData.items" :key="itemIndex" :data="{handleName:item.handleName,type:iconData.type,iconGird:iconData.iconGird||3,reWriteitem:fetchItem(item.handleName,iconData.reWriteitem)}" />
+          <card v-for="(item,itemIndex) in iconData.items" :key="itemIndex" :data="{handleName:item.handleName,type:iconData.type,iconGird:iconData.iconGird||3,reWriteitem:fetchItem(item.handleName||item.model,iconData.reWriteitem)}" />
           </b-card-group>
  
         </template>        
@@ -26,6 +26,11 @@
               <b-img v-if="item.iconUrl" :src="item.iconUrl" fluid :class="iconData.iconClass"/>
               <get-youtube :id="item.youtubeID" template="thumbnail" />
             </b-link>
+
+            <b-link v-else-if="(item.handleName||item.model)&&fetchItem(item.handleName||item.model,productData)" :to="item.path||'/'+fetchItem(item.handleName||item.model,productData).handle.path+'/'" :href="item.href">
+              <b-img :title="item.title" :src="fetchItem(item.handleName||item.model,productData).boxes[0].imageUrl" fluid :class="' '+iconData.iconClass" :style="iconData.limitHeight?'max-height:'+iconData.limitHeight+'px':''" /> 
+                     
+            </b-link>             
 
             <b-link v-else-if="item.href" :href="item.url">
               <b-img :title="item.title" :src="item.iconUrl" fluid :class="iconData.iconClass"/>
@@ -46,17 +51,21 @@
               <div v-if="item.type=='overlay'" :class="'bg-'+item.overlayStyle+'-transparent d-flex p-4 position-absolute text-white fill-position'">
                 <span class="m-auto lead">{{item.text}}</span><span class="m-auto"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="align-middle svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg></span>
               </div>              
-            </b-link>
+            </b-link> 
+
             <b-link v-else-if="iconData.iconLink == 'self'" @click="lightBoxIndex = index" >
               <b-img :title="item.title" :src="item.iconUrl" fluid :class="' '+iconData.iconClass"/>         
-            </b-link>            
+            </b-link>  
+                      
            <b-img v-else :title="item.title" :src="item.iconUrl" fluid :class="'mb-4 '+iconData.iconClass"  />
-
+        
         </div>
         <h4 v-if="item.title">{{item.title}}</h4> 
            <h6 v-if="item.subTitle">{{item.subTitle}}</h6>
+           <h5 v-if="item.handleName||item.model">{{fetchItem(item.handleName||item.model,productData)&&fetchItem(item.handleName||item.model,productData).handleName}}</h5>
           <p v-if="item.text&&!item.type" class="lead fs-5" v-html="item.text"></p> 
           <p v-else-if="item.youtubeID" class="lead fs-5"><get-youtube :id="item.youtubeID" /> </p>
+
         </b-col>
         </div> 
          <p v-if="iconData.textBottom" class="lead mt-6">{{iconData.textBottom}}</p>     
@@ -78,11 +87,12 @@
 <script>
 import { fetchItem } from "@/assets/script/tools";
 import card from './widget/card.vue';import getYoutube from './widget/getYoutube.vue';
+import {mapState} from 'vuex'
 import CoolLightBox from 'vue-cool-lightbox'
 import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 export default {
   components: { card ,getYoutube,CoolLightBox},
-  name: "iconBlock",
+  name: "icon-block",
   data() {
     return { 
       isShowVideo:false,
@@ -95,6 +105,8 @@ export default {
   props: ["iconData"],
 
   computed:{
+    ...mapState({productData: (state) => state.localData.productData}),
+  
     handlePaddingY(){
       if(this.iconData.paddingY||typeof(this.iconData.paddingY) == 'number'){
         return this.iconData.paddingY

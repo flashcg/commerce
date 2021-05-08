@@ -17,7 +17,7 @@ const defaultData: DefaultData = yamlFront.loadFront((fs.readFileSync(mdBasePath
 interface ProductDataConfig {
   boxSrc: string,
   name: string,
-  abbrName: string,
+  model: string,
   handleName: string,
   size?: number,
   path: string,
@@ -90,7 +90,7 @@ class ReleaseProcess extends FilesProcess {
       return {
         boxSrc: defaultData.imagesPath + boxSrc,
         name: itemData.name || 'OpenCloner',
-        abbrName: itemData.abbrName,
+        model: itemData.model,
         handleName: itemData.handleName,
         path: item.path
       }
@@ -112,20 +112,20 @@ class ReleaseProcess extends FilesProcess {
     fs.writeFileSync(releaseJsonPath, JSON.stringify(jsonArray))
     writeLog('Updata ' + releaseJsonPath)
   }
-  /**
-   * 根据 zip 修改时间与 release MD文件修改时间 间隔 判断是否生成压缩文件
-   */
-  isToArchive(fileName: string, zipPath: string) {
-
-
-    const ishasZip = fs.existsSync(zipPath), path = fileName.substring(0, fileName.indexOf('.')),
-      releaseMdMtime: Date = fs.statSync(mdBasePath + this.locale + '/release/' + fileName).mtime,newItem = { path, mTime: releaseMdMtime };;
+  get jsonArray():releaseJsonConfig[]|undefined {
+    if (fs.existsSync(releaseJsonPath)) {
+      return JSON.parse(fs.readFileSync(releaseJsonPath))
+    } 
+  }
+  jsonHandle(fileName: string){
+    const path = fileName.substring(0, fileName.indexOf('.')),
+      releaseMdMtime: Date = fs.statSync(mdBasePath + this.locale + '/release/' + fileName).mtime,newItem = { path, mTime: releaseMdMtime };
     //this.releaseJson(fileName,mdTime)    
     
-    const jsonFn = () => {
+    
       if (fs.existsSync(releaseJsonPath)) {
-        let jsonArray: releaseJsonConfig[] = JSON.parse(fs.readFileSync(releaseJsonPath)),
-          jsonItem = jsonArray.find(res => res.path == path);
+        let jsonArray= this.jsonArray,
+          jsonItem = jsonArray?.find(res => res.path == path);
         if (jsonItem) {
           let jsonMtime = new Date(jsonItem.mTime)
          // console.log(jsonMtime,releaseMdMtime,jsonMtime.toString() == releaseMdMtime.toString());
@@ -144,10 +144,19 @@ class ReleaseProcess extends FilesProcess {
         this.releaseJson(newItem,[],'create')
         return true
       }
-    }
+       
+  }
+  /**
+   * 根据 zip 修改时间与 release MD文件修改时间 间隔 判断是否生成压缩文件
+   */
+  isToArchive(fileName: string,zipPath: string) {
+
+
+    const ishasZip = fs.existsSync(zipPath);
+
 
     if (ishasZip) {
-      return jsonFn()
+      return this.jsonHandle(fileName)
     } else {
       return true
     }
@@ -198,9 +207,10 @@ class ReleaseProcess extends FilesProcess {
             newverCreator.xmlUpdate()
           }
 
-        }
-
-        mdJson.newver && mdJson.newver.active && newverDataToFiles()
+        };        
+        
+        
+        if (mdJson.newver) mdJson.newver.active ? newverDataToFiles():this.jsonHandle(resFileName);
       }
 
     })
@@ -217,6 +227,8 @@ class NewverZipCreator {
   }
   get newverData() {
     let outData = '';
+    console.log(this.data);
+    
     for (let i = 0; i < this.data.list.length; i++) {
       outData += '<li>' + this.data.list[i] + '</li>';
     }
@@ -226,7 +238,7 @@ class NewverZipCreator {
     if (this.data.handleName == 'DVD-Cloner') {
       return `${zipBasePath}newver.zip`;
     } else {
-      return `${zipBasePath}newver-${this.data.abbrName.toLowerCase()}.zip`;
+      return `${zipBasePath}newver-${this.data.model.toLowerCase()}.zip`;
     }
   }
   /**
@@ -235,9 +247,10 @@ class NewverZipCreator {
   xmlUpdate() {
     const xmlPath = './static/xml/' + this.data.path + '.xml',
       xmlData = fs.readFileSync(xmlPath, 'utf8');
-
     xml2js.parseString(xmlData.replace(/&(?!(?:apos|quot|[gl]t|amp);|#)/g, '&amp;'),
       (err: any, res: any) => {
+        
+        if (res) {
         let outData = res, time = new Date(this.data.date)
         outData.XML_DIZ_INFO.Program_Info[0].Program_Name = this.data.name;
         outData.XML_DIZ_INFO.Program_Info[0].Program_Version = this.data.version;
@@ -252,6 +265,8 @@ class NewverZipCreator {
 
         fs.writeFileSync(xmlPath, xml);
         writeLog('Updata ' + xmlPath)
+          
+        }
 
       });
 

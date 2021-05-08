@@ -1,9 +1,13 @@
+export default  ({store,$content, route, redirect}) => {    
 
-export default async ({store,$content, route, redirect}) => {
-    let breadcrumbs = await $content("pages", { deep: true }).only(['breadcrumb']).fetch();
-    //console.log(route.matched);
-    route.matched.forEach((item, index) => {
-        console.log(item);
-        item.meta.title = route.meta[index].title || '';
+    route.matched.forEach(async (item, index) => {
+        let breadcrumbs = await $content("pages"+item.path.slice(0,-1), { deep: true }).only(['breadcrumb']).fetch();
+
+        if(Array.isArray(breadcrumbs)){
+            breadcrumbs = await $content("pages"+item.path.slice(0,-1)+'/index', { deep: true }).only(['breadcrumb']).fetch();
+        }
+
+        item.meta.title = breadcrumbs.breadcrumb;
+
     })
 }

@@ -8,7 +8,7 @@ metaItems: # seo 内容
 layout: fluid
 template: product
 pagify: true #页面化
-abbrName: DG
+model: DG
 handleName: DVD-Cloner Gold
 name: DVD-Cloner Gold
 type: DVD Copy 

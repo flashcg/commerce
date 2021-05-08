@@ -18,6 +18,12 @@ areaTop:
       <span class="text-danger">Note: You can get both DVD-Cloner and DVD-Cloner 64-bit with one order!</span>
 release:
   more: Click to view more
+  include:
+    - DVD-Cloner
+    - DVD-Cloner for Mac
+    - OpenCloner Ripper
+    - OpenCloner UltraBox
+    - Blue-Cloner
 supportMovies:
   name: support-movies
   active: true
@@ -30,9 +36,18 @@ supportMovies:
   bgStyle: dark-opacity-2
   iconLink: self
   icon:
+    - iconUrl: cover/wonder-woman-1984.jpg
+      text: Wonder Woman 1984
+    - iconUrl: cover/the-little-things.jpg
+      text: The Little Things   
+    - iconUrl: cover/nomadland.jpg
+      text: Wonder Woman 1984
+    - iconUrl: cover/news-of-the-world.jpg
+      text: The Little Things           
     - iconUrl: cover/UHD_Cover_Ghosts-of-War_2020.10.jpg
       text: Raya  
     - iconUrl: cover/bd-I.Care_.a.Lot_.2021.3.jpg
       text: I care a lot
+ 
   iconGird: 6       
 ---

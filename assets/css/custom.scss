@@ -84,6 +84,8 @@ $theme-colors: (
   "dark-opacity-3": rgba(0, 0, 0, 0.3),
   "dark-opacity-2": rgba(0, 0, 0, 0.2),
   "dark-opacity-1": rgba(0, 0, 0, 0.1),
+  "dark-red-opacity-5":rgba(118,21,21,0.5),
+  "dark-blue-opacity-5":rgba(21,68,118,0.5),
 );
 
 $colors: (
@@ -502,13 +504,18 @@ a.disabled{ pointer-events: none
 [class *=jumbotron-] .jumbotron{padding: 0; margin: 0;}
 [class *=jumbotron-]  [class *=col-]{padding-left: 0;padding-right: 0;}
 
+/* table */
+.container td,.container th{ padding: 8px 12px;border:1px solid; }
+
+.container table{margin-bottom: 30px;}
+
 /* custom style  */
 .rotate30-right-md-position{    top: -50%;  left: 45%;  bottom: -130%;  right: -60%;;  transform: rotate(30deg);}
 .rotate30-left-md-position{ top: -50%;  left: -60%;  bottom: -130%;  right: 45%;  transform: rotate(-30deg);}
 @include media-breakpoint-down(md) { 
   .rotate30-right-md-position,.rotate30-left-md-position{transform: rotate(0deg);top: 0;  left: 0;  bottom: 0;  right: 0;}
 }
-
+.container img{max-width: 100%;}
 .card{border-radius: 0}
 .text-line-through{text-decoration: line-through}
 .VueCarousel-pagination{position: absolute;bottom: 0;}
