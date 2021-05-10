@@ -1,0 +1,11 @@
+# example netlify.toml
+[build]
+  command = "npm run generate"
+  publish = "dist"
+
+[[redirects]]
+  from = "/help/knowledgebase"
+  to = "https://youthful-raman-36935d.netlify.com"
+  status = 200
+  force = true
+  headers = {path = "/help/knowledgebase/"}

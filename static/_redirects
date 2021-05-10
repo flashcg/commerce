@@ -1,0 +1,79 @@
+# primary redirects
+/support.html https://www.cloner-alliance.com/help/ 301!
+/contact.html https://www.cloner-alliance.com/help/contact 301!
+/faq.html https://www.cloner-alliance.com/help/ 301!
+/store.html https://www.cloner-alliance.com/store/ 301!
+/download.html https://www.cloner-alliance.com/help/download/ 301!
+/hdmicloner-box-pro.html https://www.cloner-alliance.com/cloneralliance-box-pro/ 301!
+/hdmicloner-box-suite.html https://www.cloner-alliance.com/cloneralliance-box/ 301!
+/company.html https://www.cloner-alliance.com/aboutus/ 301!
+/cloner-alliance-app.html https://www.cloner-alliance.com/cloneralliance-app/ 301!
+/cloneralliance-flint-4kp.html https://www.cloner-alliance.com/cloneralliance-flint-4kp/ 301!
+/hdmicloner-box-evolve.html https://www.cloner-alliance.com/cloneralliance-box-evolve/ 301!
+/hdmicloner-box-turbo.html https://www.cloner-alliance.com/cloneralliance-box-turbo/ 301!
+/cloner-alliance-flint-lxt.html https://www.cloner-alliance.com/cloneralliance-flint-lxt/ 301!
+/hdmicloner-helper.html https://www.cloner-alliance.com/hdml-cloner-helper/ 301!
+/hdmicloner-pro-helper.html https://www.cloner-alliance.com/hdml-cloner-pro-helper 301!
+/download/hdmicloner-box-pro.html https://www.cloner-alliance.com/help/download/software/ 301!
+/cloneralliance-chert-4kc.html https://www.cloner-alliance.com/cloneralliance-chert-4kc/ 301!
+/cloner-alliance-flint-lx.html https://www.cloner-alliance.com/cloneralliance-flint-lx/ 301!
+/products.html https://www.cloner-alliance.com/products/ 301!
+/solutions.html https://www.cloner-alliance.com/solutions/ 301!
+/hdmicloner-wand-helper.html https://www.cloner-alliance.com/hdml-cloner-wand-helper/ 301!
+/oc-promotion-campaign.html https://www.cloner-alliance.com/store/ 301!
+
+#faq
+
+/faq/black_screen_tips_pro.html https://www.cloner-alliance.com/help/knowledgebase/black_screen_tips_pro 301!
+/hdmicloner-box-evolve-faq/technical-faq/black_screen_tips_evolve.html https://www.cloner-alliance.com/help/knowledgebase/black_screen_tips_evolve 301!
+/hdmicloner-box-turbo-faq/technical-faq/my-tv-has-a-black-screen-when-using-hdml-cloner-box-turbo.html https://www.cloner-alliance.com/help/knowledgebase/my-tv-has-a-black-screen-when-using-hdml-cloner-box-turbo 301!
+/hdmicloner-helper-faq/technical-faq/black_screen_tips.html https://www.cloner-alliance.com/help/knowledgebase/black_screen_tips 301!
+/faq/we-are-not-smp-declaration.html https://www.cloner-alliance.com/help/knowledgebase/we-are-not-smp-declaration 301!
+/faq/why-do-i-receive-no-permission-error-message-after-installing-windows-10-update-1803.html https://www.cloner-alliance.com/help/knowledgebase/why-do-i-receive-no-permission-error-message-after-installing-windows-10-update-1803 301!
+/faq/how-to-download-oem-setup-installation-package.html https://www.cloner-alliance.com/help/knowledgebase/how-to-download-oem-setup-installation-package 301!
+
+#download
+
+/files/download/* https://static.cloner-alliance.com/download/:splat 301!
+/files/releases/affiliate/* https://static.cloner-alliance.com/download/:splat 301!
+
+# search fixed
+# /help/search.html* https://cloner-alliance-kb.netlify.com/help/knowledgebase/search.html:splat 301!
+# /help/searchindex.js https://cloner-alliance-kb.netlify.com/help/knowledgebase/searchindex.js 200!
+
+# kb
+/help/_static/* https://cloner-alliance-kb.netlify.com/help/knowledgebase/_static/:splat 200!
+/help/knowledgebase* https://cloner-alliance-kb.netlify.com/help/knowledgebase/:splat 200!
+
+
+# manual
+/_static/* https://jolly-ardinghelli-f86f66.netlify.com/cloner-alliance-app-faq/_static/:splat 200!
+/cloner-alliance-app-faq* https://jolly-ardinghelli-f86f66.netlify.com/cloner-alliance-app-faq/:splat 200!
+
+/manual/_static/* https://gifted-blackwell-9a35e1.netlify.com/manual/hcph/_static/:splat 200!
+/manual/hcph* https://gifted-blackwell-9a35e1.netlify.com/manual/hcph/:splat 200!
+/manual/cahe* https://romantic-benz-95f64a.netlify.app/manual/cahe/:splat 200!
+
+/cloneralliance-sdk-docs* https://distracted-stonebraker-1f33d5.netlify.com/cloneralliance-sdk-docs/:splat 200!
+
+
+# other scripts
+/cgi-bin/getversion https://www.dvd-cloner.com/cgi-bin/getversion 200!
+/app/blacklist.json https://static.cloner-alliance.com/release/app/blacklist.json 200!
+
+
+# other files
+/cloneralliance-helper/newver.png https://static.cloner-alliance.com/cloneralliance-helper/newver.png 200!
+
+
+
+# Redirect domain aliases to primary domain
+https://www.cloneralliance.com/* https://www.cloner-alliance.com/:splat 301!
+https://cloneralliance.com/* https://www.cloner-alliance.com/:splat 301!
+https://manual.cloner-alliance.com/* https://www.cloner-alliance.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://cloner-alliance.netlify.com/* https://www.cloner-alliance.com/:splat 301!
+
+
+/* /404 404

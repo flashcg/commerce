@@ -1,0 +1,20 @@
+export {ProductDataConfig,ReleaseItem}
+interface ReleaseItem {
+  version:string
+  date:string
+  size:number
+  topText:string
+  list:string[]
+}
+interface ProductDataConfig{
+    model:string;
+    handleName:string;
+    name:string;
+    logo?:{iconUrl:string,imageUrl:string};
+    type:string;
+    boxes:string[];
+    desc:{longText:string,shortText?:string};
+    handle:{handleName:string,path:string};
+    release?:ReleaseItem;
+    saleInfo?:{[props: string]: string;}
+  }
