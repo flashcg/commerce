@@ -60,7 +60,7 @@ export const mutations = {
 
 }
 export const actions = {
-  async shopifyData({
+  async settledData({
     commit,
     state
   }) {
@@ -68,6 +68,7 @@ export const actions = {
 
     let handleSetting = await this.$content('default').only('handleSetting').fetch(),
       productData = new Array;
+    const releaseState = await this.$axios('/releaseState.json');  
     handleSetting = handleSetting.handleSetting;    
     if (handleSetting) {
       for (let i = 0; i < handleSetting.length; i++) {
@@ -85,7 +86,7 @@ export const actions = {
             
             data?resolve(data):reject();            
           })
-        },  releaseState = await this.$axios('releaseState.json');
+        };
 
         let ishasRelease = releaseState.data.some(res=>handleSetting[i].path == res.path)
         ,releaseData,

@@ -82,9 +82,7 @@ export default {
     {
       src: '@/plugins/i18n.js'
     },
-    {
-      src: '@/plugins/priceRules'
-    },
+
 /*     {
       src: '@/plugins/global-components.js'
     }, */    
