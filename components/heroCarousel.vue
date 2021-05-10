@@ -22,7 +22,7 @@
 
             <div v-if="item.bgStyle&&item.bgStyle.video" class=" bg-black  position-absolute fill-position"> 
         
-              <video muted :src="item.bgStyle.video.videoUrl" class="videoPlayer position-absolute d-xl-block d-none" autoplay loop :poster="item.bgStyle.video.poster&&item.bgStyle.video.poster.imageUrl" style="height:100%;bottom:0;right:0"></video>
+              <video muted :src="item.bgStyle.video.videoUrl" class="videoPlayer position-absolute d-lg-block d-none" autoplay loop :poster="item.bgStyle.video.poster&&item.bgStyle.video.poster.imageUrl" style="height:100%;bottom:0;right:0"></video>
             </div>
 
             
