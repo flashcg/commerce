@@ -25,10 +25,9 @@ export default {
   components: {
     headerNav,
     footerBlock, itemTab   
-  },
-  mounted() {
-    
-    this.$store.dispatch('shopifyData')
+  },  
+  beforeMount() {
+    this.$store.dispatch('settledData')  
 
   }
 };

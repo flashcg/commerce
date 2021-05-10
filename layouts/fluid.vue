@@ -19,8 +19,8 @@ export default {
       }
     };
   },
-  mounted() {
-    this.$store.dispatch('shopifyData') 
+  beforeMount() {
+    this.$store.dispatch('settledData')  
 
   }
 };
