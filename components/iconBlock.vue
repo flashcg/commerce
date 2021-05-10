@@ -27,9 +27,13 @@
               <get-youtube :id="item.youtubeID" template="thumbnail" />
             </b-link>
 
-            <b-link v-else-if="(item.handleName||item.model)&&fetchItem(item.handleName||item.model,productData)" :to="item.path||'/'+fetchItem(item.handleName||item.model,productData).handle.path+'/'" :href="item.href">
+            <b-link v-else-if="(item.handleName||item.model)&&fetchItem(item.handleName||item.model,productData) && item.href" :href="item.href">
+              <b-img :title="item.title" :src="fetchItem(item.handleName||item.model,productData).boxes[0].imageUrl" fluid :class="' '+iconData.iconClass" :style="iconData.limitHeight?'max-height:'+iconData.limitHeight+'px':''" />               
+            </b-link>              
+
+            <b-link v-else-if="(item.handleName||item.model)&&fetchItem(item.handleName||item.model,productData)" :to="item.path?'/'+item.path+'/' : '/'+fetchItem(item.handleName||item.model,productData).handle.path+'/'">
               <b-img :title="item.title" :src="fetchItem(item.handleName||item.model,productData).boxes[0].imageUrl" fluid :class="' '+iconData.iconClass" :style="iconData.limitHeight?'max-height:'+iconData.limitHeight+'px':''" /> 
-                     
+
             </b-link>             
 
             <b-link v-else-if="item.href" :href="item.url">

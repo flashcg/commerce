@@ -1,7 +1,6 @@
 <template>
 <div>
  <icon-block  :iconData="mddata.listGroup" />
- <nuxt-content class="container py-6" :document="mddata" />
  </div>
 </template>
 <script>
