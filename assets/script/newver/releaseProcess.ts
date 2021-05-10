@@ -4,7 +4,7 @@ import { FileCreator, FilesProcess } from './vueProcess';
 
 const fs = require('fs'), archiver = require('archiver'), request = require('request'),
   path = require('path'), myDate = new Date(), mdBasePath = "./static/locales/", zipBasePath = "./static/", xmlBasePath = "./static/xml/",
-  yamlFront = require("yaml-front-matter"), xml2js = require('xml2js'), releaseJsonPath = `${mdBasePath}en/releaseState.json`;
+  yamlFront = require("yaml-front-matter"), xml2js = require('xml2js'), releaseJsonPath = `${zipBasePath}releaseState.json`;
 
 interface DefaultData {
   handleSetting: { [prop: string]: string }[];

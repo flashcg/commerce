@@ -85,7 +85,7 @@ export const actions = {
             
             data?resolve(data):reject();            
           })
-        },  releaseState = await this.$axios('/_content/releaseState.json');
+        },  releaseState = await this.$axios('releaseState.json');
 
         let ishasRelease = releaseState.data.some(res=>handleSetting[i].path == res.path)
         ,releaseData,
