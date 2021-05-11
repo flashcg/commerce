@@ -1,11 +1,11 @@
 ---
-title: Standalone Video Recorders, Video Capture Devices, Software. 4K, 1080p, HDMI Input, Passthrough are Supported. For Game Live Stream and Competition.
+title: DVD Copy software - Copy DVD movie to DVD R/RW easily
 name: "Home"
 metaItems:
   - name: description
-    content: ClonerAlliance is a Company Specializing in the Hardware and Software Development of Video Recording and Capture.
+    content: DVD Copy becomes easier with DVD-Cloner now. The new burning engine can make perfect 1:1 DVD copy. Enjoy 30% off now!
   - name: keywords
-    content: cloneralliance, video, recorder, capture, hdmi, software, 4k, live stream
+    content: DVD copy, DVD copy software, copy DVD, DVD Cloner
 layout: fluid
 heroCarousels: #首页主banner 
   name: main-banner

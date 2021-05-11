@@ -21,9 +21,8 @@ boxes:
 desc:
   shortText: Open SuperConverter can help you with video conversion and support mutual conversion of multiple formats.
   longText: |
-    Stream-Cloner 2 is an all-in-one leading stream downloader with brand-new interfaces and high speed to download videos from all video websites and video-sharing sites including YouTube, Netflix, Hulu, Facebook, VEVO, Myspace, Dailymotion¹, etc. It enables you to download online movies, streaming videos, audio files, pictures, etc from the Internet and capture anything on the PC whenever you want. With Stream-Cloner 2, the downloaded and captured videos can be converted to video and audio formats compatible with popular media devices.
-
-    Stream-Cloner 2 can extract all static links of your current webpage so that you can select your desired content URLs to download conveniently. Besides, you can add a category manually to save your favorite finished tasks independently. The downloaded/captured/converted video files can be easily played back with the built-in video player. With this easy-to-use tool, even a novice can accomplish the download/capture tasks by using the 1-Click interface.
+    Open SuperConverter is a brand-new smart tool to convert video files to any video/audio format. It enables you to convert your original videos to any target format compatible with popular media devices such as iPod, iPhone, iPhone 3GS, iPhone 4, iPhone 4S, iPhone 5, iPhone 5C, iPhone 5S, iPad 1, iPad 2, The new iPad, iPad 4, iPad mini, Apple TV, PSP, PS3, Xbox 360, Zune, Mobile Phone, GPhone, BlackBerry, Archos, HTC, Motorola, Nokia, Samsung, etc. With Open SuperConverter, you can complete a video conversion quite easily for its considerate interfaces and professional settings. The multi-core CPU and the NVIDIA CUDA technology are supported to largely increase the conversion speed. Batch conversion enables you to convert different video files simultaneously. Besides, you can trim and crop the converted video files and add text and image watermarks into the target videos.
+  
   bgStyle: 
 areaTop:
   name: osc Desc

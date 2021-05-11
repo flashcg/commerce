@@ -111,5 +111,3 @@ screenshot:
 *   Plays back the downloaded or captured videos directly with the built-in video player.
 
 [More Info](http://www.stream-cloner.com/)
-
-[Reviewed by download3k](http://www.download3k.com/MP3-Audio-Video/CD-DVD-Tools/Download-OpenCloner-UltraBox.html)

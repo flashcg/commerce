@@ -268,12 +268,12 @@ copyright:
 
 
 #网站通用变量区
-imagesPath: http://192.168.31.206:5000/img/
+imagesPath: https://s1.occld.com/image/dc_com_web/
 KB_basePath: https://www.dvd-cloner.com/knowledge/
-download_basePath: https://www.opencloner.com/download/
-manual_basePath: https://static.cloner-alliance.com/manual/
-video_basePath: http://192.168.31.206:5000/video/
-videoProduct_basePath: https://static.cloner-alliance.com/video/products/
+download_basePath: https://s1.occld.com/release/
+manual_basePath: https://s1.occld.com/manual/
+video_basePath: https://s1.occld.com/video/dc_com_web/
+videoProduct_basePath: https://s1.occld.com/video/products/
 
 
 #页面通用组件定义区

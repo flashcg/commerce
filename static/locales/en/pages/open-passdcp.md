@@ -41,7 +41,7 @@ WhyChoose:
   name: Overview-Why
   active: true
   container: container-fluid
-  title: Why Choose DVD-Cloner?
+  title: Why choose Open PassDCP？
   textTop: 
   textBottom: 
   button:
