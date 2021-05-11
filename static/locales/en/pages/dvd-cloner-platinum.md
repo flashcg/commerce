@@ -53,7 +53,7 @@ bonus:
 
 ## Features
 
-**DVD-Cloner&nbsp;**is a powerful DVD copy/burn/decryption/conversion tool with diverse copy modes, no matter full disc copy or main movie copy. With only one click, you'll experience the most convenient DVD copy software.
+**DVD-Cloner** is a powerful DVD copy/burn/decryption/conversion tool with diverse copy modes, no matter full disc copy or main movie copy. With only one click, you'll experience the most convenient DVD copy software.
 
 **Features of DVD-Cloner:**
 
@@ -96,7 +96,7 @@ bonus:
 
 &nbsp;
 
-**Open SmartBurner&nbsp;**is a brand-new tool to burn data files and video files to DVD/Blu-ray discs. It enables you to burn data files, software, pictures, music, videos, etc. to a DVD or Blu-ray disc for archiving. Besides, you can convert video files such as AVI, MP4, FLV, MPG, MKV, M2TS, TS, VOB, MOV, WMV, RM, RMVB, etc to DVD/Blu-ray video format for playback on a standalone player. With this smart tool, DVD/Blu-ray burn becomes so easy and fun.
+**Open SmartBurner** is a brand-new tool to burn data files and video files to DVD/Blu-ray discs. It enables you to burn data files, software, pictures, music, videos, etc. to a DVD or Blu-ray disc for archiving. Besides, you can convert video files such as AVI, MP4, FLV, MPG, MKV, M2TS, TS, VOB, MOV, WMV, RM, RMVB, etc to DVD/Blu-ray video format for playback on a standalone player. With this smart tool, DVD/Blu-ray burn becomes so easy and fun.
 
 **Features of Open SmartBurner:**
 

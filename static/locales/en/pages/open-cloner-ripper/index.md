@@ -10,7 +10,7 @@ template: product
 pagify: true #页面化
 model: OCR
 handleName: OpenCloner Ripper
-name: OpenCloner Ripper 2020
+name: OpenCloner Ripper 2021
 type: 
   - DVD Ripper
   - Blu-ray Ripper
@@ -23,7 +23,7 @@ boxes:
 desc:
   shortText: All-In-One solution to rip DVD/Blu-ray/UHD movies, convert video files and rip iTunes movies.
   longText: |
-    OpenCloner Ripper 2020 is a full-featured ripping and conversion software. It can rip DVD/Blu-ray/UHD movies to standard video format, while removing various copy protections. The latest version has been optimized to support more UHD friendly drives. Meanwhile, it supports rich built-in configuration presets optimized for your device. This versatile application can also transcode video files of any encoding into MP4/MKV files, and rip downloaded iTunes movies into MP4 format, removing DRM. A variety of filters such as denoise, deinterlace, working together with video encoding, will produce excellent images for you even at a low bit rate.
+    OpenCloner Ripper 2021 is a full-featured ripping and conversion software. It can rip DVD/Blu-ray/UHD movies to standard video format, while removing various copy protections. The latest version has been optimized to support more UHD friendly drives. Meanwhile, it supports rich built-in configuration presets optimized for your device. This versatile application can also transcode video files of any encoding into MP4/MKV files, and rip downloaded iTunes movies into MP4 format, removing DRM. A variety of filters such as denoise, deinterlace, working together with video encoding, will produce excellent images for you even at a low bit rate.
 spPath: /special-offer-ocr-launch
 areaTop:
   name: OCR Desc
@@ -52,7 +52,7 @@ WhyChoose:
   name: Overview-Why
   active: true
   container: container-fluid
-  title: Why Choose DVD-Cloner?
+  title: Why Choose OpenCloner Ripper?
   textTop: 
   textBottom: 
   button:
@@ -65,18 +65,16 @@ WhyChoose:
     positionX:
   icon:
     - iconUrl: dc-icon3.png
-      text: Copy DVD/Blu-ray/4K UHD to blank disc or rip them to MKV format
+      text: Decrypt and rip DVD/Blu-ray/UHD movies to MP4 or MKV format.
     - iconUrl: dc-icon4.png
-      text: Rip UHD to MKV (HDR 10+) format, keeping original HDR and Dolby effect.
+      text: Convert video from nearly any format into MP4/MKV files.
     - iconUrl: dc-icon6.png
-      text: Lightning Blu-ray/UHD copy speed
+      text: Rip DRM protected iTunes movies (M4V) to MP4 format.
     - iconUrl: dc-icon2.png
-      text: 6 diverse copy modes
+      text: Rich encoder presets for your device or platform.
     - iconUrl: dc-icon1.png
-      text: Easy to use, just as easy as ABC
-    - iconUrl: dc-icon5.png
-      text: Output lossless quality          
-  iconGird: 6  
+      text: GPU acceleration - greatly improved working efficiency.
+  iconGird: 5  
 youtubeArea:
   name: Video Guide
   active: true

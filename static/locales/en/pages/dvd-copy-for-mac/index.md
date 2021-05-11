@@ -33,7 +33,7 @@ screenshot:
   name: Overview
   active: true
   container: container-fluid
-  title: DVD-Cloner Gold Screenshot
+  title: DVD-Cloner for Mac Screenshot
   additionClass: software-interface bg-dark-opacity-2
   itemContainer: container
   items:
@@ -58,17 +58,15 @@ WhyChoose:
     positionX:
   icon:
     - iconUrl: dc-icon3.png
-      text: Copy DVD/Blu-ray/4K UHD to blank disc or rip them to MKV format
+      text: Copy DVD to any blank DVD discs or hard disk
     - iconUrl: dc-icon4.png
-      text: Rip UHD to MKV (HDR 10+) format, keeping original HDR and Dolby effect.
+      text: Diverse DVD copy modes
     - iconUrl: dc-icon6.png
-      text: Lightning Blu-ray/UHD copy speed
+      text: Copy Blu-ray/4K UHD to a BD-R/RE (DL) or rip it to MKV format
     - iconUrl: dc-icon2.png
-      text: 6 diverse copy modes
-    - iconUrl: dc-icon1.png
-      text: Easy to use, just as easy as ABC
+      text: Remove various DVD/Blu-ray/UHD copy protections
     - iconUrl: dc-icon5.png
-      text: Output lossless quality          
+      text: Smart Analyzer technology can simulate the playback process and automatically skip bad sectors, greatly improved the copy quality.          
   iconGird: 6      
 systemRequirements:
   name: System Requirements 
@@ -82,11 +80,14 @@ systemRequirements:
         - additionClass: 
           imageUrl: macos.png
         - additionClass:
-          text: 'Intel CPU
-            1G of RAM
-            5G free hard disk space
-            One DVD drive
-            Mac OS X 10.5 or later'  
+          text: 'Minimum System Requirements:
+
+CPU: Intel or PowerPC 1.0GHZ
+Memory: 1G
+Free hard disk space required: 10GB
+One DVD/Blu-ray burner
+Model: All Mac models released after 2010
+Mac OS:10.10 or later versions'  
 ---
 
 ## Features
