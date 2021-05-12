@@ -47,10 +47,10 @@ systemRequirements:
   container: container
   additionClass: position-relative
   items:
-    - title: Mac
+    - title: Windows
       cols:
         - additionClass: 
-          imageUrl: macos.png
+          imageUrl: win10.png
         - additionClass: whiteSpace-preline
           text: |
             <b>Minimum configuration:</b>

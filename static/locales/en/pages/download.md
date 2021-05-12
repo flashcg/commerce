@@ -32,8 +32,10 @@ downloadList:
   additionClass: position-relative text-center
   bgStyle: 
   reWriteitem:
-    - handleName: DVD-Cloner Gold
-      active: true
+    - handleName: DVD-Cloner 64bit
+      active: false
+    - handleName: iPod-Cloner
+      active: false      
   iconGird: 4        
 antivirusReport:
   name: Antivirus Report

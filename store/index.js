@@ -60,7 +60,7 @@ export const mutations = {
 
 }
 export const actions = {
-  async shopifyData({
+  async settledData({
     commit,
     state
   }) {
@@ -68,24 +68,24 @@ export const actions = {
 
     let handleSetting = await this.$content('default').only('handleSetting').fetch(),
       productData = new Array;
+    const releaseState = await this.$axios('/releaseState.json');  
     handleSetting = handleSetting.handleSetting;    
     if (handleSetting) {
       for (let i = 0; i < handleSetting.length; i++) {
 
-        const item = await this.$content('pages/' + handleSetting[i].path).only(['model', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc','youtubeArea']).fetch(),
+        const item = await this.$content('pages/' + handleSetting[i].path).only(['model', 'handleName', 'name', 'type', 'logo', 'boxes','listActive','desc','youtubeArea']).fetch(),
           saleData = await this.$content('salePlatform').fetch();
 
         if (Array.isArray(item)) {
-          item = await this.$content('pages/' + handleSetting[i].path + '/index').only(['model', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc','youtubeArea']).fetch();
+          item = await this.$content('pages/' + handleSetting[i].path + '/index').only(['model', 'handleName', 'name', 'type', 'logo', 'boxes','listActive','desc','youtubeArea']).fetch();
         }
-        
         const releaseFn = (path =handleSetting[i].path ) => {
           return new Promise((resolve, reject) => {
             let data = this.$content('release/' + path).fetch()
             
             data?resolve(data):reject();            
           })
-        },  releaseState = await this.$axios('/_content/releaseState.json');
+        };
 
         let ishasRelease = releaseState.data.some(res=>handleSetting[i].path == res.path)
         ,releaseData,

@@ -70,7 +70,7 @@
         </client-only> 
         </b-col>
 
-        <b-col sm="9" v-else>
+        <b-col sm="9" v-else-if="itemInfo.release">
           <h3>{{`${itemInfo.name} V${itemInfo.release.version}`}}  </h3>
           <h5 >Size:  <span class="lead">{{itemInfo.currentSize}}MB</span></h5>
           <h5>System Requirements: <span class="lead">{{itemInfo.systemRequirement}}</span> </h5>

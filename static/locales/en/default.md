@@ -5,6 +5,9 @@ handleSetting:
   - handleName: DVD-Cloner
     model: dc
     path: dvd-cloner
+  - handleName: DVD-Cloner 64bit
+    model: dc64bit
+    path: dvd-cloner/dvd-copy-64bit   
   - handleName: DVD-Cloner Gold
     model: dg
     path: dvd-cloner-gold
@@ -268,7 +271,7 @@ copyright:
 
 
 #网站通用变量区
-imagesPath: https://s1.occld.com/image/dc_com_web/
+imagesPath: http://192.168.31.206:5000/img/
 KB_basePath: https://www.dvd-cloner.com/knowledge/
 download_basePath: https://s1.occld.com/release/
 manual_basePath: https://s1.occld.com/manual/
@@ -286,7 +289,6 @@ jumbotronPromotion:
       path: store
       hash: Promo Area
       imageUrl: pr/ca2020nov/web_sec_covid19_sale.jpg
-    additionClass: text-center
     bgStyle:
       color: white
       opacity: false

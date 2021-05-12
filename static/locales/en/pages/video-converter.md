@@ -21,6 +21,6 @@ listGroup:
     - handleName: Open SmartBurner
     - handleName: Open SuperConverter
     - handleName: Stream-Cloner
-      href: https://www.stream-cloner.com/    
+      href: http://www.stream-cloner.com/    
   iconGird: 6         
 ---

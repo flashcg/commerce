@@ -9,10 +9,12 @@
         <p v-if="iconData.textTop" class="lead mb-4 whiteSpace-preline" v-html="iconData.textTop"></p>
         <template v-if="iconData.template == 'card'">
   
-          <b-card-group deck >
-          <card v-for="(item,itemIndex) in iconData.items" :key="itemIndex" :data="{handleName:item.handleName,type:iconData.type,iconGird:iconData.iconGird||3,reWriteitem:fetchItem(item.handleName||item.model,iconData.reWriteitem)}" />
+          <b-card-group deck >  
+            <template v-for="(item,itemIndex) in iconData.items">
+          <card  :key="itemIndex" :data="{handleName:item.handleName||item,type:iconData.type,iconGird:iconData.iconGird||3,reWriteitem:fetchItem(item.handleName||item.model,iconData.reWriteitem)}" />
+          </template>
           </b-card-group>
- 
+           
         </template>        
         <div v-else :class="`row justify-content-center ${iconData.rowClass}`">
         <b-col :lg="12/iconData.iconGird" :md="12/iconData.iconGird*2" :class="`mb-4 mb-md-0 ${iconData.iconGirdClass} ${item.additionClass}`" v-for="(item,index) in iconData.icon" :key="index">

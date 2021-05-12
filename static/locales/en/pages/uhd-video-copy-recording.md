@@ -104,4 +104,4 @@ Tip: [How to switch to your local country]({kbUrl}how-to-switch-to-your-local-co
 
 ## Why should you choose a Plug and Play UHD friendly drive instead of downgrading firmware DIY?
 
-![diy or buy uhd friendly drive](https://static.opencloner.com/image/kb/kb_413_banner.png)({kbUrl}why-should-you-choose-a-plug-and-play-uhd-friendly-drive-instead-of-downgrading-firmware-diy_413.html)
+[![diy or buy uhd friendly drive](https://static.opencloner.com/image/kb/kb_413_banner.png)]({kbUrl}why-should-you-choose-a-plug-and-play-uhd-friendly-drive-instead-of-downgrading-firmware-diy_413.html)

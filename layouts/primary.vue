@@ -29,9 +29,8 @@ export default {
   components: {
     headerNav,footerBlock,breadcrumb
   },
-  mounted() {
-    this.$store.dispatch('shopifyData')  
-    
+  beforeMount() {
+    this.$store.dispatch('settledData')  
   } 
 };
 </script>

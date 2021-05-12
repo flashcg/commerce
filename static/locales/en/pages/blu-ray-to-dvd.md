@@ -11,6 +11,7 @@ pagify: true #页面化
 model: btd
 handleName: Blu-ray to DVD
 name: Blu-ray to DVD
+listActive: false
 type: 
 logo:
   imageUrl: btd_logo.png
