@@ -38,7 +38,7 @@ heroCarousels: #首页主banner
       subtitle: Strip HDCP and Record 4K UHD Streaming  Videos from Standalone Video Recorders.
       button:
         text: More Info
-        path: store 
+        path: open-passdcp
         variant: primary
       additionClass: d-flex text-white w-100 text-center text-md-right pr-md-5 align-items-md-center justify-content-md-end
       bgMobileStyle: dark
@@ -51,7 +51,7 @@ heroCarousels: #首页主banner
       subtitle: All-in-One Video Ripper Solution.
       button:
         text: More Info
-        path: dvd-cloner 
+        path: open-cloner-ripper 
         variant: primary
       additionClass: d-flex text-white w-100 text-center text-md-left pr-md-5 align-items-md-center
       height: screen
@@ -124,4 +124,24 @@ carouselRecommend:
   items:
     - html: '<p class="lead">DVD-Cloner does much more than make copies of DVDs. It also allows you to compress, customize and archive your movies. Its dual-mode interface offers both the simplicity of starting a copy in one click and the control of customizing the exact DVD you want to burn. The end results are excellent.</p><p class="text-muted font-italic text-right">- from TopTenReviews.com</P>' 
     - html: '<p class="lead">DVD-Cloner has gained prestige in the DVD software category with its versatile engine that allows you to copy, decrypt and burn DVD data. This application is renowned for its ability to remove copy protections and to deliver high quality at very good speed.</P><p class="text-muted font-italic text-right">- from Softpedia.com</P>' 
+
+releaseList:
+  name: release-list
+  template: card
+  type: release
+  container: container 
+  title: 
+  textTop: 
+  textBottom: 
+  button:
+    text: More Release
+    variant: outline-dark
+    path: release
+  paddingY: 6
+  additionClass: position-relative text-center
+  bgStyle: dark-opacity-1
+  items:
+    - dc
+    - mc
+  iconGird: 2       
 ---

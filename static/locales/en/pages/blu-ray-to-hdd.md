@@ -11,6 +11,7 @@ pagify: true #页面化
 model: bth
 handleName: Blu-ray to HDD
 name: Blu-ray to HDD
+listActive: false
 type: 
 logo:
   imageUrl: bth_logo.png

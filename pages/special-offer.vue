@@ -28,6 +28,7 @@
   </template>
 </hero-carousel>
 <div  v-for="(item,index) in list" :key="index" class="container">
+
   <item-overview v-if="item" :data="mddata.listProduct" :itemInfo="{boxSrc:item.boxes[0].imageUrl,name:item.name,desc:item.desc&&item.desc.longText,handleName:item.handleName,saleInfo:item.saleInfo,discount:{standard:mddata.listProduct.standardDiscount,lifetime:mddata.listProduct.lifetimeDiscount}}"  />
 </div>
 </div>
@@ -68,16 +69,20 @@ computed:{
   list(){
     if(this.items.length>0){
      return this.mddata.listProduct.products.map(res=>{
+       
         let item = fetchItem(res.handleName,this.items);
         item = JSON.parse(JSON.stringify(item))
-        Object.assign(item,{saleInfo:res})
+        let saleInfo = item.saleInfo;
+
+        Object.assign(saleInfo,res)
+
         return item
       })
     }
   }
 },
 mounted(){
-  console.log(this.mddata.listProduct);
+
 }
 
 

@@ -5,7 +5,7 @@
    <iconBlock :iconData="mddata.advertising" />
    <icon-block  :iconData="mddata.WhyChoose" /> 
    <carousel :data="mddata.carouselRecommend" /> 
-
+    <icon-block  :iconData="mddata.releaseList" /> 
   </div>
 </template>
 

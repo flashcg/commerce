@@ -64,7 +64,7 @@ export default {
          })  
 
          for (let i = 0; i < tempData.length; i++) { 
-           tempData[i] = fetchItem(tempData[i].handleName,this.releaseOriginal)              
+           tempData[i] = tempData[i]&&fetchItem(tempData[i].handleName,this.releaseOriginal)              
          }             
       }
       return tempData;
