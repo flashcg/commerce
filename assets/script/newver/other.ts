@@ -15,7 +15,7 @@ function dirOperate(path: string) {
   function writeLog(data: string) {
     fs.appendFile("fswrited.log", myDate.toLocaleString() + " --- " + data + "\r\n", (err: any) => {
       console.log(data)
-      console.log("The log has been written to 'fswrited.log'");
+      //console.log("The log has been written to 'fswrited.log'");
       if (err) {
         return console.error(err);
       }
