@@ -97,10 +97,11 @@ class ReleaseProcess extends FilesProcess {
     }
 
   }
-  releaseJson(item: releaseJsonConfig, jsonArray?: releaseJsonConfig[],method = 'add') {
+  releaseJson(item: releaseJsonConfig, jsonArray: releaseJsonConfig[]|undefined,method = 'add') {
     
     switch (method) {
-      case 'update':        
+      case 'update':  
+
         break;    
       case 'create':
         jsonArray?.push(item)
@@ -109,20 +110,22 @@ class ReleaseProcess extends FilesProcess {
         jsonArray?.push(item)
         break;
     }
+
     fs.writeFileSync(releaseJsonPath, JSON.stringify(jsonArray))
-    writeLog('Updata ' + releaseJsonPath)
+    
+    writeLog('Updata ' + item.path +' written to ' + releaseJsonPath)
   }
   get jsonArray():releaseJsonConfig[]|undefined {
     if (fs.existsSync(releaseJsonPath)) {
       return JSON.parse(fs.readFileSync(releaseJsonPath))
     } 
   }
-  jsonHandle(fileName: string){
+  jsonHandle(fileName: string,releaseJsonActive= false){
     const path = fileName.substring(0, fileName.indexOf('.')),
       releaseMdMtime: Date = fs.statSync(mdBasePath + this.locale + '/release/' + fileName).mtime,newItem = { path, mTime: releaseMdMtime };
-    //this.releaseJson(fileName,mdTime)    
     
     
+
       if (fs.existsSync(releaseJsonPath)) {
         let jsonArray= this.jsonArray,
           jsonItem = jsonArray?.find(res => res.path == path);
@@ -131,17 +134,17 @@ class ReleaseProcess extends FilesProcess {
          // console.log(jsonMtime,releaseMdMtime,jsonMtime.toString() == releaseMdMtime.toString());
           if(jsonMtime.toString() != releaseMdMtime.toString()){           
             jsonItem.mTime = releaseMdMtime;            
-            this.releaseJson(newItem, jsonArray,'update')
+            if(releaseJsonActive) this.releaseJson(newItem, jsonArray,'update')
             return true
           }
           return false
         } else {
-          this.releaseJson(newItem,jsonArray)
+          if(releaseJsonActive)this.releaseJson(newItem,jsonArray)
           return true
         }
 
       } else {
-        this.releaseJson(newItem,[],'create')
+        if(releaseJsonActive)this.releaseJson(newItem,[],'create')
         return true
       }
        
@@ -207,10 +210,9 @@ class ReleaseProcess extends FilesProcess {
             newverCreator.xmlUpdate()
           }
 
-        };        
-        
-        
-        if (mdJson.newver) mdJson.newver.active ? newverDataToFiles():this.jsonHandle(resFileName);
+        };         
+        if (mdJson.newver &&  mdJson.newver.active) newverDataToFiles();
+        this.jsonHandle(resFileName,true);
       }
 
     })
@@ -288,7 +290,7 @@ class NewverZipCreator {
 
     // 文件输出流结束
     output.on('close', function () {
-      console.log(`file size - ${archive.pointer()} byte`);
+      console.log(`${zipPath} file size - ${archive.pointer()} byte`);
       writeLog('created file ' + zipPath)
     })
 
