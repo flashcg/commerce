@@ -62,7 +62,7 @@ rbi:
 ## MD文档区域已经定义的变量
 
  * 变量的格式--{value}
- * {imagesPath} : 图片基础路径
+ * {imagesUrl} : 图片基础路径
  * {kbUrl} : knowledgebase 定义的通用路径
  * {downloadUrl} : 下载文件 定义的通用路径
 

@@ -52,13 +52,11 @@ export default {
       }
     },
      releaseItems () {
-      let tempData = [];
+      let tempData;
       if (this.items && this.items.length > 0) {
          tempData = this.items.filter(res=>res.release)
-
  
          tempData = JSON.parse(JSON.stringify(tempData))
-
          tempData = this.mddata.release.include.map(res=>{
          return tempData.find(resTempData=>resTempData.handleName.toLowerCase() == res.toLowerCase())
          })  
@@ -70,9 +68,11 @@ export default {
       return tempData;
     },
     options(){
+      if (this.releaseItems) {
       return this.releaseItems.map(res=>{
         return {value:res.handleName,text:res.handleName+' Release'}
-      })
+      })        
+      }
     },
     release(){
       if (this.selected&&this.releaseItems) {
@@ -88,7 +88,7 @@ export default {
   },
 
   beforeMount(){
-    if(this.options.length>0) this.selected = this.options[0].value
+    if(this.options) this.selected = this.options[0].value
   },
   methods: {
     
@@ -96,7 +96,7 @@ export default {
   watch: {
     options(val){
    
-      if(val.length>0) this.selected = val[0].value
+      if(val) this.selected = val[0].value
     }
   },
   mounted() {
