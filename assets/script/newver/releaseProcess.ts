@@ -97,22 +97,21 @@ class ReleaseProcess extends FilesProcess {
     }
 
   }
-  releaseJson(item: releaseJsonConfig, jsonArray: releaseJsonConfig[],method = 'add') {
+  releaseJson(item: releaseJsonConfig, jsonArray: releaseJsonConfig[]|undefined,method = 'add') {
     
     switch (method) {
       case 'update':  
 
         break;    
       case 'create':
-        jsonArray.push(item)
+        jsonArray?.push(item)
         break;          
       default:
-        jsonArray.push(item)
+        jsonArray?.push(item)
         break;
     }
 
     fs.writeFileSync(releaseJsonPath, JSON.stringify(jsonArray))
-    console.log(item.mTime);
     
     writeLog('Updata ' + item.path +' written to ' + releaseJsonPath)
   }
