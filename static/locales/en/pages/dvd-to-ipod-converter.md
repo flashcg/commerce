@@ -11,6 +11,7 @@ pagify: true #页面化
 model: ic
 handleName: iPod-Cloner
 name: iPod-Cloner
+listActive: false
 type: 
 logo:
   imageUrl: ic-logo.png
@@ -21,14 +22,7 @@ desc:
   shortText: OpenCloner UltraBox is a collection of software, including DVD-Cloner, Blue-Cloner, Open DVD Ripper, Open Blu-ray Ripper and more.
   longText: |    
     <strong>iPod-Cloner</strong>   is a one-click solution to convert all kinds of DVD to iPod compatible formats. The conversion process is fast and easy. Its built-in iPod Files Manager enables you to transport all files, including music, video, movies and TV shows directly from PC to iPod. iPod-Cloner will be your best investment of $29.99 since the day you bought your iPod!
-
-    iPod-Cloner's Key features:
-    <ul>
-        <li>Directly transports DVD files from PC to iPod without iTunes!</li>
-        <li>Supports the conversion of latest DVD movies</li>
-        <li>Supports iPod Nano and Classic</li>
-        <li>Faster and easier to use. (up to 400%)</li>
-    </ul>
+    iPod-Cloner's Key features:<ul><li>Directly transports DVD files from PC to iPod without iTunes!</li><li>Supports the conversion of latest DVD movies</li><li>Supports iPod Nano and Classic</li><li>Faster and easier to use. (up to 400%)</li></ul>
   bgStyle: 
 areaTop:
   name: OU Desc

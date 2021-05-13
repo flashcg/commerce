@@ -1,10 +1,10 @@
 ---
-title: Online Support Center
+title: Video Guide | DVD-Cloner
 metaItems:
   - name: description
-    content: You can complain to support manager at this page.
+    content: 
   - name: keywords
-    content: cloneralliance, video, recorder, capture, hdmi, software, 4k, live stream
+    content: 
 
 products:
   name: product Videos

@@ -94,10 +94,11 @@
     <!-- 全屏 jumbotron promotion 样式-->
 
       <div v-else-if="item.overlayBody&&item.overlayBody.template == 'promotion'"
-      :class="'jumbotron-body position-relative mt-2 w-100 '+textColor(item)+' '+item.additionClass">  
+      :class="'jumbotron-body position-relative w-100 '+textColor(item)+' '+item.additionClass">
         <b-link v-if="item.overlayBody.path" :to="item.overlayBody.hash?'/'+item.overlayBody.path+'/#'+$toLower(item.overlayBody.hash):'/'+item.overlayBody.path+'/'">
         <b-img :src="item.overlayBody.imageUrl" fluid />
         </b-link>
+        <b-img v-else :src="item.overlayBody.imageUrl" fluid />
       </div>      
 
 <!-- 全屏 jumbotron 默认样式-->

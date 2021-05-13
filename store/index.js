@@ -73,13 +73,12 @@ export const actions = {
     if (handleSetting) {
       for (let i = 0; i < handleSetting.length; i++) {
 
-        const item = await this.$content('pages/' + handleSetting[i].path).only(['model', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc','youtubeArea']).fetch(),
+        const item = await this.$content('pages/' + handleSetting[i].path).only(['model', 'handleName', 'name', 'type', 'logo', 'boxes','listActive','desc','youtubeArea']).fetch(),
           saleData = await this.$content('salePlatform').fetch();
 
         if (Array.isArray(item)) {
-          item = await this.$content('pages/' + handleSetting[i].path + '/index').only(['model', 'handleName', 'name', 'type', 'logo', 'boxes', 'desc','youtubeArea']).fetch();
+          item = await this.$content('pages/' + handleSetting[i].path + '/index').only(['model', 'handleName', 'name', 'type', 'logo', 'boxes','listActive','desc','youtubeArea']).fetch();
         }
-        
         const releaseFn = (path =handleSetting[i].path ) => {
           return new Promise((resolve, reject) => {
             let data = this.$content('release/' + path).fetch()

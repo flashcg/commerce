@@ -6,4 +6,7 @@ newver:
     active: false  
 release:
     - version: 3.90.518
+      date: Jan.06, 2016
+      list:
+        - Optimized the H.264 encoding.  
 ---

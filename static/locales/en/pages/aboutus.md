@@ -1,10 +1,10 @@
 ---
-title: About ClonerAlliance Inc.
+title: About us | DVD-Cloner
 metaItems:
   - name: description
-    content: ClonerAlliance Inc., founded in 2014, is dedicated to the development of standalone video recorders, capture devices and software.
+    content: OpenCloner Inc., founded in 2002, is a professional software developer dedicating to the development and distribution of digital media solutions.
   - name: keywords
-    content: cloneralliance, video, recorder, capture, hdmi, software, 4k, live stream
+    content: OpenCloner Inc., DVD-Cloner
 desc:
   name: In history
   active: true

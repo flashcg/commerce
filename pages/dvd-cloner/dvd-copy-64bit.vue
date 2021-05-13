@@ -8,7 +8,6 @@
   <div id="features" class="bg-dark-opacity-8">
   <nuxt-content class="container py-6 text-light" :document="mddata" />
   </div>
-  <icon-block  :iconData="mddata.youtubeList" />
   <item-tab :data="mddata.systemRequirements" />
   <item-bonus :data="mddata.bonus" />
   <item-release :data="{handleName:mddata.handleName,name:mddata.name}" />
@@ -17,7 +16,7 @@
 <script>
 export default {
 async asyncData({ app, $content }) {
-  let mddata = await $content("pages/open-cloner-ripper/index").fetch();
+  let mddata = await $content("pages/dvd-cloner/dvd-copy-64bit").fetch();
   mddata = await app.$initMD(mddata);    
   return { mddata };
 },

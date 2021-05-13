@@ -1,6 +1,7 @@
 <template>
-  <div :class="`col-xl-${12/data.iconGird} col-lg-4 col-md-6`" v-if="item && item.saleInfo" style="margin-bottom:30px">
+  <div :class="`col-xl-${12/data.iconGird} col-lg-${12/data.iconGird+1} col-md-${12/data.iconGird+3}`" v-if="item && item.saleInfo && item.listActive !== false" style="margin-bottom:30px"> 
     <div class="shadow-box" v-if="data.type=='upgrade' && item.saleInfo.upgradeUrl">
+      
     <b-card-header class="bg-transparent border-0">
       <b-card-title>{{ item.handleName }} </b-card-title>
     </b-card-header>
@@ -96,6 +97,28 @@
         </b-card-footer>      
     </div>
 
+    <div class="shadow-box" v-else-if="data.type=='release' && (item.release && item.active !== false)">
+
+      <b-card-body class="pb-0">
+        <b-row>
+        <div class="col-md-4 d-none d-md-block">
+          <b-link :to="`/${item.handle.path}/`">
+            <b-img :src="                
+                item.boxes[0].imageUrl" fluid
+            ></b-img>       
+            </b-link>         
+        </div>
+        <div  class="col-md-8 text-left">
+           <h6 v-if="item.currentVer">{{`${item.name} V${item.release.version}`}} </h6>
+           <p class="text-muted font-weight-light font-italic">{{item.release.date}} </p>
+           <ul>
+            <li v-for="(text,textIndex) in item.release.list" :key="textIndex" v-html="text"></li>
+           </ul>
+        </div>
+        </b-row>
+        </b-card-body>
+    </div>    
+
   </div>
 </template>
  
@@ -126,7 +149,7 @@ export default defineComponent({
       ),
       item = ref<object>(),
       itemFn = (handleName: string) => {
-        let items  = JSON.parse(JSON.stringify(products.value))
+        let items  = JSON.parse(JSON.stringify(products.value))        
         item.value = fetchItem(handleName, items);
         if(props.data.reWriteitem&&item.value)Object.assign(item.value,props.data.reWriteitem)
        

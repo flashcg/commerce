@@ -13,6 +13,12 @@ softwareInfo:
       lifetime:
         price: 299.99
         buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965249]=1
+    - handleName: DVD-Cloner 64bit
+      downloadUrl_64bit: dcloner64bit.exe
+      standard:
+        comparePrice:
+        price: 59.99
+        buyLink: https://www.dvd-copy-all.com/cgi-bin/orderlink.cgi?credit=1
     - handleName: DVD-Cloner for Mac   
       upgradeUrl: /dvd-copy-for-mac/upgrade
       downloadUrl: dvd-cloner-for-mac.dmg
@@ -123,4 +129,21 @@ softwareInfo:
         comparePrice:
         price: 35.99
         buyLink: https://www.dvd-cloner.com/cgi-bin/orderlink.cgi?osc=y
+
+    - handleName: iPod-Cloner
+      downloadUrl: ipod-cloner setup.exe
+      standard:
+        comparePrice:
+        price: 29.99
+        buyLink: https://usd.swreg.org/cgi-bin/s.cgi?s=4680&p=4680-1ipodcloner&v=0&d=0&q=1      
+
+    - handleName: Blu-ray to DVD
+      downloadUrl: btdpro-setup.exe
+      standard:
+        comparePrice:
+        price: 39.99
+        buyLink: https://secure.avangate.com/order/checkout.php?PRODS=3239241&QTY=1&CART=2
+
+    - handleName: Blu-ray to HDD
+      downloadUrl: blu-ray-to-hdd-setup.exe
 ---

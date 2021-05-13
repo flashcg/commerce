@@ -4,7 +4,7 @@ metaItems:
   - name: description
     content: You can complain to support manager at this page.
   - name: keywords
-    content: cloneralliance, video, recorder, capture, hdmi, software, 4k, live stream
+    content: DVD-Cloner
 
 liveChat:
   name: live chat

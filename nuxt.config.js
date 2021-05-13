@@ -6,7 +6,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: "ClonerAlliance is a Company Specializing in the Hardware and Software Development of Video Recording and Capture.",
+    title: "DVD Copy software - Copy DVD movie to DVD R/RW easily",
   //  titleTemplate: '%s - Cloner-Alliance',
     meta: [{
         charset: 'utf-8'
@@ -22,12 +22,12 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: "ClonerAlliance Provides Standalone Video Recorders, Video Capture Devices, Software. 4K, 1080p, HDMI Input, Passthrough are Supported. For Game Live Stream and Competition."
+        content: "DVD Copy becomes easier with DVD-Cloner now. The new burning engine can make perfect 1:1 DVD copy"
       },
       {
         hid: 'keywords',
         name: 'keywords',
-        content: 'cloneralliance, video, recorder, capture, hdmi, software, 4k, live stream'
+        content: 'DVD copy, DVD copy software, copy DVD, DVD Cloner'
       }
     ],
 

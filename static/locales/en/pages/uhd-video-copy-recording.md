@@ -84,7 +84,7 @@ If you want to make things to be easier, Plug and Play UHD friendly drive [BW-16
 
 BUY [CA-BW-16D1HT](http://bit.ly/2pHqUDJ) NOW. Price: USD$166.99. Free Shipping</td>			<td>
 
-BUY [CA-BC-12D2HT](http://bit.ly/2PMWrPe) NOW. Price: USD$126.99. Free Shipping</td>		</tr>		<tr>			<td>
+BUY [CA-BC-12D2HT](http://bit.ly/2PMWrPe) NOW. Price: USD$133.99. Free Shipping</td>		</tr>		<tr>			<td>
 
 [![us-flag-16D1HT](https://static.opencloner.com/image/kb/us_flag.png)](http://bit.ly/2pHqUDJ) [![en-flag-16D1HT](https://static.opencloner.com/image/kb/en_flag.png)](https://www.newegg.com/global/UK/Product/Product.aspx?Item=9SIAG1H7UZ2651) [![de-flag-16D1HT](https://static.opencloner.com/image/kb/de_flag.png)](https://www.newegg.com/global/DE/Product/Product.aspx?Item=9SIAG1H7UZ2651) [![fr-flag-16D1HT](https://static.opencloner.com/image/kb/france_flag.png)](https://www.newegg.com/global/FR/Product/Product.aspx?Item=9SIAG1H7UZ2651) [![it-flag-16D1HT](https://static.opencloner.com/image/kb/it_flag.png)](https://www.newegg.com/global/IT/Product/Product.aspx?Item=9SIAG1H7UZ2651) [![es-flag-16D1HT](https://static.opencloner.com/image/kb/spain_flag.png)](https://www.newegg.com/global/ES/Product/Product.aspx?Item=9SIAG1H7UZ2651)			</td>			<td>
 
@@ -104,4 +104,4 @@ Tip: [How to switch to your local country]({kbUrl}how-to-switch-to-your-local-co
 
 ## Why should you choose a Plug and Play UHD friendly drive instead of downgrading firmware DIY?
 
-![diy or buy uhd friendly drive](https://static.opencloner.com/image/kb/kb_413_banner.png)({kbUrl}why-should-you-choose-a-plug-and-play-uhd-friendly-drive-instead-of-downgrading-firmware-diy_413.html)
+[![diy or buy uhd friendly drive](https://static.opencloner.com/image/kb/kb_413_banner.png)]({kbUrl}why-should-you-choose-a-plug-and-play-uhd-friendly-drive-instead-of-downgrading-firmware-diy_413.html)

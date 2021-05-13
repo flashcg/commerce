@@ -72,51 +72,34 @@ systemRequirements:
 
 ## Features
 
-**Supports multiple media formats and devices**
+*   **Rips DVD to popular video and audio formats**
 
+    Open DVD ripper 3 can rip DVD movies to various video and audio formats such as AVI, MKV, WMV, 3GP, MP4, MOV, RM, ASF, MP3, M4A, WAV, MPEG-1/2, VOB, VCD, SVCD and so on, and encode AC3, MP2, WMA, OGG, RA, AAC, AU, AIFF, DTS, MPEG-1/2, H.264 and so on. You can feel free to rip your preferred movies to any format which is compatible with your devices.
 
-*   **Video Formats:** AVI, MPEG-1/MPEG-2, MP4, H264, 3GP, ASF, DVD, MKV, MOV, HD AVI, HD ASF, HD DivX, HD H.264, HD WMV, HD MKV, HD MOV, HD MPEG4, HD MPEG2-TS/PS, HD XviD.
-*   **Audio Formats:** MP2, MP3, DTS, WAV, AIFF, WMA, M4A, OGG, RA, SUN AU, APE, FLAC, ALAC and many other audio formats on Mac.
-*   **Devices:** Open DVD Ripper for Mac supports Android, Android Pad, Animation, Apple TV, BlackBerry, iPad, iPhone, iPod, Mobile Phone, Nokia, PlayStation, Portable Multimedia, Web Video, Wii and NDS, Windows Phone, Xbox360.
+*   **Converts 2D to 3D movies with high quality**
 
+    Open DVD ripper 3 can convert 2D movies to 3D movies. You can choose different 3D features such as Red/Cyan, Red/Green, Red/Blue, Blue/Yellow and so on, as well as adjust the 3D depth to get your desired output effects.
 
+*   **Supports wide range of multimedia devices**
 
-**Personalized ripping process**
+    Open DVD ripper 3 is a powerful ripping tool to rip your favorite DVD movies for you to play on nearly all the popular used multimedia devices, such as iPod, iPhone, iPhone 3GS, iPhone 4, iPhone 4S, iPhone 5, iPad 1, iPad 2, The new iPad, Android Pad, Apple TV, Xbox 360, Mobile Phone, GPhone, PSP, PS3, BlackBerry, Sony, Archos, Windows phone, HTC mobile, Motorola mobile, Sony mobile and various other mobile phones.
 
+*   **Optimized profiles**
 
+    There are many high-resolution video formats added to the supported format list of Open DVD ripper 3. In addition, this brand-new DVD ripping tool is equipped with wizard functions. You can save your preferred clips from the video file, remove the unnecessary borders from the video screen and add image or text watermarks in it. Moreover, it enables you to adjust some kinds of special effects such as the brightness, contrast, saturation, vertical flip, horizontal flip and the output background effect.
 
-*   **Select chapters**
+*   **Super high speed and perfect overall conversion quality**
 
-    You can choose your favorite movie chapters to rip, and select subtitles and audio tracks for the chapters.
-*   **Set output parameters freely**
+    Open DVD ripper 3 brings strong technical support. With the GPU acceleration, the conversion speed is much higher than before. What is more, the HST™ is optimized, which increases the conversion speed largely as well. Its newly-developed technology makes the converted files have the same image and audio quality as the original.
 
-    You can feel free to change codec, bitrate, size, frame rate, aspect ratio, channels, and volume parameters to influence the output spent-time, file size and quality of the movie.
-*   **Preview the ripping segments**
+*   **Supports the compression of high volume DVD files and subtitle conversion**
 
-    You can preview your favorite clips when it is ripping, during this period of time, you can know the details about what you are ripping, such as the picture quality, the sound, the conversion process etc.
-*   **Efficient and convenient ripping process.**
+    With Open DVD ripper 3, you can save the space of your hard disk easily by ripping the DVD and compressing the files. Open DVD ripper 3 can also help you rip the subtitle to your desired language, as well as select one or more chapters from the source DVD to convert.
 
+*   **Removes various protections from the source DVD**
 
+    Open DVD ripper 3 can remove CSS-encrypted, Region-protected and Sony ARCCOS protections from the source DVD, which gives you the freedom to rip your DVD files to any desired format.
 
-**Powerful technology support**
+*   **Other features**
 
-
-*   **Removes various protections**
-
-    Open DVD Ripper for Mac, with its powerful technology support and superb decryption technology, can remove multiple disc protections such as CSS-encrypted, Region-protected and Sony ARCCOS protection. Thus, you can feel free to convert your DVD movies to your preferred formats.
-*   **High speed and excellent ripping quality**
-
-    Open DVD Ripper for Mac, with its powerful technology, makes the decryption more efficiently and achieves much higher ripping speed than other DVD rippers, meanwhile, you can enjoy the perfect quality the same as the original one.
-*   **Supports latest DVD movies**
-
-    You can rip most newly released DVD movies and enjoy them anywhere anytime.
-
-
-
-**Other functions of Open DVD Ripper for Mac**
-
-*   **Simple interface**
-
-    The easy-to-use interface makes users enjoy simple and quick conversion. Just a few clicks can finish the whole converting process.
-*   **Rips ISO files to many formats with high quality.**
-*   **Rips the whole movie or the main movie.**  
+    Open DVD ripper 3 enables you to check whether your device supports the GPU acceleration and choose to enable subtitle when ripping DVD. Meanwhile, Open DVD ripper 3 makes the operation more convenient and efficient with the Express and Expert interfaces for both beginners and advanced users.
