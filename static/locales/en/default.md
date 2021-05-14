@@ -67,7 +67,7 @@ handleSetting:
     path: dvd-to-ipod-converter 
   - handleName: Game-Cloner
     model: gc
-    path: game-cloner   
+    path: game-cloner
 globalName:
   ok: OK
   submit: Submit
@@ -84,6 +84,7 @@ globalName:
   comparsion: What's different?
   coupon: Coupon
   more: More Info
+  moreRelease: More Release
   buy: Buy Now
   download: Download
   downloadGoogle: Download from Google Play
@@ -313,7 +314,7 @@ productRecommend:
       cols:
         - additionClass:
           text: '<p><a class="btn rounded-0 btn-outline-dark" href="/dvd-cloner/faqs-dvd-cloner/">FAQs of DVD-Cloner earlier version.</a></p>
-          <p><a href="/dvd-copy-for-mac/">DVD copy for Mac</a>, <a href="/dvd-cloner/">DVD-Cloner</a>, <a href="/dvd-cloner/dvd-cloner-5/">DVD-Cloner 5</a>, <a href="/dvd-cloner/dvd-cloner-4/">DVD-Cloner 4</a>, <a href="/dvd-cloner/dvd-cloner-3/">DVD-Cloner 3</a>, <a href="/dvd-cloner/dvd-cloner-2/">DVD-Cloner 2</a>, <a href="/blu-ray-to-dvd/index/">Blu-ray copy Tools</a>, <a href="/knowledge/">DVD-Cloner Knowledge Base</a>, <a href="/dvd-cloner/bonus/">Bonus</a>, <a href="/dvd-cloner/vista/">Windows 10 test</a>, <a href="/antivirus_report/">Antivirus Report</a>, <a href="/dvd-cloner/upgrade/">Upgrade</a>, <a href="/dvd-cloner/resource/">Resource</a>, <a href="http://www.stream-cloner.com/">download online movies</a>, <a href="/dvd-cloner/dvd-cloner-screenshot-express/">Express Screenshot</a>, <a href="/dvd-cloner/dvd-cloner-screenshot-expert/">Expert Screenshot</a>, <a href="/dvd-cloner/dvd-to-avi/">DVD to AVI</a>, <a href="/dvd-cloner/dvd-to-mpeg/">DVD to MPEG</a>, <a href="/dvd-cloner/dvd-to-svcd/">DVD to SVCD</a>, <a href="/dvd-cloner/articles/digital-rights-management/">Digital rights Management</a>, <a href="/dvd-cloner/articles/how-will-the-film-or-video-into-a-dvd-format/">How to burn video files into the DVD format</a>, <a href="/dvd-cloner/articles/what-benefits-does-blu-ray-offer-compared-to-hd-dvd/">What benefits does Blu-ray offer compared to HD-DVD?</a>, <a href="/dvd-cloner/articles/what-is-blu-ray-disc/">What is Blu-ray Disc?</a></p>' 
+          <p><a href="/dvd-copy-for-mac/">DVD copy for Mac</a>, <a href="/dvd-cloner/">DVD-Cloner</a>, <a href="/dvd-cloner/dvd-cloner-5/">DVD-Cloner 5</a>, <a href="/dvd-cloner/dvd-cloner-4/">DVD-Cloner 4</a>, <a href="/dvd-cloner/dvd-cloner-3/">DVD-Cloner 3</a>, <a href="/dvd-cloner/dvd-cloner-2/">DVD-Cloner 2</a>, <a href="/blu-ray-to-dvd/">Blu-ray copy Tools</a>, <a href="/knowledge/">DVD-Cloner Knowledge Base</a>, <a href="/dvd-cloner/bonus/">Bonus</a>, <a href="/dvd-cloner/vista/">Windows 10 test</a>, <a href="/antivirus_report/">Antivirus Report</a>, <a href="/dvd-cloner/upgrade/">Upgrade</a>, <a href="/dvd-cloner/resource/">Resource</a>, <a href="http://www.stream-cloner.com/">download online movies</a>, <a href="/dvd-cloner/dvd-cloner-screenshot-express/">Express Screenshot</a>, <a href="/dvd-cloner/dvd-cloner-screenshot-expert/">Expert Screenshot</a>, <a href="/dvd-cloner/dvd-to-avi/">DVD to AVI</a>, <a href="/dvd-cloner/dvd-to-mpeg/">DVD to MPEG</a>, <a href="/dvd-cloner/dvd-to-svcd/">DVD to SVCD</a>, <a href="/dvd-cloner/articles/digital-rights-management/">Digital rights Management</a>, <a href="/dvd-cloner/articles/how-will-the-film-or-video-into-a-dvd-format/">How to burn video files into the DVD format</a>, <a href="/dvd-cloner/articles/what-benefits-does-blu-ray-offer-compared-to-hd-dvd/">What benefits does Blu-ray offer compared to HD-DVD?</a>, <a href="/dvd-cloner/articles/what-is-blu-ray-disc/">What is Blu-ray Disc?</a></p>' 
     - title: Related Sites
       cols:
         - text: '     

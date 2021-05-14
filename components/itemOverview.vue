@@ -1,5 +1,5 @@
 <template>
-<div v-if="data" :id="$handlify(data.name)" class="products-info position-relative " :class="`${data.additionClass||`bg-dark text-light py-lg-8 py-6`}`">  
+<div v-if="data" :id="$handlify(data.name)" class="products-info position-relative " :class="`${data.additionClass||`bg-dark text-light py-8`}`">  
    <b-container class="position-relative zIndex">
       <b-row :class="data.type == 'download'?'flex-row-reverse':''">
         <b-col sm="12"><h2 :class="`mb-4 text-left ${data.type == 'download'?'text-danger':''}`">{{data.title||itemInfo.name}} </h2></b-col>
