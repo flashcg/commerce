@@ -82,7 +82,7 @@ If you want to make things to be easier, Plug and Play UHD friendly drive [BW-16
 
 [![CA-BC-12D2HT-PIC](https://static.opencloner.com/image/kb/kb_377_CA-BC-12D2HT-front-uhd-buy.png)](http://bit.ly/2PMWrPe)</td></tr><tr><td>
 
-BUY [CA-BW-16D1HT](http://bit.ly/2pHqUDJ) NOW. Price: USD$166.99. Free Shipping</td>			<td>
+BUY [CA-BW-16D1HT](http://bit.ly/2pHqUDJ) NOW. Price: USD$169.99. Free Shipping</td>			<td>
 
 BUY [CA-BC-12D2HT](http://bit.ly/2PMWrPe) NOW. Price: USD$133.99. Free Shipping</td>		</tr>		<tr>			<td>
 

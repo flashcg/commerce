@@ -23,7 +23,7 @@
         v-for="(item, itemIndex) in data.items"
         :key="itemIndex"
       > <b-row>
-        <b-col md="auto" :class="col.additionClass"         
+        <b-col :md="col.md||'auto'" :class="col.additionClass"         
           v-for="(col, colIndex) in item.cols"
           :key="colIndex"         
         >

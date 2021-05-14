@@ -9,6 +9,7 @@
         {{item}}
       </li>
     </ul>
+    <b-button squared variant="outline-secondary" to="/release/">{{$t('globalName.moreRelease')}} </b-button>
     </div>
   </div>
 </template>
