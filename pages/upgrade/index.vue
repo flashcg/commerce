@@ -6,7 +6,7 @@ import { fetchItem } from "@/assets/script/tools";
 export default {
   
 async asyncData({app,$content}){
-let  mddata = await $content('pages/upgrade').fetch();
+let  mddata = await $content('pages/upgrade/index').fetch();
  mddata = await app.$initMD(mddata);
  return {mddata}
 },

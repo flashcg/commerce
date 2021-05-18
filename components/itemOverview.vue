@@ -60,9 +60,9 @@
           </template>
 
           <template v-if="itemSaleInfo.years">
-            <b-button v-if="itemSaleInfo.years.length>1" :disabled="!upgradeYearSelected" squared variant="danger" size="lg" :href="upgradeYearSelected" class="mt-2">{{$t("globalName.upgrade")}} </b-button>
+            <b-button v-if="itemSaleInfo.years.length>1" :disabled="!upgradeYearSelected" squared variant="danger" size="lg" :href="upgradeYearSelected" class="mt-2">{{itemSaleInfo.buttonText?itemSaleInfo.buttonText:$t("globalName.upgrade")}} </b-button>
 
-           <b-button v-else squared variant="danger" :href="itemSaleInfo.years[0].link" size="lg" class="mt-2">{{$t("globalName.upgrade")}} </b-button> 
+           <b-button v-else squared variant="danger" :href="itemSaleInfo.years[0].link" size="lg" class="mt-2">{{itemSaleInfo.buttonText?itemSaleInfo.buttonText:$t("globalName.upgrade")}} </b-button> 
           </template>
           </p>
           <p v-if="data.button&&data.button.additionText" class="whiteSpace-preline" v-html="data.button.additionText"></p>

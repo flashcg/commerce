@@ -1,5 +1,6 @@
 <template>
 <div class="bg-white">
+    <jumbotron :jumbotronData="mddata.jumbotron" />
   <template v-if="upgradeInfo">
   <div class="container py-6">
 
@@ -26,9 +27,14 @@
 Your code can register any version released before <strong>{{upgradeInfo.expirationDate}}</strong>.
 Currently you can register V<strong>{{upgradeInfo.currentVersion}}</strong> or later versions.</p>
 <p class="text-center"><b-img :src="mddata.orderInfo.guarantee.imageUrl" /></p>
+<p class="text-center"><b-button variant="success" squared size="xl" to="/download/">{{$t('globalName.download')}} Now</b-button> </p>
+<h4 v-if="mddata.orderInfo.deadline" class="text-center">{{mddata.orderInfo.deadline.text}} </h4>
   </div>
   <div class="bg-dark-opacity-1 py-6">
-<nuxt-content class="container" :document="mddata" />
+    <div class="container">
+    <h3>Dear Donkey,</h3>
+<nuxt-content  :document="mddata" />
+</div>
 </div>
   <div class="container">
     <template  v-for="(item,index) in list">
@@ -42,6 +48,7 @@ Currently you can register V<strong>{{upgradeInfo.currentVersion}}</strong> or l
     <b-alert show variant="danger">{{invalidInfo}} </b-alert>
     </b-overlay>
   </div>
+  <jumbotron :jumbotronData="mddata.jumbotronBottom" />
   <faq-list :listData="mddata.faqList"></faq-list>
 </div> 
 
@@ -52,7 +59,7 @@ import { fetchItem,stringToObj } from "@/assets/script/tools";
 export default {
   
 async asyncData({app,$content}){
-let  mddata = await $content('pages/dvd-cloner/upgradecode').fetch(),{upgrade} = await $content('pages/dvd-cloner/upgrade').fetch();
+let  mddata = await $content('pages/upgrade/upgradecode_oc2020apr_mask_edm_dcup').fetch(),{upgrade} = await $content('pages/dvd-cloner/upgrade').fetch();
  mddata = await app.$initMD(mddata);
  return {mddata,apiUrl:upgrade.apiUrl}
 },
@@ -61,7 +68,7 @@ head() {
 },
 data(){
   return{
-    isloading: false,
+    isloading: true,
     invalidInfo: ''
   }
 },
@@ -73,7 +80,9 @@ computed:{
      return this.mddata.upgradeItems.items.map(res=>{
         let item = fetchItem(res.handleName,this.items);
         item = JSON.parse(JSON.stringify(item))
-        Object.assign(item,{saleInfo:res})
+        let desc = res.desc;
+        delete res.desc
+        Object.assign(item,{saleInfo:res},{desc:desc?desc:item.desc})
         return item
       })
     }
@@ -115,7 +124,7 @@ methods:{
         .then((res) => {
           this.isloading = false;  
           data = stringToObj(res.data);
-          console.log(data);
+          console.log(res);
           switch (data.state) {
             case 'wrong':
 
