@@ -63,7 +63,7 @@ release:
     - version: 17.30.1457
       date: Apr.10, 2020
       list:
-        - Added a free plug-in '[OpenCloner Decode widget]({kbUrl}what-is-opencloner-decode-widget_447.html)'. You can play any encrypted Blu-ray and UHD movies using VLC.
+        - 'Added a free plug-in [OpenCloner Decode widget]({kbUrl}what-is-opencloner-decode-widget_447.html). You can play any encrypted Blu-ray and UHD movies using VLC.'
         - Updated decryption modules for the newest blu-ray/UHD movies.
     - version: 17.20.1456
       date: Mar.11, 2020
@@ -203,8 +203,8 @@ release:
     - version: 15.10.1433
       date: Jul.20, 2018
       list:
-        - DVD-Cloner began to fully support '[UHD Blu-ray Copy](/uhd-video-copy-recording/)'.
-        - From DVD-Cloner 15.10, you can use DVD-Cloner to copy and backup 4K, HDR, UHD Blu-ray movies.('[UHD friendly drive is required]({kbUrl}uhd-friendly-drive-list_377.html)'.)
+        - 'DVD-Cloner began to fully support [UHD Blu-ray Copy](/uhd-video-copy-recording/)'.
+        - 'From DVD-Cloner 15.10, you can use DVD-Cloner to copy and backup 4K, HDR, UHD Blu-ray movies.([UHD friendly drive is required]({kbUrl}uhd-friendly-drive-list_377.html).)'
         - '[How to copy an UHD Blu-ray movie?]({kbUrl}how-to-copy-uhd-blu-ray_379.html)'
     - version: 15.00
       date: Jun.13, 2018
@@ -375,7 +375,7 @@ release:
         - Supports for copying multi-channel audio tracks such as Dolby Digital 5.1 and DTS.
         - Supports for defining the compression rate for every title and chapter and previewing the real-time image quality under the customized copy mode.
         - The inventive SCT™ enables you to copy latest DVD movies through the upgraded technology.
-        - Downloads YouTube¹ videos from the Internet and captures anything playing on the PC with the free bonus Stream-Cloner Lite worth $39.99. You can click '[here](http://www.stream-cloner.com/upgrade.html)' to upgrade it to Stream-Cloner with only $14.99 to download online videos from all video and video-sharing websites as well as enjoy the video conversion function!
+        - 'Downloads YouTube¹ videos from the Internet and captures anything playing on the PC with the free bonus Stream-Cloner Lite worth $39.99. You can click [here](http://www.stream-cloner.com/upgrade.html) to upgrade it to Stream-Cloner with only $14.99 to download online videos from all video and video-sharing websites as well as enjoy the video conversion function!'
         - Supports both home & PC DVD players.
         - Constantly updated to support latest DVD copy protections.
     - version: '10.70'
@@ -431,7 +431,9 @@ release:
         - Under the customized DVD copy mode, you can select to copy your desired chapters to a DVD-5 or DVD-9 disc.
         - Makes copies of your DVD backup copies without using your valuable original DVD discs.
         - The inventive UMT™ enables you to copy latest DVD movies through the optimized module.
-        - Copies Blu-ray movies without any third party plug-in. (Due to the variety of Blu-ray discs, DVD-Cloner may not support all kinds of them. If DVD-Cloner can't identify your Blu-ray disc, please '[click here](https://www.blue-cloner.com/)' to get the download version of Blue-Cloner for free which supports for copying almost all Blu-ray discs. * If you are a registered user of DVD-Cloner, you can '[click here](https://www.blue-cloner.com/dc_discountorder.html)' to get 10% discount for ordering Blue-Cloner.)
+        - 'Copies Blu-ray movies without any third party plug-in. (Due to the variety of Blu-ray discs, DVD-Cloner may not support all kinds of them. If DVD-Cloner can't identify your Blu-ray disc, please [click here](https://www.blue-cloner.com/) to get the download version of Blue-Cloner for free which supports for copying almost all Blu-ray discs. 
+        
+        If you are a registered user of DVD-Cloner, you can [click here](https://www.blue-cloner.com/dc_discountorder.html) to get 10% discount for ordering Blue-Cloner.)'
         - Converts DVD movies to AVI, MPEG and SVCD output formats with the free bonus Open DVD Ripper Lite worth $29.99.
         - Downloads and captures online movies from the Internet with the free bonus Stream-Cloner Lite worth $39.99.
         - Adjusts the screen ratio (such as 4:3, 16:9) to fit your screen size.

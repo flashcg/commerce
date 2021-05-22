@@ -99,7 +99,7 @@ release:
         - Fixed a few bugs.
     - version: 8.00.822
       date: Jan.09, 2019
-      topText: Blue-Cloner 2018 V8.00.822 is Released. '[Upgrade to the latest version](https://www.blue-cloner.com/upgrade.html)'
+      topText: 'Blue-Cloner 2018 V8.00.822 is Released. [Upgrade to the latest version](https://www.blue-cloner.com/upgrade.html)'
       list:
         - Supports Blu-ray/4K UHD Blu-ray movies released in Q4 2018.
         - Integrated the 4K UHD Blu-ray copy function, which enables you to copy 4K Ultra HD movies with only one click without any additional charge.
@@ -157,8 +157,8 @@ release:
     - version: 7.40.812
       date: Jul.20, 2018
       list:
-        - Blue-Cloner began to fully support '[UHD Blu-ray Copy](/uhd-video-copy-recording)'.
-        - From Blue-Cloner 7.40, you can use Blue-Cloner to copy and backup 4K, HDR, UHD Blu-ray movies.('[UHD friendly drive is required.]({kbUrl}uhd-friendly-drive-list_377.html)')
+        - 'Blue-Cloner began to fully support [UHD Blu-ray Copy](/uhd-video-copy-recording)'.
+        - 'From Blue-Cloner 7.40, you can use Blue-Cloner to copy and backup 4K, HDR, UHD Blu-ray movies.([UHD friendly drive is required.]({kbUrl}uhd-friendly-drive-list_377.html))'
         - '[How to copy an UHD Blu-ray movie?]({kbUrl}how-to-copy-uhd-blu-ray_379.html)'
     - version: 7.30.811
       date: Jun.28, 2018
@@ -249,8 +249,10 @@ release:
         - Copies home-made Blu-ray discs, backs up home-made Blu-ray folders/ISO files to BD-R/RE with various Blu-ray copy modes.
         - Set the DVD encoding format, PAL or NTSC.
         - Supports the acceleration of latest graphics cards with higher H.264 encoding speed.
-        - Do you want to rip high-volume Blu-ray movies to normal video formats on your media devices for playback? Please click '[here](http://www.blue-cloner.com/download.html)' to download the trial version of Blue-Cloner Diamond for free which contains Blue-Cloner, Open Blu-ray ripper and Open SmartBurner to realize your digital dreams. For more information about Blue-Cloner Diamond, please go to https://www.blue-cloner.com/blue-cloner-diamond.html
-        If you are a registered user of Blue-Cloner 5 or its former versions, please click '[here](http://www.blue-cloner.com/upgrade.html)' to upgrade to Blue-Cloner Diamond.
+        - 'Do you want to rip high-volume Blu-ray movies to normal video formats on your media devices for playback? Please click [here](http://www.blue-cloner.com/download.html) to download the trial version of Blue-Cloner Diamond for free which contains Blue-Cloner, Open Blu-ray ripper and Open SmartBurner to realize your digital dreams. For more information about Blue-Cloner Diamond, please go to https://www.blue-cloner.com/blue-cloner-diamond.html
+
+
+        If you are a registered user of Blue-Cloner 5 or its former versions, please click [here](http://www.blue-cloner.com/upgrade.html) to upgrade to Blue-Cloner Diamond.'
        - Compatible with Windows 10 and Windows 8.1.
     - version: '5.70'
       date: Mar. 26, 2015
@@ -462,14 +464,26 @@ release:
       date: Oct. 15, 2009
       list:
         - Movie complete copy
+          
+          
           Compresses a BD-R (50G) to a blank BD-R (25G), including menus and special features.
+
+          
           Correct and complete copy of a full BD-R (25G) onto another.
         - Movie-only copy
+
+
           Copies the main movie of the original Blu-ray disc to a blank BD-R (25G), omitting unwanted features like menus, special features and prohibition messages.
         - Split copy
+
+
           Splits one Blu-ray movie to two blank BD-Rs (25G).
         - Perfect 1:1 Blu-ray copy
+
+
           Makes a copy of the whole Blu-ray disc onto another, keeping those fancy menus and intros.
+
+
           Powerful burn engine, supports the copy of latest Blu-ray movies
     - version: '1.20'
       date: Aug. 27, 2009

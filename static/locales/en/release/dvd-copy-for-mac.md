@@ -126,14 +126,24 @@ release:
       date: Dec.25, 2017
       list:
         - '**Same Experience and Same Excellent features.**'
+
+
           Unify DVD-Cloner (Mac and Windows) User Interface and User Experience cross Windows and macOS. Every user can switch operation system platform between Windows and masOS smoothly.
         - '**Newest technology supports Newest released movies.**'
+          
+          
           With continuous updating UMT™ copy technology, DVD-Cloner for Mac can copy all of your favorite DVD movies. Even the movies released days ago.
         - '**Using smart analyzer engine which is as good as Windows OS.**'
+          
+          
           Transported smart analyzer feature from Windows OS. Make sure every popular and old classical movie disc can be copied and backed up easily and completely.
         - '**Improve driver for external DVD/Blu-ray burners.**'
+          
+          
           Supported most of brands of external DVD/Blu-ray burners. Don't worry about compatibility of external burner.
         - '**"Elevated" with macOS together.**'
+          
+          
           DVD-Cloner for Mac optimized many functions for newest version of macOS High Sierra. Faster, and securer than before.
         - '**Fixed some bugs collected from the last version of DVD-Cloner for Mac.**'
         - '**FREE for the new customers within one year!**'
@@ -167,7 +177,7 @@ release:
         - Optimized for latest Mac OS.
     - version: '4.20'
       date: Mar.21, 2014
-      bottomText: 'Note: For better product experience, you are strongly recommended to upgrade immediately for free.'
+      bottomText: For better product experience, you are strongly recommended to upgrade immediately for free.
       list:
         - Supports latest DVD movies.
         - Fixed an important scanning bug.     
