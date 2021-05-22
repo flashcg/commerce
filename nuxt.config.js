@@ -137,6 +137,10 @@ export default {
     }],
     '@nuxtjs/sitemap' 
   ],
+  markdownit: {
+    html: true,
+    runtime: true // Support `$md()`
+  },
   sitemap: {
     hostname: 'https://www.dvd-cloner.com',
     gzip: true,
