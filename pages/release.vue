@@ -1,7 +1,6 @@
 <template>
   <div>
     <iconBlock :iconData="mddata.supportMovies" />
-    {{releaseOriginal}}
     <b-overlay :show="!release" rounded="sm">
     <b-container   class="py-lg-8 py-6">
       <template v-if="release">

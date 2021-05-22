@@ -203,7 +203,7 @@ release:
     - version: 15.10.1433
       date: Jul.20, 2018
       list:
-        - 'DVD-Cloner began to fully support [UHD Blu-ray Copy](/uhd-video-copy-recording/)'.
+        - 'DVD-Cloner began to fully support [UHD Blu-ray Copy](/uhd-video-copy-recording/).'
         - 'From DVD-Cloner 15.10, you can use DVD-Cloner to copy and backup 4K, HDR, UHD Blu-ray movies.([UHD friendly drive is required]({kbUrl}uhd-friendly-drive-list_377.html).)'
         - '[How to copy an UHD Blu-ray movie?]({kbUrl}how-to-copy-uhd-blu-ray_379.html)'
     - version: 15.00
@@ -431,9 +431,9 @@ release:
         - Under the customized DVD copy mode, you can select to copy your desired chapters to a DVD-5 or DVD-9 disc.
         - Makes copies of your DVD backup copies without using your valuable original DVD discs.
         - The inventive UMT™ enables you to copy latest DVD movies through the optimized module.
-        - 'Copies Blu-ray movies without any third party plug-in. (Due to the variety of Blu-ray discs, DVD-Cloner may not support all kinds of them. If DVD-Cloner can't identify your Blu-ray disc, please [click here](https://www.blue-cloner.com/) to get the download version of Blue-Cloner for free which supports for copying almost all Blu-ray discs. 
+        - "Copies Blu-ray movies without any third party plug-in. (Due to the variety of Blu-ray discs, DVD-Cloner may not support all kinds of them. If DVD-Cloner can't identify your Blu-ray disc, please [click here](https://www.blue-cloner.com/) to get the download version of Blue-Cloner for free which supports for copying almost all Blu-ray discs. 
         
-        If you are a registered user of DVD-Cloner, you can [click here](https://www.blue-cloner.com/dc_discountorder.html) to get 10% discount for ordering Blue-Cloner.)'
+        If you are a registered user of DVD-Cloner, you can [click here](https://www.blue-cloner.com/dc_discountorder.html) to get 10% discount for ordering Blue-Cloner.)"
         - Converts DVD movies to AVI, MPEG and SVCD output formats with the free bonus Open DVD Ripper Lite worth $29.99.
         - Downloads and captures online movies from the Internet with the free bonus Stream-Cloner Lite worth $39.99.
         - Adjusts the screen ratio (such as 4:3, 16:9) to fit your screen size.
@@ -853,7 +853,7 @@ release:
     - version: '1.81'
       date: Nov.06, 2002
       list:
-        - "ASPI error" was debugged. You can update your ASPI layer within DVD-Cloner!
+        - '"ASPI error" was debugged. You can update your ASPI layer within DVD-Cloner!'
     - version: '1.80'
       date: Oct.31, 2002
       list:

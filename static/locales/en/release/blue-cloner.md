@@ -60,7 +60,7 @@ release:
         - Supports Blu-ray/4K UHD Blu-ray movies released in Q4 2019.
         - Added the function of customizing audio tracks and subtitles when copying Blu-ray to DVD, removing unwanted sections.
         - Improved HST feature for saving lots of time of UHD encoding.
-        - "NVIDIA" and "INTEL QSV" GPUs are supported.
+        - '"NVIDIA" and "INTEL QSV" GPUs are supported.'
         - Select whether to delete temporary files when copy is finished.
         - Select whether to cache files to the hard disk when compressing UHD.
     - version: '8.70.830'
@@ -68,7 +68,7 @@ release:
       list:
         - Supported new released 4K Ultra HD/Blu-ray/DVD Movies.
         - Improved HST feature for saving lots of time of UHD encoding.
-        - "NVIDIA" and "INTER QSV" GPUs are supported.
+        - '"NVIDIA" and "INTER QSV" GPUs are supported.'
     - version: 8.60.829
       date: Sep.27, 2019
       list:
@@ -157,7 +157,7 @@ release:
     - version: 7.40.812
       date: Jul.20, 2018
       list:
-        - 'Blue-Cloner began to fully support [UHD Blu-ray Copy](/uhd-video-copy-recording)'.
+        - 'Blue-Cloner began to fully support [UHD Blu-ray Copy](/uhd-video-copy-recording).'
         - 'From Blue-Cloner 7.40, you can use Blue-Cloner to copy and backup 4K, HDR, UHD Blu-ray movies.([UHD friendly drive is required.]({kbUrl}uhd-friendly-drive-list_377.html))'
         - '[How to copy an UHD Blu-ray movie?]({kbUrl}how-to-copy-uhd-blu-ray_379.html)'
     - version: 7.30.811
@@ -253,7 +253,8 @@ release:
 
 
         If you are a registered user of Blue-Cloner 5 or its former versions, please click [here](http://www.blue-cloner.com/upgrade.html) to upgrade to Blue-Cloner Diamond.'
-       - Compatible with Windows 10 and Windows 8.1.
+
+        - Compatible with Windows 10 and Windows 8.1.
     - version: '5.70'
       date: Mar. 26, 2015
       list:
