@@ -17,7 +17,7 @@
            
         </template>        
         <div v-else :class="`row justify-content-center ${iconData.rowClass}`">
-        <b-col :lg="12/iconData.iconGird" :md="12/iconData.iconGird*2" :class="`mb-4 mb-md-0 ${iconData.iconGirdClass} ${item.additionClass}`" v-for="(item,index) in iconData.icon" :key="index">
+        <b-col :lg="12/iconData.iconGird" :md="12/iconData.iconGird*2" :cols="iconData.iconGird>2?6:''" :class="`mb-4 mb-md-0 ${iconData.iconGirdClass} ${item.additionClass}`" v-for="(item,index) in iconData.icon" :key="index">
 
           <div :class="`position-relative  mb-4 mx-auto w-${iconData.iconWidth}`">
             

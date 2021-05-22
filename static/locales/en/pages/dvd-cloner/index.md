@@ -107,6 +107,7 @@ systemRequirements:
       cols:
         - additionClass: 
           imageUrl: win10.png
+          md: 2
         - additionClass:
           text: '<p>Minimum configuration:</p>
           <ul><li>Intel Core2</li>

@@ -37,15 +37,15 @@ screenshot:
   additionClass: software-interface bg-dark-opacity-2
   itemContainer: container
   items:
-    - imageUrl: mac2021_screenshot_1.jpg
-    - imageUrl: mac2021_screenshot_2.jpg
-    - imageUrl: mac2021_screenshot_3.jpg    
+    - imageUrl: mc_screenshot_1.jpg
+    - imageUrl: mc_screenshot_2.jpg
+    - imageUrl: mc_screenshot_3.jpg    
   iconGird: 2
 WhyChoose:
   name: Overview-Why
   active: true
   container: container-fluid
-  title: Why Choose DVD-Cloner?
+  title: Why Choose DVD-Cloner for Mac?
   textTop: 
   textBottom: 
   button:
@@ -57,15 +57,15 @@ WhyChoose:
     positionY: 50%
     positionX:
   icon:
-    - iconUrl: dc-icon3.png
+    - iconUrl: icon/dc-for-mac-icon1.png
       text: Copy DVD to any blank DVD discs or hard disk
-    - iconUrl: dc-icon4.png
+    - iconUrl: icon/dc-for-mac-icon2.png
       text: Diverse DVD copy modes
-    - iconUrl: dc-icon6.png
+    - iconUrl: icon/dc-for-mac-icon3.png
       text: Copy Blu-ray/4K UHD to a BD-R/RE (DL) or rip it to MKV format
-    - iconUrl: dc-icon2.png
+    - iconUrl: icon/dc-for-mac-icon4.png
       text: Remove various DVD/Blu-ray/UHD copy protections
-    - iconUrl: dc-icon5.png
+    - iconUrl: icon/dc-for-mac-icon5.png
       text: Smart Analyzer technology can simulate the playback process and automatically skip bad sectors, greatly improved the copy quality.          
   iconGird: 6      
 systemRequirements:
@@ -79,98 +79,68 @@ systemRequirements:
       cols:
         - additionClass: 
           imageUrl: macos.png
+          md: 2
         - additionClass:
-          text: 'Minimum System Requirements:
-
-CPU: Intel or PowerPC 1.0GHZ
-Memory: 1G
-Free hard disk space required: 10GB
-One DVD/Blu-ray burner
-Model: All Mac models released after 2010
-Mac OS:10.10 or later versions'  
+          text: |
+            <p>Minimum System Requirements:  </p>          
+            <ul><li>CPU: Intel or PowerPC 1.0GHZ</li><li>Memory: 1G</li><li>Free hard disk space required: 10GB</li><li>One DVD/Blu-ray burner</li><li>Model: All Mac models released after 2010</li><li>Mac OS:10.10 or later versions</li></ul>
+            <p><img src="{imageUrl}win10.png" style="max-width:30px"> <a href="/dvd-copy-for-mac/">Click here to copy DVD/Blu-ray on Windows</a></p>
 ---
 
 ## Features
 
-* Lightning Blu-ray/UHD Copy Speed
-  * The new upgraded HST function allows you to copy Blu-ray/UHD movies with only about three hours, which greatly improved the copy speed. (NVIDIA 1660 or above graphics card recommended)
+*   Blu-ray/4K UHD Copy
 
-* Easy To Use, Just As Easy As ABC
-  * Whether you are a novice or experienced user, DVD-Cloner 2021 has you covered. Under the Express mode, DVD-Cloner automatically recognizes your disc type and provides suitable ways for you to make one-click copies. The Expert mode provides you with a variety of copy modes, which is a good choice if you want to make custom DVD copies with intuitive titles.
+    *   Remove various Blu-ray protections such as AACS, BD+, Cinavia, etc.
+    *   Copy 4K UHD Blu-ray to a blank BD-50 using a 4K UHD friendly drive, retaining the same HDR10 and Dolby HD audio effect.
+    *   Copy the main movie of a 4K UHD Blu-ray to computer hard drives saved as ISO files.
+    *   Copy a Blu-ray movie to a blank BD-25 or hard disk with movie-only copy mode.
+*   Blu-ray/4K UHD Ripper
 
-* Express mode (One-click copy) :
-  * Copy DVD-5 to DVD-5
-  * Copy DVD-9 to DVD-5
-  * Copy Blu-ray to BD-25
-  * Copy 4K UHD Blu-ray to BD-50
-  * Rip DVD to MKV
-  * Rip Blu-ray to MKV  
-* Expert mode (Professional copy) :
-  * Perfect 1:1 DVD Copy
-    * Without any third party DVD decrypters, this best DVD copying software has unlimited access to all region codes and copy protection systems. It removes all known DVD copy protections.
-    * Copy a DVD-5 movie to a blank DVD-5 DVD±R/RW disc in 1:1 ratio.
-    * Copy a DVD-9 movie to a blank DVD-9 DVD±R/RW disc in 1:1 ratio.
-    * Backup DVD movie to a DVD movie folder for playback on the player software or TV and a DVD player is not needed anymore.
-  * Movie Complete Copy
-    * Compress one DVD-9 movie to a blank DVD-5 disc, keeping menus and special features.
-    * Select to keep all audio tracks and subtitles or remove unwanted ones.
-    * Manually define the compression rate to define the picture quality of your DVD copies.
-  * Movie-Only Copy
-    * Copy the main movie of a DVD-9/DVD-5 to a DVD-5 disc, omitting menus and special features, thus to improve the picture quality of the main movie.
-    * Intelligently recognize the main movie from the source DVD to avoid copying a fake main movie.
-    * Audio tracks and subtitles are selective to make a special copy of DVD movie.
-  * Split DVD Copy
-    * Split one DVD-9 movie to two blank DVD-5 discs with original picture quality.
-    * Optionally keep menus when splitting a DVD-9 movie to two DVD-5s.
-  * Movie Customized Copy
-    * Episodic DVD copier software - Copy only a certain range of chapters, specially designed for Episodic TV series DVDs and music video DVDs.
-    * Copy your favorite titles and chapters from the original DVD-5 movie to a DVD-9 disc.
-    * Supports copying multi-channel audio tracks such as Dolby Digital 5.1 and DTS.
-    * Create multiple DVD copies without having to repeat the entire process again.
-  * Rip DVD to MKV
-    * Rip high-capacity DVD movies to MKV format for easy storage, with high bitrate, high quality, and lower size.
-    * Optionally compress a DVD movie in the ripping process by setting H.264 or H.265 as the encoder.
-    * Enable HST to improve the H.264/H.265 encoding speed, with all audio tracks and subtitles included.
-  * Burn a DVD movie from the hard disk to a DVD±R (DL)
-    * Burn DVD folders or ISO image files on the hard disk to DVD±R (DL) with diverse copy modes.
-  * Combine multiple DVDs to one DVD±R DL or BD-R/RE (DL)
-    * Combine two DVDs to one DVD±R DL.
-    * Copy DVDs to Blu-ray - Combine DVDs (up to 6) to one BD-R/RE (DL).
-    * Select the menu template, background picture and set the disc volumes.
-    * Merge your desired movie titles from several DVD discs to one DVD±R DL or BD-R/RE (DL) and remove unwanted audio track(s) and subtitle(s).
-  * Copy Blu-ray/4K UHD Blu-ray movies
-    * Copy a Blu-ray movie to a blank BD-25 with movie-only copy.
-    * Copy a Blu-ray movie to the hard disk as a movie folder or ISO image file.
-    * Copy UHD Blu-ray to a blank BD-50 with an UHD friendly drive. 4K, HDR features are supported. Learn more about <a href="https://www.dvd-cloner.com/knowledge/how-to-copy-uhd-blu-ray_379.html">how to copy UHD Blu-ray</a>.
-    * Supports enabling HST to increase the Blu-ray copy speed greatly.
-    * Optionally convert HD AC3, DTS audio to a normal format.
-    * Manually adjust the encoding speed, which will affect the copy quality. 
+    *   Convert a Blu-ray/4K UHD movie into portable and mobile device ready MKV videos, with lossless 4K HEVC or SDR video quality.
+    *   Enjoy the 4K UHD movies on your 4K UHD TV screen, without actually consuming the discs anymore.
+    *   Preserve the stunning HDR10 and Dolby HD audio quality.
+    *   Select to keep only one audio track and subtitle in the MKV ripping function, removing other unnecessary ones.
+*   Perfect 1:1 DVD Copy
 
-  *If you want to copy Blu-ray movies in 1:1 ratio or copy Blu-ray to DVD, please download the trial version of <a href="https://www.blue-cloner.com" rel="nofollow noreferrer noopener">Blue-Cloner</a> for free. If you are a registered user of DVD-Cloner, you can get <a href="https://www.blue-cloner.com/dc_discountorder.html" rel="nofollow noreferrer noopener">10% discount for ordering this Blu-ray cloner/copier.</a>  
+    *   This best DVD copying software removes various DVD copy protections such as CSS, RC, RCE, APS, UOPs, ARccOS, etc.
+    *   Copy DVD-5 to DVD-5 in 1:1 ratio.
+    *   Copy DVD-9 to DVD-9 in 1:1 ratio.
+    *   Backup DVD to a DVD movie folder for playback on the player software or TV and a DVD player is not needed anymore.
+    *   Backup DVD to an ISO image file on the hard disk for later burning.
+*   Movie Complete Copy
 
-  * Rip Blu-ray/4K UHD Blu-ray to MKV
-    * Besides Blu-ray disc copy, DVD-Cloner 2021 gives you another choice to rip the main movie * of a high-capacity Blu-ray disc to MKV format saved on the hard disk.
-    * Rip 4K UHD movies to MKV (HDR 10+) format and play on your UHD player, which allows you to enjoy the same HDR and Dolby HD audio effect as the original disc.
-    * With efficient H.265 codec technology, DVD-Cloner can rip UHD Blu-ray movies to MKV, keeping the same 4K/HDR image quality as the original UHD Blu-ray.
-    * Enable HST to improve the H.264/H.265 encoding speed, with all audio tracks and subtitles included.
-    * Select to keep only one audio track and subtitle in the MKV ripping function, removing other unnecessary ones.
+    *   Compress one DVD-9 movie to a blank DVD-5 disc, keeping menus and special features.
+    *   Manually adjust the compression rate to define the picture quality of your DVD copies.
+*   Movie-Only Copy
 
-  *If you want to rip Blu-ray movies to a format profile optimized for your device, please download the trial version of <a href="/open-cloner-ripper/" >OpenCloner Ripper</a> for free.
+    *   Copy the main movie of a DVD-9/DVD-5 to a DVD-5 disc, omitting menus and special features.
+    *   Intelligently recognize the main movie from the source DVD to avoid copying a fake main movie.
+*   Split DVD Copy
 
-  * <a href="https://www.dvd-cloner.com/knowledge/what-is-opencloner-decode-widget_447.html" >OpenCloner Decode widget</a>
-    * Works as a third party Blu-ray decryption plug-in, which allows VLC to <a href="https://www.dvd-cloner.com/knowledge/How_to_use_VLC_Media_Player_to_play_Blu-ray_or_4K_UHD_disc_438.html" >play encrypted Blu-ray and UHD movies</a>.
-  * Other Features:
-    * Optimized the DVD burning engine. The copied DVD discs are compatible with more playback devices including PS4, Xbox1, Blu-ray player, etc.
-    * Download YouTube videos from the Internet and capture anything playing on the PC with free bonus Stream-Cloner Lite worth $39.99. You can <a href="http://www.stream-cloner.com/upgrade.html">upgrade to Stream-Cloner</a> with only $14.99 to download online videos from all video and video-sharing websites as well as enjoy the video conversion function!
-    * Convert DVD movies to AVI, MPEG and SVCD output formats for enjoying on corresponding media devices with free bonus Open DVD Ripper Lite worth $29.99. If you want to rip DVD movies to more video and audio formats as well as convert 2D movies to 3D format, please <a href="http://www.open-dvd-ripper.com/upgrade.html">upgrade to Open DVD ripper</a> with only $14.99!
-    * Modified some details about the operation interface, such as pop-up tips after skipping bad sector, to make it easier to use.
-    * Make flawless copies of scratched DVDs, so you can bring your damaged movies back to life.
-    * The Smart Analyzer module has been upgraded to analyze DVD discs faster and more accurately.
-    * Manually set the pattern of Read I/O to determine the DVD reading speed and whether to skip bad sectors.
-    * Multi-language interface support such as English, French, Italian and Polish, suitable for users from different countries.
-    * Zoom in/Zoom out the operation interface according to your preferences. The maximum is 200%.
-    * One-Click option for DVD-Cloner installation.
-    * Send us quick feedback in real time via the shortcut window within the software.
-    * Use the full version of DVD-Cloner for 7 days for free before purchasing.
+    *   Split one DVD-9 movie to two blank DVD-5 discs with original picture quality.
+    *   Optionally keep menus when splitting a DVD-9 movie to two DVD-5s.
+*   Movie Customized Copy
 
-  *1: Trade names including YouTube, PS4, Xbox and others used above are the respective trademarks of their owners.
+    *   Episodic DVD copier software - Copy only a certain range of titles, specially designed for Episodic TV series DVDs and music video DVDs.
+    *   Create multiple DVD copies without having to repeat the entire process again.
+*   Rip DVD to MKV
+
+    *   Rip high-capacity DVD movies to MKV format for easy storage, with high bitrate, high quality, and lower size.
+    *   Optionally compress a DVD movie in the ripping process by setting H.264 or H.265 as the encoder.
+*   Burn a DVD movie from the hard disk to a DVD±R (DL)
+
+    *   Burn DVD movie folders or ISO image files on the hard disk to DVD±R (DL) with diverse copy modes.
+*   Combine 2 DVDs to one DVD±R DL
+
+    *   Combine 2 DVD movie discs onto one DVD±R DL.
+    *   Supports reading source DVD movie folders or ISO image files from the hard disk.
+    *   Select the menu template, background picture and set the movie titles.
+*   Other Features:
+
+    *   Optimized the DVD burning engine. The copied DVD discs are compatible with more playback devices including PS4, Xbox, Blu-ray player, etc.
+    *   Make flawless copies of scratched DVDs, so you can bring your damaged movies back to life.
+    *   Select to add the .dvdmedia suffix to the DVD folder on the hard disk before copying for convenient playback on the DVD player.
+    *   Optimized the DVD copy function, improved the video quality.
+    *   Send us quick feedback in real time via the shortcut window within the software.
+    *   Use the full version of DVD-Cloner for Mac 7 days for free before purchasing.

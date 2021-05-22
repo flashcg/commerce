@@ -155,7 +155,7 @@ export default defineComponent({
               case 'success':
                 data.handleName = props.data.handleName;
                 store.commit('toUpgradeInfo',data) 
-                router.push({ path: '../upgradecode/', query: {  }})                
+                router.push({ path: '/upgrade/upgradecode_'+item.value?.model.toLowerCase()+'/', query: {  }})                
                 break                          
               default:
                 isValid.value = false; 

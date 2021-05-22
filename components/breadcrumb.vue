@@ -41,7 +41,11 @@ export default {
           string = string.replace('dvd','DVD')
           string = string.replace('uhd','UHD')
           string = string.replace('blu ray','Blu-ray')
-
+          string = string.replace('upgradecode_dc','DVD-Cloner Upgrade')
+          string = string.replace('upgradecode_mc','DVD-Cloner for Mac Upgrade')
+          string = string.replace('upgradecode_oc2020apr_mask_edm_dcup','DVD-Cloner Upgrade')
+          string = string.replace('upgradecode_edm_mcup','DVD-Cloner for Mac Upgrade')
+          string = string.replace('upgradecode_edm_dcup','DVD-Cloner Upgrade')
           currentArray.push({ text: string, to: rePath });
 
 

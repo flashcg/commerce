@@ -52,7 +52,7 @@ import { fetchItem,stringToObj } from "@/assets/script/tools";
 export default {
   
 async asyncData({app,$content}){
-let  mddata = await $content('pages/dvd-copy-for-mac/upgradecode').fetch(),{upgrade} = await $content('pages/dvd-copy-for-mac/upgrade').fetch();
+let  mddata = await $content('pages/upgrade/upgradecode_dc').fetch(),{upgrade} = await $content('pages/dvd-cloner/upgrade').fetch();
  mddata = await app.$initMD(mddata);
  return {mddata,apiUrl:upgrade.apiUrl}
 },
@@ -73,7 +73,9 @@ computed:{
      return this.mddata.upgradeItems.items.map(res=>{
         let item = fetchItem(res.handleName,this.items);
         item = JSON.parse(JSON.stringify(item))
-        Object.assign(item,{saleInfo:res})
+        let desc = res.desc;
+        delete res.desc
+        Object.assign(item,{saleInfo:res},{desc:desc?desc:item.desc})
         return item
       })
     }

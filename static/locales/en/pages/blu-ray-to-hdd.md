@@ -52,63 +52,19 @@ systemRequirements:
 ## Features
 
 
-Download Movies
-
-*   Stream-Cloner 2 is an all-in-one leading stream downloader to download favorite online movies, streaming videos, audio files, pictures, etc.
-*   The brand-new interfaces enable you to download/capture streaming videos more conveniently.
-*   Downloads multiple streaming videos at one time with high speed.
-*   The 1-Click Download interface enables new users to download streaming videos quite easily.
-*   Intelligently analyzes the source video URL.
-*   Extracts all static links of the current webpage to download your desired contents conveniently.
-*   Supports all video websites and video-sharing sites such as YouTube, Netflix, Hulu, Facebook, IMDB, VEVO, AOL, iFilm, My space, Blip.tv, Vimeo, Video.google, Movieweb, Video.yahoo¹, etc for download.
-*   Select whether to always download the video with the maximum size after analysis.
-*   Select whether to pop up the submission window when adding a download task from the URL filter.
-*   Add a URL filter manually to only save your desired types of files.
-*   Select whether to add a URL manually to analyze and download videos or enter the main interface to download videos with the internal browser when Stream-Cloner starts.
-*   Supports various popular browsers including IE, Firefox, Opera, Chrome, Safari, etc.
-*   Supports for downloading online TV shows from social video websites.
-*   Supports for downloading and converting one video file simultaneously.
-*   Downloads streaming videos from all HTTP protocols.
-
-
-
-Capture Movies
-
-*   Captures anything playing on your PC whenever you want.
-*   Drags a region for capture manually.
-*   Picks an object for capture automatically.
-*   Freely customizes the capture frame.
-*   Shows or hides the capture frame.
-*   The 1-Click Capture interface enables new users to capture videos quite easily.
-*   Set the captured DVD file format as PAL or NTSC.
-*   Supports all video websites including Netflix, iTunes, Redbox¹, etc for capture.
-
-
-
-Manage files
-
-*   Converts the downloaded and captured streaming video/audio to various video formats such as AVI, MKV, MP4, MOV, 3GP, ASF, WMV, MPG, TS, VOB, FLV, SWF and audio formats such as MP3, MP2, AC3, OGG, AAC, M4A, WMA, WAV, AIFF, AU, etc for enjoying on popular media devices.
-*   Supports media devices such as iPod, iPhone, iPhone 4, iPhone 5, iPad, iPad 2, Tablet PC, PSP, PS3, Zune, Mobile Phone, GPhone, Smart Phone, Xbox 360, etc.
-*   Plays back the downloaded or captured videos directly with the built-in video player.
-*   Converts multiple video files simultaneously.
-*   Browses your finished tasks by listing the reports or icons.
-*   Quickly opens the folder where your downloaded/captured videos are saved.
-*   Shows the detailed task properties such as title, description, source URL, screenshot, creation time, etc.
-*   Add a category manually to save your favorite finished tasks independently.
-
-
-
-Other Features
-
-*   Quickly runs the program anytime by right-clicking on the webpage where your fancy video is played back as long as you have selected "Add items to the Internet Explorer menu" when installing Stream-Cloner.
-*   Built-in crash-proof web browser adopting the multi-process technology.
-*   Reopens recently closed website pages.
-*   Set the homepage of the internal browser.
-*   Plays sound when the download is completed.
-*   Begins the unfinished task(s) when Stream-Cloner starts.
-*   Set the maximum analysis duration time.
-*   Shows the analyzing log of the source video URL.
-*   Select whether to show the suspension download prompt on the flash player.
-*   Set the target capture window to topmost when capturing.
-*   Free technical support
-*   No adware or spyware 
+*   Converts Blu-ray to MKV files.
+*   Converts Blu-ray to TS files.
+*   Supports the conversion of latest Blu-ray movies.
+*   Removes copy protections like AACS, BD+ with a third-party plug-in such as Blu-ray Copy Helper.
+*   Rips with high definition and highest rate.
+*   Removes region code.
+*   Opens Blu-ray files from the hard disk.
+*   Movie-only copy.
+*   Chapter(s) conversion.
+*   Select your desired audio track
+*   Select your desired subtitle ( for TS files only).
+*   Playback of the converted movie with your HD Hard Disk Player.
+*   Playback of the converted movie on the PC with PowerDVD or other Blu-ray software players.
+*   Shuts down the system when the conversion is completed.
+*   High conversion speed.
+*   Free technical support.
