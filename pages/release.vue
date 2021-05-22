@@ -1,6 +1,7 @@
 <template>
   <div>
     <iconBlock :iconData="mddata.supportMovies" />
+    {{releaseOriginal}}
     <b-overlay :show="!release" rounded="sm">
     <b-container   class="py-lg-8 py-6">
       <template v-if="release">
@@ -47,7 +48,9 @@ export default {
     };
   },
   async fetch(){
-    this.releaseOriginal = await this.$content('release').fetch();
+    this.releaseOriginal = await this.$content('release').fetch();    
+    this.releaseOriginal = await this.$initMD(this.releaseOriginal);
+
   },
   computed: {
     ...mapState({
