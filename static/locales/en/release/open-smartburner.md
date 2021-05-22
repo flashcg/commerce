@@ -28,6 +28,7 @@ release:
         - Enhanced the operation stability.
     - version: '1.20'
       date: Aug.16, 2013
+      bottomText: '[More info](/open-smartburner/)'
       list:
         - Burns data files to a DVD data disc.
         - Burns data files to a Blu-ray data disc.
@@ -39,6 +40,5 @@ release:
         - Supports for making PAL DVDs or NTSC DVDs from video files.
         - Supports 720p and 1080p output for making Blu-ray video format.
         - Converts video files to DVD/Blu-ray video format for playback on a standalone player.
-        - Creates a new project to add data files or video files for burning.
-        [More info](/open-smartburner.html)
+        - Creates a new project to add data files or video files for burning.     
 ---

@@ -12,6 +12,7 @@ release:
         - Added the function of checking the aspect ratio parameter, and improved the stability.
     - version: '1.10'
       date: Oct.20, 2014
+      bottomText: '[More info](/open-superconverter/)'
       list:
         - Freely converts between various video/audio formats.
         - Supports a wide range of multimedia devices, such as iPod, iPhone, iPhone 3GS, iPhone 4, iPhone 4S, iPhone 5, iPhone 5C, iPhone 5S, iPad 1, iPad 2, The new iPad, iPad 4, iPad mini, Android Pad, etc.
@@ -24,5 +25,4 @@ release:
         - Adjust the brightness, contrast, saturation, vertical flip, horizontal flip and the output background to get special video effects.
         - Batch conversion enables you to convert different video files simultaneously.
         - The multi-core CPU and the NVIDIA CUDA technology are supported to largely increase the conversion speed.
-        [More info](/open-superconverter.html)
 ---

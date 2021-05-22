@@ -63,7 +63,7 @@ release:
     - version: 17.30.1457
       date: Apr.10, 2020
       list:
-        - Added a free plug-in [OpenCloner Decode widget]({kbUrl}what-is-opencloner-decode-widget_447.html). You can play any encrypted Blu-ray and UHD movies using VLC.
+        - Added a free plug-in '[OpenCloner Decode widget]({kbUrl}what-is-opencloner-decode-widget_447.html)'. You can play any encrypted Blu-ray and UHD movies using VLC.
         - Updated decryption modules for the newest blu-ray/UHD movies.
     - version: 17.20.1456
       date: Mar.11, 2020
@@ -203,11 +203,12 @@ release:
     - version: 15.10.1433
       date: Jul.20, 2018
       list:
-        - DVD-Cloner began to fully support [UHD Blu-ray Copy](/uhd-video-copy-recording).
-        - From DVD-Cloner 15.10, you can use DVD-Cloner to copy and backup 4K, HDR, UHD Blu-ray movies.([UHD friendly drive is required]({kbUrl}uhd-friendly-drive-list_377.html).)
-        - [How to copy an UHD Blu-ray movie?]({kbUrl}how-to-copy-uhd-blu-ray_379.html)
+        - DVD-Cloner began to fully support '[UHD Blu-ray Copy](/uhd-video-copy-recording/)'.
+        - From DVD-Cloner 15.10, you can use DVD-Cloner to copy and backup 4K, HDR, UHD Blu-ray movies.('[UHD friendly drive is required]({kbUrl}uhd-friendly-drive-list_377.html)'.)
+        - '[How to copy an UHD Blu-ray movie?]({kbUrl}how-to-copy-uhd-blu-ray_379.html)'
     - version: 15.00
       date: Jun.13, 2018
+      bottomText: '[Upgrade to the latest version](/dvd-cloner/upgrade/)'
       list:
         - Fully updated the user interface, and improved the user experience by providing more intuitive operation guide.
         - Rip high-capacity DVD movies to MKV format for easy storage, with all audio tracks included, high bitrate, high quality and lower size.
@@ -221,12 +222,11 @@ release:
         - Multi-language interface support, suitable for users all over the world.
         - Modified the software trial limit, which is now fully functional for 7 days.
         - Send us quick feedback in real time via the shortcut window within the software.
-        [Upgrade to the latest version](/dvd-cloner/upgrade.html)
     - version: 14.20
       date: Nov.24, 2017
+      topText: This is DVD-Cloner Must-have version! It includes
+      bottomText: Enjoy holiday!
       list: 
-        This is DVD-Cloner Must-have version!
-        It includes
         - Last and most important upgrading within 2017.
         - Support newest DVD movies and Blu-ray movies.
         - Reinforce recognized technology for most of DVD and Blu-ray discs that released in Q4 2017.
@@ -234,8 +234,7 @@ release:
         - Optimized for compatibility of up-to-date Windows operation system.
         - Fixed some bugs that collected within 2017.
         - FREE for the new customers within one year!
-        - A bunch of FREE bonus software included.
-        Enjoy holiday!
+        - A bunch of FREE bonus software included. 
     - version: 14.10
       date: Jul.04, 2017
       list:
@@ -273,8 +272,8 @@ release:
     - version: '13.00'
       date: Nov.10, 2015
       list:
-        - Express interface: one click to make 1:1 DVD copy or compress one DVD-9 movie to a DVD-5 DVD±R/RW disc.
-        - Expert interface: movie complete copy, full 1:1 DVD disc copy, movie-only copy, split copy and movie customized copy.
+        - Express interface, one click to make 1:1 DVD copy or compress one DVD-9 movie to a DVD-5 DVD±R/RW disc.
+        - Expert interface, movie complete copy, full 1:1 DVD disc copy, movie-only copy, split copy and movie customized copy.
         - Added support for new Java protection.
         - Enjoy every movie title or chapter directly with the preview window and don't need to install other DVD player software.
         - Copies one DVD movie disc to a DVD movie folder for playback on the player software or TV, and a DVD player is not needed any more.
@@ -365,6 +364,7 @@ release:
         - DVD-Cloner runs more smoothly.
     - version: '11.00'
       date: Nov.18, 2013
+      bottomText: Trade names including YouTube, Hulu, Facebook, IMDB, VEVO, AOL, iFilm, My space, Blip.tv, Vimeo, Video.google, Movieweb, Video.yahoo, Netflix, iTunes, Redbox and others used above are the respective trademarks of their owners.
       list:
         - Removes all known DVD protections and region codes such as CSS, CPRM, CPPM, RC, RCE, APS, UOPs, SONY ARCCOS, Rip-Guard, Macrovision, Disney X-DRM, CORE x2, Flux DVD, etc for you to bring the cinema home.
         - Impressive high-speed DVD copy - takes only about 1/3 of playback time to copy a DVD movie.
@@ -375,10 +375,9 @@ release:
         - Supports for copying multi-channel audio tracks such as Dolby Digital 5.1 and DTS.
         - Supports for defining the compression rate for every title and chapter and previewing the real-time image quality under the customized copy mode.
         - The inventive SCT™ enables you to copy latest DVD movies through the upgraded technology.
-        - Downloads YouTube¹ videos from the Internet and captures anything playing on the PC with the free bonus Stream-Cloner Lite worth $39.99. You can click [here](http://www.stream-cloner.com/upgrade.html) to upgrade it to Stream-Cloner with only $14.99 to download online videos from all video and video-sharing websites as well as enjoy the video conversion function!
+        - Downloads YouTube¹ videos from the Internet and captures anything playing on the PC with the free bonus Stream-Cloner Lite worth $39.99. You can click '[here](http://www.stream-cloner.com/upgrade.html)' to upgrade it to Stream-Cloner with only $14.99 to download online videos from all video and video-sharing websites as well as enjoy the video conversion function!
         - Supports both home & PC DVD players.
         - Constantly updated to support latest DVD copy protections.
-        ¹: Trade names including YouTube, Hulu, Facebook, IMDB, VEVO, AOL, iFilm, My space, Blip.tv, Vimeo, Video.google, Movieweb, Video.yahoo, Netflix, iTunes, Redbox and others used above are the respective trademarks of their owners.
     - version: '10.70'
       date: Oct.14, 2013
       list:
@@ -417,11 +416,11 @@ release:
         - Supports latest DVD movies.
     - version: 64-bit
       date: Dec.08, 2012
+      bottomText: '[More info](/dvd-cloner/dvd-copy-64bit/)'
       list:
         - Full features of DVD-Cloner.
         - 20% higher copy speed than DVD-Cloner.
         - Runs under Windows Vista 64-bit or later versions.
-        [More info](/dvd-cloner/dvd-copy-64bit.html)
     - version: '10.00'
       date: Nov.18, 2012
       list:
@@ -432,7 +431,7 @@ release:
         - Under the customized DVD copy mode, you can select to copy your desired chapters to a DVD-5 or DVD-9 disc.
         - Makes copies of your DVD backup copies without using your valuable original DVD discs.
         - The inventive UMT™ enables you to copy latest DVD movies through the optimized module.
-        - Copies Blu-ray movies without any third party plug-in. (* Due to the variety of Blu-ray discs, DVD-Cloner may not support all kinds of them. If DVD-Cloner can't identify your Blu-ray disc, please [click here](https://www.blue-cloner.com/) to get the download version of Blue-Cloner for free which supports for copying almost all Blu-ray discs. * If you are a registered user of DVD-Cloner, you can [click here](https://www.blue-cloner.com/dc_discountorder.html) to get 10% discount for ordering Blue-Cloner.)
+        - Copies Blu-ray movies without any third party plug-in. (Due to the variety of Blu-ray discs, DVD-Cloner may not support all kinds of them. If DVD-Cloner can't identify your Blu-ray disc, please '[click here](https://www.blue-cloner.com/)' to get the download version of Blue-Cloner for free which supports for copying almost all Blu-ray discs. * If you are a registered user of DVD-Cloner, you can '[click here](https://www.blue-cloner.com/dc_discountorder.html)' to get 10% discount for ordering Blue-Cloner.)
         - Converts DVD movies to AVI, MPEG and SVCD output formats with the free bonus Open DVD Ripper Lite worth $29.99.
         - Downloads and captures online movies from the Internet with the free bonus Stream-Cloner Lite worth $39.99.
         - Adjusts the screen ratio (such as 4:3, 16:9) to fit your screen size.
@@ -728,7 +727,7 @@ release:
     - version: '4.00'
       date: Dec.01, 2006
       list:
-        - Two newly designed interfaces: Express mode is the easiest way to copy DVD. It only takes one click to copy your DVD! Expert mode is more professional and customized. It makes you a DVD copy expert!
+        - Two newly designed interfaces, Express mode is the easiest way to copy DVD. It only takes one click to copy your DVD! Expert mode is more professional and customized. It makes you a DVD copy expert!
         - Upgraded burning kernel and encoding engine.
         - New "DVD Fix" copy mode enables you to recover damaged DVDs.
         - Fixed some bugs in DVD-Cloner 3.
@@ -737,7 +736,7 @@ release:
       date: Sep.19, 2006
       list:
         - Added the "Adjust the compression rate" function. With this function you can get a better video effect and less DVD size. You can also adjust the compression rate from 10% to100%.
-        - Improved decoding kernel: defeat all new published DVD protection mechanisms, especially to some latest DVD movies. 
+        - Improved decoding kernel, defeat all new published DVD protection mechanisms, especially to some latest DVD movies. 
         - Fixed some little bugs in V3.30.
     - version: '3.30'
       date: Aug.02, 2006

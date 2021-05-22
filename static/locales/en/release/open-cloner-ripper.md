@@ -86,11 +86,11 @@ release:
         - With 2-pass encoding and denoise filter, you'll get excellent images even at a low bitrate.
         - Choose a profile optimized for your device, or choose a universal profile for standard or high quality conversions. Simple, easy, fast.
         - Customize your own default profile presets manually.
-        - Video Encoders: H.264, H.265, MPEG-2, MPEG-4, VP8, VP9
+        - Video Encoders including H.264, H.265, MPEG-2, MPEG-4, VP8, VP9
         - Trim unnecessary parts from the video, only keeping the clips you like.
         - Remove black borders from video.
         - Embed watermark in video.
-        - Video filters: Deinterlacing, Denoise, Detelecine, Deblock, Sharpen, Rotate.
+        - Video filters including Deinterlacing, Denoise, Detelecine, Deblock, Sharpen, Rotate.
         - GPU acceleration - greatly improved the transcoding speed.
         - Constant quality or average bitrate video encoding.
 ---
