@@ -16,7 +16,7 @@
 <script>
 export default {
 async asyncData({ app, $content }) {
-  let mddata = await $content("pages/open-smartburner").fetch();
+  let mddata = await $content("pages/open-superconverter/index").fetch();
   mddata = await app.$initMD(mddata);    
   return { mddata };
 },

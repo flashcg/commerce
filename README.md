@@ -20,7 +20,7 @@ zip xml 和网站的release更新根据 static\locales\en\release目录下的md�
 
 -------------------
 
-# MD 变量区
+# MD 变量区 （yaml）
 ## 页面根据MD自动生成
 
  * 键值用 冒号加空格的方式来定义 key: value ，
@@ -53,6 +53,20 @@ rbi:
 
 * 导航菜单：内容在default.md - menuTop 中的设置
    - （待更新）
+
+# 在MD 变量区（yaml） 使用 md 文档语法
+
+**release 页面具体条目中、产品页面概述和System Requirements中，可以使用**
+
+  单选使用md样式，（包括 : [ ] * 等），字段需要用引号括上，编辑器会有提示
+  多行的话，使用如下
+
+```
+Key: |
+  **this is my very very very**
+  * long string
+  * long string  
+```  
 
 
 

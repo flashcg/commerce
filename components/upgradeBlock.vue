@@ -65,7 +65,6 @@
 </template>
  
 <script lang="ts">
-import Vue from 'vue'
 import {
   defineComponent,
   reactive,
@@ -153,6 +152,7 @@ export default defineComponent({
                 invalidInfo.value = data.text
                 break  
               case 'success':
+                isloading.value = true;
                 data.handleName = props.data.handleName;
                 store.commit('toUpgradeInfo',data) 
                 router.push({ path: '/upgrade/upgradecode_'+item.value?.model.toLowerCase()+'/', query: {  }})                

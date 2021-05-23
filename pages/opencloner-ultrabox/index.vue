@@ -16,7 +16,7 @@
 <script>
 export default {
 async asyncData({ app, $content }) {
-  let mddata = await $content("pages/opencloner-ultrabox").fetch();
+  let mddata = await $content("pages/opencloner-ultrabox/index").fetch();
   mddata = await app.$initMD(mddata);    
   return { mddata };
 },
