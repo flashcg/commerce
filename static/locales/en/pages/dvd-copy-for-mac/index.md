@@ -37,9 +37,9 @@ screenshot:
   additionClass: software-interface bg-dark-opacity-2
   itemContainer: container
   items:
-    - imageUrl: mac2021_screenshot_1.jpg
-    - imageUrl: mac2021_screenshot_2.jpg
-    - imageUrl: mac2021_screenshot_3.jpg    
+    - imageUrl: mc_screenshot_1.jpg
+    - imageUrl: mc_screenshot_2.jpg
+    - imageUrl: mc_screenshot_3.jpg    
   iconGird: 2
 WhyChoose:
   name: Overview-Why

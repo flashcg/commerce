@@ -163,7 +163,8 @@ export default ({
   }
 
   //inject $initMD to context.app
-  if (app) app.$initMD = async (data, method = 'page') => {
+  
+  Vue.prototype.$initMD = async (data, method = 'page') => {
 
     let pathData = await $content('default').only(['imagesPath', 'KB_basePath', 'download_basePath', 'manual_basePath', 'video_basePath', 'videoProduct_basePath']).fetch();
     let pathHandle=(value,globalPath)=>{
@@ -246,7 +247,7 @@ export default ({
     }
     return data
   }
-
+  if (app) app.$initMD =  Vue.prototype.$initMD
   Date.prototype.format = function(fmt) { 
     var o = { 
        "M+" : this.getMonth()+1,                 //月份 
