@@ -310,7 +310,7 @@ productRecommend:
           additionClass: mb-2
         - imageUrl: bundle-2021.jpg
           path: /order/#bundles        
-    - title: Tips
+    - title: Tips 
       cols:
         - additionClass:
           text: '<p><a class="btn rounded-0 btn-outline-dark" href="/dvd-cloner/faqs-dvd-cloner/">FAQs of DVD-Cloner earlier version.</a></p>

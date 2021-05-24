@@ -16,7 +16,7 @@
 <script>
 export default {
 async asyncData({ app, $content }) {
-  let mddata = await $content("pages/open-superconverter").fetch();
+  let mddata = await $content("pages/dvd-to-ipod-converter/index").fetch();
   mddata = await app.$initMD(mddata);    
   return { mddata };
 },

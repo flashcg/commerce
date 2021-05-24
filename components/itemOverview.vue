@@ -12,11 +12,9 @@
         </b-col>
 
         <b-col lg="9" v-if="data.type != 'download'">
-          <client-only>    
-          <p v-if="data.topAdditionText"  class="whiteSpace-preline" v-html="data.topAdditionText"></p>
-          <p v-html="itemInfo.desc"  class="whiteSpace-preline"></p>
-          <p v-if="data.bottomAdditionText"  class="whiteSpace-preline" v-html="data.bottomAdditionText"></p>
-          
+          <client-only>
+            <div v-html="`${data.topAdditionText?'<p>'+$md.render(data.topAdditionText)+'</p>':''} ${itemInfo.desc?'<p>'+$md.render(itemInfo.desc)+'</p>':''} ${data.bottomAdditionText?'<p>'+$md.render(data.bottomAdditionText)+'</p>':''}`">
+            </div>  
           <template v-if="itemSaleInfo.lifetime">
             <div class="mb-2">
             <span class="text-orange">{{standard?
@@ -60,9 +58,9 @@
           </template>
 
           <template v-if="itemSaleInfo.years">
-            <b-button v-if="itemSaleInfo.years.length>1" :disabled="!upgradeYearSelected" squared variant="danger" size="lg" :href="upgradeYearSelected" class="mt-2">{{$t("globalName.upgrade")}} </b-button>
+            <b-button v-if="itemSaleInfo.years.length>1" :disabled="!upgradeYearSelected" squared variant="danger" size="lg" :href="upgradeYearSelected" class="mt-2">{{itemSaleInfo.buttonText?itemSaleInfo.buttonText:$t("globalName.upgrade")}} </b-button>
 
-           <b-button v-else squared variant="danger" :href="itemSaleInfo.years[0].link" size="lg" class="mt-2">{{$t("globalName.upgrade")}} </b-button> 
+           <b-button v-else squared variant="danger" :href="itemSaleInfo.years[0].link" size="lg" class="mt-2">{{itemSaleInfo.buttonText?itemSaleInfo.buttonText:$t("globalName.upgrade")}} </b-button> 
           </template>
           </p>
           <p v-if="data.button&&data.button.additionText" class="whiteSpace-preline" v-html="data.button.additionText"></p>
