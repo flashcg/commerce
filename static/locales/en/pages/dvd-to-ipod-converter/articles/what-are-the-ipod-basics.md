@@ -2,7 +2,7 @@
 title: What are the iPod Basics? | DVD-Cloner
 metaItems:
   - name: description
-    content: An Apple product works with both Mac and Windows machines. Since it's the top-selling media player in the United States, probably the big question is: What makes it different from any other digital media player? The answer will differ depending on who you ask. Some might say it's the form factor -- the 80-GB iPod classic is less than half an inch (1.4 centimeters) deep and weighs about 4.9 ounces (140 grams). For comparison, the Zen Portable Media Center from Creative is 1.06 inches (2.7 centimeters) deep, weighs 12 ounces (340 grams) and has only 20 GB of hard drive space
+    content: "An Apple product works with both Mac and Windows machines. Since it's the top-selling media player in the United States, probably the big question is: What makes it different from any other digital media player? The answer will differ depending on who you ask. Some might say it's the form factor -- the 80-GB iPod classic is less than half an inch (1.4 centimeters) deep and weighs about 4.9 ounces (140 grams). For comparison, the Zen Portable Media Center from Creative is 1.06 inches (2.7 centimeters) deep, weighs 12 ounces (340 grams) and has only 20 GB of hard drive space"
   - name: keywords
     content: DVD to iPod converter
 ---

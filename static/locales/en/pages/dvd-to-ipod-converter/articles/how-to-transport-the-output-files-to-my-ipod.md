@@ -3,7 +3,7 @@ title: How to transport the output files to my iPod?
 metaItems:
   - name: description
     content: How to transport the output files to my iPod?
-     - name: keywords
+  - name: keywords
     content: DVD to iPod converter
 ---
 

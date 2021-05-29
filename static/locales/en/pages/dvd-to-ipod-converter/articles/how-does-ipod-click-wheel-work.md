@@ -2,7 +2,7 @@
 title: How does iPod Click Wheel work? | DVD-Cloner
 metaItems:
   - name: description
-    content: The Click Wheel is a touch-sensitive ring that you use to navigate through all of iPod's menus and control all of its features. It provides two ways to input commands: by sliding your finger around the wheel and by pressing buttons located under and in the middle of the wheel.
+    content: "The Click Wheel is a touch-sensitive ring that you use to navigate through all of iPod's menus and control all of its features. It provides two ways to input commands: by sliding your finger around the wheel and by pressing buttons located under and in the middle of the wheel."
   - name: keywords
     content: DVD to iPod converter
 ---
