@@ -1,0 +1,27 @@
+### Blu-ray to DVD's FAQ
+
+Technical FAQ
+
+* [Does the DVD drive support the playback of burnt DVDs? Which software player can be used to play them?](/blu-ray-to-dvd/playback-of-burnt-dvds/)
+* [How to burn Blu-ray movies to blank DVD-9 Rs?](/blu-ray-to-dvd/how-to-burn/)
+* [How to view the detailed information of Blu-ray to DVD?](/blu-ray-to-dvd/view-detail-information/)
+* [How long does it take for Blu-ray to DVD to burn a Blu-ray movie?](/blu-ray-to-dvd/how-long-to-burn/)
+* [What are the system requirements for Blu-ray to DVD?](/blu-ray-to-dvd/system-requirement/)
+* [How to add menus to the target movies?](/blu-ray-to-dvd/add-menu/)
+* [If my hard disk is FAT32, will there be any error message when I burn a disc? How to change the file system from FAT32 to NTFS?](/blu-ray-to-dvd/fat32-to-ntfs/)
+* [How to set the size of target disc?](/blu-ray-to-dvd/set-the-size/)
+* [Does Blu-ray to DVD support the burning of MKV files?](/blu-ray-to-dvd/mkv-support/)
+* [Can I modify the characters in the disc menu? How to modify them?](/blu-ray-to-dvd/modify-the-characters/)
+* [Can a standalone DVD player play the burnt DVDs?](/blu-ray-to-dvd/dvd-stanalone-player/)
+* [If there are different source files, how do I make the selection?](/blu-ray-to-dvd/make-the-selection/)
+* [What kinds of discs does Blu-ray to DVD support?](/blu-ray-to-dvd/disc-support/)
+* [What kind of disc can Blu-ray to DVD make?](/blu-ray-to-dvd/kind-disc-make/)
+* [If I disable the burning, can I continue the process?](/blu-ray-to-dvd/continue-the-process/)
+* [Can I set the number of discs to be burnt in Blu-ray to DVD Pro? How to do that?](/blu-ray-to-dvd/set-number-of-discs/)
+* [Can I change the background picture of the target disc menu?](/blu-ray-to-dvd/change-the-background/)
+* [How to select the subtitles and audio tracks?](/blu-ray-to-dvd/select-subtitle-and-audio/)
+* [Can I cancel the operation during the making process? How to continue the unfinished work after the cancellation?](/blu-ray-to-dvd/cancel-and-continue-process/)
+* [How to rename the burnt disc?](/blu-ray-to-dvd/rename-the-burnt-disc/)
+* [If some burnt discs can't be played back normally due to some reason, what shall I do?](/blu-ray-to-dvd/can-not-be-played-back/)
+* [Which playing devices can play the DVDs made by Blu-ray to DVD Pro?](/blu-ray-to-dvd/player-the-dvds/)
+* [How to get help?](/blu-ray-to-dvd/how-to-get-help/)
