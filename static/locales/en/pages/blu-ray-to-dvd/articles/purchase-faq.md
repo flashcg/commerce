@@ -1,3 +1,12 @@
+---
+title: Blu-ray to DVD's FAQ
+metaItems:
+  - name: description
+    content: Blu-ray to DVD's FAQ
+  - name: keywords
+    content: Blu-ray to DVD
+---
+
 ### Blu-ray to DVD's FAQ
 
 * [Purchase FAQ](/blu-ray-to-dvd/purchase-faq/)
