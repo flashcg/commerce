@@ -1,8 +1,8 @@
 ---
-title: "file is too big for the disc, and do I still want to burn?".....when I click "yes" it just cancels the whole operation.
+title: '"file is too big for the disc, and do I still want to burn?".....when I click "yes" it just cancels the whole operation."'
 metaItems:
   - name: description
-    content: "file is too big for the disc, and do I still want to burn?".....when I click "yes" it just cancels the whole operation.
+    content: '"file is too big for the disc, and do I still want to burn?".....when I click "yes" it just cancels the whole operation.'
   - name: keywords
     content: DVD Cloner
 ---

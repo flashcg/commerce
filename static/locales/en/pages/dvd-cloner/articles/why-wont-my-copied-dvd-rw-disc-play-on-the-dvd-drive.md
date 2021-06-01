@@ -1,8 +1,8 @@
 ---
-title: Why won't my copied DVD±RW disc play on the DVD drive, or DVD player
+title: "Why won't my copied DVD±RW disc play on the DVD drive, or DVD player"
 metaItems:
   - name: description
-    content: Why won't my copied DVD±RW disc play on the DVD drive, or DVD player
+    content: "Why won't my copied DVD±RW disc play on the DVD drive, or DVD player"
   - name: keywords
     content: DVD Cloner
 ---
