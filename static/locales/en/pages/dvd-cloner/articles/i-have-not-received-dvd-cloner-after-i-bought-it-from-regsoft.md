@@ -1,0 +1,13 @@
+---
+title: I haven't received DVD-Cloner after I bought it from Regsoft
+metaItems:
+  - name: description
+    content: I haven't received DVD-Cloner after I bought it from Regsoft
+  - name: keywords
+    content: DVD Cloner
+---
+
+### Q: I haven't received DVD-Cloner after I bought it from Regsoft.
+
+A:
+Since regsoft.com handles the CD shipping issues, please check the shippment status at : orders@regsoft.com .
