@@ -22,9 +22,8 @@ desc:
     Note: The registered users of Open DVD Ripper Lite (or DVD-Cloner 2020) can click <a href="http://www.open-dvd-ripper.com/upgrade.html" target="_blank">here</a> to upgrade to Open DVD ripper with only $14.99, to convert your DVD movies to much more video and audio formats.
   bgStyle: 
 areaTop:
-  name: DG Desc
+  name: ODRL Desc
   title: #默认为 productName
-  topAdditionText: DVD-Cloner Gold enables you to copy and burn DVD/Blu-ray movies with ease.
   bgStyle: 
     default: dark
     imageUrl: product-info-bg.jpg       
