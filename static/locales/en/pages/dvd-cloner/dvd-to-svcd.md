@@ -3,7 +3,7 @@ title: DVD to SVCD free download, DVD-Cloner's Bonus Software
 metaItems: # seo 内容
   - name: description
     content: DVD-TO-SVCD is a powerful and easy DVD ripping application for converting DVD to VCD and SVCD with excellent output quality.
-    - name: keywords
+  - name: keywords
     content: DVD to SVCD     
 
 layout: fluid

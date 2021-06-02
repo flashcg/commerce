@@ -3,7 +3,7 @@ title: DVD to AVI free download, DVD-Cloner's Bonus Software
 metaItems: # seo 内容
   - name: description
     content: DVD-TO-AVI is an ideal program to back up DVD speedily with fine audio and video effect.
-    - name: keywords
+  - name: keywords
     content: DVD to AVI     
 
 layout: fluid
@@ -18,8 +18,9 @@ boxes:
 desc:
   shortText: DVD-TO-AVI
   longText: |
-     **DVD-TO-AVI** is an ideal program to back up DVD speedily with fine audio and video effect. Compared with other DVD converters, it is so easy to use that only a few clicks are enough. Furthermore, you can handle all settings and properties easily in one interface.
-      Why Choose DVD-to-AVI?
+    **DVD-TO-AVI** is an ideal program to back up DVD speedily with fine audio and video effect. Compared with other DVD converters, it is so easy to use that only a few clicks are enough. Furthermore, you can handle all settings and properties easily in one interface.
+    
+    Why Choose DVD-to-AVI?
 
     * Easy to use - Only a few clicks are enough to make the conversion.
     * Brand-new DVD decryptor - supports more encrypted DVD movies.

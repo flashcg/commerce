@@ -3,7 +3,7 @@ title: DVD to MPEG free download, DVD-Cloner's Bonus Software
 metaItems: # seo 内容
   - name: description
     content: DVD-TO-MPEG is powerful, convenient and high-efficient software to convert DVD to MPEG-1 or MPEG-2.
-    - name: keywords
+  - name: keywords
     content: DVD to MPEG     
 
 layout: fluid
@@ -18,10 +18,9 @@ boxes:
 desc:
   shortText: DVD-TO-MPEG
   longText: |
-     **DVD-TO-MPEG** is powerful, convenient and high-efficient software to convert DVD to MPEG-1 or MPEG-2. It is easy to use, fast in speed and excellent in quality. 
-The most important thing is, it is super easy to use. No matter whether you are a beginner or a veteran, you will feel it's developed JUST for you! In one word, choosing DVD-TO-MPEG means opening the door of enjoying your multimedia life!
+    **DVD-TO-MPEG** is powerful, convenient and high-efficient software to convert DVD to MPEG-1 or MPEG-2. It is easy to use, fast in speed and excellent in quality. The most important thing is, it is super easy to use. No matter whether you are a beginner or a veteran, you will feel it's developed JUST for you! In one word, choosing DVD-TO-MPEG means opening the door of enjoying your multimedia life!
 
-      Why Choose DVD-TO-MPEG?
+    Why Choose DVD-TO-MPEG?
 
     * Fast - converts DVD to MPEG with high speed.
     * Easy to use - You can handle all settings and properties easily in one interface.
