@@ -11,9 +11,6 @@ let  mddata = await $content('${path}').fetch();
 },
 head() {   
  return this.mddata.head
-},
-mounted() {
-  window.$nuxt.setLayout(this.mddata.layout)
 }
 };
 </script>`},

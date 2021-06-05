@@ -3,7 +3,7 @@ import { dirOperate, writeLog } from './other';
 import { FileCreator, FilesProcess } from './vueProcess';
 
 const fs = require('fs'), archiver = require('archiver'), request = require('request'),
-  path = require('path'), myDate = new Date(), mdBasePath = "./static/locales/", zipBasePath = "./static/", xmlBasePath = "./static/xml/",
+  path = require('path'), myDate = new Date(), mdBasePath = "./static/locales/", zipBasePath = "./static/", xmlBasePath = "./static/rss/",
   yamlFront = require("yaml-front-matter"), xml2js = require('xml2js'), releaseJsonPath = `${zipBasePath}releaseState.json`;
 
 interface DefaultData {
@@ -237,6 +237,8 @@ class NewverZipCreator {
   get zipPath() {
     if (this.data.handleName == 'DVD-Cloner') {
       return `${zipBasePath}newver.zip`;
+    } else if( this.data.handleName == 'DVD-Cloner for Mac'){
+      return `${zipBasePath}newver_mc.zip`;
     } else {
       return `${zipBasePath}newver-${this.data.model.toLowerCase()}.zip`;
     }
@@ -245,7 +247,7 @@ class NewverZipCreator {
    * Updata XML files
    */
   xmlUpdate() {
-    const xmlPath = './static/xml/' + this.data.path + '.xml',
+    const xmlPath = xmlBasePath + this.data.path + '.xml',
       xmlData = fs.readFileSync(xmlPath, 'utf8');
     xml2js.parseString(xmlData.replace(/&(?!(?:apos|quot|[gl]t|amp);|#)/g, '&amp;'),
       (err: any, res: any) => {

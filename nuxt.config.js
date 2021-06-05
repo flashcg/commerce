@@ -107,7 +107,7 @@ export default {
     '@nuxtjs/markdownit',
     '@nuxt/content',
     'bootstrap-vue/nuxt',
-   // ['@nuxtjs/google-tag-manager', { id: 'GTM-P25NTJQ' }],
+    //['@nuxtjs/google-tag-manager', { id: 'AW-1068142190' }],
     ['nuxt-i18n', {
       locales: [{
         code: 'en',
@@ -184,7 +184,7 @@ export default {
    */
   buildModules: [
     ['@nuxtjs/google-analytics', {
-      id: 'UA-60608488-1'
+      id: 'UA-7547467-1'
     }],
     ['@nuxt/typescript-build', {
       typeCheck: true, //在不同的程序中启用 TypeScript 的类型检查

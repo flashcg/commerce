@@ -102,7 +102,7 @@
             <hr style="opacity:0.3" />
               <div class="d-flex align-items-center">      
                 <div class="col-12">
-                <b-button @click="clickAction($event)" v-for="(groupButton,groupButtonIndex) in subList.groupButtons" :key="groupButtonIndex"   :variant="groupButton.variant?groupButton.variant:'outline-light'" class="rounded-0 mr-2" size="lg" :to="groupButton.hash?'/'+groupButton.path+'/#'+$toLower(groupButton.hash):'/'+groupButton.path+'/'" :href="groupButton.href">{{ groupButton.text }} </b-button>
+                <b-button @click="clickAction($event)" v-for="(groupButton,groupButtonIndex) in subList.groupButtons" :key="groupButtonIndex"   :variant="groupButton.variant?groupButton.variant:'outline-light'" class="rounded-0 mr-2" size="lg" :to="groupButton.path?groupButton.hash?'/'+groupButton.path+'/#'+$toLower(groupButton.hash):'/'+groupButton.path+'/':''" :href="groupButton.href">{{ groupButton.text }} </b-button>
                 </div>
               </div> 
             </div>
