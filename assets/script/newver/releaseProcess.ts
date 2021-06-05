@@ -237,6 +237,8 @@ class NewverZipCreator {
   get zipPath() {
     if (this.data.handleName == 'DVD-Cloner') {
       return `${zipBasePath}newver.zip`;
+    } else if( this.data.handleName == 'DVD-Cloner for Mac'){
+      return `${zipBasePath}newver_mc.zip`;
     } else {
       return `${zipBasePath}newver-${this.data.model.toLowerCase()}.zip`;
     }
