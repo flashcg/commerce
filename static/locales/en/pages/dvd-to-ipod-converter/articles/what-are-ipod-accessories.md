@@ -5,6 +5,7 @@ metaItems:
     content: The iPod has become so ubiquitous that you'll regularly hear people refer to MP3 players as "iPods," even if they're not talking about Apple's device. An entire genre of broadcasting has evolved to take advantage of the iPod -- you can download "podcasts" to any type of MP3 player (or computer), but these home-made broadcasts originally popped up as an iPod application.
   - name: keywords
     content: DVD to iPod converter
+template: blog     
 ---
 
 ### Q: What are iPod Accessories?

@@ -5,6 +5,7 @@ metaItems:
     content: iTunes is a digital media player application, introduced by Apple Inc. on January 9, 2001at the Macworld Expo in San Francisco, for playing and organizing digital music and video files. The program is also an interface to manage the contents on Apple's popular iPod digital media players as well as the iPhone.
   - name: keywords
     content: DVD to iPod converter
+template: blog     
 ---
 
 ### Q: What is itunes?

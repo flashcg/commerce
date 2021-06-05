@@ -14,6 +14,10 @@ let  mddata = await $content('pages/linkout').fetch();
 head() {   
  return this.mddata.head
 },
-layout:"primary"
+
+layout:"primary",
+mounted(){
+
+}
 };
 </script>

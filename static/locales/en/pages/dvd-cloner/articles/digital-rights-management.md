@@ -5,13 +5,12 @@ metaItems:
     content: Digital rights Management
   - name: keywords
     content: DVD Cloner
+template: blog     
 ---
 
 ### Q: Digital rights Management
 
-A:
-
-The Blu-ray Disc format employs several layers of digital rights management. AACS decryption processAdvanced Access Content System (AACS) is a standard for content distribution and digital rights management. It is developed by AS Licensing Administrator, LLC (AACS LA), a consortium that includes Disney, Intel, Microsoft, Matsushita (Panasonic), Warner Bros., IBM, Toshiba and Sony.
+A: The Blu-ray Disc format employs several layers of digital rights management. AACS decryption processAdvanced Access Content System (AACS) is a standard for content distribution and digital rights management. It is developed by AS Licensing Administrator, LLC (AACS LA), a consortium that includes Disney, Intel, Microsoft, Matsushita (Panasonic), Warner Bros., IBM, Toshiba and Sony.
 
 Since appearing in devices in 2006, several successful attacks have been made on the format. The first known attack relied on the trusted client problem. In addition, decryption keys have been extracted from a weakly protected player (WinDVD). However, even though some AACS cryptographic keys have been compromised, new releases will use new, uncompromised keys. BD+ was developed by Cryptography Research Inc. and is based on their concept of Self-Protecting Digital Content.BD+ is effectively a small virtual machine embedded in authorized players. It allows content providers to include executable programs on Blu-ray Discs. Such programs can:
 examine the host environment, to see if the player has been tampered with. Every licensed playback device manufacturer must provide the BD+ licensing authority with memory footprints that identify their devices.

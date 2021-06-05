@@ -5,6 +5,7 @@ metaItems:
     content: What is Blu-ray Disc?
   - name: keywords
     content: DVD Cloner
+template: blog     
 ---
 
 ### Q: What is Blu-ray Disc?

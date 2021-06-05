@@ -5,6 +5,7 @@ metaItems:
     content: The iPod video uses a 30-GB Toshiba 1.8-inch hard drive (model MK3008GAL), featuring 4200 rpm and a USB interface. It weighs 1.7 ounces (48 grams) and fits 30 GB onto a single platter, squeezing in 93.5 gigabits per square inch. To fit so much into so little space, the drive uses smaller and lighter sliders (which keep the right spacing between the read/write heads and the recording surface) and a more sensitive thin-film technology on the heads and the platter. The increased sensitivity allows for a greater number of recorded bits per square inch. 
   - name: keywords
     content: DVD to iPod converter
+template: blog     
 ---
 
 ### Q: What is the hareware in an iPod?

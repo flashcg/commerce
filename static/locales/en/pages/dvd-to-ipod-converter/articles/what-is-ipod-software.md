@@ -5,6 +5,7 @@ metaItems:
     content: While Apple is very tight-lipped about its iPod software, most reports have the iPod 5G runs on the Pixo OS 2.1 operating system along with PortalPlayer's Digital Media Platform. The PortalPlayer platform is an all-in-one "system on a chip" that provides some of the hardware we already looked at, including the two ARM7TDMI microprocessor cores. The developer package includes audio-decoder support, customizable firmware (with support for DRM-system development) and software-development tools.
   - name: keywords
     content: DVD to iPod converter
+template: blog     
 ---
 
 ### Q: What is iPod Software?

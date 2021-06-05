@@ -117,7 +117,32 @@
         </div>
         </b-row>
         </b-card-body>
-    </div>    
+    </div>  
+
+    <div class="shadow-box" v-if="data.type=='bonus'">
+      
+    <b-card-header class="bg-transparent border-0">
+      <b-card-title>{{ item.handleName }} </b-card-title>
+    </b-card-header>
+    <b-card-body>
+      <p>
+        <b-link :to="`/dvd-cloner/bonus/`">
+          <b-img-lazy style="max-height:320px" :src="              
+              item.boxes[0].imageUrl" fluid
+          ></b-img-lazy
+        ></b-link>
+      </p>
+      </b-card-body>
+      <b-card-footer class="bg-transparent  border-0">
+        <b-button
+          :to="`/dvd-cloner/bonus/`"
+          variant="primary"
+          size="xl"
+        >
+          Go to Bonus Software
+        </b-button>
+      </b-card-footer>
+    </div>      
 
   </div>
 </template>

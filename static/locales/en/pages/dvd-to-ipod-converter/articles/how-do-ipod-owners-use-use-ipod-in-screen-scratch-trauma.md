@@ -5,6 +5,7 @@ metaItems:
     content: Apple's discussion forums are already host to a 188-post thread on the topic, where people have spotted that the plastic used for the screen and front of the product is as sensitive as a Kate Moss sponsor.
   - name: keywords
     content: DVD to iPod converter
+template: blog     
 ---
 
 ### Q: How do iPod owners use use iPod in Screen Scratch Trauma?

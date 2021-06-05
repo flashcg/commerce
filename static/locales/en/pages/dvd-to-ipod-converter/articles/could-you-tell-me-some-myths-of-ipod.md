@@ -5,6 +5,7 @@ metaItems:
     content: If you use iPod as my digital-media player, you can only download music from the iTunes Store.
   - name: keywords
     content: DVD to iPod converter
+template: blog     
 ---
 
 ### Q: Could you tell me some myths of iPod?

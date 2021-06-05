@@ -5,6 +5,7 @@ metaItems:
     content: The 160-GB iPod supports MP3, WAV, AAC, AIFF, Apple Lossless and Audible audio files. You can download songs from the iTunes Store, from a different MP3 download site or rip them from your CDs into the iTunes software. You need to go through the iTunes software to download files to the iPod (unless you download a hack that lets you bypass iTunes -- more on hacks in the Software section). You can listen to audio books at various speeds -- normal, faster or slower -- without seriously distorting the sound, and connect your iPod to your home stereo through a mini-to-RCA jack.
   - name: keywords
     content: DVD to iPod converter
+template: blog     
 ---
 
 ### Q: What are the features of iPod?

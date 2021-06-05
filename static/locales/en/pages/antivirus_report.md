@@ -2,7 +2,7 @@
 title: Antivirus Report | DVD-Cloner
 metaItems:
   - name: description
-    content: DVD-Cloner is guaranteed 100% clean, including but not limited to: spyware, viruses, trojans and backdoors
+    content: 'DVD-Cloner is guaranteed 100% clean, including but not limited to: spyware, viruses, trojans and backdoors'
   - name: keywords
     content: DVD-Cloner, antivirus
 ---

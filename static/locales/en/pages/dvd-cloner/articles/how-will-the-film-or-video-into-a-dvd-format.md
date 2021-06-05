@@ -5,6 +5,7 @@ metaItems:
     content: How to burn video files into the DVD format?
   - name: keywords
     content: DVD Cloner
+template: blog     
 ---
 
 ### Q: How to burn video files into the DVD format?

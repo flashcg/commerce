@@ -5,7 +5,7 @@ metaItems:
     content: DVD Copy
   - name: keywords
     content: Opencloner  
- 
+template: blog 
 ---
 
 
@@ -122,29 +122,29 @@ A DVD-10 (double sided) disc will hold a nominal 133 minutes on each side (ie 26
 
 A DVD-18 (dual layer, doubled sided) disc can hold 240 minutes on each side and the disc also needs to be turned over to play the other side.
 
-Most DVD is DVD-9 or DVD-5 format. Our software can clone DVD-9 to just one&nbsp;DVD±R/RW disc (DVD-5 format) without evident losing.
+Most DVD is DVD-9 or DVD-5 format. Our software can clone DVD-9 to just one DVD±R/RW disc (DVD-5 format) without evident losing.
 
-&nbsp;
+ 
 
 **6. What are Menu and Navigation?**
 
 * * *
 
-&nbsp;
+ 
 
 Interactivity on a DVD-Video disc is provided as menus, which allow the user to select particular sequences or functions. Each menu comprises a still image or video loop as background plus up to 36 rectangular buttons, which use subpictures for highlighting. Different versions of the menu are required for widescreen, letterbox, and pan &amp; scan mode. In this case only 12 buttons are available for each, making 36 in total. The user selects buttons (instead of moving a cursor) and use the Up/Down/Left/Right arrow keys on a remote control. The three available subpicture colors (the fourth is transparent) can be used to indicate what state the button is in: unselected, highlighted or selected. This provides the necessary feedback to the user. This user interface may be a bit cumbersome but generally makes it easier to use from a remote control device.
 
 By using DVD-Cloner, you can select whether you will save the movies of DVDs only, without keeping menus or not.
 
-&nbsp;
+ 
 
 **7. What's Double Layer disc?**
 
 * * *
 
-&nbsp;
+ 
 
-Double Layer DVD recording brings new capability to your PC. With the ability to store up to 4 hours of high quality MPEG-2 video (or up to 8 hours of MPEG-1 video) or up to 8.5GB of information on a single sided disc with 2 recordable layers. DVD+R DL discs are write once discs of the DVD "+" format, and once recorded they are playable in standard consumer&nbsp;**DVD players*** and computer DVD-ROM drives.
+Double Layer DVD recording brings new capability to your PC. With the ability to store up to 4 hours of high quality MPEG-2 video (or up to 8 hours of MPEG-1 video) or up to 8.5GB of information on a single sided disc with 2 recordable layers. DVD+R DL discs are write once discs of the DVD "+" format, and once recorded they are playable in standard consumer **DVD players*** and computer DVD-ROM drives.
 
 ![]({imageUrl}article/double-layer-dvd.jpg)
 
@@ -154,8 +154,8 @@ SONY DRU-700A (Recommended)
 
 ASUS DRW-1604P
 
-BenQ DW1600&nbsp;
+BenQ DW1600 
 
-LG GSA-4120B&nbsp;
+LG GSA-4120B 
 
 NEC ND-2510A

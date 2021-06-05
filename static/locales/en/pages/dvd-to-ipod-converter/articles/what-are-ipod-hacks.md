@@ -5,6 +5,7 @@ metaItems:
     content: iPod hacks are programs written to give iPods new (non-Apple-intended) functionality. You know how we talked about things you can't do with an iPod, like sync via FireWire? Well, you can hack an iPod to sync via FireWire. Unless you're a programmer, "hacking an iPod" just means you download a chunk of code that alters your iPod's functionality at the software level. If you're a programmer, it means developing that code. iPod hackers are publishing all sorts of programs that alter the way an iPod works -- some of the software is free, and some of it is for purchase.
   - name: keywords
     content: DVD to iPod converter
+template: blog     
 ---
 
 ### Q: What are iPod hacks?

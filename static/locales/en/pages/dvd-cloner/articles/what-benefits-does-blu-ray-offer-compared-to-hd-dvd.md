@@ -5,6 +5,7 @@ metaItems:
     content: What benefits does Blu-ray offer compared to HD-DVD?
   - name: keywords
     content: DVD Cloner
+template: blog     
 ---
 
 ### Q: What benefits does Blu-ray offer compared to HD-DVD?

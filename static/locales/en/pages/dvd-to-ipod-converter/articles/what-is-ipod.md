@@ -5,6 +5,7 @@ metaItems:
     content: iPod is a brand of portable media players designed and marketed by Apple Inc and launched on October 23, 2001. As of 2008, the current product line-up includes the hard drive-based iPod classic, the touchscreen iPod touch, the video-capable iPod nano and the screenless iPod shuffle. Former products include the compact iPod mini and the spin-off iPod photo (since re-integrated into the main iPod classic line).
   - name: keywords
     content: DVD to iPod converter
+template: blog     
 ---
 
 ### Q: What is iPod?

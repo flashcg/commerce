@@ -5,6 +5,7 @@ metaItems:
     content: Step1. Insert your DVD disc into your DVD-Rom, then run the software, click "Load DVD" button and add the DVD file. You can also add DVD/IFO from your hard disk. Step2. This software can convert DVD to various video formats such as MPEG-4, AVI, WMV, FLV, 3GP, VOB, etc. Click the "Format" drop down list to select a format. If you want to copy DVD to computer in 1:1 lossless quality, please select "Lossless DVD Copy (*.vob)".
   - name: keywords
     content: DVD to iPod converter
+template: blog     
 ---
 
 ### Q: How to convert DVD to iPhone/iPod/PSP/Zune/Apple TV/Phone/Xbox/Zen/AVI/MPEG?
