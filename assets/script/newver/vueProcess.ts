@@ -40,14 +40,19 @@ interface fileSetting {
      * create vue file
      */
     writeVueFile() {
-      let ishasFile: boolean = false,pagify:boolean = true;
+      let ishasFile: boolean = false,pagify:boolean = true,pagesFilesFit:string|undefined = this.pagesFiles;
       
       fs.existsSync(this.pagesFiles) ? ishasFile = true : ishasFile = false;
       if(this.jsonData.pagify === false) pagify = false;     
       
       if (!ishasFile&&pagify) {
-        
-       fs.writeFile(this.pagesFiles, this.templateCode, (err: any) => {
+        if (this.pagesFiles?.search('/dvd-cloner/articles/')!=-1) {
+          pagesFilesFit = this.pagesFiles?.replace('/dvd-cloner/articles/','/dvd-cloner/')
+
+         } else if (this.pagesFiles?.search('/blu-ray-to-dvd/articles/')!=-1) {
+          pagesFilesFit = this.pagesFiles?.replace('/blu-ray-to-dvd/articles/','/blu-ray-to-dvd/') 
+        }
+        fs.writeFile(pagesFilesFit, this.templateCode, (err: any) => {
           writeLog('created file - .' + this.pagesFiles);
           if (err) console.log(err);
         })
