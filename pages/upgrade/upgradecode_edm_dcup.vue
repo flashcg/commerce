@@ -32,7 +32,7 @@ Currently you can register V<strong>{{upgradeInfo.currentVersion}}</strong> or l
   </div>
   <div class="bg-dark-opacity-1 py-6">
     <div class="container">
-    <h3>Dear Donkey,</h3>
+    <h3>Dear {{upgradeInfo.name}} </h3>
 <nuxt-content  :document="mddata" />
 </div>
 </div>

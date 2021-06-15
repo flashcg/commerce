@@ -11,7 +11,7 @@ upgrade:
   name: upgrade
   title: Upgrade
   handleName: DVD-Cloner for Mac
-  apiUrl: https://www.dvd-cloner.com/cgi-bin/upgradecode_mc_api.cgi
+  apiUrl: /cgi-bin/upgradecode_mc_api.cgi
   formItems:
     title: 'Enter your registration information:(You may find it in your order confirmation Email)'
     code: true
