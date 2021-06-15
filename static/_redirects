@@ -28,6 +28,9 @@
 # 
 # /cloneralliance-sdk-docs* https://distracted-stonebraker-1f33d5.netlify.com/cloneralliance-sdk-docs/:splat 200!
 
+#cgi scripts  test
+
+/cgi-bin/upgradecode_api.cgi*  https://order.dvd-cloner.com/cgi-bin/upgradecode_api.cgi:splat 200!
 
 # other scripts
 # /cgi-bin/getversion https://www.dvd-cloner.com/cgi-bin/getversion 200!
