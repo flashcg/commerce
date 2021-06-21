@@ -1,3 +1,66 @@
+# upgradecode cgi scripts
+
+# https://www.dvd-cloner.com/cgi-bin/upgradecode.cgi?code=[XXXXXXXXXXXXXXXX]
+# https://www.dvd-cloner.com/cgi-bin/upgradecode_mc.cgi?code=[XXXXXXXXXXXXXXXX]
+# https://www.dvd-cloner.com/cgi-bin/upgradecode_edm_dcup?code=[XXXXXXXXXXXXXXXX]
+# https://www.dvd-cloner.com/cgi-bin/upgradecode_edm_mcup?code=[XXXXXXXXXXXXXXXX]
+# https://www.dvd-cloner.com/cgi-bin/upgradecode_oc2020apr_mask_edm_dcup?code=[XXXXXXXXXXXXXXXX]
+
+# ref https://redmine.sy-ruifeng.com/issues/13502#note-5
+
+# &&
+
+# code authentication & orderlink & onlinereg scripts
+
+# https://www.dvd-cloner.com/cgi-bin/orderlink.cgi?credit=[xx]
+# https://www.dvd-cloner.com/cgi-bin/onlinereg_dc.cgi?[param]
+# https://www.dvd-cloner.com/cgi-bin/dc/gkn?[param]
+
+# ref https://redmine.sy-ruifeng.com/issues/13466#note-6
+# ------------------------------------1-------------------------------------------
+
+/cgi-bin/*  https://www.dvd-cloner.com/cgi-bin/:splat 200!
+
+# ------------------------------------1-------------------------------------------
+
+# pages
+# ref https://redmine.sy-ruifeng.com/issues/13449#note-3
+
+#-------------------------------------2-----------------------------------------
+
+/oder.html http://www.dvd-cloner.com/order/ 301!
+/contact.html http://www.dvd-cloner.com/contact/ 301!
+/upgrade.html  http://www.dvd-cloner.com/upgrade/ 301!
+/download.html http://www.dvd-cloner.com/contact/ 301!
+/support_form.html http://www.dvd-cloner.com/contact/
+/open-smartburner.html http://www.dvd-cloner.com/open-smartburner/ 301!
+/open-cloner-ripper.html https://www.dvd-cloner.com/open-cloner-ripper/ 301!
+/dvd-copy-for-mac/ https://www.dvd-cloner.com/dvd-copy-for-mac/ 301!
+/open-cloner-ri.htmlper/upgrade/ https://www.dvd-cloner.com/open-cloner-ripper/upgrade/ 301！ 
+/dvd-copy-for-mac/upgrade.html https://www.dvd-cloner.com/dvd-copy-mac/dvd-cloner-for-mac-upgrade/ 301！
+/dvd-cloner/upgrade.html https://www.dvd-cloner.com/dvd-cloner/upgrade/301!
+/create-ticket.html https://www.dvd-cloner.com/create-ticket/ 301!
+/upgrade.html* https://www.dvd-cloner.com//upgrade/:splat  301!
+
+
+#-------------------------------------2----------------------------------
+
+# manual
+# ref https://redmine.sy-ruifeng.com/issues/13449#note-3
+
+#-------------------------------------3----------------------------------
+
+/manual/* https://www.dvd-cloner.com/dvd-cloner/manual/:splat 200!
+
+#-------------------------------------3----------------------------------
+
+# knowledge
+
+#-------------------------------------4---------------------------------
+
+
+#-------------------------------------4---------------------------------
+
 # primary redirects
 
 # /support.html https://www.cloner-alliance.com/help/ 301!
