@@ -13,7 +13,7 @@ handleName: OpenCloner Ripper Lifetime
 name: OpenCloner Ripper Lifetime
 type: 
 boxes:
-  - imageUrl: ocr2019-liftime-box.png #默认盒子图
+  - imageUrl: ocr2021-box.png #默认盒子图
 desc:
   shortText: OpenCloner Ripper - Lifetime License
   longText: |
