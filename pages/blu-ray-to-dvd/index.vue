@@ -16,7 +16,7 @@
 <script>
 export default {
 async asyncData({ app, $content }) {
-  let mddata = await $content("pages/blu-ray-to-dvd").fetch();
+  let mddata = await $content("pages/blu-ray-to-dvd/index").fetch();
   mddata = await app.$initMD(mddata);    
   return { mddata };
 },
