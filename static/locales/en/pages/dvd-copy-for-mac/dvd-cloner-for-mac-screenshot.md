@@ -9,10 +9,10 @@ metaItems:
 
 ## DVD-Cloner for Mac Screenshot
 
-![]({imageUrl}mc-screen1.jpg)
+![]({imageUrl}mc_screenshot_1.jpg)
 
-![]({imageUrl}mc-screen2.jpg)
+![]({imageUrl}mc_screenshot_2.jpg)
 
-![]({imageUrl}mc-screen3.jpg)
+![]({imageUrl}mc_screenshot_3.jpg)
 
-# <center> DVD-Cloner for Mac has a professional and easy-to-use interface which enables you to copy DVD movies with just a few steps.
+# DVD-Cloner for Mac has a professional and easy-to-use interface which enables you to copy DVD movies with just a few steps.

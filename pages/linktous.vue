@@ -7,7 +7,7 @@
 <script>
 export default {
 async asyncData({app,$content}){
-let  mddata = await $content('pages/linkout').fetch();
+let  mddata = await $content('pages/linktous').fetch();
  mddata = await app.$initMD(mddata);
  return {mddata}
 },
