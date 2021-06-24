@@ -29,7 +29,7 @@
 
 #-------------------------------------2-----------------------------------------
 
-/oder.html http://www.dvd-cloner.com/order/ 301!
+/order.html http://www.dvd-cloner.com/order/ 301!
 /contact.html http://www.dvd-cloner.com/contact/ 301!
 /upgrade.html  http://www.dvd-cloner.com/upgrade/ 301!
 /download.html http://www.dvd-cloner.com/contact/ 301!
@@ -55,16 +55,16 @@
 
 #-------------------------------------3----------------------------------
 
-#/dvd-cloner/_static/* https://dc2018-manual.netlify.app/dvd-cloner/manual/_static/:splat 200!
+/dvd-cloner/_static/* https://dc2018-manual.netlify.app/dvd-cloner/manual/_static/:splat 200!
 /dvd-cloner/manual/* https://dc2018-manual.netlify.app/dvd-cloner/manual/:splat 200!
 
-# /manual/_static/* https://dc2019-manual.netlify.app/manual/dc2019/_static/:splat 200!
-/manual/dc2019* https://dc2019-manual.netlify.app/manual/dc2019/:splat 200!
-/manual/dc2020* https://dc2019-manual.netlify.app/manual/dc2020/:splat 200!
-/manual/dc2021* https://dc2019-manual.netlify.app/manual/dc2021/:splat 200!
-/manual/ocr2019* https://dc2019-manual.netlify.app/manual/ocr2019/:splat 200!
-/manual/ocr2020* https://dc2019-manual.netlify.app/manual/ocr2019/:splat 200!
-/manual/ocr2021* https://dc2019-manual.netlify.app/manual/ocr2019/:splat 200!
+/manual/_static/* https://dc2019-manual.netlify.app/manual/dc2019/_static/:splat 200!
+/manual/dc2019/* https://dc2019-manual.netlify.app/manual/dc2019/:splat 200!
+/manual/dc2020/* https://dc2019-manual.netlify.app/manual/dc2020/:splat 200!
+/manual/dc2021/* https://dc2019-manual.netlify.app/manual/dc2021/:splat 200!
+/manual/ocr2019/* https://dc2019-manual.netlify.app/manual/ocr2019/:splat 200!
+/manual/ocr2020/* https://dc2019-manual.netlify.app/manual/ocr2019/:splat 200!
+/manual/ocr2021/* https://dc2019-manual.netlify.app/manual/ocr2019/:splat 200!
 
 /manual/* https://www.dvd-cloner.com/dvd-cloner/manual/:splat 200!
 
