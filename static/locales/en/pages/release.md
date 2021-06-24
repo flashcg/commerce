@@ -1,10 +1,10 @@
 ---
-title: 100% Satisfaction Guarantee, purchase DVD-Cloner
+title: DVD-Cloner release info
 metaItems:
   - name: description
-    content: DVD to DVD copy, copy dual layer DVDs, 30 day money-back guarantee that makes it your perfect DVD copy solution!
+    content: DVD copy software - DVD-Cloner is officially released.
   - name: keywords
-    content: DVD-Cloner, order 
+    content: DVD copy software, DVD-Cloner, release 
 breadcrumb: Privacy Policy   
 template: primary
 areaTop:

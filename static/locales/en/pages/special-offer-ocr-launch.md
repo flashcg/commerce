@@ -1,10 +1,10 @@
 ---
-title: DVD copy software Special Offer
+title: Special Offer OpenCloner Ripper 2021 | DVD-Cloner
 metaItems:
   - name: description
-    content: Get 20% OFF for ordering DVD-Cloner, DVD-Cloner for Mac, DVD-Cloner Platinum and DVD-Cloner Gold.
+    content: Take the excellent chance to get the time-limited special offer! Before ! Hit DVD/Blu-ray/UHD/iTunes movies are being released every day, ripping and converting all these discs and videos with 1:1 ratio is not easy and will consume you a lot of precious time. So we&#039;ve developed OpenCloner Ripper 2020for you, which enables you to rip any DVD/Blu-ray/UHD movies into MP4/MKV video format optimized for various devices and platforms, and remove DRM from iTunes movies, so you have more choices to store your movies from now on.
   - name: keywords
-    content: DVD-Cloner, special offer
+    content: 
 
 banner:
   name: Support Email

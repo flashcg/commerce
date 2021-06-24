@@ -1,10 +1,10 @@
 ---
-title: Bonus - DVD-Cloner
+title: Free bonus software Stream-Cloner Lite and Open DVD Ripper Lite
 metaItems:
   - name: description
-    content: bonus - DVD-Cloner
+    content: The bonus software enables you to download and capture online movies from the Internet and convert DVD movies to AVI, MPEG and SVCD formats.
   - name: keywords
-    content: bonus
+    content: bonus, DVD-Cloner, Open DVD Ripper Lite, Stream-Cloner Lite
 breadcrumb:   
 template: primary
 entrances:

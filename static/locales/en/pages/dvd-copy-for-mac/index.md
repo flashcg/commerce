@@ -1,10 +1,10 @@
 ---
-title: DVD/Blu-ray copy software - DVD-Cloner 
+title: DVD copy for Mac - Download free Mac DVD copy software 
 metaItems: # seo 内容
   - name: description
-    content: Blu-ray copy software free download, DVD-Cloner backs up DVD/Blu-ray movies easily, perfect 1:1 DVD Copy
+    content: DVD-Cloner for Mac is the excellent DVD copy software for Mac OS.
   - name: keywords
-    content: Blu-ray copy, DVD copy software, DVD-Cloner
+    content: DVD copy for Mac, DVD copy Mac, Mac DVD copy, DVD-Cloner for Mac, DVD software for Mac
 layout: fluid
 template: product
 pagify: true #页面化

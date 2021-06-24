@@ -1,10 +1,10 @@
 ---
-title: Opencloner - Privacy Policy
+title: A comprehensive UHD, 4K, HDR movies and TV shows copy or recording solution with software or hardware.
 metaItems:
   - name: description
-    content: Opencloner - Privacy Policy
+    content: Using Blue-cloner | DVD-Cloner software or hardware to complete UHD movie Blu-ray copy, UHD TV shows recording. Save UHD, 4K, HDR movies and TV shows permanently.
   - name: keywords
-    content: Opencloner  
+    content: UHD movie copy, UHD TV shows recording, 4K HDR video recorder, UHD Blu-ray copy
 ---
 
 

@@ -10,6 +10,7 @@ metaItems:
 ### Q: How can I order CD version from Regsoft?
 
 A:
-Please order CD versin at: https://www.regsoft.net/regsoft/vieworderpage.php3?productid=55530
-Please select "Yes, I wish to add 1 CD-ROM to my purchase."
-Usually, you will receive the CD version within 10-15 days. After placing an order, we will eamil you an order comfirmation email within 1 hour. The confirmation notice will contain the Registration Code and Email Address information that you need to register.
+
+We offer E-delivery service. I’m sorry that you will not receive a backup disc and it's not available for purchase. Normally, you will receive a confirmation email from our re-seller (payment processor) within 2 hours after purchase. If you can't receive it, please directly contact us for installation and registration information, we are the publisher of the software and we'll help you. BTW. We offer one-year free upgrade for the standard license and lifetime free upgrade for a lifetime license. That means you will need to download the latest version timely from our website. The backup disc is not necessary for you. 
+
+If you truly need a backup disc, you can also use your own burning program and burn the installation exe file of DVD-Cloner to a disc.

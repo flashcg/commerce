@@ -1,8 +1,8 @@
 ---
-title: Stream-Cloner
+title: Stream-Cloner | DVD-Cloner
 metaItems: # seo 内容
   - name: description
-    content: 
+    content: Stream-Cloner 2 is an all-in-one leading stream downloader with brand-new interfaces and high speed to download videos from all video websites and video-sharing sites including YouTube, Netflix, Hulu, Facebook, VEVO, Myspace, Dailymotion¹, etc. It enables you to download online movies, streaming videos, audio files, pictures, etc from the Internet and capture anything on the PC whenever you want. With Stream-Cloner 2, the downloaded and captured videos can be converted to video and audio formats compatible with popular media devices.
   - name: keywords
     content: 
 layout: fluid

@@ -1,8 +1,8 @@
 ---
-title: DVD Ripper
+title: DVD Ripper | DVD-Cloner
 metaItems:
   - name: description
-    content: DVD Ripper
+    content: Nowadays, we are in the era of digital world and seeking for more convenience. Most of us have a rather large DVD collection, while the most DVDs are bogged down with copy protection, making it difficult to copy these DVDs to iPad/cellphone/other mobile devices directly. In order to convert a DVD to your mobile devices, you will need a solution that can overcome these issues.
   - name: keywords
     content: Opencloner  
 listGroup:

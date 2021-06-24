@@ -10,6 +10,5 @@ metaItems:
 ### Q: I haven't received DVD-Cloner after I bought it from SWREG.
 
 A:
-Please check the shippment status at : http://www.swiftcd.com/tracking
-If you have any shipping questions about the CD,please contact
-Swiftcd directly at:http://www.swiftcd.com/Contact.asp Thank you.
+
+Please check [HERE](https://www.dvd-cloner.com/contact.html), our support will help you. 

@@ -11,4 +11,3 @@ metaItems:
 
 A:
 SWREG needs to manually process it.Please wait for a couple of days.
-Or check with SWREG directly for the status: https://usd.swreg.org/cgi-bin/msgwizard.cgi

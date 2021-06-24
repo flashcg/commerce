@@ -10,4 +10,4 @@ metaItems:
 ### Q: What can I do if I lost my registration information?
 
 A:
-If you lost your registration code, please click HERE and we'll help you to retrieve it.
+If you lost your registration code, please click [HERE](https://www.dvd-cloner.com/contact.html) and we'll help you to retrieve it.

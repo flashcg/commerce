@@ -12,4 +12,4 @@ metaItems:
 A:
 You may chat with us between 18:00 to 2:00 PST,19:00 to 03:00 MST,20:00 to 04:00 CST, 21:00 to 05:00 EST.
 
-Please feel free to chat with us about any questions regarding DVD-Cloner. When the live chat is not available, please contact us via the Ticket System.
+Please feel free to chat with us about any questions regarding DVD-Cloner. When the live chat is not available, please contact us via the [Ticket System](http://www.dvd-cloner.net/support_client/ticket.html).

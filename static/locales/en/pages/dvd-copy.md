@@ -1,8 +1,8 @@
 ---
-title: DVD Copy
+title: DVD Copy | DVD-Cloner
 metaItems:
   - name: description
-    content: DVD Copy
+    content: DVD copy 
   - name: keywords
     content: Opencloner  
 listGroup:
