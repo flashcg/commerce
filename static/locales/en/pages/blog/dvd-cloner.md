@@ -1,10 +1,10 @@
 ---
-title: DVD Copy
+title: Some Resources about DVD Copy
 metaItems:
   - name: description
-    content: DVD Copy
+    content: Resources about DVD copy, Blu-ray disc, HD DVD, how to make a quality copy, the difference between DVD-5 and DVD-9, etc.
   - name: keywords
-    content: Opencloner  
+    content: DVD-Cloner 
 template: blog 
 ---
 

@@ -14,4 +14,5 @@ Of Course .
 If you've bought DVD-Cloner V, please go to https://www.dvd-cloner.com/online_register.html to register off-line. 
 
 If you've bought DVD-Cloner IV, DVD-Cloner III or DVD-Cloner II, 
-Please click here to contact us. We will help you register off-line.
+
+Please click [HERE](https://www.dvd-cloner.com/contact.html) to contact us. We will help you register off-line.

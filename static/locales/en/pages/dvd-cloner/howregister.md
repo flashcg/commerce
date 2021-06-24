@@ -24,21 +24,7 @@ Registration procedure:
 
 ![Screenshot]({imageUrl}2018_2.jpg)
 
-4. Click "Yes" and DVD-Cloner will go to www.dvd-cloner.com to make a manual key for you. Then you'll get the following information:
---------------------------------------------------------
-Registration code: 1234567890123
-Registration Email: anyone@anyone.com
-Product ID: ********
-
-Dear anyone (anyone@anyone.com),
-Thank you for choosing DVD-Cloner.
-Your registration file has been sent to anyone@anyone.com and please check your Email box.
-Note: Some Email servers (such as AOL, Verizon) may reject this Email.
-If you did not receive it in 1 hour, please contact our support team:
-http://www.dvd-cloner.net/support_client/ticket.html
-Thank you.
-DVD-Cloner support team.
---------------------------------------------------------
+4. Click "Yes" and DVD-Cloner will go to www.dvd-cloner.com to make a manual key for you. Then you'll get the key file. 
 
 5. Check your Email, and you will find the link of the "registration file" for your DVD-Cloner. Download and copy it to DVD-Cloner's home directory, such as C:\Program Files\DVD-Cloner. Now you can enjoy the full version of DVD-Cloner!
 

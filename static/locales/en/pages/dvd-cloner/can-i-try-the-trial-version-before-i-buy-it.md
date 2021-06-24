@@ -10,4 +10,4 @@ metaItems:
 ### Q: Can I try the trial version before I buy it?
 
 A:
-Yes, you may download the trial version and have a try first.
+Yes, you may download the [trial version](https://www.dvd-cloner.com/download.html) and have a try first.

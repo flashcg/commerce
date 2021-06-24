@@ -10,4 +10,4 @@ metaItems:
 ### Q: I am trying to purchase DVD-Cloner V and when I go to the shopping cart and remove the software registration option it keeps saying my cart is empty.
 
 A:
-It is a service of SWREG, Registration Backup Service. For more details, please go to: https://usd.swreg.org/rbs.html
+It is a service of SWREG, Registration Backup Service. Please check [HERE](https://www.dvd-cloner.com/contact.html), our support will help you. 

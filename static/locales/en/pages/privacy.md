@@ -1,10 +1,10 @@
 ---
-title: Opencloner - Privacy Policy
+title: OpenCloner Privacy Policy
 metaItems:
   - name: description
-    content: Opencloner - Privacy Policy
+    content: OpenCloner Privacy Policy
   - name: keywords
-    content: Opencloner  
+    content: DVD-Cloner 
 ---
 
 

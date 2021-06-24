@@ -1,10 +1,10 @@
 ---
-title: Blu-ray to HDD
+title: Blu-ray to HDD - Convert Blu-ray to MKV or TS format
 metaItems: # seo 内容
   - name: description
-    content: 
+    content: Blu-ray to HDD is powerful Blu-ray ripping software with the ability to convert Blu-ray movies to MKV or TS files.
   - name: keywords
-    content: 
+    content: Blu-ray to HDD, Blu-ray to MKV, Blu-ray to TS
 layout: fluid
 template: product
 pagify: true #页面化

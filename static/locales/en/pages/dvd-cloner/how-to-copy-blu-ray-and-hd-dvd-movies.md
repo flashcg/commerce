@@ -24,4 +24,4 @@ Step2: Click "Start" and it will begin to copy
 Step3: After the copying completes, you can watch your backup movie with PowerDVD or WinDVD as you like!
 
 Note: * Due to the variety of Blu-ray discs, DVD-Cloner may not support all kinds of them. If DVD-Cloner can't identify your Blu-ray disc, please click here to get the download version of Blue-Cloner for free which supports for copying almost all Blu-ray discs. 
-* If you are a registered user of DVD-Cloner, you can click here to get 10% discount for ordering Blue-Cloner.
+* If you are a registered user of DVD-Cloner, you can click [HERE](https://www.blue-cloner.com/dc_discountorder.html) to get 10% discount for ordering Blue-Cloner.

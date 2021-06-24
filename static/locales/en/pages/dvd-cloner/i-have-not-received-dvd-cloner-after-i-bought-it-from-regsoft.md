@@ -10,4 +10,5 @@ metaItems:
 ### Q: I haven't received DVD-Cloner after I bought it from Regsoft.
 
 A:
-Since regsoft.com handles the CD shipping issues, please check the shippment status at : orders@regsoft.com .
+
+Please check [HERE](https://www.dvd-cloner.com/contact.html), our support will help you. 

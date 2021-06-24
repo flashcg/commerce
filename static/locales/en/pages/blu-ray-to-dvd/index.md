@@ -1,10 +1,10 @@
 ---
-title: Blu-ray to DVD
+title: Blu-ray to DVD - Blu-ray Copy Software
 metaItems: # seo 内容
   - name: description
-    content: 
+    content: Blu-ray to DVD II Pro gives you the freedom to enjoy Blu-ray movies on your DVD player, with almost the same quality!
   - name: keywords
-    content: 
+    content: Blu-ray copy, copy Blu-ray, Blu-ray to DVD, Blu-ray software, free Blu-ray copy, free Blu-ray software
 layout: fluid
 template: product
 pagify: true #页面化

@@ -1,10 +1,10 @@
 ---
-title: DVD/Blu-ray copy software - DVD-Cloner 
+title: DVD-Cloner Gold - Perfect DVD/Blu-ray copy and burn software 
 metaItems: # seo 内容
   - name: description
-    content: Blu-ray copy software free download, DVD-Cloner backs up DVD/Blu-ray movies easily, perfect 1:1 DVD Copy
+    content: DVD-Cloner Gold has all the features of DVD-Cloner and Open SmartBurner.
   - name: keywords
-    content: Blu-ray copy, DVD copy software, DVD-Cloner
+    content: DVD copy, Blu-ray copy, burn DVD, burn Blu-ray, DVD-Cloner Gold
 layout: fluid
 template: product
 pagify: true #页面化
