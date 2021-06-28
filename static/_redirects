@@ -41,13 +41,11 @@
 /dvd-copy-for-mac/upgrade.html https://www.dvd-cloner.com/dvd-copy-mac/dvd-cloner-for-mac-upgrade/ 301！
 /dvd-cloner/upgrade.html https://www.dvd-cloner.com/dvd-cloner/upgrade/301!
 /create-ticket.html https://www.dvd-cloner.com/create-ticket/ 301!
-/upgrade.html https://www.dvd-cloner.com/upgrade/:splat  301!
-/dvd-cloner-for-mac-upgrade.html https://www.dvd-cloner.com//dvd-copy-mac 301!
-/dvd-cloner-for-mac-upgrade/ https://www.dvd-cloner.com/dvd-copy-for-mac 301!
+/upgrade.html* https://www.dvd-cloner.com/upgrade/:splat  301!
 
-/dvd-copy-mac/dvd-cloner-for-mac-upgrade.html https://www.dvd-cloner.com/dvd-copy-for-mac/upgrade/ !301
-/dvd-copy-mac/dvd-cloner-for-mac-screenshot.html https://www.dvd-cloner.com/dvd-copy-for-mac/dvd-cloner-for-mac-screenshot/ !301
-/refund.html https://www.dvd-cloner.com/privacy/ !301
+/dvd-copy-mac/dvd-cloner-for-mac-upgrade.html https://www.dvd-cloner.com/dvd-copy-for-mac/upgrade/ 301!
+/dvd-copy-mac/dvd-cloner-for-mac-screenshot.html https://www.dvd-cloner.com/dvd-copy-for-mac/dvd-cloner-for-mac-screenshot/ 301!
+/refund.html https://www.dvd-cloner.com/privacy/ 301!
 #-------------------------------------2----------------------------------
 
 # manual
