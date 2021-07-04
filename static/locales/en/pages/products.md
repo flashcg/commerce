@@ -6,7 +6,7 @@ metaItems:
   - name: keywords
     content: DVD-Cloner, DVD-Cloner Platinum, DVD-Cloner Gold, DVD-Cloner for Mac, Open SmartBurner, Open SuperConverter, OpenCloner UltraBox
 
-    listProduct:
+listProduct:
   additionClass: 'shadow-box p-6 my-6'
   type: 'spList'
 exclude:
