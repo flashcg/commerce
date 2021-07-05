@@ -53,7 +53,7 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# *.vue
+*.vue
 
 # Yarn Integrity file
 .yarn-integrity
