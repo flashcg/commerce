@@ -11,7 +11,11 @@ newver:
         bgColor: '#353535'
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级      
 release: 
-    - version: '8.10.722'
+    - version: '8.20.724'
+      date: Jul.20, 2021     
+      list:
+        - Supported the newest released Blu-ray movies.
+    - version: '8.10.723'
       date: Mar.23, 2021     
       list:
         - Supported the newest released movies.
