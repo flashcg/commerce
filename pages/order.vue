@@ -1,11 +1,13 @@
 <template>
   <div>
+    <b-overlay :show="!overviewData" rounded="sm">
     <item-overview
       v-if="overviewData && itemDC"
       :data="overviewData"
       :itemInfo="itemDC"
     />
     <iconBlock :iconData="mddata.orderList" />
+    </b-overlay>
     <item-tab :data="mddata.bundles">
       <template v-slot="data">
         <b-tab :title="data.items[0].title" title-link-class="rounded-0">

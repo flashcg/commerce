@@ -1,11 +1,13 @@
 <template>
 <div>
+  <b-overlay :show="!overviewData" rounded="sm">
     <item-overview
       v-if="overviewData && itemDC"
       :data="overviewData"
       :itemInfo="itemDC"
     />
     <iconBlock :iconData="mddata.downloadList" />
+    </b-overlay>
     <iconBlock :iconData="mddata.antivirusReport" />
     <iconBlock :iconData="mddata.getFreeDC" />
 </div>

@@ -32,7 +32,7 @@ orderList:
       active: false
     - handleName: iPod-Cloner
       active: false
-  iconGird: 4
+  iconGird: 3
 bundles:
   name: Bundles
   active: true
