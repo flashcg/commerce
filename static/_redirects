@@ -74,8 +74,8 @@
 
 #-------------------------------------4---------------------------------
 
-/knowledge/_static/* https://dvd-cloner-knowledge.app/knowledge/_static/:splat 200!
-/knowledge/* https://dvd-cloner-knowledge.app/knowledge/:splat 200!
+/knowledge/_static/* https://dvd-cloner-knowledge.netlify.app/knowledge/_static/:splat 200!
+/knowledge/* https://dvd-cloner-knowledge.netlify.app/knowledge/:splat 200!
 
 #-------------------------------------4---------------------------------
 
