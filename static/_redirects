@@ -72,12 +72,10 @@
 # ref https://redmine.sy-ruifeng.com/issues/13449#note-3
 # ref https://redmine.sy-ruifeng.com/issues/13612
 
-/knowledge/_static/* https://dvd-cloner-knowledge.app/knowledge/_static/:splat 200!
-/knowledge/* https://dvd-cloner-knowledge.app/knowledge/:splat 200!
-
 #-------------------------------------4---------------------------------
 
-/knowledge/* https://dev.dvd-cloner.com/:splat 200!
+/knowledge/_static/* https://dvd-cloner-knowledge.app/knowledge/_static/:splat 200!
+/knowledge/* https://dvd-cloner-knowledge.app/knowledge/:splat 200!
 
 #-------------------------------------4---------------------------------
 
