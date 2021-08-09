@@ -79,6 +79,21 @@
 
 #-------------------------------------4---------------------------------
 
+# blog 
+# ref https://redmine.sy-ruifeng.com/issues/11735#note-11
+
+
+#-------------------------------------5---------------------------------
+
+
+/blog/* https://dvd-cloner-blog.netlify.app/blog/:splat 200!
+
+#-------------------------------------5---------------------------------
+
+
+
+
+
 # primary redirects
 
 # /support.html https://www.cloner-alliance.com/help/ 301!
