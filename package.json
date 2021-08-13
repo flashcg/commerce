@@ -1,6 +1,6 @@
 {
   "name": "dvd-cloner",
-  "version": "1.60.061",
+  "version": "1.60.062",
   "description": "DVD Copy becomes easier with DVD-Cloner now. The new burning engine can make perfect 1:1 DVD copy",
   "author": "lzc",
   "private": true,
@@ -11,8 +11,8 @@
     "serve": "nuxt serve",
     "netlify": "netlify-lambda serve ./netlify/functions/",
     "generate-simple": "nuxt generate",
-    "generate": "tsc init --outDir ./compiledJS -t es5 && node ./compiledJS/init && nuxt generate",
-    "init": "tsc init --outDir ./compiledJS -t es5 && node ./compiledJS/init",
+    "generate": "tsc init --outDir ./jsCache -t es5 && node ./jsCache/init && nuxt generate",
+    "init": "tsc init --outDir ./jsCache -t es5 && node ./jsCache/init",
     "test": "jest"
   },
   "dependencies": {

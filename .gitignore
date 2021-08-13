@@ -90,6 +90,7 @@ netlify-functions
 cache
 .env
 compiledJS
+jsCache
 releaseState.json
 source
 newver*.zip

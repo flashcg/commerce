@@ -1,4 +1,4 @@
-import { ProductDataConfig } from "@/assets/script/interfaceSet";
+import { ProductDataConfig } from "./interfaceSet";
 export { camelCaseToWords, isMobile, toLower, fetchItem, sortFn,getDate,stringToObj }
 
 function camelCaseToWords(field: string, targetStr: string = ' ') {
@@ -30,7 +30,7 @@ function stringToObj(string: string) {
     return {}
   }
 }
-function toLower(name: string, string: string) {
+function toLower(name: string, string?: string) {
   if (name && typeof (name) == 'string') {
     string = string || '-'
     let _name = name.replace(/\s/g, string);

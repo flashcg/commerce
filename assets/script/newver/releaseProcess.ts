@@ -1,6 +1,7 @@
 import { newverCode } from './template';
 import { dirOperate, writeLog } from './other';
 import { FileCreator, FilesProcess } from './vueProcess';
+import { toLower } from '../tools';
 
 const fs = require('fs'), archiver = require('archiver'), request = require('request'),
   path = require('path'), myDate = new Date(), mdBasePath = "./static/locales/", zipBasePath = "./static/", xmlBasePath = "./static/rss/",
@@ -173,10 +174,10 @@ class ReleaseProcess extends FilesProcess {
     fs.readdirSync(this.mdDirPath).forEach((resFileName: string) => {
 
       let mdFileFullPath = this.mdFileFullPath({ mdDirPath: this.mdDirPath, fileName: resFileName }),
-        mdJson: mdDataConfig = new FileCreator({ mdPath: mdFileFullPath }).jsonData;
+        mdJson: mdDataConfig = new FileCreator({ mdPath: mdFileFullPath }).jsonData,sourceFileName: string='';
 
-      if (mdJson.newver.source) {
-
+      if (mdJson.newver.source) {        
+        
         let handleName = mdJson.newver.source
         //取item 对应的path
 
@@ -185,13 +186,16 @@ class ReleaseProcess extends FilesProcess {
         handleSetting ? mdFileFullPath = this.mdFileFullPath({ mdDirPath: this.mdDirPath, fileName: handleSetting.path + '.md' }) : '';
         //取source 的数据
         let sourceJson = new FileCreator({ mdPath: mdFileFullPath }).jsonData;
-        //处理数据
+        //处理数据        
+        sourceFileName = toLower(sourceJson.handleName)+'.md';
         delete sourceJson.handleName;
         sourceJson.currentSize = mdJson.currentSize;
-        Object.assign(mdJson, sourceJson);
-
+        Object.assign(mdJson, sourceJson);        
 
       }
+      
+      
+      
       //stat 状态中有两个函数一个是stat中有isFile ,isisDirectory 判断是文件还是文件夹     
       if (fs.statSync(mdFileFullPath).isFile()) {
 
@@ -203,9 +207,10 @@ class ReleaseProcess extends FilesProcess {
 
           mdJson.newver.release && Object.assign(newverData, mdJson.newver.release);
           Object.assign(newverData, productData, { link: mdJson.newver.link }, mdJson.newver.style);
-          const newverCreator = new NewverZipCreator(newverData);
-
-          if (this.isToArchive(resFileName, newverCreator.zipPath)) {
+          const newverCreator = new NewverZipCreator(newverData);                   
+          
+          // sourceFileName 源文件名 resFileName 当前文件名
+          if (this.isToArchive((sourceFileName||resFileName), newverCreator.zipPath)) {
             newverCreator.launch()
             newverCreator.xmlUpdate()
           }
