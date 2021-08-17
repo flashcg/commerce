@@ -19,7 +19,7 @@ heroCarousels: #首页主banner
       icons:
         - imageUrl: icon/banner-dc-bd.png
         - imageUrl: icon/banner-dc-dvd.png
-        - imageUrl: icon/banner-dc-bd.png
+        - imageUrl: icon/banner-dc-uhd.png
       button:
         text: More Info
         path: dvd-cloner 

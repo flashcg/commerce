@@ -214,8 +214,8 @@ menuFooter:
       path: aboutus
     - name: Affiliate
       path: affiliate
-    - name: Blog
-      path: blog
+    # - name: Blog
+    #   path: blog
     - name: Contact Us
       path: contact
   - name: Products
