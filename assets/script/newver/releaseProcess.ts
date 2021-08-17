@@ -4,7 +4,7 @@ import { FileCreator, FilesProcess } from './vueProcess';
 import { toLower } from '../tools';
 
 const fs = require('fs'), archiver = require('archiver'), request = require('request'),
-  path = require('path'), myDate = new Date(), mdBasePath = "./static/locales/", zipBasePath = "./static/", xmlBasePath = "./static/rss/",
+  path = require('path'), myDate = new Date(), mdBasePath = "./static/locales/", zipBasePath = "./static/", xmlBasePath = "./static/",
   yamlFront = require("yaml-front-matter"), xml2js = require('xml2js'), releaseJsonPath = `${zipBasePath}releaseState.json`;
 
 interface DefaultData {
