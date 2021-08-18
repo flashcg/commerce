@@ -103,7 +103,7 @@ softwareInfo:
         buyLink: https://www.dvd-cloner.com/cgi-bin/orderlink.cgi?obr=y  
 
     - handleName: Open DVD ripper
-      downloadUrl: open-dvd-ripper.exe
+      downloadUrl: open_dvd_ripper.exe
       standard:
         comparePrice:
         price: 39.99
