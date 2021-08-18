@@ -25,7 +25,7 @@
     </b-row>
     <p class="text-center">Your code version is <strong>{{upgradeInfo.codeVersion}}</strong>, current software version is V<strong>{{upgradeInfo.currentVersion}}</strong>.
 Your code can register any version released before <strong>{{upgradeInfo.expirationDate}}</strong>.
-Currently you can register V<strong>{{upgradeInfo.currentVersion}}</strong> or later versions.</p>
+Currently you can register V<strong>{{upgradeInfo.availableVersion}}</strong> or later versions.</p>
 <p class="text-center"><b-img :src="mddata.orderInfo.guarantee.imageUrl" /></p>
 <p class="text-center"><b-button variant="success" squared size="xl" to="/download/">{{$t('globalName.download')}} Now</b-button> </p>
 <h4 v-if="mddata.orderInfo.deadline" class="text-center">{{mddata.orderInfo.deadline.text}} </h4>

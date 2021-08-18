@@ -24,7 +24,7 @@
     </b-row>
     <p class="text-center">Your code version is <strong>{{upgradeInfo.codeVersion}}</strong>, current software version is V<strong>{{upgradeInfo.currentVersion}}</strong>.
 Your code can register any version released before <strong>{{upgradeInfo.expirationDate}}</strong>.
-Currently you can register V<strong>{{upgradeInfo.currentVersion}}</strong> or later versions.</p>
+Currently you can register V<strong>{{upgradeInfo.availableVersion}}</strong> or later versions.</p>
 <p class="text-center"><b-img :src="mddata.orderInfo.guarantee.imageUrl" /></p>
   </div>
   <div class="bg-dark-opacity-1 py-6">
