@@ -274,7 +274,7 @@ copyright:
 #网站通用变量区
 imagesPath: https://s1.occld.com/image/dc_com_web/
 KB_basePath: https://www.dvd-cloner.com/knowledge/
-download_basePath: https://s1.occld.com/release/
+download_basePath: https://www.opencloner.com/download/
 manual_basePath: https://s1.occld.com/manual/
 video_basePath: https://s1.occld.com/video/dc_com_web/
 videoProduct_basePath: https://s1.occld.com/video/products/
