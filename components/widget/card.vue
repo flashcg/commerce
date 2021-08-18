@@ -88,7 +88,7 @@
             {{ $t("globalName.download") }}
           </b-button>
           <b-button v-if="item.saleInfo.downloadUrl_64bit"
-            :href="item.saleInfo.downloadUrl_64bit"
+            :href="item.saleInfo.downloadUrl_64bit" class="mb-2"
             variant="success" squared
             size="lg"
           >
