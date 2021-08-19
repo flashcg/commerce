@@ -59,7 +59,7 @@ softwareInfo:
         price: 59.99
         buyLink: https://www.dvd-cloner.com/cgi-bin/orderlink.cgi?bc=y
       lifetime:
-        price: 299.00
+        price: 299.99
         buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965252]=1   
 
     - handleName: Blue-Cloner Diamond
@@ -70,7 +70,7 @@ softwareInfo:
         price: 59.99
         buyLink: https://www.dvd-cloner.com/cgi-bin/orderlink.cgi?bcd=y
       lifetime:
-        price: 399.00
+        price: 399.99
         buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965253]=1
 
     - handleName: OpenCloner Ripper 
