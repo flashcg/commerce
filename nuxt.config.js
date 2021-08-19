@@ -145,7 +145,8 @@ export default {
     hostname: 'https://www.dvd-cloner.com',
     gzip: true,
     exclude: [
-      '/zohoTicket.html'    
+      '/zohoTicket.html',
+      '/404'    
     ],
     filter ({ routes }) {
       return routes.map(route => {

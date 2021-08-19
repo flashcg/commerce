@@ -13,8 +13,12 @@ newver:
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级
     
 release:
+    - version: 10.20.840
+      date: Jun.15, 2021     
+      list:
+        - Support the newest released Blu-ray Movies.
     - version: 10.10.839
-      date: Apr.15, 2021     
+      date: Apr.03, 2021     
       list:
         - Support the newest released Blu-ray Movies.
     - version: 10.00.838

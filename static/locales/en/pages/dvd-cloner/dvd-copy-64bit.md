@@ -41,21 +41,21 @@ Copy time may vary with your computer configuration, burn speed and the contents
 
 ### Knowledge about DVD-Cloner 64-bit
 
-[What is 64-bit computing?]({kbUrl}about-64-bit/what-is-64-bit-computing.html)
+[What is 64-bit computing?]({kbUrl}what-is-64-bit-computing_346.html)
 
 64-bit refers to the bits number that can be processed or transmitted in parallel or bits number used for single element in a data format. While 64-bit computing is the use of processors that have data path widths, integer size, and memory addresses of 64 bits wide. A 64-bit register can store 264 different values and a processor with 64-bit memory addresses can directly access 264 bytes of memory. A 64-bit CPU can handle much more memory and larger files than a 32-bit CPU. 32-bit computer systems can only hold up to 4GB of RAM while 64-bit computer systems can hold up to 1000GB of memory. So 64-bit desktop systems keep ahead of 32-bit desktop systems in many aspects, especially for larger storage capacity and higher performance speed.
 
-[Can 64-bit programs run on a 32-bit computer?]({kbUrl}about-64-bit/can-64-bit-programs-run-on-a-32-bit-computer.html)
+[Can 64-bit programs run on a 32-bit computer?]({kbUrl}can-64-bit-programs-run-on-a-32-bit-computer_351.html)
 If the program is specifically designed for the 64-bit version of Windows, it won't work on the 32-bit version of Windows. However, most 32-bit programs will work on the 64-bit version of Windows, except for some antivirus programs. Meanwhile, 64-bit device drivers won't work on computers running a 32-bit version of Windows.
 
-[Which versions of Windows operating systems are available in 64-bit format?]({kbUrl}about-64-bit/which-versions-of-windows-operating-systems-are-available-in-64-bit-format.html)
+[Which versions of Windows operating systems are available in 64-bit format?]({kbUrl}which-versions-of-windows-operating-systems-are-available-in-64-bit-format_347.html)
 
 Most versions of Windows 10, Windows 8, Windows 7 and Windows Vista are available in 64-bit format. However, only Windows XP Professional is available in 64-bit format. Meanwhile, all versions of Windows 10, Windows 8, Windows 7, Windows Vista and Windows XP are also available in 32-bit format.
 
 **For more information about 64-bit, please refer to the questions below:**
 
-**[What are the differences between the 32-bit versions and 64-bit versions of Windows Vista?]({kbUrl}about-64-bit/differences-between-32bit-and-64bit-of-windows-vista.html)**
+**What are the differences between the 32-bit versions and 64-bit versions of Windows Vista?**
 
-**[What are the advantages of 64-bit?]({kbUrl}about-64-bit/what-are-the-advantages-of-64-bit.html)**
+**What are the advantages of 64-bit?**
 
-**[I have a 32-bit version of Windows Vista, and can I upgrade to the 64-bit version?]({kbUrl}about-64-bit/i-have-a-32-bit-version-of-windows-vista-and-can-i-upgrade-to-the-64-bit-version.html)**
+**I have a 32-bit version of Windows Vista, and can I upgrade to the 64-bit version?**

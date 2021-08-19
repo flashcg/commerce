@@ -9,14 +9,14 @@
         </div>
       <div class="pt-2 col-md-8 col-9" style="z-index:2"> 
       <h4 class="text-danger">{{data.title}} </h4>
-      <h5>Market Pirce:<span style="text-decoration: line-through;">{{`$${data.initialPrice}`}}</span> 
+      <h5>Market Price:<span style="text-decoration: line-through;">{{`$${data.initialPrice}`}}</span> 
       <span class="text-danger ">Now Only:<span class="fs-4">{{`$${data.price}`}}</span> </span></h5>
       </div> 
         </template>
         <template v-else>
           <div class="col-12">
                 <h4 class="text-danger d-inline-block mr-2">{{data.title}} </h4>
-                <h5 class="d-inline-block">Market Pirce:<span style="text-decoration: line-through;">{{`$${data.initialPrice}`}}</span> 
+                <h5 class="d-inline-block">Market Price:<span style="text-decoration: line-through;">{{`$${data.initialPrice}`}}</span> 
       <span class="text-danger ">Now Only:<span class="fs-4">{{`$${data.price}`}}</span> </span></h5>
           </div>
            <div>     

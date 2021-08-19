@@ -68,7 +68,7 @@ bonus:
 *   Supports HST acceleration to improve the H.264/H.265 encoding speed.
 *   Make flawless copies of scratched DVDs, so you can bring your damaged movies back to life.
 *   Duplicate multiple DVD copies without having to repeat the entire process again.
-*   Works as a third party Blu-ray decryption plug-in, which allows VLC to [play encrypted Blu-ray and UHD movies.]({kbUrl}How_to_use_VLC_Media_Player_to_play_Blu-ray_or_4K_UHD_disc_438.html)
+*   Works as a third party Blu-ray decryption plug-in, which allows VLC to [play encrypted Blu-ray and UHD movies.]({kbUrl}how-to-use-vlc-media-player-to-play-blu-ray-or-4k-uhd-disc_438.html)
 *   Multi-language interface support, suitable for users from different countries.
 *   Send us quick feedback in real time via the shortcut window within the software.
 *   Zoom in/Zoom out the operation interface according to your preferences. The maximum is 200%.

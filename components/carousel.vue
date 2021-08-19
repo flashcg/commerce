@@ -31,7 +31,8 @@
       <div class="swiper-button-next" slot="button-next"></div>
     </div>
 
-      <b-button v-if="data.button" size="xl" :href="data.button.href" :to="data.button.path+'/'" :class="'rounded-0 mt-3 '+data.button.additionClass" :variant="data.button.variant">{{data.button.text}}</b-button>
+      <b-button v-if="data.button" size="xl"  :href="data.button.href" :to="data.button.path?data.button.path+'/':''" :class="'rounded-0 mt-3 '+data.button.additionClass" :variant="data.button.variant">{{data.button.text}}</b-button>
+      
         <CoolLightBox v-if="data.imageLink == 'self'"
           :items="images" 
           :index="lightBoxIndex"

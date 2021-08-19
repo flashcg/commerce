@@ -33,7 +33,7 @@
         <template v-else-if="col.imageUrl">
           <b-img v-if="col.imageUrl" :src="col.imageUrl" fluid></b-img>
         </template>
-        <div v-if="col.text" v-html="$md.render(col.text)"></div>
+        <div v-if="col.text" v-html="$md.render(col.text)"></div> 
         </b-col>
         </b-row>
       </b-tab>
