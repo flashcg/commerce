@@ -1,6 +1,8 @@
 ---
 softwareInfo:
   currency: $
+  50offUrl: /special-offer
+  50offUrlOcr: /special-offer-ocr-launch
   items:  
     - handleName: DVD-Cloner
       downloadUrl: dcloner.exe
