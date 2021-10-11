@@ -12,6 +12,12 @@ newver:
         bgColor: '#353535'
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级      
 release: 
+    - version: 18.70.1468
+      date: Oct.11, 2021    
+      topText:
+      list: 
+        - Supported the newest released movies.
+        - Fixed the bug that failed to rip some Blu-ray movies to MKV.
     - version: 18.60.1467
       date: Aug.13, 2021    
       topText:
