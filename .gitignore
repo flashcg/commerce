@@ -84,7 +84,9 @@ dist
 
 # Service worker
 sw.*
-
+!components/Section/*.vue
+!components/*.vue
+!pages/streaming-cloner/*.vue
 netlify-functions
 
 cache

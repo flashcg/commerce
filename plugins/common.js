@@ -168,7 +168,7 @@ export default ({
 
     let pathData = await $content('default').only(['imagesPath', 'KB_basePath', 'download_basePath', 'manual_basePath', 'video_basePath', 'videoProduct_basePath']).fetch();
     let pathHandle=(value,globalPath)=>{
-      if(value.substr(0,4) == 'http'){
+      if(value&&value.substr(0,4) == 'http'){
         return value
       } else {
         return globalPath+value
