@@ -4,7 +4,7 @@
       <!-- <VueFaqAccordion :items="data.items" /> -->
       <ul class="ul-style-none">
         <li v-for="(item, index) in data.items" :key="index" class="mb-2">
-          <a class="d-block p-3 fs-7 border" v-b-toggle="`detail${index}`" style="cursor: pointer">
+          <a class="d-block p-3 fs-6 border" v-b-toggle="`detail${index}`" style="cursor: pointer">
           <span class="text-success fs-5 mr-2"
             >+</span
           >{{ item.title }}
