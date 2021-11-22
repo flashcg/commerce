@@ -10,7 +10,7 @@
                 <h4>{{ data.subtitle }}</h4>
                 <p>{{ data.text }}</p>
 
-                <a href="#" class="btn btn-success btn-xl">Get Started</a>
+                <a :href="data.button.path" class="btn btn-success btn-xl" v-if="data.button">{{data.button.text}} </a>
               </div>
             </div>
 

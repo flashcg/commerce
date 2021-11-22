@@ -1,8 +1,8 @@
 <template>
   <Section-IconGrid :iconData="data">
     <template #default="{ item, index }">
-      <div class="funfact" ref="box">
-        <h2>
+      <div class="funfact text-center" ref="box">
+        <h2 class="text-success ">
           <ICountUp
             :ref="'count' + index"
             class="count-up"
