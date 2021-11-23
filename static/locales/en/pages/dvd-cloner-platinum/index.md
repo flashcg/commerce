@@ -13,14 +13,14 @@ handleName: DVD-Cloner Platinum
 name: DVD-Cloner Platinum
 type: DVD Copy 
 logo:
-  iconUrl: icon/dc2021-platinum.png
+  iconUrl: icon/dc2022-platinum.png
 boxes:
-  - imageUrl: dc2021-platinum-box.png #默认盒子图
-  - imageUrl: dc2021-platinum-box-ref.png #带阴影盒子图
+  - imageUrl: dp2022-box.png #默认盒子图
+  - imageUrl: dp2022-ref-box.png #带阴影盒子图
 desc:
   shortText: Powerful DVD/Blu-ray copy/burn/ripping software, with all the features of DVD-Cloner, Open DVD ripper and Open SmartBurner.
   longText: |    
-    <p><strong>DVD-Cloner Platinum</strong> is powerful DVD/Blu-ray copy/burn/ripping software, with all the features of DVD-Cloner, Open DVD ripper and Open SmartBurner. It's a user-friendly program with excellent output quality. As an enhanced bundle for DVD and Blu-ray backup solutions, it enables you to copy, back up, clone and burn your DVD and Blu-ray collections, rip DVD to various video and audio formats, convert Blu-ray to MKV format or burn video files onto blank DVD/Blu-ray discs. Give it a try and you'll find your ideal multimedia solution!</p><p><strong>Key features:</strong></p><ul><li>6 diverse DVD copy modes</li><li>Copy Blu-ray/4K UHD Blu-ray to a blank BD-R/RE (DL) or to the hard disk</li><li>Rip Blu-ray/UHD movies to MKV format for easy storage</li><li>Rip DVD movies to various video and audio formats</li><li>Burn various data and video files to a blank DVD/Blu-ray disc</li></ul>
+    <p>DVD-Cloner Platinum is powerful DVD/Blu-ray copy/burn/ripping software, with all the features of DVD-Cloner, Open DVD ripper and Open SmartBurner. It's a user-friendly program with excellent output quality. As an enhanced bundle for DVD and Blu-ray backup solutions, it enables you to copy, back up, clone and burn your DVD and Blu-ray collections, rip DVD to various video and audio formats, convert Blu-ray to MKV format or burn video files onto blank DVD/Blu-ray discs. Give it a try and you'll find your ideal multimedia solution!</p><p><strong>Key features:</strong></p><ul><li>6 diverse DVD copy modes</li><li>Copy Blu-ray/4K UHD Blu-ray to a blank BD-R/RE (DL) or to the hard disk</li><li>Rip Blu-ray/UHD movies to MKV format for easy storage</li><li>Rip DVD movies to various video and audio formats</li><li>Burn various data and video files to a blank DVD/Blu-ray disc</li><li>Compatible with Windows 11</li></ul>
   bgStyle: 
 areaTop:
   name: DP Desc
@@ -37,7 +37,7 @@ screenshot:
   itemContainer: container
   imageLink: self
   items:
-    - imageUrl: dc-2021_screenshot_2.png
+    - imageUrl: dp-2022_screenshot.png
     - imageUrl: os_screenshot.png
     - imageUrl: odr-screenshot.png
 bonus: 
@@ -68,11 +68,12 @@ bonus:
 *   Supports HST acceleration to improve the H.264/H.265 encoding speed.
 *   Make flawless copies of scratched DVDs, so you can bring your damaged movies back to life.
 *   Duplicate multiple DVD copies without having to repeat the entire process again.
-*   Works as a third party Blu-ray decryption plug-in, which allows VLC to [play encrypted Blu-ray and UHD movies.]({kbUrl}how-to-use-vlc-media-player-to-play-blu-ray-or-4k-uhd-disc_438.html)
+*   Works as a third party Blu-ray decryption plug-in, which allows VLC to [play encrypted Blu-ray and UHD movies](https://www.dvd-cloner.com/knowledge/How_to_use_VLC_Media_Player_to_play_Blu-ray_or_4K_UHD_disc_438.html).
 *   Multi-language interface support, suitable for users from different countries.
 *   Send us quick feedback in real time via the shortcut window within the software.
 *   Zoom in/Zoom out the operation interface according to your preferences. The maximum is 200%.
 *   Free bonus software Stream-Cloner Lite and Open DVD Ripper Lite.
+*   Compatible with Windows 11.
 
 [More about DVD-Cloner &gt;&gt;](/dvd-cloner/)
 
