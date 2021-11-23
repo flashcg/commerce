@@ -86,64 +86,69 @@ orderList:
       - Automatic renewal, cancel at any time.
       - 30 Days Money Back Guarantee
       - 12/7 Support        
-  items:
-    - text: 
-      name: Streaming-Cloner Ultimate
-      imageUrl: sicu-box-ultimate.png
-      price: 99.90
-      buyLink: test
-      subscriptions:
-        - price: 9.9
-          text: monthly Plan
-          buyLink: test
-        - price: 24.9
-          text: 3-months Plan
-          buyLink: test      
-        - price: 42.9
-          text: 6-months Plan
-          buyLink: test     
-        - price: 79.9
-          text: Yearly Plan
-          buyLink: test                        
+  items:                      
     - text: 
       name: Streaming-Cloner NF Downloader
       imageUrl: sicnf-box.png
+      price: 99.9
+      buyLink: test 
+      id: 744747
+      subscriptions:
+        - price: 9.9
+          id: 744738
+          text: monthly Plan
+          buyLink: https://test
+        - price: 24.9
+          id: 744739
+          text: 3-months Plan
+          buyLink: test      
+        - price: 42.9
+          id: 744740
+          text: 6-months Plan
+          buyLink: test     
+        - price: 79.9
+          id: 744741
+          text: Yearly Plan
+          buyLink: test     
+    - text: 
+      name: Streaming-Cloner Ultimate
+      imageUrl: sicu-box-ultimate.png
       price: 159.50
       buyLink: test
+      id: 744746
       tips: #覆写
         - One-time payment
         - Unlimited free upgrades
         - 30 Days Money Back Guarantee
-        - 12/7 Support     
+        - 12/7 Support          
       subscriptions:
-        - price: 9.9
-          text: monthly Plan
-          buyLink: https://test
-        - price: 24.9
-          text: 3-months Plan
-          buyLink: test      
-        - price: 42.9
-          text: 6-months Plan
-          buyLink: test     
-        - price: 79.9
+        - price: 179.9
+          id: 744736
           text: Yearly Plan
-          buyLink: test                  
+          buyLink: test   
+          title: Long-term VIP 
+          subtitle: 7 Days Free Trial with Full Features                     
     - text: 
+      id: 744749
       name: Streaming-Cloner AZ Downloader
       imageUrl: sicaz-box.png  
       price: 99.90
       buyLink: test 
       subscriptions:
         - price: 9.9
+          id: 744742
           text: monthly Plan
           buyLink: test
         - price: 24.9
+          id: 744743
           text: 3-months Plan
           buyLink: test      
         - price: 42.9
+          id: 744744
           text: 6-months Plan
           buyLink: test     
         - price: 79.9
+          id: 744745
           text: Yearly Plan
           buyLink: test          
 banner:
