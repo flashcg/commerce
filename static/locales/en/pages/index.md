@@ -114,7 +114,32 @@ WhyChoose:
     - iconUrl: dc-icon5.png
       text: Output lossless quality  
   iconGird: 6                   
-
+sicBanner: #sic banner 
+  name: main-banner
+  overflow: hidden
+  title: Easiest Way to Share Hit Online Video
+  subtitle: Streaming-Cloner Software
+  text: Share your favorite online videos with 3 CLICKS
+  background:
+    imageUrl: main-banner.png
+  button:
+    text: Try it Now
+    path: streaming-download
+  feature:
+    iconGird: 4
+    icons:
+      - iconUrl: main-banner/unlock.png
+        title: Unlock
+        text: Copy DVD/Blu-ray/4K UHD to blank disc or rip them to MKV format
+      - iconUrl: main-banner/custom.png
+        title: Customization
+        text: Rip UHD to MKV (HDR 10+) format, keeping original HDR and Dolby effect.
+      - iconUrl: main-banner/download.png
+        title: Download      
+        text: Lightning Blu-ray/UHD copy speed
+      - iconUrl: main-banner/speed.png
+        title: Speed      
+        text: Lightning Blu-ray/UHD copy speed   
 carouselRecommend:
   name: recommend
   container: container-fluid

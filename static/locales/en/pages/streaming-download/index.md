@@ -73,6 +73,79 @@ videoPlatforms:
     - title: Netflix
       imageUrl: icons/netflix.png
       text: Can help you download the latest popular streaming media. It is convenient for you to share and create all kind of videos.
+orderList:
+  name: order list
+  overflow: hidden
+  container: container
+  sectionClass: bg-eef6fd
+  paddingY: 6
+  additionClass: 
+  subscription:
+    separationText: Or
+    tips:
+      - Automatic renewal, cancel at any time.
+      - 30 Days Money Back Guarantee
+      - 12/7 Support        
+  items:
+    - text: 
+      name: Streaming-Cloner Ultimate
+      imageUrl: sicu-box-ultimate.png
+      price: 99.90
+      buyLink: test
+      subscriptions:
+        - price: 9.9
+          text: monthly Plan
+          buyLink: test
+        - price: 24.9
+          text: 3-months Plan
+          buyLink: test      
+        - price: 42.9
+          text: 6-months Plan
+          buyLink: test     
+        - price: 79.9
+          text: Yearly Plan
+          buyLink: test                        
+    - text: 
+      name: Streaming-Cloner NF Downloader
+      imageUrl: sicnf-box.png
+      price: 159.50
+      buyLink: test
+      tips: #覆写
+        - One-time payment
+        - Unlimited free upgrades
+        - 30 Days Money Back Guarantee
+        - 12/7 Support     
+      subscriptions:
+        - price: 9.9
+          text: monthly Plan
+          buyLink: https://test
+        - price: 24.9
+          text: 3-months Plan
+          buyLink: test      
+        - price: 42.9
+          text: 6-months Plan
+          buyLink: test     
+        - price: 79.9
+          text: Yearly Plan
+          buyLink: test                  
+    - text: 
+      name: Streaming-Cloner AZ Downloader
+      imageUrl: sicaz-box.png  
+      price: 99.90
+      buyLink: test 
+      subscriptions:
+        - price: 9.9
+          text: monthly Plan
+          buyLink: test
+        - price: 24.9
+          text: 3-months Plan
+          buyLink: test      
+        - price: 42.9
+          text: 6-months Plan
+          buyLink: test     
+        - price: 79.9
+          text: Yearly Plan
+          buyLink: test          
 banner:
   name: banner
   overflow: hidden
@@ -85,7 +158,7 @@ banner:
   button:
     text: Join to Get Update
     variant: outline-light
-    path: order
+    path: /order
   bgStyle:
     imageUrl: banner_bg_clouds.png
     positionX: center
@@ -154,6 +227,7 @@ whyChoose:
     - title: Live Chat 7*12
       text: We provide ticket and live chat services. Help customers solve problems at any time 
       imageUrl: icons/live-chat.png   
+     
 feedback:
   name: feedback
   overflow: hidden

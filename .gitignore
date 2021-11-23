@@ -86,7 +86,7 @@ dist
 sw.*
 !components/Section/*.vue
 !components/*.vue
-!pages/streaming-cloner/*.vue
+!pages/streaming-download/*.vue
 netlify-functions
 
 cache

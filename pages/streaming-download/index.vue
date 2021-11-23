@@ -4,6 +4,7 @@
     <Section-CountUP :data="content.funFacts"  />
     <Section-BoxList :data="content.videoPlatforms" />
     <Section-Banner :data="content.banner" />
+    <Section-IconGridOrder :data="content.orderList" />
     <!-- <Section-Swiper :data="content.easyToUse" /> -->
     <Section-WhyChoose :data="content.whyChoose" />
     <Section-Feedback :data="content.feedback" />
@@ -14,7 +15,7 @@
 <script>
 export default {
   async asyncData({app, $content }) {
-    let content = await $content("pages/streaming-cloner/index").fetch()
+    let content = await $content("pages/streaming-download/index").fetch()
     content = await app.$initMD(content);
     return { content };
   },
