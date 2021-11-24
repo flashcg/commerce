@@ -20,7 +20,7 @@ boxes:
   - imageUrl: dc2021-box-ref.png #带阴影盒子图
 desc:
   shortText: A one-click solution to copy/backup/decrypt/rip your DVD/Blu-ray/4K UHD Blu-ray movies.
-  longText: DVD-Cloner 2021 is a widely-acclaimed professional DVD copy software with perfect output image quality. It can decrypt DVD and clone DVD to any blank disc with diverse copy modes for playback on many media devices including PS4, Xbox, Blu-ray player, etc. Besides, it can copy DVD to your Windows computer as an ISO file or DVD folders.The newest generation DVD-Cloner 2021, with optimized HST function, allows you to copy Blu-ray/UHD movies with only about three hours, which greatly improved the copy speed.
+  longText: DVD-Cloner 2022 is all-in-one professional DVD copy software with perfect output image quality. With only $59.99, you can get a software combination of DVD copy, DVD to MKV, Blu-ray copy, Blu-ray to MKV, UHD copy and UHD to MKV. It is very valuable and save you a lot. The newest generation DVD-Cloner 2022, with optimized HST function, allows you to copy Blu-ray/UHD movies with only about three hours, which greatly improved the copy speed.
 areaTop:
   name: DC Desc
   title: Perfect 1:1 DVD/Blu-ray Copy - DVD-Cloner #默认为 productName
@@ -70,13 +70,13 @@ WhyChoose:
     positionX:
   icon:
     - iconUrl: dc-icon3.png
-      text: Copy DVD/Blu-ray/4K UHD to blank disc or rip them to MKV format
-    - iconUrl: dc-icon4.png
-      text: Rip UHD to MKV (HDR 10+) format, keeping original HDR and Dolby effect.
-    - iconUrl: dc-icon6.png
-      text: Lightning Blu-ray/UHD copy speed
+      text: Versatile DVD/Blu-ray/UHD Copy/Ripper
     - iconUrl: dc-icon2.png
-      text: 6 diverse copy modes
+      text: 6 diverse copy modes      
+    - iconUrl: dc-icon4.png
+      text: Compatible with Windows 11
+    - iconUrl: dc-icon6.png
+      text: Lightning copy speed
     - iconUrl: dc-icon1.png
       text: Easy to use, just as easy as ABC
     - iconUrl: dc-icon5.png
