@@ -305,10 +305,10 @@ productRecommend:
   items:
     - title: Recommend
       cols: 
-        - imageUrl: recommend-dg-2021_banner.jpg
+        - imageUrl: recommend-dg-2022_banner.jpg
           path: /dvd-cloner-gold/
           additionClass: mb-2
-        - imageUrl: bundle-2021.jpg
+        - imageUrl: bundle-2022.jpg
           path: /order/#bundles        
     - title: Tips 
       cols:
