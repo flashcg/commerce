@@ -137,6 +137,9 @@ menuTop:
           - handleName: Blue-Cloner Diamond
             path: blu-ray-copy
         additionClass: bg-dark-blue-opacity-5
+  - name: Streaming-Download
+    template: normal
+    path: streaming-download        
   - name: Video Ripper and Converter
     template: product
     items:
@@ -229,6 +232,8 @@ menuFooter:
       path: release
   - name: Featured
     children:
+    - name: Streaming-Download
+      path: streaming-download    
     - name: DVD Copy
       path: dvd-copy
     - name: Blu-ray Copy
@@ -305,10 +310,10 @@ productRecommend:
   items:
     - title: Recommend
       cols: 
-        - imageUrl: recommend-dg-2021_banner.jpg
+        - imageUrl: recommend-dg-2022_banner.jpg
           path: /dvd-cloner-gold/
           additionClass: mb-2
-        - imageUrl: bundle-2021.jpg
+        - imageUrl: bundle-2022.jpg
           path: /order/#bundles        
     - title: Tips 
       cols:
