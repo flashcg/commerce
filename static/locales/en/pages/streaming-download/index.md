@@ -26,6 +26,7 @@ mainBanner:
   subtitle: Powerful video download software
   text: Can help you download the latest popular streaming media. It is convenient for you to share and create all kind of videos.
   bgStyle:
+    opacity: .15
     imageUrl: banner-bg1.jpg
   mainImage:
     imageUrl: person-banner.png
@@ -40,13 +41,31 @@ mainBanner:
   learnMore: 
     text: Learn More
     path: store
+bannerVideo:
+  name: video
+  active: true
+  container: container-fluid
+  bodyZindex: false
+  additionClass: position-relative text-center text-light
+  bgStyle: 
+    default: dark
+    positionY: center
+    imageUrl: sic-video-poster.jpg  
+    overlay:
+      variant: dark
+  video:
+    title: Video Guide
+    url: https://static.opencloner.com/video/sic-promo-v1.0.mp4
+  iconGird: 2
+  iconClass: 
+  iconWidth: 75 #25 50 75 100 默认是100          
 funFacts:
   name: fun-facts
   overflow: hidden
   sectionClass: bg-white funfacts-area
   container: container
   paddingY: 8
-  numUnit:  
+  numUnit:   
   bgStyle:
     imageUrl: map.png 
     size: contain 
@@ -157,6 +176,7 @@ banner:
   container: container
   sectionClass: bg-gradient text-white
   paddingY: 6
+  bodyZindex: true
   additionClass: text-center
   title: More Platforms Will be Supported Soon
   bar: false
@@ -272,4 +292,13 @@ faq:
       value: 'Yes, SIC Helper maximum support 3840x2160@60fps.'
     - title: 'How to enable GPU encoding function?'
       value: 'GPU encoding can improve performance, but you need to test before use. Please click Test GPU encoder. '
+contactUs:
+  name: contact-us
+  container: container-fluid
+  title: Our Develop and Support team
+  imageUrl: contact-us.jpg
+  text: Share your favorite online videos with 3 clicks
+  button: 
+    text: Learn More
+    path: contact     
 ---

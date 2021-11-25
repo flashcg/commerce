@@ -18,7 +18,9 @@
           </template>
           <template v-else>
             <div v-for="(item,index) in item.subscriptions" :key="index">
-              <h3>{{item.title}} </h3>
+              <h3><span style="font-size:4rem" class="align-middle"><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-star-vip"></use>
+            </svg></span><span class="align-middle">{{item.title}}</span> </h3>
             <span class="fs-4 d-inline-block" style="width:80px">${{item.price}}</span>
             <h5>{{item.subtitle}} </h5>
             </div>

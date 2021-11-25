@@ -101,11 +101,11 @@ WhyChoose:
     positionY: 50%
     positionX:
   icon:
-    - iconUrl: dc-icon-versatile.png
+    - iconUrl: dc-icon-win11.png
       text: Versatile DVD/Blu-ray/UHD Copy/Ripper
     - iconUrl: dc-icon2.png
       text: 6 diverse copy modes      
-    - iconUrl: dc-icon-win11.png
+    - iconUrl: dc-icon-versatile.png
       text: Compatible with Windows 11
     - iconUrl: dc-icon6.png
       text: Lightning copy speed

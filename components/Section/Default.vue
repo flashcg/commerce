@@ -5,7 +5,7 @@
       handlePaddingY - 2} ${iconData.sectionClass || ''} section-${slugify(iconData.name)}`"
   >
     <div
-      :class="`section-body zIndex ${textColor(iconData.bgstyle)||''} ${iconData.additionClass||''} ${iconData.container||''}`"
+      :class="`section-body ${iconData.bodyZindex?'zIndex':''} ${textColor(iconData.bgstyle)||''} ${iconData.additionClass||''} ${iconData.container||''}`"
     >
       <div
         v-if="iconData.title || !iconData.title == null"
@@ -32,6 +32,9 @@
       :class="backgroundClass"
       :style="backgroundStyle"
     ></div>
+
+      <!--背景-->
+      <div v-if="iconData.bgStyle&&iconData.bgStyle.overlay" :class="bgStyle(iconData.bgStyle.overlay)+' position-absolute fill-position'"></div>
   </div>
 </template>
 
@@ -61,6 +64,15 @@ export default defineComponent({
           return 8;
         }
       }),
+      bgStyle=(data:{opacity:string,variant:string,mobileVariant:string})=> {
+      if (data.opacity) {
+        return "bg-" + data.variant;
+      } else if (data.mobileVariant) {
+        return "bg-md-" + data.mobileVariant + "-transparent";
+      } else {
+        return "bg-" + data.variant + "-transparent";
+      }
+    },
       textColor = (bgStyle: string) => {
         if (bgStyle == "dark") {
           return "text-light";
@@ -106,7 +118,7 @@ export default defineComponent({
 
     return {
       defaultData,
-      slugify,
+      slugify,bgStyle,
       handlePaddingY,
       textColor,
       backgroundStyle,

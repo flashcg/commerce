@@ -53,9 +53,9 @@ export default {
       currentCode: null,
       currentCodeErrorMessage:null,
       swiperOption: {
-        // autoplay: {
-        //   delay:5000
-        // },
+        autoplay: {
+          delay:4000
+        },
         pagination: {
           el: ".swiper-pagination"
         },

@@ -1,6 +1,7 @@
 <template>
   <div>
     <Primary-Banner :data="content.mainBanner" class="bg-white" />
+    <Section-bannerVideo :data="content.bannerVideo" />
     <Section-CountUP :data="content.funFacts"  />
     <Section-BoxList :data="content.videoPlatforms" />
     <Section-Banner :data="content.banner" />
@@ -9,6 +10,7 @@
     <Section-WhyChoose :data="content.whyChoose" />
     <Section-Feedback :data="content.feedback" />
     <Section-Faq :data="content.faq" />
+    <Section-JumbotronHalfMask :data="content.contactUs" />
   </div>
 </template>
 

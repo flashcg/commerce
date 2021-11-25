@@ -1,8 +1,8 @@
 <template>
   <!-- Start Main Banner -->
-  <div v-if="data" class="main-banner pt-8" :style="{background: `transparent url(${data.bgStyle&&data.bgStyle.imageUrl}) right top/cover no-repeat`}">
+  <div v-if="data" class="main-banner pt-8 pb-6 d-flex " >
 
-        <div class="container">
+        <div class="container" style="z-index:1">
           <div class="row h-100 justify-content-center align-items-center">
             <div class="col-lg-5">
               <div class="hero-content">
@@ -20,11 +20,11 @@
               </div>
             </div>
           </div>
-
     </div>
     <!-- <template v-if="data.shapeLump">
     <div v-for="(item,index) in data.shapeLump" :key="index" :class="item.class"><img :src="item.imageUrl"  style="max-width:80px" /></div>
     </template> -->
+          <div v-if="data.bgStyle&&data.bgStyle.imageUrl" :style="{background: `transparent url(${data.bgStyle.imageUrl}) right top/cover`,opacity:data.bgStyle.opacity||1}" class="position-absolute fill-position h-100 mt-7"></div>    
   </div>
   <!-- End Main Banner -->
 </template>
