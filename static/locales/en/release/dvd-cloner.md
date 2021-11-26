@@ -16,9 +16,11 @@ release:
       date: Nov.26, 2021    
       topText:
       list: 
-        - Optimized the burning function.
-        - Optimized the rip to MKV function for TV series.
-        - Supported the newest released movies.
+        - Supports newly-released DVD/Blu-ray/4K UHD movies.
+        - With only $59.99, you can get a software combination of DVD copy, DVD to MKV, Blu-ray copy, Blu-ray to MKV, UHD copy and UHD to MKV. It is very valuable and save you a lot.
+        - Compatible with Windows 11.
+        - Updated the user interface.
+        - Fixed some minor bugs.
     - version: 18.70.1468
       date: Oct.11, 2021    
       topText:
