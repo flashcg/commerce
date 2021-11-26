@@ -11,7 +11,7 @@ pagify: true #页面化
 model: DC64bit
 listActive: false
 handleName: DVD-Cloner 64bit
-name: DVD-Cloner 64bit 2021
+name: DVD-Cloner 64bit 2022
 boxes:
   - imageUrl: dc202164bit-box-ref.png #默认盒子图
   - imageUrl: dc202164bit-box-ref.png #默认盒子图  

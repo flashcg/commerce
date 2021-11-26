@@ -163,7 +163,7 @@ bundles:
           price: 136
           discountRate: 32%
           additionClass: col-xxl-6
-          text: Blue-Cloner Ultimate, including Blue-Cloner, Open blu-ray ripper, Open SmartBurner, Blu-ray to HDD and Blu-ray to DVD.
+          text: Blue-Cloner Ultimate, including Blue-Cloner, Open Blu-ray ripper, Open SmartBurner, Blu-ray to HDD and Blu-ray to DVD.
 bonus: 
   name: Free Software
   active: true

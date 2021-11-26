@@ -13,7 +13,7 @@ heroCarousels: #首页主banner
   overflow: hidden
   allowTouchMove: true
   block:
-    - name: Home recoding
+    - name: Home recording
       title: Blu-ray and DVD copy - Perfect 1:1 copy
       subtitle: 
       icons:
@@ -33,9 +33,9 @@ heroCarousels: #首页主banner
         video:
           layout: bottom
           videoUrl: background_burning_dc-2022.mp4
-    - name: Home recoding      
+    - name: Home recording      
       title: 
-      subtitle: Strip HDCP and Record 4K UHD Streaming  Videos from Standalone Video Recorders.
+      subtitle: Strip HDCP and Record 4K UHD Streaming Videos from Standalone Video Recorders.
       button:
         text: More Info
         path: open-passdcp
@@ -46,7 +46,7 @@ heroCarousels: #首页主banner
       bgStyle:
         imageUrl: banner-passdcp.jpg
         color:
-    - name: Home recoding
+    - name: Home recording
       title: Rip, Convert and Remove DRM of All Latest DVD/Blu-ray/iTunes Movies to any platforms.
       subtitle: All-in-One Video Ripper Solution.
       button:
@@ -117,9 +117,9 @@ WhyChoose:
 sicBanner: #sic banner 
   name: main-banner
   overflow: hidden
-  title: Easiest Way to Share Hit Online Video
-  subtitle: Streaming-Cloner Software
-  text: Share your favorite online videos with 3 CLICKS
+  title: Easiest Way to Download Hit Streaming Video from Various Video Platforms
+  subtitle: Streaming-Cloner
+  text: Download your favorite online videos with only 3 clicks
   background:
     imageUrl: main-banner.png
   button:
@@ -129,17 +129,17 @@ sicBanner: #sic banner
     iconGird: 4
     icons:
       - iconUrl: main-banner/unlock.png
-        title: Unlock
-        text: Copy DVD/Blu-ray/4K UHD to blank disc or rip them to MKV format
+        title: DRM Removed
+        text: Get the HD video with DRM removed to facilitate your sharing and re-creation.
       - iconUrl: main-banner/custom.png
-        title: Customization
-        text: Rip UHD to MKV (HDR 10+) format, keeping original HDR and Dolby effect.
+        title: Flexible
+        text: Download online videos in MP4/MKV format.
       - iconUrl: main-banner/download.png
-        title: Download      
-        text: Lightning Blu-ray/UHD copy speed
+        title: High Quality      
+        text: Download original HD video. Keep best quality.
       - iconUrl: main-banner/speed.png
-        title: Speed      
-        text: Lightning Blu-ray/UHD copy speed   
+        title: Lightning Speed      
+        text: Download every video with lightning speed.   
 carouselRecommend:
   name: recommend
   container: container-fluid
