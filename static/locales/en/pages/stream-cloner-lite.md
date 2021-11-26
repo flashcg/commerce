@@ -19,7 +19,7 @@ desc:
   longText: |
     Stream-Cloner Lite is a smart stream downloader to download and capture streaming video/audio from the Internet. With Stream-Cloner Lite, you can save and play back the downloaded and captured streaming video/audio directly on your PC. It enables you to download and play back multiple tasks at one time and adjust the parameters of the downloaded or captured movies. Now let's take this valuable opportunity to get Stream-Cloner Lite worth $39.99 for free!
 
-    Note: The registered users of DVD-Cloner 2020 can click here to upgrade Stream-Cloner Lite to Stream-Cloner with only $14.99, to download online videos from all video and video-sharing websites as well as enjoy the video conversion function!
+    Note: The registered users of DVD-Cloner 2022 can click here to upgrade Stream-Cloner Lite to Stream-Cloner with only $14.99, to download online videos from all video and video-sharing websites as well as enjoy the video conversion function!
   bgStyle: 
 areaTop:
   name: DG Desc

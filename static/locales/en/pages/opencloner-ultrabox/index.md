@@ -57,13 +57,13 @@ screenshot:
 
 ### DVD-Cloner
 
-*   The latest version enables you to copy latest DVD movies with much higher speed. Without any third party DVD decrypter, DVD-Cloner has unlimited access to all region codes and copy protection systems. It removes all known DVD protections such as CSS, CPPM, APS, UOPs, Sony ARccOS, RipGuard, RPC-I/RPC-II/RCE, Disney's Fake, etc.
-*   Copies DVD-5 to DVD-5, DVD-9 to DVD-9 in 1:1 ratio.
-*   Copy DVD to ISO or burn ISO to DVD
-*   Copies only the main movie from a DVD movie to a DVD-5 disc, omitting the menus and special features.
-*   Combines two DVDs to one DVD±R DL or combines 6 DVDs to one BD-R/RE (DL).
-*   Rips DVD/Blu-ray movies to MKV format.
-*   Copies the main movie of a Blu-ray disc to a blank BD-25 disc.
+*  With DVD-Cloner, you can get a software combination of DVD copy, DVD to MKV, Blu-ray copy, Blu-ray to MKV, UHD copy and UHD to MKV. It is very valuable and save you a lot.
+*  6 diverse copy modes: Perfect 1:1 DVD copy, movie complete copy, movie-only copy, split copy, movie chapter copy and DVD to MKV.
+*  Lightning Copy Speed. The new upgraded HST function allows you to copy Blu-ray/UHD movies with only about three hours, which greatly improved the copy speed. (NVIDIA 1660 or above graphics card recommended)
+*  Rip 4K UHD movies to MKV (HDR 10+) format and play on your UHD player, which allows you to enjoy the same HDR and Dolby HD audio effect as the original disc.
+*  Copy Blu-ray/4K UHD Blu-ray movies to a blank BD-R/RE (DL) with movie-only copy or to the hard disk.
+*  Supports HST acceleration to improve the H.264/H.265 encoding speed.
+*  Compatible with Windows 11.
 
 [More Info](/dvd-cloner/)
 

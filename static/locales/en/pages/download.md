@@ -59,7 +59,7 @@ getFreeDC:
   container: container
   title: Get FREE DVD-Cloner now!
   textTop: |    
-    We'd like to turn DVD-Cloner 2020 into a multi-language application. Welcome to translate it to your native language. The translator will receive DVD-Cloner 2020's registration code as a reward. If you are interested in it, please <a class="text-danger" href="/knowledge/How-to-create-multi-language-text-for-a-DVD-Cloner-interface_381.html">Click HERE</a> to learn more.
+    We'd like to turn DVD-Cloner 2022 into a multi-language application. Welcome to translate it to your native language. The translator will receive DVD-Cloner 2022's registration code as a reward. If you are interested in it, please <a class="text-danger" href="/knowledge/How-to-create-multi-language-text-for-a-DVD-Cloner-interface_381.html">Click HERE</a> to learn more.
 
     Please don't translate the following languages. Here is a multi-language translation list that we have received.
     
