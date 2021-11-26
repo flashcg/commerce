@@ -12,6 +12,21 @@ newver:
         bgColor: '#353535'
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级      
 release: 
+    - version: 19.00.1469
+      date: Nov.26, 2021    
+      topText:
+      list: 
+        - Supports newly-released DVD/Blu-ray/4K UHD movies.
+        - With only $59.99, you can get a software combination of DVD copy, DVD to MKV, Blu-ray copy, Blu-ray to MKV, UHD copy and UHD to MKV. It is very valuable and save you a lot.
+        - Compatible with Windows 11.
+        - Updated the user interface.
+        - Fixed some minor bugs.
+    - version: 18.70.1468
+      date: Oct.11, 2021    
+      topText:
+      list: 
+        - Supported the newest released movies.
+        - Fixed the bug that failed to rip some Blu-ray movies to MKV.
     - version: 18.60.1467
       date: Aug.13, 2021    
       topText:

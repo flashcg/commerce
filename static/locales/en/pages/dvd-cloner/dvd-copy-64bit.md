@@ -54,8 +54,9 @@ Most versions of Windows 10, Windows 8, Windows 7 and Windows Vista are availabl
 
 **For more information about 64-bit, please refer to the questions below:**
 
-**What are the differences between the 32-bit versions and 64-bit versions of Windows Vista?**
+* [What are the differences between the 32-bit versions and 64-bit versions of Windows Vista?]({kbUrl}differences-between-the-32-bit-versions-and-64-bit-versions-of-windows-vista_345.html)
 
-**What are the advantages of 64-bit?**
+* [What are the advantages of 64-bit?]({kbUrl}about-uhd-copy-39.html)
 
-**I have a 32-bit version of Windows Vista, and can I upgrade to the 64-bit version?**
+* [I have a 32-bit version of Windows Vista, and can I upgrade to the 64-bit version?]({kbUrl}why-should-you-choose-a-plug-and-play-uhd-friendly-drive-instead-of-downgrading-firmware-diy_413.html)
+
