@@ -9,8 +9,8 @@
             </template>
             <div>
             <b-link
-      v-if="data.button"
-      :to="data.button.path"
+      v-if="data.button" 
+      :to="data.button.path?'/'+data.button.path+'/':''" :href="data.button.href"
       class="btn btn-primary btn-xl mt-3"
       >{{ data.button.text }}</b-link><br />  
       <small v-if="data.button.note" class="d-inline-block mt-2"> {{data.button.note}}</small>
