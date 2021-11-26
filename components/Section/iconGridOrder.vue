@@ -47,7 +47,9 @@ import {
 import { fetchProduct } from "@/script/common";
 import { State } from "@/script/interface";
 
-
+interface  Window {
+  Paddle: any
+}
 export default defineComponent({
   props: { data: Object },
   setup(props) {
@@ -61,7 +63,7 @@ export default defineComponent({
       };
       onMounted(()=>{
         window.addEventListener('load',()=>{
-          const Paddle = window.Paddle;          
+          const {Paddle} = window as any;          
             //Paddle.Environment.set('sandbox');
             Paddle.Setup({ vendor: 134375 }) 
         })
