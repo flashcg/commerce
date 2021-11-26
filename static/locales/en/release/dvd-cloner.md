@@ -12,6 +12,13 @@ newver:
         bgColor: '#353535'
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级      
 release: 
+    - version: 19.00.1469
+      date: Nov.26, 2021    
+      topText:
+      list: 
+        - Optimized the burning function.
+        - Optimized the rip to MKV function for TV series.
+        - Supported the newest released movies.
     - version: 18.70.1468
       date: Oct.11, 2021    
       topText:
