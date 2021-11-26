@@ -63,7 +63,7 @@ export default defineComponent({
         window.addEventListener('load',()=>{
           const Paddle = window.Paddle;          
             //Paddle.Environment.set('sandbox');
-            Paddle.Setup({ vendor: 3199 }) 
+            Paddle.Setup({ vendor: 134375 }) 
         })
 
       })
