@@ -139,13 +139,13 @@ orderList:
         - Unlimited free upgrades
         - 30 Days Money Back Guarantee
         - 12/7 Support          
-      subscriptions:
-        - price: 179.9
-          id: 744736
-          text: Yearly Plan
-          buyLink: test   
-          title: Long-term VIP 
-          subtitle: 7 Days Free Trial with Full Features                     
+#      subscriptions:
+#        - price: 179.9
+#          id: 744736
+#          text: Yearly Plan
+#          buyLink: test   
+#          title: Long-term VIP 
+#          subtitle: 7 Days Free Trial with Full Features                     
     - text: 
       id: 744749
       name: Streaming-Cloner AZ Downloader
