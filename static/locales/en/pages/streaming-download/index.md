@@ -131,7 +131,7 @@ orderList:
     - text: 
       name: Streaming-Cloner Ultimate
       imageUrl: sicu-box-ultimate.png
-      price: 159.50
+      price: 179.50
       buyLink: test
       id: 744746
       tips: #覆写
@@ -231,7 +231,7 @@ whyChoose:
     type: whyChoose
   button:
     text: Try it Now
-    path: https://www.opencloner.com/download/streaming-cloner.exe
+    href: https://www.opencloner.com/download/streaming-cloner.exe
     note: Permanent Free Trial
   items:
     - title: Lightning Speed
