@@ -2,7 +2,7 @@
       <Section-default :iconData="iconData">
       
         <div v-if="iconData" :class="`row justify-content-center ${iconData.rowClass}`">
-        <div :class="`col-lg-${12/(iconData.iconGird||(iconData.icon||iconData.list||iconData.items).length)} col-md-${12/(iconData.iconGird||(iconData.icon||iconData.list||iconData.items).length)*2} col-${(iconData.iconGird||(iconData.icon||iconData.list||iconData.items).length)>2?6:''} mb-4 mb-lg-0 ${iconData.iconGirdClass} ${item.additionClass}`" v-for="(item,index) in (iconData.icon||iconData.list||iconData.items)" :key="index">
+        <div :class="`col-lg-${12/(iconData.iconGird||(iconData.icon||iconData.list||iconData.items).length)} col-md-${12/(iconData.iconGird||(iconData.icon||iconData.list||iconData.items).length)*2} col-${(iconData.iconGirdMObile?12/iconData.iconGirdMObile:'')||((iconData.iconGird||(iconData.icon||iconData.list||iconData.items).length)>2?6:'')} mb-4 mb-lg-0 ${iconData.iconGirdClass} ${item.additionClass}`" v-for="(item,index) in (iconData.icon||iconData.list||iconData.items)" :key="index">
           
           <slot :item="item" :index="index">
           <div :class="`position-relative  mb-4 mx-auto w-${iconData.iconWidth}`">          
