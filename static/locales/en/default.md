@@ -137,7 +137,7 @@ menuTop:
           - handleName: Blue-Cloner Diamond
             path: blu-ray-copy
         additionClass: bg-dark-blue-opacity-5
-  - name: Streaming-Download
+  - name: Streaming Download
     template: normal
     path: streaming-download        
   - name: Video Ripper and Converter
@@ -232,7 +232,7 @@ menuFooter:
       path: release
   - name: Featured
     children:
-    - name: Streaming-Download
+    - name: Streaming Download
       path: streaming-download    
     - name: DVD Copy
       path: dvd-copy
