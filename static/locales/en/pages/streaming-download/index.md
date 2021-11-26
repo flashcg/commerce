@@ -139,13 +139,13 @@ orderList:
         - Unlimited free upgrades
         - 30 Days Money Back Guarantee
         - 12/7 Support          
-      subscriptions:
-        - price: 179.9
-          id: 744736
-          text: Yearly Plan
-          buyLink: test   
-          title: Long-term VIP 
-          subtitle: 7 Days Free Trial with Full Features                     
+#      subscriptions:
+#        - price: 179.9
+#          id: 744736
+#          text: Yearly Plan
+#          buyLink: test   
+#          title: Long-term VIP 
+#          subtitle: 7 Days Free Trial with Full Features                     
     - text: 
       id: 744749
       name: Streaming-Cloner AZ Downloader
@@ -179,32 +179,32 @@ banner:
   additionClass: text-center
   title: More Platforms Will be Supported Soon
   bar: false
-  button:
-    text: Join to Get Update
-    variant: outline-light
-    path: /order
+#  button:
+#    text: Join to Get Update
+#    variant: outline-light
+#    path: /order
   bgStyle:
     imageUrl: banner_bg_clouds.png
     positionX: center
     opacity: 0.4
-easyToUse:
-  name: easy to Use
-  overflow: hidden
-  container: container
-  sectionClass: bg-white
-  paddingY: 6
-  additionClass: 
-  title: Super Easy to Use
-  bar: false
-  template: 
-    type: slider
-  items:
-    - title: Find your Favorite Video
-      imageUrl: screenshot/os_screenshot.png
-    - title: One Click to Download
-      imageUrl: https://static.cloner-alliance.com/image/web/ca-998p_specs_box.jpg
-    - title: Get Videos within Minutes
-      imageUrl: screenshot/os_screenshot.png
+# easyToUse:
+#   name: easy to Use
+#   overflow: hidden
+#   container: container
+#   sectionClass: bg-white
+#   paddingY: 6
+#   additionClass: 
+#   title: Super Easy to Use
+#   bar: false
+#   template: 
+#     type: slider
+#   items:
+#     - title: Find your Favorite Video
+#       imageUrl: screenshot/os_screenshot.png
+#     - title: One Click to Download
+#       imageUrl: https://static.cloner-alliance.com/image/web/ca-998p_specs_box.jpg
+#     - title: Get Videos within Minutes
+#       imageUrl: screenshot/os_screenshot.png
 whyChoose:
   name: why-choose
   overflow: hidden
@@ -231,6 +231,7 @@ whyChoose:
     type: whyChoose
   button:
     text: Try it Now
+    path: https://www.opencloner.com/download/streaming-cloner.exe
     note: Permanent Free Trial
   items:
     - title: Lightning Speed
@@ -298,6 +299,6 @@ contactUs:
   imageUrl: contact-us.jpg
   text: We are open to your suggestions or any problems about our products.
   button: 
-    text: Learn More
-    path: contact     
+    text: Contact Us
+    path: /contact/
 ---
