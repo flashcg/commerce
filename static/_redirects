@@ -16,10 +16,6 @@
 # https://www.dvd-cloner.com/cgi-bin/onlinereg_dc.cgi?[param]
 # https://www.dvd-cloner.com/cgi-bin/dc/gkn?[param]
 
-# ref https://redmine.sy-ruifeng.com/issues/13466#note-6
-# ------------------------------------1-------------------------------------------
-
-/cgi-bin/*  https://www.dvd-cloner.com/cgi-bin/:splat 200!
 
 # ------------------------------------1-------------------------------------------
 
@@ -29,23 +25,71 @@
 
 #-------------------------------------2-----------------------------------------
 
-/order.html http://www.dvd-cloner.com/order/ 301!
-/contact.html http://www.dvd-cloner.com/contact/ 301!
-/upgrade.html  http://www.dvd-cloner.com/upgrade/ 301!
-/download.html http://www.dvd-cloner.com/contact/ 301!
-/support_form.html http://www.dvd-cloner.com/contact/
-/open-smartburner.html http://www.dvd-cloner.com/open-smartburner/ 301!
-/open-cloner-ripper.html https://www.dvd-cloner.com/open-cloner-ripper/ 301!
-/dvd-copy-for-mac/ https://www.dvd-cloner.com/dvd-copy-for-mac/ 301!
-/open-cloner-ri.htmlper/upgrade/ https://www.dvd-cloner.com/open-cloner-ripper/upgrade/ 301！ 
-/dvd-copy-for-mac/upgrade.html https://www.dvd-cloner.com/dvd-copy-mac/dvd-cloner-for-mac-upgrade/ 301！
-/dvd-cloner/upgrade.html https://www.dvd-cloner.com/dvd-cloner/upgrade/301!
-/create-ticket.html https://www.dvd-cloner.com/create-ticket/ 301!
-/upgrade.html* https://www.dvd-cloner.com/upgrade/:splat  301!
+/affiliate.html https://www.dvd-cloner.com/affiliate/ 301! 
+/blu-ray-to-dvd/index.html https://www.dvd-cloner.com/blu-ray-to-dvd/ 301! 
+/contact.html https://www.dvd-cloner.com/contact/ 301! 
+/create-ticket.html https://www.dvd-cloner.com/create-ticket/ 301! 
+/download.html https://www.dvd-cloner.com/download/ 301! 
+/dvdcloner.html https://www.dvd-cloner.com/dvd-cloner/ 301! 
+/dvd-cloner/dvd-to-avi/index.html https://www.dvd-cloner.com/dvd-cloner/dvd-to-avi/ 301! 
+/dvd-cloner/dvd-to-mpeg/index.html https://www.dvd-cloner.com/dvd-cloner/dvd-to-mpeg/ 301! 
+/dvd-cloner/dvd-to-svcd/index.html https://www.dvd-cloner.com/dvd-cloner/dvd-to-svcd/ 301! 
+/dvd-cloner/index.html https://www.dvd-cloner.com/dvd-cloner/ 301! 
+/dvd-cloner/online_register.html https://www.dvd-cloner.com/online_register/ 301! 
+/dvd-cloner/resource.html https://www.dvd-cloner.com/dvd-copy/ 301! 
+/dvd-cloner/upgrade.html https://www.dvd-cloner.com/dvd-cloner/upgrade/ 301! 
+/dvd-cloner-gold.html https://www.dvd-cloner.com/dvd-cloner-gold/ 301! 
+/dvd-cloner-ii.html https://www.dvd-cloner.com/dvd-cloner/dvd-cloner-2/ 301! 
+/dvd-cloner-iii.html https://www.dvd-cloner.com/dvd-cloner/dvd-cloner-3/ 301! 
+/dvd-cloneriv.html https://www.dvd-cloner.com/dvd-cloner/dvd-cloner-4/ 301! 
+/dvd-cloner-platinum.html https://www.dvd-cloner.com/dvd-cloner-platinum/ 301! 
+/dvd-cloner-platinum/index.html https://www.dvd-cloner.com/dvd-cloner-platinum 301! 
+/dvd-copy-for-mac.html https://www.dvd-cloner.com/dvd-copy-for-mac/ 301! 
+/dvd-copy-for-mac/upgrade.html https://www.dvd-cloner.com/dvd-copy-mac/dvd-cloner-for-mac-upgrade/ 301！ 
+/dvd-copy-mac/dvd-cloner-for-mac-screenshot.html https://www.dvd-cloner.com/dvd-copy-for-mac/dvd-cloner-for-mac-screenshot/ 301! 
+/dvd-copy-mac/dvd-cloner-for-mac-upgrade.html https://www.dvd-cloner.com/dvd-copy-for-mac/upgrade/ 301! 
+/dvd-to-ipod-converter/index.html https://www.dvd-cloner.com/dvd-to-ipod-converter/ 301! 
+/faq.html https://www.dvd-cloner.com/knowledge/ 301! 
+/faqs.html https://www.dvd-cloner.com/knowledge/ 301! 
+/faqs-dvd-cloner-platinum.html https://www.dvd-cloner.com/knowledge/dvd-cloner-platinum-faq/ 301! 
+/faqs-ipod-cloner.html https://www.dvd-cloner.com/dvd-to-ipod-converter/faqs-ipod-cloner/ 301! 
+/getupgrade.html https://www.dvd-cloner.com/dvd-cloner/upgrade/ 301! 
+/howregister.html https://www.dvd-cloner.com/dvd-cloner/howregister/ 301! 
+/ipod-cloner.html https://www.dvd-cloner.com/dvd-to-ipod-converter/ 301! 
+/ipod-cloner-order.html https://www.dvd-cloner.com/order/ 301! 
+/kav_clear.html https://www.dvd-cloner.com/safe-security/ 301! 
+/knowledge/index.html https://www.dvd-cloner.com/knowledge/ 301! 
+/open-cloner-ripper/upgrade.html https://www.dvd-cloner.com/open-cloner-ripper/upgrade/ 301！ 
+/open-cloner-ripper.html https://www.dvd-cloner.com/open-cloner-ripper/ 301! 
+/opencloner-ultrabox.html https://www.dvd-cloner.com/opencloner-ultrabox/ 301! 
+/open-smartburner.html https://www.dvd-cloner.com/open-smartburner/ 301! 
+/open-superconverter.html https://www.dvd-cloner.com/open-superconverter/ 301! 
+/order.html https://www.dvd-cloner.com/order/ 301! 
+/otherdownload/dc-key.html https://www.dvd-cloner.com/video-guide/ 301! 
+/otherdownload/play-dc.html https://www.dvd-cloner.com/video-guide/ 301! 
+/otherdownload/play-dc-for-mac.html https://www.dvd-cloner.com/video-guide/ 301! 
+/otherdownload/play-os.html https://www.dvd-cloner.com/video-guide/ 301! 
+/otherdownload/play-support.html https://www.dvd-cloner.com/video-guide/ 301! 
+/refund.html https://www.dvd-cloner.com/privacy/ 301! 
+/support_form.html https://www.dvd-cloner.com/contact/ 301!
+/special-offer.html https://www.dvd-cloner.com/special-offer/ 301!  
+/upgrade.html https://www.dvd-cloner.com/upgrade/ 301! 
+/upgrade.html* https://www.dvd-cloner.com/upgrade/:splat 301! 
+/vista.html https://www.dvd-cloner.com/dvd-cloner/vista/ 301! 
+   
+/otherdownload/dcloner_mac.dmg https://www.opencloner.com/download/dvd-cloner-for-mac.dmg 301! 
+/otherdownload/dcloner_mac.zip https://www.opencloner.com/download/dvd-cloner-for-mac.zip 301! 
+/otherdownload/dcloner64bit.exe https://www.opencloner.com/download/dcloner64bit.exe 301! 
+/otherdownload/dc-platinum-setup.exe https://www.opencloner.com/download/dc-platinum-setup.exe 301! 
+/otherdownload/dvdcloner_gold_2017.exe https://www.opencloner.com/download/dvdcloner_gold_2017.exe 301! 
+/otherdownload/open_dvd_ripper_lite_setup.exe https://www.opencloner.com/download/open_dvd_ripper_lite_setup.exe 301! 
+/otherdownload/opencloner-ultrabox.exe https://www.opencloner.com/download/OpenCloner_UltraBox.exe 301! 
+/otherdownload/sc_lite_setup.exe https://www.opencloner.com/download/sc_lite_setup.exe 301! 
+/dc_loadv20/dcloner.exe https://www.opencloner.com/download/dcloner.exe 301! 
 
-/dvd-copy-mac/dvd-cloner-for-mac-upgrade.html https://www.dvd-cloner.com/dvd-copy-for-mac/upgrade/ 301!
-/dvd-copy-mac/dvd-cloner-for-mac-screenshot.html https://www.dvd-cloner.com/dvd-copy-for-mac/dvd-cloner-for-mac-screenshot/ 301!
-/refund.html https://www.dvd-cloner.com/privacy/ 301!
+/dvd-cloner/newver.zip https://www.dvd-cloner.com/newver.zip 301! 
+/dvd-copy-mac/newver_mc.zip https://www.dvd-cloner.com/newver_mc.zip 301!
+
 #-------------------------------------2----------------------------------
 
 # manual
@@ -58,11 +102,16 @@
 
 /manual/_static/* https://dc2019-manual.netlify.app/manual/dc2019/_static/:splat 200!
 /manual/dc2019/* https://dc2019-manual.netlify.app/manual/dc2019/:splat 200!
-/manual/dc2020/* https://dc2019-manual.netlify.app/manual/dc2020/:splat 200!
-/manual/dc2021/* https://dc2019-manual.netlify.app/manual/dc2021/:splat 200!
-/manual/ocr2019/* https://dc2019-manual.netlify.app/manual/ocr2019/:splat 200!
-/manual/ocr2020/* https://dc2019-manual.netlify.app/manual/ocr2019/:splat 200!
-/manual/ocr2021/* https://dc2019-manual.netlify.app/manual/ocr2019/:splat 200!
+/manual/dc2020/* https://dc2020-manual.netlify.app/manual/dc2020/:splat 200!
+/manual/dc2021/* https://dc2021-manual.netlify.app/manual/dc2021/:splat 200!
+/manual/dc2022/* https://dc2022-manual.netlify.app/manual/dc2022/:splat 200!
+/manual/ocr2019/* https://ocr2019-manual.netlify.app/manual/ocr2019/:splat 200!
+/manual/ocr2020/* https://ocr2020-manual.netlify.app/manual/ocr2020/:splat 200!
+/manual/ocr2021/* https://ocr2021-manual.netlify.app/manual/ocr2021/:splat 200!
+/manual/mc2021/* https://mc2021-manual.netlify.app/manual/mc2021/:splat 200!
+/manual/bc2020/* https://bc2020-manual.netlify.app/manual/bc2020/:splat 200!
+/manual/bc2021/* https://bc2021-manual.netlify.app/manual/bc2021/:splat 200!
+/manual/bc2019/* https://bc2019-manual.netlify.app/manual/bc2019/:splat 200!
 
 /manual/* https://www.dvd-cloner.com/dvd-cloner/manual/:splat 200!
 
@@ -124,9 +173,18 @@
 # 
 # /cloneralliance-sdk-docs* https://distracted-stonebraker-1f33d5.netlify.com/cloneralliance-sdk-docs/:splat 200!
 
-#cgi scripts  test
+# cgi scripts  test
 
-/cgi-bin/*  https://www.dvd-cloner.com/cgi-bin/:splat 200!
+# /cgi-bin/* https://www.dvd-cloner.com/cgi-bin/:splat 200!
+
+# cgi proxy to dvd-cloner.net
+
+/db/* http://www.dvd-cloner.net/db/:splat 200!
+
+# cgi proxy to dev.dc.com
+
+/cgi-bin/* http://dev.dvd-cloner.com/cgi-bin/:splat 200!
+/akeys/* http://dev.dvd-cloner.com/akeys/:splat 200!
 
 # other scripts
 # /cgi-bin/getversion https://www.dvd-cloner.com/cgi-bin/getversion 200!
