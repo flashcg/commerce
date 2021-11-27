@@ -51,7 +51,7 @@
 
           <p>
             <b-button v-if="itemSaleInfo.standard" squared variant="danger" :size="data.type=='order'?'xl':'lg'" :href="standard?itemSaleInfo.standard.buyLink:itemSaleInfo.lifetime.buyLink" class="mt-2">{{$t("globalName.buy")}} </b-button>
-          <template v-if="data.type!='order'">
+          <template v-if="data.type!='order'&&data.type!='upgrade'">
           <b-button v-if="itemSaleInfo.downloadUrl" squared variant="success" size="lg" :href="itemSaleInfo.downloadUrl" class="mt-2">{{$t("globalName.download")}} </b-button> 
           <b-button v-if="itemSaleInfo.downloadUrl_64bit" squared variant="success" size="lg" :href="itemSaleInfo.downloadUrl_64bit" class="mt-2">{{`${$t("globalName.download")} 64 Bit`}} </b-button>          
           <b-button v-if="itemSaleInfo.upgradeUrl&&data.type!='spList'" squared variant="outline-light" size="lg" :to="`${itemSaleInfo.upgradeUrl}/`" class="mt-2">{{$t("globalName.upgrade")}} </b-button> 
@@ -61,6 +61,9 @@
             <b-button v-if="itemSaleInfo.years.length>1" :disabled="!upgradeYearSelected" squared variant="danger" size="lg" :href="upgradeYearSelected" class="mt-2">{{itemSaleInfo.buttonText?itemSaleInfo.buttonText:$t("globalName.upgrade")}} </b-button>
 
            <b-button v-else squared variant="danger" :href="itemSaleInfo.years[0].link" size="lg" class="mt-2">{{itemSaleInfo.buttonText?itemSaleInfo.buttonText:$t("globalName.upgrade")}} </b-button> 
+
+           <b-link v-if="itemSaleInfo.downloadUrl"  :href="itemSaleInfo.downloadUrl" class="align-bottom">Download Now</b-link> 
+ 
           </template>
           </p>
           <p v-if="data.button&&data.button.additionText" class="whiteSpace-preline" v-html="data.button.additionText"></p>
@@ -131,8 +134,10 @@ export default Vue.extend({
       return this.items&&fetchItem(this.itemInfo.handleName,this.items)?.saleInfo||{}
     },
     itemSaleInfo(){     
-      let outData = this.items&&fetchItem(this.itemInfo.handleName,this.items)?.saleInfo||{}
-      if(this.itemInfo.saleInfo) return this.itemInfo.saleInfo
+      let outData = this.items&&fetchItem(this.itemInfo.handleName,this.items)?.saleInfo||{}   
+      
+      if(this.itemInfo.saleInfo) return {...this.itemInfo.saleInfo,downloadUrl:outData.downloadUrl}    
+            
       return outData
     },
     upgradeYearOptions(){
@@ -186,7 +191,6 @@ export default Vue.extend({
     }
   },
   mounted() {
-
     
   }
 
