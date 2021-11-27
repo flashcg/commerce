@@ -17,10 +17,10 @@ orderInfo:
   text:  
     success: Order found!
     error: Failed to get data! Require code or email.
-  guarantee:
-    imageUrl: guarantee300px_old.jpg
+#  guarantee:
+#    imageUrl: guarantee300px_old.jpg
   deadline:
-    text: Save Big on upgrading to DVD-Cloner 2022 till Dec. 31.
+    text: <span class="fs-2">Save Big</span> on upgrading to DVD-Cloner 2022 till Dec. 31.
   
 jumbotron:
   - template: overlay
