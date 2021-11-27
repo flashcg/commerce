@@ -36,8 +36,10 @@ mainBanner:
     - imageUrl: icons/netflix.png
       class: shape4   
   button:
+    prefixIcon: win  
     text: Try it Now
-    path: https://www.opencloner.com/download/streaming-cloner.exe 
+    path: https://www.opencloner.com/download/streaming-cloner.exe
+    note: Permanent Free Trial     
   learnMore: 
     text: Learn More
     path: https://www.dvd-cloner.com/streaming-download/
@@ -93,7 +95,7 @@ videoPlatforms:
       imageUrl: icons/netflix.png
       text: Streaming-Cloner NF Downloader is a powerful online video downloader for you to download movies, TV shows and previews from Netflix with Full HD 1080p quality very fast.
 orderList:
-  name: order list
+  name: order_list
   overflow: hidden
   container: container
   sectionClass: bg-eef6fd
@@ -103,7 +105,8 @@ orderList:
     separationText: Or
     tips:
       - Automatic renewal, cancel at any time.
-      - 12/7 Support        
+      - 12/7 Support
+  iconGirdMObile: 1 #覆写默认col规则            
   items:                      
     - text: 
       name: Streaming-Cloner NF Downloader
@@ -230,6 +233,7 @@ whyChoose:
   template: 
     type: whyChoose
   button:
+    prefixIcon: win  
     text: Try it Now
     href: https://www.opencloner.com/download/streaming-cloner.exe
     note: Permanent Free Trial
@@ -260,6 +264,7 @@ feedback:
   sectionClass: bg-eef6fd
   paddingY: 6
   additionClass: 
+  iconGirdMObile: 1 #覆写默认col规则   
   title: What Users Saying
   items:
     - text: Streaming-Cloner is a strong tool for me to download movies from Netflix. I can't wait to introduce this great software to my friends.
