@@ -12,7 +12,7 @@
       v-if="data.button" 
       :to="data.button.path?'/'+data.button.path+'/':''" :href="data.button.href"
       class="btn btn-primary btn-xl mt-3"
-      >{{ data.button.text }}</b-link><br />  
+      ><span v-if="data.button.prefixIcon"><svg aria-hidden="true" class="icon mr-2"><use :xlink:href="`#icon-${data.button.prefixIcon}`"></use></svg></span> {{ data.button.text }}</b-link><br />  
       <small v-if="data.button.note" class="d-inline-block mt-2"> {{data.button.note}}</small>
       </div>  
         </div>

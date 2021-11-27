@@ -10,7 +10,8 @@
                 <h4>{{ data.subtitle }}</h4>
                 <p>{{ data.text }}</p>
 
-                <a :href="data.button.path" class="btn btn-success btn-xl" v-if="data.button">{{data.button.text}} </a>
+                <p><a :href="data.button.path" class="btn btn-success btn-xl" v-if="data.button"><span v-if="data.button.prefixIcon"><svg aria-hidden="true" class="icon mr-2"><use :xlink:href="`#icon-${data.button.prefixIcon}`"></use></svg></span> {{data.button.text}} </a><br />
+                <small v-if="data.button.note" class="d-inline-block mt-2"> {{data.button.note}}</small></p>
               </div>
             </div>
 
