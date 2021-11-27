@@ -62,7 +62,7 @@
 
            <b-button v-else squared variant="danger" :href="itemSaleInfo.years[0].link" size="lg" class="mt-2">{{itemSaleInfo.buttonText?itemSaleInfo.buttonText:$t("globalName.upgrade")}} </b-button> 
 
-           <b-link v-if="itemSaleInfo.downloadUrl"  :href="itemSaleInfo.downloadUrl" class="align-bottom">Download Now</b-link> 
+           <b-button  v-if="itemSaleInfo.downloadUrl" squared variant="outline-secondary" size="lg" :href="itemSaleInfo.downloadUrl" class="mt-2">Download Now</b-button> 
  
           </template>
           </p>
