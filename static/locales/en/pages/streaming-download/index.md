@@ -31,9 +31,9 @@ mainBanner:
   mainImage:
     imageUrl: person-banner.png
   shapeLump:
-    - imageUrl: icons/amazon.png
+    - imageUrl: icons/amzn.png
       class: shape5
-    - imageUrl: icons/netflix.png
+    - imageUrl: icons/nflx.png
       class: shape4   
   button:
     prefixIcon: win  
@@ -89,10 +89,10 @@ videoPlatforms:
   bar: false
   items:
     - title: AMZN
-      imageUrl: icons/amazon.png
+      imageUrl: icons/amzn.png
       text: Streaming-Cloner AZ Downloader is a powerful software for you to download seas of movies and TV shows from AMZN Prime Video.
     - title: NFLX
-      imageUrl: icons/netflix.png
+      imageUrl: icons/nflx.png
       text: Streaming-Cloner NF Downloader is a powerful online video downloader for you to download movies, TV shows and previews from NFLX with Full HD 1080p quality very fast.
 orderList:
   name: order_list
