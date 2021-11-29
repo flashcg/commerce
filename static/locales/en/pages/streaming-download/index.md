@@ -88,12 +88,12 @@ videoPlatforms:
   title: Supported Streaming Video Platforms
   bar: false
   items:
-    - title: Amazon
+    - title: AMZN
       imageUrl: icons/amazon.png
-      text: Streaming-Cloner AZ Downloader is a powerful software for you to download seas of movies and TV shows from Amazon Prime Video.
-    - title: Netflix
+      text: Streaming-Cloner AZ Downloader is a powerful software for you to download seas of movies and TV shows from AMZN Prime Video.
+    - title: NFLX
       imageUrl: icons/netflix.png
-      text: Streaming-Cloner NF Downloader is a powerful online video downloader for you to download movies, TV shows and previews from Netflix with Full HD 1080p quality very fast.
+      text: Streaming-Cloner NF Downloader is a powerful online video downloader for you to download movies, TV shows and previews from NFLX with Full HD 1080p quality very fast.
 orderList:
   name: order_list
   overflow: hidden
@@ -267,10 +267,10 @@ feedback:
   iconGirdMObile: 1 #覆写默认col规则   
   title: What Users Saying
   items:
-    - text: Streaming-Cloner is a strong tool for me to download movies from Netflix. I can't wait to introduce this great software to my friends.
+    - text: Streaming-Cloner is a strong tool for me to download movies from NFLX. I can't wait to introduce this great software to my friends.
       name: David Brown
       iconUrl: author/author1.jpg
-    - text: I love your Amazon Prime Video downloader as it is very fast and works smoothly. I can also select to keep all audio tracks and subtitles.
+    - text: I love your AMZN Prime Video downloader as it is very fast and works smoothly. I can also select to keep all audio tracks and subtitles.
       name: Oscar Smith
       iconUrl: author/author2.jpg
     - text: I've never used such a powerful tool which saves me a lot of money and time. It downloads fast and the video has very good quality. Excellent software and customer service.
@@ -290,7 +290,7 @@ faq:
     - title: 'Does it support downloading 5.1 audio tracks?'
       value: 'Yes, it supports downloading 5.1 dolby audio tracks.'
     - title: 'How do I download HD video content?'
-      value: 'By default, it will download the highest quality video available, if you want to download HD content, you need to log in a Netflix account that allows you to watch videos in high definition(HD), and please also make sure your PC is capable of displaying HD content.'
+      value: 'By default, it will download the highest quality video available, if you want to download HD content, you need to log in a NFLX account that allows you to watch videos in high definition(HD), and please also make sure your PC is capable of displaying HD content.'
     - title: 'Why does it need recoding during the download?'
       value: 'DRM removal needs decoding, and the decoded videos need to be recoded to H.264.'
     - title: 'Can the downloaded file be MKV?'
