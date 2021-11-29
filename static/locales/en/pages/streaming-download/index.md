@@ -90,7 +90,7 @@ videoPlatforms:
   items:
     - title: Amazon
       imageUrl: icons/amazon.png
-      text: Streaming-Cloner AN Downloader is a powerful software for you to download seas of movies and TV shows from Amazon Prime Video.
+      text: Streaming-Cloner AZ Downloader is a powerful software for you to download seas of movies and TV shows from Amazon Prime Video.
     - title: Netflix
       imageUrl: icons/netflix.png
       text: Streaming-Cloner NF Downloader is a powerful online video downloader for you to download movies, TV shows and previews from Netflix with Full HD 1080p quality very fast.
