@@ -39,7 +39,7 @@ mainBanner:
     prefixIcon: win  
     text: Try it Now
     path: https://www.opencloner.com/download/streaming-cloner.exe
-    note: Permanent Free Trial     
+    note: Permanent Free Trial with Embedded Watermarks.    
   learnMore: 
     text: Learn More
     path: https://www.dvd-cloner.com/streaming-download/
@@ -90,7 +90,7 @@ videoPlatforms:
   items:
     - title: AMZN
       imageUrl: icons/amzn.png
-      text: Streaming-Cloner AZ Downloader is a powerful software for you to download seas of movies and TV shows from AMZN Prime Video.
+      text: Streaming-Cloner AZ Downloader is a powerful streaming video download software for you to download seas of movies, TV shows and trailers from AMZN Prime Video.
     - title: NFLX
       imageUrl: icons/nflx.png
       text: Streaming-Cloner NF Downloader is a powerful online video downloader for you to download movies, TV shows and previews from NFLX with Full HD 1080p quality very fast.
@@ -138,8 +138,9 @@ orderList:
       buyLink: test
       id: 744746
       tips: #覆写
+        - All-In-One Online Video Downloader (NFLX, AMZN and more will be supported soon)
         - One-time payment
-        - Unlimited free upgrades
+        - Unlimited free upgrades for lifetime
         - 30 Days Money Back Guarantee
         - 12/7 Support          
 #      subscriptions:
@@ -180,7 +181,7 @@ banner:
   paddingY: 6
   bodyZindex: true
   additionClass: text-center
-  title: More Platforms Will be Supported Soon
+  title: More Streaming Video Platforms Will be Supported Soon
   bar: false
 #  button:
 #    text: Join to Get Update
@@ -216,7 +217,7 @@ whyChoose:
   paddingY: 6
   additionClass: 
   title: Why Choose Streaming-Cloner
-  textTop: Compared with competing products, Streaming-Cloner stands out in terms of product features and customer services.
+  textTop: Compared with competing products, Streaming-Cloner is the most comprehensive online video downloading solution which allows you to download videos from AMZN Prime Video, NFLX and other streaming websites (More will be supported soon such as Disney+). It is convenient for you to create and build your own video library across multiple video platforms.
   mainImage:
     imageUrl: why-choose-man.png
   widget:
@@ -236,13 +237,13 @@ whyChoose:
     prefixIcon: win  
     text: Try it Now
     href: https://www.opencloner.com/download/streaming-cloner.exe
-    note: Permanent Free Trial
+    note: Permanent Free Trial with Embedded Watermarks.
   items:
     - title: Lightning Speed
       text: Greatly increase the downloading speed through multi-thread encoding method.    
       imageUrl: icons/faster.png
     - title: Real 1080p Download
-      text: Directly download HD video from the streaming video platform. Not lagging screen recording.  
+      text: Directly download HD video from the streaming video platform and save videos as MP4 and MKV files. Not lagging screen recording.  
       imageUrl: icons/1080p-download.png
     - title: High-fidelity Audio Supported
       text: Download multiple audio tracks and original 5.1 surround sound. Keep the best experience of watching videos.
