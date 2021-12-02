@@ -42,7 +42,7 @@ bundles:
     - title: DVD Software Bundles
       list:
         - title: Blue&DVD-Cloner Suite
-          url: https://secure.avangate.com/order/checkout.php?PRODS=4558661&QTY=1&CART=1&ORDERSTYLE=nLWooJXflH4=
+          url: https://secure.avangate.com/order/checkout.php?PRODS=4558661&QTY=1&CART=1
           handleName:
             - DVD-Cloner
             - Blue-Cloner
@@ -52,7 +52,7 @@ bundles:
           additionClass: col-xxl-6
           text: Blue & DVD-Cloner Suite, including DVD-Cloner and Blue-Cloner, enables you to copy DVD and Blu-ray movies with diverse copy modes, such as perfect 1:1 DVD/Blu-ray copy, movie complete copy, movie-only copy, split copy and customized copy.
         - title: DVD-Cloner & ripper Suite
-          url: https://secure.avangate.com/order/checkout.php?PRODS=4558660&QTY=1&CART=1&ORDERSTYLE=nLWooJXflH4= 
+          url: https://secure.avangate.com/order/checkout.php?PRODS=4558660&QTY=1&CART=1 
           handleName:
             - dc
             - odr
@@ -72,7 +72,7 @@ bundles:
           additionClass: col-xxl-6
           text: DVD-Cloner & SmartBurner Suite, including DVD-Cloner and Open SmartBurner, enables you to copy DVD movies with diverse copy modes, remove all DVD protections and burn data/video files to DVD/Blu-ray discs.
         - title: DVD-Cloner & Stream-Cloner Suite
-          url: https://secure.avangate.com/order/checkout.php?PRODS=4558665&QTY=1&CART=1&ORDERSTYLE=nLWooJXflH4=
+          url: https://secure.avangate.com/order/checkout.php?PRODS=4558665&QTY=1&CART=1
           handleName:
             - dc
             - sc
@@ -82,7 +82,7 @@ bundles:
           additionClass: col-xxl-6
           text: DVD-Cloner & Stream-Cloner Suite, including DVD-Cloner and Stream-Cloner, enables you to copy DVD movies with diverse copy modes, remove all DVD protections, download/capture online movies and convert them to various video and audio formats.
         - title: DVD-Cloner & Game-Cloner Suite
-          url: https://secure.avangate.com/order/checkout.php?PRODS=4558663&QTY=1&CART=1&ORDERSTYLE=nLWooJXflH4=
+          url: https://secure.avangate.com/order/checkout.php?PRODS=4558663&QTY=1&CART=1
           handleName:
             - dc
             - gc
@@ -93,7 +93,7 @@ bundles:
           text: DVD-Cloner & Game-Cloner Suite, including DVD-Cloner and Game-Cloner, enables you to copy DVD movies with diverse copy modes, remove all DVD protections and copy PS3 games, PS2 games, Xbox 360 games, Wii games and PC games with excellent image quality.
         - title: DVD-Cloner Ultimate
           type: ultimate
-          url: https://secure.avangate.com/order/checkout.php?PRODS=4558663&QTY=1&CART=1&ORDERSTYLE=nLWooJXflH4=
+          url: https://secure.2checkout.com/order/checkout.php?PRODS=4558662&QTY=1&CART=1&CARD=1
           handleName:
             - dc
             - odr
@@ -108,7 +108,7 @@ bundles:
     - title: Blu-ray Software Bundles
       list:
         - title: Blue&DVD-Cloner Suite
-          url: https://secure.avangate.com/order/checkout.php?PRODS=4558661&QTY=1&CART=1&ORDERSTYLE=nLWooJXflH4=
+          url: https://secure.avangate.com/order/checkout.php?PRODS=4558661&QTY=1&CART=1
           handleName:
             - DVD-Cloner
             - Blue-Cloner
@@ -140,7 +140,7 @@ bundles:
           text: Blue-Cloner & Stream-Cloner Suite, including DVD-Cloner and Stream-Cloner, enables you to copy DVD movies with diverse copy modes, remove all DVD protections, download/capture online movies and convert them to various video and audio formats.
 
         - title: Blue-Cloner & ripper Suite
-          url: https://secure.avangate.com/order/checkout.php?PRODS=4558666&QTY=1&CART=1&ORDERSTYLE=nLWooJXflH4=
+          url: https://secure.avangate.com/order/checkout.php?PRODS=4558666&QTY=1&CART=1
           handleName:
             - bc
             - obr
@@ -152,7 +152,7 @@ bundles:
 
         - title: Blue-Cloner Ultimate
           type: ultimate
-          url: https://secure.avangate.com/order/checkout.php?PRODS=4558667&QTY=1&CART=1&ORDERSTYLE=nLWooJXflH4=
+          url: https://secure.avangate.com/order/checkout.php?PRODS=4558667&QTY=1&CART=1
           handleName:
             - bc
             - obr
