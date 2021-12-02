@@ -138,9 +138,10 @@ orderList:
       buyLink: test
       id: 744746
       tips: #覆写
-        - All-In-One Online Video Downloader (NFLX, AMZN and more will be supported soon)
+        - All-In-One Online Streaming Video Downloader
         - One-time payment
         - Unlimited free upgrades for lifetime
+        - In addition to AMZN and NFLX, more platforms will be supported for free.
         - 30 Days Money Back Guarantee
         - 12/7 Support          
 #      subscriptions:
