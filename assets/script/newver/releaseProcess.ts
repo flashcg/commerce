@@ -26,6 +26,8 @@ interface ProductDataConfig {
 interface NewverData extends ProductDataConfig {
   fontColor: string,
   bgColor: string
+  button: boolean
+  box: boolean  
   link: {
     download?: string,
     web?: string
@@ -40,6 +42,8 @@ interface NewverData extends ProductDataConfig {
 interface mdDataConfig {
   handleName: string;
   newver: {
+    button: boolean
+    box: boolean 
     active: boolean,
     source?: string,
     size?: number
@@ -88,6 +92,7 @@ class ReleaseProcess extends FilesProcess {
         itemData = yamlFront.loadFront((fs.readFileSync(itemPath + '.md', 'utf-8')));
         itemSrc(itemData)
       }
+      
       return {
         boxSrc: defaultData.imagesPath + boxSrc,
         name: itemData.name || 'OpenCloner',
@@ -174,9 +179,9 @@ class ReleaseProcess extends FilesProcess {
     fs.readdirSync(this.mdDirPath).forEach((resFileName: string) => {
 
       let mdFileFullPath = this.mdFileFullPath({ mdDirPath: this.mdDirPath, fileName: resFileName }),
-        mdJson: mdDataConfig = new FileCreator({ mdPath: mdFileFullPath }).jsonData,sourceFileName: string='';
-
-      if (mdJson.newver.source) {        
+        mdJson: mdDataConfig = new FileCreator({ mdPath: mdFileFullPath }).jsonData,sourceFileName: string='';     
+      
+      if (mdJson.newver?.source) {        
         
         let handleName = mdJson.newver.source
         //取item 对应的path
@@ -202,11 +207,17 @@ class ReleaseProcess extends FilesProcess {
         let newverDataToFiles = () => {
 
           let newverData: NewverData = mdJson.release[0], productData = this.productData(mdJson.handleName);
-
+          
+          
           if (mdJson.currentSize) newverData.size = mdJson.currentSize;
+          
+          newverData.box = mdJson.newver.box;
+          newverData.button = mdJson.newver.button;
 
           mdJson.newver.release && Object.assign(newverData, mdJson.newver.release);
-          Object.assign(newverData, productData, { link: mdJson.newver.link }, mdJson.newver.style);
+          Object.assign(newverData, productData, { link: mdJson.newver.link, }, mdJson.newver.style);
+
+          if(mdJson.newver.name) newverData.name = mdJson.newver.name;
           const newverCreator = new NewverZipCreator(newverData);                   
           
           // sourceFileName 源文件名 resFileName 当前文件名
@@ -316,6 +327,8 @@ class NewverZipCreator {
     dirOperate(cachePath);
     dirOperate(path.join(cachePath, itemDirName));
     //建立缓存文件
+    console.log(this.data);
+    
     fs.writeFileSync(path.join(cachePath, itemDirName, 'newver.html'), newverCode(this.data, this.newverData))
 
     //存储图片文件 建立zip文件
