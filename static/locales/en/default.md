@@ -2,6 +2,9 @@
 name: Cloner Alliance
 lang: en
 handleSetting:
+  - handleName: Streaming-Cloner
+    model: sic
+    path: streaming-download
   - handleName: DVD-Cloner
     model: dc
     path: dvd-cloner
