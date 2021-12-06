@@ -252,9 +252,9 @@ class NewverZipCreator {
    * Updata XML files
    */
   xmlUpdate() {
-    const xmlPath = xmlBasePath + this.data.path + '.xml',
-      xmlData = fs.readFileSync(xmlPath, 'utf8');
-    xml2js.parseString(xmlData.replace(/&(?!(?:apos|quot|[gl]t|amp);|#)/g, '&amp;'),
+    const xmlPath = xmlBasePath + this.data.path + '.xml',xmlPathExist = fs.existsSync(xmlPath),
+      xmlData = xmlPathExist&&fs.readFileSync(xmlPath, 'utf8');
+      xmlPathExist&&xml2js.parseString(xmlData.replace(/&(?!(?:apos|quot|[gl]t|amp);|#)/g, '&amp;'),
       (err: any, res: any) => {
         
         if (res) {
