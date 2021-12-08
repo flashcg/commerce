@@ -252,7 +252,48 @@ whyChoose:
     - title: Live Chat 7*12
       text: We provide ticket and live chat services. Help customers solve problems at any time 
       imageUrl: icons/live-chat.png   
-     
+topVideo:
+  name: top video
+  active: true
+  container: container
+  title: Top Streaming Video Downloading List
+  textTop: Updated on {time}
+  additionClass: position-relative text-left 
+  items:
+    - title: Amzn Prime Video
+      more:
+        text: Learn More
+        path: http://test
+      list:
+        - text: How to Watch Amazon Video Offline
+          path: watch-amazon-video-offline
+        - text: How to Download Amazon Video on Windows
+          path: download-amazon-video-on-windows
+        - text: Watch Netflix Videos on Nintendo Switch
+          path: how-to-watch-netflix-on-a-nintendo-switch
+        - text: Download Amazon Video in MP4 Format
+          path: download-amazon-video-in-mp4
+        - text: Keep Netflix Content after Free Trial
+          path: keep-netflix-videos-after-free-trial
+        - text: Download Netflix Videos on Windows 7
+          path: download-netflix-video-on-windows-7     
+    - title: Amzn Prime Video
+      more:
+        text: Learn More
+        path: http://test
+      list:
+        - text: How to Watch Amazon Video Offline
+          path: watch-amazon-video-offline
+        - text: How to Download Amazon Video on Windows
+          path: download-amazon-video-on-windows
+        - text: Watch Netflix Videos on Nintendo Switch
+          path: how-to-watch-netflix-on-a-nintendo-switch
+        - text: Download Amazon Video in MP4 Format
+          path: download-amazon-video-in-mp4
+        - text: Keep Netflix Content after Free Trial
+          path: keep-netflix-videos-after-free-trial
+        - text: Download Netflix Videos on Windows 7
+          path: download-netflix-video-on-windows-7            
 feedback:
   name: feedback
   overflow: hidden
