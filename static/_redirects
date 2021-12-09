@@ -115,6 +115,8 @@
 
 /manual/* https://www.dvd-cloner.com/dvd-cloner/manual/:splat 200!
 
+/sites/dcc/themes/theme808/images/icon/oc.png https://www.dvd-cloner.com/logo.png 301!
+
 #-------------------------------------3----------------------------------
 
 # knowledge
