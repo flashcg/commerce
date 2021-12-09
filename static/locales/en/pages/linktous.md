@@ -1,10 +1,10 @@
 ---
-title: Affiliate Program
+title: Link to Us 
 metaItems:
   - name: description
-    content: DVD-Cloner Affiliate Program. It's very easy to become our affiliate. As an affiliate member you can earn a generous commission from us. 
+    content: We are always very appreciative of webmasters linking to DVD-Cloner. If you agree to be our link partner, please add our link to your site and send us your link's details. 
   - name: keywords
-    content: DVD-Cloner, affiliate
+    content: DVD-Cloner, link to us
  
 link:
   name: Link

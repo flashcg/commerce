@@ -53,7 +53,7 @@ bonus:
 
 ## Features
 
-**DVD-Cloner** is a powerful DVD copy/burn/decryption/conversion tool with diverse copy modes, no matter full disc copy or main movie copy. With only one click, you'll experience the most convenient DVD copy software.
+**DVD-Cloner 2022** is all-in-one professional DVD copy software with perfect output image quality. With DVD-Cloner, you can get a software combination of DVD copy, DVD to MKV, Blu-ray copy, Blu-ray to MKV, UHD copy and UHD to MKV. It is very valuable and save you a lot.
 
 **Features of DVD-Cloner:**
 

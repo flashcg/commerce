@@ -11,6 +11,14 @@ newver:
         bgColor: '#353535'
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级      
 release:
+    - version: 4.40.116
+      date: Nov.23, 2021    
+      list:   
+        - Supported the newest movies.
+    - version: 4.30.115
+      date: Sep.29, 2021    
+      list:   
+        - Supported the newest movies.
     - version: 4.20.114
       date: Jul.22, 2021    
       list:   

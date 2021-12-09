@@ -16,11 +16,11 @@ orderInfo:
     expirationDate: Expiration Date
   text:  
     success: Order found!
-    error: Failed to get data! require code or email.
-  guarantee:
-    imageUrl: guarantee300px_old.jpg
+    error: Failed to get data! Require code or email.
+#  guarantee:
+#    imageUrl: guarantee300px_old.jpg
   deadline:
-    text: Save Big on upgrading to DVD-Cloner 2021 till Dec. 31.
+    text: <span class="fs-2">Save Big</span> on upgrading to DVD-Cloner 2022 till Dec. 31.
   
 jumbotron:
   - template: overlay
@@ -55,8 +55,8 @@ upgradeItems:
   items:
     - handleName: DVD-Cloner
       desc:
-        longText: <h4>What're the advantages of DVD-Cloner 2021?</h4><p>This is a DVD-Cloner Must-Have version for Christmas and New Year! Worth every user to experience. All-New UI. Supporting a richer movie library and innovative functions!</p><ul><li>Included a free Plugin:<a href="{kbUrl}what-is-opencloner-decode-widget_447.html">OpenCloner Decode Widget</a> for you to play encrypted Blu-ray/4K UHD movies with VLC media player.</li><li>Upgraded the copy module and supports Xmas Hit DVD/Blu-ray/4K UHD movies.</li><li>Lightning Copy Speed. The new upgraded HST function allows you to copy Blu-ray/UHD movies with only about three hours, which greatly improved the copy speed. (NVIDIA 1660 or above graphics card recommended)</li><li>Rip 4K UHD movies to MKV (HDR 10+) format and play on your UHD player, which allows you to enjoy the same HDR and Dolby HD audio effect as the original disc.</li></ul>
-      buttonText: Upgrade to DVD-Cloner 2021
+        longText: <h4>What're the advantages of DVD-Cloner 2022?</h4><p>This is a DVD-Cloner Must-Have version for Christmas and New Year! Worth every user to experience. All-New UI. Supporting a richer movie library and innovative functions!</p><ul><li>With DVD-Cloner 2022, you can get a software combination of DVD copy, DVD to MKV, Blu-ray copy, Blu-ray to MKV, UHD copy and UHD to MKV. It is very valuable and save you a lot.</li><li>Upgraded the copy module and supports Xmas Hit DVD/Blu-ray/4K UHD movies.</li><li>Compatible with Windows 11.</li><li>Updated the user interface.</li></ul>
+      buttonText: Upgrade to DVD-Cloner 2022
       years:
         - name: One-year
           price: 29.99
@@ -76,7 +76,7 @@ upgradeItems:
       buttonText: 40% OFF to Get DVD-Cloner Platinum
       desc:
         longText: | 
-            DVD-Cloner Platinum 2021 is the best cost-effective DVD/Blu-ray copy/burn/ripping software, with all the features of DVD-Cloner 2021, Open DVD ripper and Open SmartBurner.
+            DVD-Cloner Platinum 2022 is the best cost-effective DVD/Blu-ray copy/burn/ripping software, with all the features of DVD-Cloner 2022, Open DVD ripper and Open SmartBurner.
 
             Open DVD ripper 3 is smart DVD ripping software to rip DVD movies to most popular video and audio formats, such as AVI, MKV, WMV, 3GP, MP4, MOV, RM, etc.
 
@@ -102,4 +102,4 @@ faqList:
       kbUrl: can-i-try-the-latest-version-first-whats-the-limitation-of-the-free-trial-version_415.html              
 ---
 
-**<item-info :handlename="handleName"></item-info>** is best software for UHD friendly drive to read and copy/rip UHD movies. To reward your constant support over the years, we're offering up to 40% deep discount on upgrading DVD-Cloner ending Dec. 31, which allows you read and copy/rip NEWEST UHD movies. Don't hesitate!
+**<item-info :handlename="handleName"></item-info>** is best software for UHD friendly drive to read and copy/rip UHD movies. To reward your constant support over the years, we're offering up to 40% deep discount on upgrading DVD-Cloner ending Dec. 31, which allows you to read and copy/rip NEWEST UHD movies. Don't hesitate!
