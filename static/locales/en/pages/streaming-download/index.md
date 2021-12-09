@@ -101,8 +101,11 @@ orderList:
   sectionClass: bg-eef6fd
   paddingY: 6
   additionClass: 
+  switchText: Buy One-Off
   subscription:
     separationText: Or
+    switchText: Choose a Plan
+    bottomText: Start from $9.9/Mon
     tips:
       - Automatic renewal, cancel at any time.
       - 12/7 Support
@@ -111,6 +114,7 @@ orderList:
     - text: 
       name: Streaming-Cloner NF Downloader
       imageUrl: sicnf-box.png
+      iconUrl: sicn2021-logo-n.png
       price: 99.9
       buyLink: test 
       id: 744747
@@ -118,19 +122,15 @@ orderList:
         - price: 9.9
           id: 744738
           text: Monthly Plan
-          buyLink: https://test
         - price: 24.9
           id: 744739
           text: 3-Month Plan
-          buyLink: test      
         - price: 42.9
           id: 744740
           text: 6-Month Plan
-          buyLink: test     
         - price: 79.9
           id: 744741
           text: Yearly Plan
-          buyLink: test     
     - text: 
       name: Streaming-Cloner Ultimate
       imageUrl: sicu-box-ultimate.png
@@ -155,25 +155,22 @@ orderList:
       id: 744749
       name: Streaming-Cloner AZ Downloader
       imageUrl: sicaz-box.png  
+      iconUrl: sica2021-logo-a.png
       price: 99.90
       buyLink: test 
       subscriptions:
         - price: 9.9
           id: 744742
           text: Monthly Plan
-          buyLink: test
         - price: 24.9
           id: 744743
           text: 3-Month Plan
-          buyLink: test      
         - price: 42.9
           id: 744744
           text: 6-Month Plan
-          buyLink: test     
         - price: 79.9
           id: 744745
           text: Yearly Plan
-          buyLink: test          
 banner:
   name: banner
   overflow: hidden

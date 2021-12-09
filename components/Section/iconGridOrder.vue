@@ -2,8 +2,12 @@
   <Section-IconGrid :iconData="data">
 
     <template #default="{ item, index }">
-        <div class="contact-info-box h-100">
+        <div class="contact-info-box h-100" :id="'sub-order-'+index">
+
+          <!--  -->
+        <div class="order-product">
           <p><img :src="item.imageUrl" style="max-width:180px" /></p>
+
           <h4>{{item.name}} </h4>
           <h4 class="text-danger">
             <span style="font-size:4rem" class="align-middle"><svg class="icon" aria-hidden="true">
@@ -12,11 +16,11 @@
           <a class="btn btn-success btn-xl paddle_button  mb-3" href="#!" :data-product="item.id" data-theme="none">Buy Now</a>
           
           <template v-if="item.subscriptions&&item.subscriptions.length>1">
-            <p class="fs-5">{{data.subscription.separationText}} </p>
-          <p v-for="(item,index) in item.subscriptions" :key="index">
-            <span class="fs-4 d-inline-block" style="width:80px">${{item.price}}</span> <a href="#!" class="btn btn-outline-secondary btn-lg paddle_button" style="width:180px" :data-product="item.id" data-theme="none">{{item.text}} </a>
-          </p>
+            <hr />
+          <button class="btn btn-outline-secondary btn-lg" :data-index="index" @click="clickShowSub($event,index)">{{data.subscription.switchText}} </button>            
+            <p v-if="data.subscription.bottomText">{{data.subscription.bottomText}} </p>
           </template>
+
           <template v-else-if="item.subscriptions">
             <p class="fs-5">{{data.subscription.separationText}} </p>
             <div v-for="(item,index) in item.subscriptions" :key="index">
@@ -28,12 +32,30 @@
             </div>
             <a href="#!" class="btn btn-outline-secondary btn-xl paddle_button" :data-product="item.id" data-theme="none">Subscribe</a> 
           </template>
-          <ul class="text-left">
+          <ul class="text-left" v-if="!item.subscriptions">
             <li v-for="(item,index) in tipsHanle(item.tips)" :key="index">
               {{item}}
             </li>
           </ul> 
-          
+          </div>
+
+
+          <div v-if="item.subscriptions" class="order-subscription" style="display:none">
+            <p><img :src="item.iconUrl" style="max-width:180px" /></p>
+            <h4 class="mb-4">{{item.name}} </h4>
+
+          <p v-for="(item,index) in item.subscriptions" :key="index">
+            <span class="fs-4 d-inline-block align-middle" style="width:80px">${{item.price}}</span> <a href="#!" class="btn btn-success btn-lg paddle_button" style="width:180px" :data-product="item.id" data-theme="none">{{item.text}} </a>
+          </p>
+            
+          <ul class="text-left">
+            <li v-for="(item,index) in tipsHanle(item.tips)" :key="index">
+              {{item}}
+            </li>
+          </ul>   
+          <hr />
+          <button class="btn btn-outline-secondary btn-lg" :data-index="index" @click="clickShowOneoff($event,index)">{{data.switchText}} </button>         
+          </div>
         </div>
     </template>
   </Section-IconGrid>
@@ -52,8 +74,10 @@ import { State } from "@/script/interface";
 interface  Window {
   Paddle: any
 }
+
 export default defineComponent({
   props: { data: Object },
+
   setup(props) {
     const { state } = useStore<State>(),
       defaultData = computed(() => state.localData.defaultData),
@@ -62,7 +86,19 @@ export default defineComponent({
         let tips:string[] = props.data?.subscription.tips 
         if(itemTips)tips = itemTips
         return tips
-      };
+      },
+      clickShowSub=(event:Event,index:number)=>{    
+        const elSub = document.querySelector(`#sub-order-${index} .order-subscription`) as HTMLElement,
+        elProduct = document.querySelector(`#sub-order-${index} .order-product`) as HTMLElement
+        elProduct.style.display = 'none';
+        elSub.style.display = 'block';        
+      },
+      clickShowOneoff=(event:Event,index:number)=>{    
+        const elSub = document.querySelector(`#sub-order-${index} .order-subscription`) as HTMLElement,
+        elProduct = document.querySelector(`#sub-order-${index} .order-product`) as HTMLElement
+        elSub.style.display = 'none';
+        elProduct.style.display = 'block';        
+      }      
       onMounted(()=>{
         window.addEventListener('load',()=>{
           const {Paddle} = window as any;          
@@ -72,7 +108,7 @@ export default defineComponent({
 
       })
 
-    return { items, defaultData, fetchProduct,tipsHanle };
+    return { items, defaultData, fetchProduct,tipsHanle,clickShowSub,clickShowOneoff };
   },
 });
 </script>
