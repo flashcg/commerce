@@ -1,7 +1,7 @@
 ---
 handleName: Streaming-Cloner
-currentSize: 44.1
-currentSize_64bit: 51.6
+currentSize: 160
+currentSize_64bit: 160
 systemRequirement: Windows 10/7/Vista
 newver:
     name: Streaming Cloner
@@ -9,16 +9,21 @@ newver:
     box: false  
     button: false
     link:
-        download: https://www.dvd-cloner.com/download.html 
+        download: https://www.streaming-cloner.com/download/
     style:
         fontColor: '#fff'
         bgColor: '#353535'
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级      
-release: 
-    - version: 18.60.1467
-      date: Aug.13, 2021    
+release:
+    - version: 1.10.102
+      date: Dec.9, 2021    
       topText:
       list: 
-        - Supported the newest released movies.
-        - Added some useful options in the Setup form.
+        - Optimized the program UI interface.
+    - version: 1.10.101
+      date: Dec.6, 2021    
+      topText:
+      list: 
+        - Fixed some bugs.
+        - Optimized the image quality of downloaded videos.
 ---
