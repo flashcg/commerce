@@ -5,6 +5,7 @@
     <Section-CountUP :data="content.funFacts"  />
     <Section-BoxList :data="content.videoPlatforms" />
     <Section-Banner :data="content.banner" />
+    <Section-iconGridList :data="content.topVideo" />
     <Section-IconGridOrder :data="content.orderList" />
     <!-- <Section-Swiper :data="content.easyToUse" /> -->
     <Section-WhyChoose :data="content.whyChoose" />

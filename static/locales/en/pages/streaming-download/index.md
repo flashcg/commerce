@@ -39,7 +39,7 @@ mainBanner:
     prefixIcon: win  
     text: Try it Now
     path: https://www.opencloner.com/download/streaming-cloner.exe
-    note: Permanent Free Trial with Embedded Watermarks.    
+    note: Permanent Free Trial    
   learnMore: 
     text: Learn More
     path: https://www.dvd-cloner.com/streaming-download/
@@ -101,8 +101,11 @@ orderList:
   sectionClass: bg-eef6fd
   paddingY: 6
   additionClass: 
+  switchText: Buy Life-Time
   subscription:
     separationText: Or
+    switchText: Choose a Plan
+    bottomText: Starting at $9.9/Mon
     tips:
       - Automatic renewal, cancel at any time.
       - 12/7 Support
@@ -111,6 +114,7 @@ orderList:
     - text: 
       name: Streaming-Cloner NF Downloader
       imageUrl: sicnf-box.png
+      iconUrl: sicn2021-logo-n.png
       price: 99.9
       buyLink: test 
       id: 744747
@@ -118,19 +122,15 @@ orderList:
         - price: 9.9
           id: 744738
           text: Monthly Plan
-          buyLink: https://test
         - price: 24.9
           id: 744739
           text: 3-Month Plan
-          buyLink: test      
         - price: 42.9
           id: 744740
           text: 6-Month Plan
-          buyLink: test     
         - price: 79.9
           id: 744741
           text: Yearly Plan
-          buyLink: test     
     - text: 
       name: Streaming-Cloner Ultimate
       imageUrl: sicu-box-ultimate.png
@@ -155,25 +155,22 @@ orderList:
       id: 744749
       name: Streaming-Cloner AZ Downloader
       imageUrl: sicaz-box.png  
+      iconUrl: sica2021-logo-a.png
       price: 99.90
       buyLink: test 
       subscriptions:
         - price: 9.9
           id: 744742
           text: Monthly Plan
-          buyLink: test
         - price: 24.9
           id: 744743
           text: 3-Month Plan
-          buyLink: test      
         - price: 42.9
           id: 744744
           text: 6-Month Plan
-          buyLink: test     
         - price: 79.9
           id: 744745
           text: Yearly Plan
-          buyLink: test          
 banner:
   name: banner
   overflow: hidden
@@ -238,7 +235,7 @@ whyChoose:
     prefixIcon: win  
     text: Try it Now
     href: https://www.opencloner.com/download/streaming-cloner.exe
-    note: Permanent Free Trial with Embedded Watermarks.
+    note: Permanent Free Trial
   items:
     - title: Lightning Speed
       text: Greatly increase the downloading speed through multi-thread encoding method.    
@@ -258,7 +255,44 @@ whyChoose:
     - title: Live Chat 7*12
       text: We provide ticket and live chat services. Help customers solve problems at any time. 
       imageUrl: icons/live-chat.png   
-     
+topVideo:
+  name: top video
+  active: true
+  container: container
+  title: Top Streaming Video Downloading List
+  textTop: Updated on {time}
+  additionClass: position-relative text-left 
+  items:
+    - title: List of Supported NFLX Videos 
+      more:
+        text: Learn More
+        kbUrl: nflx-movies-series-streaming-videos.html
+      list:
+        - text: The Power of the Dog [2021 Movie]
+          kbUrl: how-to-download-nflx-original-movie-the-power-of-the-dog.html
+        - text: tick, tick…BOOM! [2021 Movie]
+          kbUrl: how-to-download-nflx-original-movie-tick-tick-boom.html
+        - text: Red Notice [2021 Movie]
+          kbUrl: how-to-download-nflx-original-movie-red-notice.html
+        - text: Arcane [2021 TV Series]
+          kbUrl: how-to-download-nflx-original-series-arcane.html
+        - text: Cowboy Bebop? [2021 TV Series]
+          kbUrl: how-to-download-nflx-original-series-cowboy-bebop.html
+    - title: List of Supported AMZN Prime Videos
+      more:
+        text: Learn More
+        kbUrl: amzn-movies-series-streaming-videos.html
+      list:
+        - text: Shang-Chi and the Legend of the Ten Rings [2021 Movie]
+          kbUrl: how-to-download-amzn-prime-video-movie-shang-chi-and-the-legend-of-the-ten-rings.html
+        - text: Dune [2021 Movie]
+          kbUrl: how-to-download-amzn-prime-video-movie-dune.html
+        - text: No Time To Die [2021 Movie]
+          kbUrl: how-to-download-amzn-prime-video-movie-no-time-to-die.html
+        - text: The Wheel of Time [2021 TV Series]
+          kbUrl: how-to-download-amzn-prime-video-original-series-the-wheel-of-time.html
+        - text: The Expanse - Season 6 [2021 TV Series]
+          kbUrl: how-to-download-amzn-prime-video-original-series-the-expanse-season-6.html          
 feedback:
   name: feedback
   overflow: hidden
