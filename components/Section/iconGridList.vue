@@ -8,10 +8,10 @@
           v-for="item in item.list"
           :key="item.title"
         >
-          <b-link :href="item.path"> {{ item.title || item.text }} </b-link>
+          <b-link :href="item.kbUrl"> {{ item.title || item.text }} </b-link>
         </li>
       </ul>
-      <b-link v-if="item.more" :href="item.more.path"> {{ item.more.text }} </b-link>
+      <b-link v-if="item.more" :href="item.more.kbUrl"> {{ item.more.text }} </b-link>
     </template>
   </Section-IconGrid>
 </template>
