@@ -39,7 +39,7 @@ mainBanner:
     prefixIcon: win  
     text: Try it Now
     path: https://www.opencloner.com/download/streaming-cloner.exe
-    note: Permanent Free Trial with Embedded Watermarks.    
+    note: Permanent Free Trial    
   learnMore: 
     text: Learn More
     path: https://www.dvd-cloner.com/streaming-download/
@@ -101,11 +101,11 @@ orderList:
   sectionClass: bg-eef6fd
   paddingY: 6
   additionClass: 
-  switchText: Buy One-Off
+  switchText: Buy Life-Time
   subscription:
     separationText: Or
     switchText: Choose a Plan
-    bottomText: Start from $9.9/Mon
+    bottomText: Starting at $9.9/Mon
     tips:
       - Automatic renewal, cancel at any time.
       - 12/7 Support
@@ -235,7 +235,7 @@ whyChoose:
     prefixIcon: win  
     text: Try it Now
     href: https://www.opencloner.com/download/streaming-cloner.exe
-    note: Permanent Free Trial with Embedded Watermarks.
+    note: Permanent Free Trial
   items:
     - title: Lightning Speed
       text: Greatly increase the downloading speed through multi-thread encoding method.    
@@ -263,40 +263,36 @@ topVideo:
   textTop: Updated on {time}
   additionClass: position-relative text-left 
   items:
-    - title: Amzn Prime Video
+    - title: List of Supported NFLX Videos 
       more:
         text: Learn More
-        path: http://test
+        kbUrl: nflx-movies-series-streaming-videos.html
       list:
-        - text: How to Watch Amazon Video Offline
-          path: watch-amazon-video-offline
-        - text: How to Download Amazon Video on Windows
-          path: download-amazon-video-on-windows
-        - text: Watch Netflix Videos on Nintendo Switch
-          path: how-to-watch-netflix-on-a-nintendo-switch
-        - text: Download Amazon Video in MP4 Format
-          path: download-amazon-video-in-mp4
-        - text: Keep Netflix Content after Free Trial
-          path: keep-netflix-videos-after-free-trial
-        - text: Download Netflix Videos on Windows 7
-          path: download-netflix-video-on-windows-7     
-    - title: Amzn Prime Video
+        - text: The Power of the Dog [2021 Movie]
+          kbUrl: how-to-download-nflx-original-movie-the-power-of-the-dog.html
+        - text: tick, tick…BOOM! [2021 Movie]
+          kbUrl: how-to-download-nflx-original-movie-tick-tick-boom.html
+        - text: Red Notice [2021 Movie]
+          kbUrl: how-to-download-nflx-original-movie-red-notice.html
+        - text: Arcane [2021 TV Series]
+          kbUrl: how-to-download-nflx-original-series-arcane.html
+        - text: Cowboy Bebop? [2021 TV Series]
+          kbUrl: how-to-download-nflx-original-series-cowboy-bebop.html
+    - title: List of Supported AMZN Prime Videos
       more:
         text: Learn More
-        path: http://test
+        kbUrl: amzn-movies-series-streaming-videos.html
       list:
-        - text: How to Watch Amazon Video Offline
-          path: watch-amazon-video-offline
-        - text: How to Download Amazon Video on Windows
-          path: download-amazon-video-on-windows
-        - text: Watch Netflix Videos on Nintendo Switch
-          path: how-to-watch-netflix-on-a-nintendo-switch
-        - text: Download Amazon Video in MP4 Format
-          path: download-amazon-video-in-mp4
-        - text: Keep Netflix Content after Free Trial
-          path: keep-netflix-videos-after-free-trial
-        - text: Download Netflix Videos on Windows 7
-          path: download-netflix-video-on-windows-7            
+        - text: Shang-Chi and the Legend of the Ten Rings [2021 Movie]
+          kbUrl: how-to-download-amzn-prime-video-movie-shang-chi-and-the-legend-of-the-ten-rings.html
+        - text: Dune [2021 Movie]
+          kbUrl: how-to-download-amzn-prime-video-movie-dune.html
+        - text: No Time To Die [2021 Movie]
+          kbUrl: how-to-download-amzn-prime-video-movie-no-time-to-die.html
+        - text: The Wheel of Time [2021 TV Series]
+          kbUrl: how-to-download-amzn-prime-video-original-series-the-wheel-of-time.html
+        - text: The Expanse - Season 6 [2021 TV Series]
+          kbUrl: how-to-download-amzn-prime-video-original-series-the-expanse-season-6.html          
 feedback:
   name: feedback
   overflow: hidden
