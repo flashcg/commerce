@@ -23,6 +23,9 @@ export default {
     return { content };
   },
   layout: "fluid",
+  head() {   
+    return this.content.head
+    },
 };
 </script>
 
