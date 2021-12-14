@@ -276,7 +276,7 @@ topVideo:
           kbUrl: how-to-download-nflx-original-movie-red-notice.html
         - text: Arcane [2021 TV Series]
           kbUrl: how-to-download-nflx-original-series-arcane.html
-        - text: Cowboy Bebop? [2021 TV Series]
+        - text: Cowboy Bebop [2021 TV Series]
           kbUrl: how-to-download-nflx-original-series-cowboy-bebop.html
     - title: List of Supported AMZN Prime Videos
       more:
