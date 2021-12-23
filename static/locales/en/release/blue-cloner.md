@@ -1,6 +1,6 @@
 ---
 handleName: Blue-Cloner
-currentSize: 35.7 #MB
+currentSize: 34.3 #MB
 systemRequirement: Windows 10/7/Vista
 newver:
     active: true
@@ -13,6 +13,11 @@ newver:
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级
     
 release:
+    - version: 11.00.843
+      date: Dec.23, 2021     
+      list:
+        - Optimized the program UI design.
+        - Supported the newest released movies.
     - version: 10.40.842
       date: Sep.29, 2021     
       list:
