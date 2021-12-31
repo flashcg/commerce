@@ -271,9 +271,9 @@ topVideo:
         - text: The Witcher - Season 2 [2021 TV Series]
           kbUrl: how-to-download-nflx-original-series-the-witcher-season-2.html
         - text: The Power of the Dog [2021 Movie]
-          kbUrl: how-to-download-nflx-original-movie-the-power-of-the-dog.html
-        - text: tick, tick…BOOM! [2021 Movie]
-          kbUrl: how-to-download-nflx-original-movie-tick-tick-boom.html
+          kbUrl: how-to-download-nflx-original-movie-the-power-of-the-dog.html          
+        - text: Don't Look Up [2021 Movie]
+          kbUrl: how-to-download-nflx-original-movie-dont-look-up-in-mp4-format.html
         - text: Red Notice [2021 Movie]
           kbUrl: how-to-download-nflx-original-movie-red-notice.html
         - text: Arcane [2021 TV Series]
@@ -285,8 +285,8 @@ topVideo:
       list:
         - text: Resident Evil - Welcome to Raccoon City [2021 Movie]
           kbUrl: how-to-download-amzn-prime-video-movie-resident-evil-welcome-to-raccoon-city.html  
-        - text: Dune [2021 Movie]
-          kbUrl: how-to-download-amzn-prime-video-movie-dune.html
+        - text: 1883 [2021 TV Series]
+          kbUrl: how-to-download-series-1883-episode-1-on-amzn-prime-video-in-mp4-format.html
         - text: No Time To Die [2021 Movie]
           kbUrl: how-to-download-amzn-prime-video-movie-no-time-to-die.html      
         - text: The Wheel of Time [2021 TV Series]
