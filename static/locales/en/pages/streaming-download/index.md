@@ -267,7 +267,7 @@ topVideo:
       more:
         text: Learn More
         kbUrl: nflx-movies-series-streaming-videos.html
-      list:
+      list:    
         - text: The Witcher - Season 2 [2021 TV Series]
           kbUrl: how-to-download-nflx-original-series-the-witcher-season-2.html
         - text: The Power of the Dog [2021 Movie]
@@ -278,11 +278,15 @@ topVideo:
           kbUrl: how-to-download-nflx-original-movie-red-notice.html
         - text: Arcane [2021 TV Series]
           kbUrl: how-to-download-nflx-original-series-arcane.html
+        - text: tick, tick…BOOM! [2021 Movie]
+          kbUrl: how-to-download-nflx-original-movie-tick-tick-boom.html        
     - title: List of Supported AMZN Prime Videos
       more:
         text: Learn More
         kbUrl: amzn-movies-series-streaming-videos.html
       list:
+        - text: Ghostbusters - Afterlife [2022 Movie]
+          kbUrl: how-to-download-amzn-prime-video-movie-ghostbusters-in-mp4-format.html
         - text: Resident Evil - Welcome to Raccoon City [2021 Movie]
           kbUrl: how-to-download-amzn-prime-video-movie-resident-evil-welcome-to-raccoon-city.html  
         - text: 1883 [2021 TV Series]
@@ -292,7 +296,9 @@ topVideo:
         - text: The Wheel of Time [2021 TV Series]
           kbUrl: how-to-download-amzn-prime-video-original-series-the-wheel-of-time.html
         - text: The Expanse - Season 6 [2021 TV Series]
-          kbUrl: how-to-download-amzn-prime-video-original-series-the-expanse-season-6.html          
+          kbUrl: how-to-download-amzn-prime-video-original-series-the-expanse-season-6.html
+        - text: Shang-Chi and the Legend of the Ten Rings [2021 Movie]
+          kbUrl: how-to-download-amzn-prime-video-movie-shang-chi-and-the-legend-of-the-ten-rings.html                    
 feedback:
   name: feedback
   overflow: hidden
