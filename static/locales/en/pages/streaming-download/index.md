@@ -267,7 +267,9 @@ topVideo:
       more:
         text: Learn More
         kbUrl: nflx-movies-series-streaming-videos.html
-      list:    
+      list:
+        - text: The Lost Daughter [2021 Movie]
+          kbUrl: how-to-download-nflx-movie-the-lost-daughter-in-mp4-format.html          
         - text: The Witcher - Season 2 [2021 TV Series]
           kbUrl: how-to-download-nflx-original-series-the-witcher-season-2.html
         - text: The Power of the Dog [2021 Movie]
