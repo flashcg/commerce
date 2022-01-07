@@ -20,7 +20,7 @@ boxes:
 desc:
   shortText: Copy/backup/burn/decrypt Blu-ray/4K UHD movies to Blu-ray/DVD discs or hard disk.
   longText: |
-    Blue-Cloner 2022 is all new Blu-ray copy/backup/burn/decryption software which can copy Blu-ray movies, including 3D, to blank Blu-ray/DVD/AVCHD discs or hard disk as Blu-ray folders and ISO image files with just one or a few clicks. In addition, Blue-Cloner 2022 has been enhanced to copy 4K UHD Blu-ray to a blank Blu-ray disc with an UHD friendly drive, with Dolby Vision and the HDR10 video quality preserved. The third party plug-in OpenCloner Decode widget allows VLC to play encrypted Blu-ray and UHD movies.
+    Blue-Cloner 2022 is all new Blu-ray copy/backup/burn/decryption software which can copy Blu-ray movies, including 3D, to blank Blu-ray/DVD/AVCHD discs or hard disk as Blu-ray folders and ISO image files with just one or a few clicks. In addition, Blue-Cloner 2021 has been enhanced to copy 4K UHD Blu-ray to a blank Blu-ray disc with an UHD friendly drive, with Dolby Vision and the HDR10 video quality preserved. The third party plug-in OpenCloner Decode widget allows VLC to play encrypted Blu-ray and UHD movies.
 
     The Express and Expert interfaces can meet users' different needs for Blu-ray copy, whether a new user or a professional user. Blue-Cloner 2022 enables you to make perfect 1:1 Blu-ray copy, movie complete copy, movie-only copy, split copy and customized copy. If the Blu-ray movies are Cinavia protected, this best Blu-ray copying software can permanently remove Cinavia watermarks in the audio tracks, so that you can enjoy the backup discs on various playback devices such as PS3, PS4, Xbox One, DVD/Blu-ray player, PowerDVD software player, etc.
 areaTop:
