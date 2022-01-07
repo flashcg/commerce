@@ -87,6 +87,7 @@ sw.*
 !components/Section/*.vue
 !components/*.vue
 !pages/streaming-download/*.vue
+!pages/upgrade/*.vue
 netlify-functions
 
 cache

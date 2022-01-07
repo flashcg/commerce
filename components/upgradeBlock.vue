@@ -16,6 +16,7 @@
         <h3>{{ data.title }}</h3>
         <p class="lead">{{ data.formItems.title }}</p>
         <b-form @submit="onSubmit">
+          <template v-if="data.formItems.email">
           <b-form-group
             id="input-group-1"
             label="Registration Email:"
@@ -31,6 +32,7 @@
             ></b-form-input>
           </b-form-group>
           <span class="text-danger fs-4">Or</span>
+          </template>
           <b-form-group
             id="code"
             label="Registration code:"
