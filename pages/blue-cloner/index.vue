@@ -15,7 +15,7 @@
 <script>
 export default {
 async asyncData({ app, $content }) {
-  let mddata = await $content("pages/blue-cloner").fetch();
+  let mddata = await $content("pages/blue-cloner/index").fetch();
   mddata = await app.$initMD(mddata);    
   return { mddata };
 },

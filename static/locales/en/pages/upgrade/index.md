@@ -21,7 +21,8 @@ entrances:
   bgStyle: 
   items:
     - handleName: DVD-Cloner
+    - handleName: Blue-Cloner
     - handleName: DVD-Cloner for Mac
     - handleName: OpenCloner Ripper
-  iconGird: 3   
+  iconGird: 3
 ---
