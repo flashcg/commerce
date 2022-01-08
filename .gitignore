@@ -88,6 +88,7 @@ sw.*
 !components/*.vue
 !pages/streaming-download/*.vue
 !pages/upgrade/*.vue
+!pages/blue-cloner/*.vue
 netlify-functions
 
 cache

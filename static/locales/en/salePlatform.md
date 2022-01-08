@@ -56,6 +56,7 @@ softwareInfo:
     - handleName: Blue-Cloner
       downloadUrl: https://www.blue-cloner.com/download/blue-cloner.exe
       downloadUrl_64bit: blue-cloner-x64.exe
+      upgradeUrl: /blue-cloner/upgrade 
       standard:
         comparePrice:
         price: 59.99
