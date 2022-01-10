@@ -42,23 +42,25 @@ upgradeItems:
         - name: One-year
           price: 49.59
           saving: 38%
-          link: https:////www.Blue-Cloner.com/cgi-bin/orderlink.cgi?gold=y&code=upgradedg
+          link: https://www.dvd-cloner.com/cgi-bin/orderlink.cgi?bcd=y
 faqList:
   name: product faq
   title: FAQ
   container: container
   additionClass: position-relative text-center
   lists:
-    - title: Is the "one year upgrade" only good for one year?
-      kbUrl: is-the-one-year-upgrade-only-good-for-one-year_416.html
-    - title: Am I eligible for the latest version? How do I get a free upgrade?
-      kbUrl: am-i-eligible-for-the-latest-version-how-do-i-get-a-free-upgrade_417.html
+    - title: What is the upgrade policy of Blue-Cloner?
+      kbUrl: what-is-the-upgrade-policy-of-blue-cloner_409.html
+    - title: How to register Blue-Cloner?
+      kbUrl: how-to-register-blue-cloner_410.html
     - title: My registration code is still in the free upgrade period, why did your system want to charge me again?
       kbUrl: my-registration-code-is-still-in-the-free-upgrade-period-why-did-your-system-want-to-charge-me-again_421.html
-    - title: Can I try the latest version first? What’s the limitation of the free trial version?
-      kbUrl: can-i-try-the-latest-version-first-whats-the-limitation-of-the-free-trial-version_415.html              
+    - title: What is the limitation of the trial version of Blue-Cloner?
+      kbUrl: what-is-the-limitation-of-the-trial-version-of-blue-cloner_411.html 
+    - title: Why is Internet needed when Blue-Cloner is removing protections?
+      kbUrl: why-is-internet-needed-when-blue-cloner-is-removing-protections_402.html
 ---
 
 ## Upgrade now! 
 
-If you want to copy and burn up-to-date DVD/Blu-ray/UHD movies, we suggest you upgrade to Blue-Cloner Platinum or Blue-Cloner Gold, or you can just do a regular upgrade by selecting the upgrade year and clicking on the "Upgrade to  **<item-info :handlename="handleName"></item-info>**" button below.
+If you want to copy, convert, and burn up-to-date Blu-ray movies, we suggest you upgrade to Blue-Cloner Diamond, or you can just do a regular upgrade by selecting the upgrade year.

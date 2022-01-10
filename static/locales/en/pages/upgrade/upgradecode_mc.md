@@ -50,7 +50,9 @@ faqList:
     - title: My registration code is still in the free upgrade period, why did your system want to charge me again?
       kbUrl: my-registration-code-is-still-in-the-free-upgrade-period-why-did-your-system-want-to-charge-me-again_421.html
     - title: Can I try the latest version first? What’s the limitation of the free trial version?
-      kbUrl: can-i-try-the-latest-version-first-whats-the-limitation-of-the-free-trial-version_415.html              
+      kbUrl: can-i-try-the-latest-version-first-whats-the-limitation-of-the-free-trial-version_415.html 
+    - title: Is there a trial version of DVD-Cloner for Mac which can be tried before buying?
+      kbUrl: is-there-a-trial-version-of-dvd-cloner-for-mac-which-can-be-tried-before-buying_294.html            
 ---
 
 ## Upgrade now! 

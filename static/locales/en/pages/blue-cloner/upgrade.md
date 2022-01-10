@@ -23,16 +23,16 @@ faqList:
   bgStyle: dark-opacity-2
   additionClass: position-relative text-center
   lists:
-    - title: I lost my code, how can I retrieve it?
-      kbUrl: i-lost-my-code-how-can-i-retrieve-it_48.html
-    - title: How to find my registration code?
-      kbUrl: how-to-find-my-registration-code_414.html
-    - title: Why didn’t your upgrade system recognize my code of DVD-Cloner for Mac?
-      kbUrl: why-didnt-your-upgrade-system-recognize-my-code-of-dvd-cloner-for-mac_420.html
-    - title: How do I change my registration email?
-      kbUrl: how-do-i-change-my-registration-email_419.html
-    - title: How much is the upgrade?
-      kbUrl: how-much-is-the-upgrade_418.html     
+    - title: What is the upgrade policy of Blue-Cloner?
+      kbUrl: what-is-the-upgrade-policy-of-blue-cloner_409.html
+    - title: How to register Blue-Cloner?
+      kbUrl: how-to-register-blue-cloner_410.html
+    - title: My registration code is still in the free upgrade period, why did your system want to charge me again?
+      kbUrl: my-registration-code-is-still-in-the-free-upgrade-period-why-did-your-system-want-to-charge-me-again_421.html
+    - title: What is the limitation of the trial version of Blue-Cloner?
+      kbUrl: what-is-the-limitation-of-the-trial-version-of-blue-cloner_411.html 
+    - title: Why is Internet needed when Blue-Cloner is removing protections?
+      kbUrl: why-is-internet-needed-when-blue-cloner-is-removing-protections_402.html     
 
 ---
 
@@ -40,6 +40,6 @@ faqList:
 
 **Pay to upgrade to <item-info :handlename="handleName"></item-info> now and enjoy one-year free upgrades of its future versions!**
 
-The new customers who have purchased DVD-Cloner for less than one year can upgrade to <item-info :handlename="handleName"></item-info> or later versions for free within the year!
+The new customers who have purchased Blue-Cloner for less than one year can upgrade to <item-info :handlename="handleName"></item-info> or later versions for free within the year!
 
 If it exceeds one year, you need to pay for next year's upgrade service. If you do not want to upgrade, you can still use the original version without time limit!
