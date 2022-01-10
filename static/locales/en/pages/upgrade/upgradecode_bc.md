@@ -40,9 +40,9 @@ upgradeItems:
     - handleName: Blue-Cloner Diamond
       years:
         - name: One-year
-          price: 49.59
+          price: 47.99
           saving: 38%
-          link: https://www.dvd-cloner.com/cgi-bin/orderlink.cgi?bcd=y
+          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300863424]=1&COUPON1=40OFF&cartcoupon=false
 faqList:
   name: product faq
   title: FAQ
