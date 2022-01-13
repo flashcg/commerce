@@ -15,6 +15,11 @@ newver:
         bgColor: '#353535'
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级      
 release:
+    - version: 1.10.104
+      date: Jan.13, 2022    
+      topText:
+      list: 
+        - Fixed bugs in Amazon Downloader.
     - version: 1.10.103
       date: Dec.22, 2021    
       topText:
