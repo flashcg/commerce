@@ -26,16 +26,16 @@
     <p class="text-center">Your code version is <strong>{{upgradeInfo.codeVersion}}</strong>, current software version is V<strong>{{upgradeInfo.currentVersion}}</strong>.
 Your code can register any version released before <strong>{{upgradeInfo.expirationDate}}</strong>.
 Currently you can register V<strong>{{upgradeInfo.availableVersion}}</strong> or later versions.</p>
-<p class="text-center"><b-img :src="mddata.orderInfo.guarantee.imageUrl" /></p>
-<p class="text-center"><b-button variant="success" squared size="xl" to="/download/">{{$t('globalName.download')}} Now</b-button> </p>
-<h4 v-if="mddata.orderInfo.deadline" class="text-center">{{mddata.orderInfo.deadline.text}} </h4>
+<p class="text-center" v-if="mddata.orderInfo.guarantee"><b-img :src="mddata.orderInfo.guarantee&&mddata.orderInfo.guarantee.imageUrl" /></p>
+<!-- <p class="text-center"><b-button variant="success" squared size="xl" to="/download/">{{$t('globalName.download')}} Now</b-button> </p> -->
+<h4 v-if="mddata.orderInfo.deadline" class="text-center" v-html="mddata.orderInfo.deadline&&mddata.orderInfo.deadline.text"></h4>
   </div>
-  <div class="bg-dark-opacity-1 py-6">
+
     <div class="container">
     <h3>Dear {{upgradeInfo.name}} </h3>
 <nuxt-content  :document="mddata" />
 </div>
-</div>
+
   <div class="container">
     <template  v-for="(item,index) in list">
   <item-overview :key="index" v-if="item" :data="mddata.upgradeItems" :itemInfo="{boxSrc:item.boxes[0].imageUrl,name:item.name,desc:item.desc&&item.desc.longText,handleName:item.handleName,saleInfo:item.saleInfo,code:upgradeInfo.keyCode}"  />

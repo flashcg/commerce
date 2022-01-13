@@ -159,9 +159,9 @@ export default {
   bootstrapVue: {
     bootstrapCSS: false, // or `css`
     bootstrapVueCSS: false, // or `bvCSS`
-     components: ['BIcon','BBreadcrumb','BAlert','BLink','BButton','BButtonGroup','BBadge','BBtn','BEmbed','BContainer','BRow','BCol','BNavbar','BNavbarBrand','BNavbarToggle','BCollapse','BTab','BTabs','BSpinner','BIconArrowLeft','BIconArrowRight','BIconClock','BIconSearch','BIconArrowUpCircleFill'],
+     components: ['BIcon','BBreadcrumb','BAlert','BLink','BButton','BButtonGroup','BBadge','BBtn','BEmbed','BContainer','BRow','BCol','BNavbar','BNavbarBrand','BNavbarToggle','BCollapse','BTab','BTabs','BSpinner','BIconArrowLeft','BIconArrowRight','BIconClock','BIconSearch','BIconArrowUpCircleFill','BCollapse'],
     componentPlugins: [
-      'ModalPlugin','ListGroupPlugin','VBTogglePlugin','CardPlugin','FormPlugin','FormInputPlugin','InputGroupPlugin','FormGroupPlugin','SidebarPlugin','FormSelectPlugin','ImagePlugin','PaginationPlugin','FormRadioPlugin','OverlayPlugin'
+      'ModalPlugin','ListGroupPlugin','VBTogglePlugin','CardPlugin','FormPlugin','FormInputPlugin','InputGroupPlugin','FormGroupPlugin','SidebarPlugin','FormSelectPlugin','ImagePlugin','PaginationPlugin','FormRadioPlugin','OverlayPlugin','CollapsePlugin' 
     ], 
   },
   content:{

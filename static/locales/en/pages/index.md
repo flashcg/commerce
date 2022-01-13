@@ -13,7 +13,7 @@ heroCarousels: #首页主banner
   overflow: hidden
   allowTouchMove: true
   block:
-    - name: Home recoding
+    - name: Home recording
       title: Blu-ray and DVD copy - Perfect 1:1 copy
       subtitle: 
       icons:
@@ -28,14 +28,14 @@ heroCarousels: #首页主banner
       height: screen
       bgMobileStyle: dark
       bgStyle:
-        imageUrl: banner-dc-hero.png
+        imageUrl: banner-main-2022.png
         color: 
         video:
           layout: bottom
-          videoUrl: background_burning_dc.mp4
-    - name: Home recoding      
+          videoUrl: background_burning_dc-2022.mp4
+    - name: Home recording      
       title: 
-      subtitle: Strip HDCP and Record 4K UHD Streaming  Videos from Standalone Video Recorders.
+      subtitle: Strip HDCP and Record 4K UHD Streaming Videos from Standalone Video Recorders.
       button:
         text: More Info
         path: open-passdcp
@@ -46,7 +46,7 @@ heroCarousels: #首页主banner
       bgStyle:
         imageUrl: banner-passdcp.jpg
         color:
-    - name: Home recoding
+    - name: Home recording
       title: Rip, Convert and Remove DRM of All Latest DVD/Blu-ray/iTunes Movies to any platforms.
       subtitle: All-in-One Video Ripper Solution.
       button:
@@ -70,12 +70,12 @@ advertising:
   additionClass: position-relative text-center
   bgStyle: gray-light
   icon:
-    - iconUrl: special-offer-ad.png
+    - iconUrl: special-offer-ad-2022.png
       title: 
       text: Take the excellent chance to get the time-limited offer!
       additionClass: py-6 bg-dark-opacity-1
       path: special-offer
-    - iconUrl: front-ad-bundle.png
+    - iconUrl: front-ad-bundle-2022.png
       title: 
       path: order
       hash: order-bundles
@@ -101,20 +101,45 @@ WhyChoose:
     positionY: 50%
     positionX:
   icon:
-    - iconUrl: dc-icon3.png
-      text: Copy DVD/Blu-ray/4K UHD to blank disc or rip them to MKV format
-    - iconUrl: dc-icon4.png
-      text: Rip UHD to MKV (HDR 10+) format, keeping original HDR and Dolby effect.
-    - iconUrl: dc-icon6.png
-      text: Lightning Blu-ray/UHD copy speed
+    - iconUrl: dc-icon-win11.png
+      text: Versatile DVD/Blu-ray/UHD Copy/Ripper
     - iconUrl: dc-icon2.png
-      text: 6 diverse copy modes
+      text: 6 diverse copy modes      
+    - iconUrl: dc-icon-versatile.png
+      text: Compatible with Windows 11
+    - iconUrl: dc-icon6.png
+      text: Lightning copy speed
     - iconUrl: dc-icon1.png
       text: Easy to use, just as easy as ABC
     - iconUrl: dc-icon5.png
-      text: Output lossless quality  
+      text: Output lossless quality    
   iconGird: 6                   
-
+sicBanner: #sic banner 
+  name: main-banner
+  overflow: hidden
+  title: Easiest Way to Download Hit Streaming Video from Various Video Platforms
+  subtitle: Streaming-Cloner
+  text: Download your favorite online videos with only 3 clicks
+  background:
+    imageUrl: main-banner.png
+  button:
+    text: Try it Now
+    path: streaming-download
+  feature:
+    iconGird: 4
+    icons:
+      - iconUrl: main-banner/unlock.png
+        title: DRM Removed
+        text: Get the HD video with DRM removed to facilitate your sharing and re-creation.
+      - iconUrl: main-banner/custom.png
+        title: Flexible
+        text: Download online videos in MP4/MKV format.
+      - iconUrl: main-banner/download.png
+        title: High Quality      
+        text: Download original HD video. Keep best quality.
+      - iconUrl: main-banner/speed.png
+        title: Lightning Speed      
+        text: Download every video with lightning speed.   
 carouselRecommend:
   name: recommend
   container: container-fluid

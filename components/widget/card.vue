@@ -48,8 +48,10 @@
             </div>          
           </template>
 
-          <p class="fs-3 text-danger" v-if="item.saleInfo.standard">{{standard?$t('softwareInfo.currency')+item.saleInfo.standard.price:$t('softwareInfo.currency')+item.saleInfo.lifetime.price}}<br /><b-link v-if="!standard" to="/special-offer/" class="fs-6 text-red-light">{{$t('globalName.get50off')}} </b-link>          
-          </p>
+          <p class="fs-3 text-danger" v-if="item.saleInfo.standard">{{standard?$t('softwareInfo.currency')+item.saleInfo.standard.price:$t('softwareInfo.currency')+item.saleInfo.lifetime.price}}<br />
+
+          <b-link v-if="!standard" :to="item.model.toLowerCase()==='ocr'?$t('softwareInfo.50offUrlOcr')+'/':$t('softwareInfo.50offUrl')+'/'" class="fs-6 text-red-light">{{$t('globalName.get50off')}} </b-link>
+           </p>
 
         </b-card-body>
         <b-card-footer class="bg-transparent pt-0 border-0">

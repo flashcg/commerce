@@ -34,8 +34,8 @@
   </Company_Info>
   <Program_Info>
     <Program_Name>DVD-Cloner for Mac 2021</Program_Name>
-    <Program_Version>8.20.724</Program_Version>
-    <Program_Release_Month>7</Program_Release_Month>
+    <Program_Version>8.40.726</Program_Version>
+    <Program_Release_Month>11</Program_Release_Month>
     <Program_Release_Day>2</Program_Release_Day>
     <Program_Release_Year>2021</Program_Release_Year>
     <Program_Cost_Dollars>59.99</Program_Cost_Dollars>
@@ -46,18 +46,18 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Mac OS X, Mac Other, Other</Program_OS_Support>
     <Program_Language>English</Program_Language>
-    <Program_Change_Info>This best DVD copying software removes various DVD copy protections such as CSS, RC, RCE, APS, UOPs, ARccOS, etc.&#xD;
-Remove various Blu-ray protections such as AACS, BD+, Cinavia, etc.&#xD;
-Smart Analyzer technology can simulate the playback process and automatically skip bad sectors, greatly improved the copy quality.&#xD;
-Rip high-capacity DVD movies to MKV format for easy storage, with all audio tracks included, high bitrate, high quality and lower size.&#xD;
-Copy the main movie of a Blu-ray disc to a blank BD-25 or to the hard disk as an ISO image file or a Blu-ray movie folder.&#xD;
-Rip any Blu-ray movie to MKV format on the hard disk, with all audio tracks included, compatible with many playback devices.&#xD;
-Copy the main movie of UHD Blu-ray encrypted with AACS 2.0 to a blank BD-50 using a 4K UHD friendly drive. 4K, HDR features are supported.&#xD;
-With efficient H.265 codec technology, DVD-Cloner for Mac can rip UHD Blu-ray movies to MKV, keeping the same 4K/HDR image quality as the original UHD Blu-ray.&#xD;
-Optionally compress a DVD/Blu-ray movie in the ripping process by setting H.264 or H.265 as the encoder.&#xD;
-Optionally convert HD AC3, DTS audio to a normal format when you copy a Blu-ray movie.&#xD;
-Select to keep only one audio track and subtitle in the MKV ripping function, removing other unnecessary ones.&#xD;
-Send us quick feedback in real time via the shortcut window within the software.&#xD;
+    <Program_Change_Info>This best DVD copying software removes various DVD copy protections such as CSS, RC, RCE, APS, UOPs, ARccOS, etc.&#xD;&#xD;
+Remove various Blu-ray protections such as AACS, BD+, Cinavia, etc.&#xD;&#xD;
+Smart Analyzer technology can simulate the playback process and automatically skip bad sectors, greatly improved the copy quality.&#xD;&#xD;
+Rip high-capacity DVD movies to MKV format for easy storage, with all audio tracks included, high bitrate, high quality and lower size.&#xD;&#xD;
+Copy the main movie of a Blu-ray disc to a blank BD-25 or to the hard disk as an ISO image file or a Blu-ray movie folder.&#xD;&#xD;
+Rip any Blu-ray movie to MKV format on the hard disk, with all audio tracks included, compatible with many playback devices.&#xD;&#xD;
+Copy the main movie of UHD Blu-ray encrypted with AACS 2.0 to a blank BD-50 using a 4K UHD friendly drive. 4K, HDR features are supported.&#xD;&#xD;
+With efficient H.265 codec technology, DVD-Cloner for Mac can rip UHD Blu-ray movies to MKV, keeping the same 4K/HDR image quality as the original UHD Blu-ray.&#xD;&#xD;
+Optionally compress a DVD/Blu-ray movie in the ripping process by setting H.264 or H.265 as the encoder.&#xD;&#xD;
+Optionally convert HD AC3, DTS audio to a normal format when you copy a Blu-ray movie.&#xD;&#xD;
+Select to keep only one audio track and subtitle in the MKV ripping function, removing other unnecessary ones.&#xD;&#xD;
+Send us quick feedback in real time via the shortcut window within the software.&#xD;&#xD;
 Use the full version of DVD-Cloner for Mac 7 days for free before purchasing.</Program_Change_Info>
     <Program_Specific_Category>Audio</Program_Specific_Category>
     <Program_Category_Class>Audio &amp; Multimedia::Video &amp; DVD Tools</Program_Category_Class>
@@ -79,18 +79,42 @@ Use the full version of DVD-Cloner for Mac 7 days for free before purchasing.</P
   </Program_Info>
   <Program_Descriptions>
     <English>
-      <Keywords>dvd-cloner, dvd copier, dvd copier software, dvd copy, dvd copy software, dvd copying software, best dvd copying software,&#xD;
-copy dvd, clone dvd, copy dvd to dvd, copy dvd on mac, copy dvd to mac, copy dvd to iso, copy dvd movie, backup dvd,&#xD;
-dvd decrypter, decrypt dvd, decrypt AACS, decrypt AACS 2.0, remove Cinavia, decrypt blu-ray, DVD region free, rip dvd, burn dvd, duplicate dvd, dvd copy protection, make a copy of dvd, dvd-9 to dvd-5,&#xD;
-blu-ray copy, blu-ray copy software, blu-ray copier, blu-ray cloner, copy blu-ray, copy uhd blu-ray, copy blu-ray to iso,&#xD;
-rip blu-ray, combine dvd, dvd to mkv, blu-ray to mkv, dvd burning, dvd ripper, convert dvd, uhd friendly drive, copy main movie,&#xD;
+      <Keywords>dvd-cloner, dvd copier, dvd copier software, dvd copy, dvd copy software, dvd copying software, best dvd copying software,&#xD;&#xD;
+copy dvd, clone dvd, copy dvd to dvd, copy dvd on mac, copy dvd to mac, copy dvd to iso, copy dvd movie, backup dvd,&#xD;&#xD;
+dvd decrypter, decrypt dvd, decrypt AACS, decrypt AACS 2.0, remove Cinavia, decrypt blu-ray, DVD region free, rip dvd, burn dvd, duplicate dvd, dvd copy protection, make a copy of dvd, dvd-9 to dvd-5,&#xD;&#xD;
+blu-ray copy, blu-ray copy software, blu-ray copier, blu-ray cloner, copy blu-ray, copy uhd blu-ray, copy blu-ray to iso,&#xD;&#xD;
+rip blu-ray, combine dvd, dvd to mkv, blu-ray to mkv, dvd burning, dvd ripper, convert dvd, uhd friendly drive, copy main movie,&#xD;&#xD;
 split dvd, episodic dvd copy, H.264 encoder, H.265 encoder, blu-ray copy speed, dvd reading speed</Keywords>
       <Char_Desc_45>DVD/Blu-ray/4K UHD copy/ripping software for Mac.</Char_Desc_45>
       <Char_Desc_80>Copy/backup/decrypt/rip your DVD/Blu-ray/4K UHD Blu-ray movies on Mac.</Char_Desc_80>
       <Char_Desc_450>Fully upgraded professional DVD/Blu-ray/4K UHD copy software. Remove various DVD/Blu-ray/UHD copy protections. Clone DVD to any blank disc including DVD+R/RW, DVD-R/RW, DVD+R DL and DVD-R DL with multiple copy modes. The great breakthrough for DVD-Cloner for Mac 2019 is that it can copy Blu-ray/4K UHD Blu-ray movies to BD-R/REs or your Mac and rip DVD/Blu-ray/4K UHD movies to MKV format for easy storage.</Char_Desc_450>
       <Char_Desc_2000>
-         &#xD;
-        DVD-Cloner for Mac 2019 is a fully upgraded professional DVD/Blu-ray/4K UHD copy/ripping/decryption software with ultra high quality. It can clone DVD to any blank disc including DVD+R/RW, DVD-R/RW, DVD+R DL and DVD-R DL with multiple copy modes. Besides, it can copy DVD to your Mac as an ISO file or DVD movie folder. The great breakthrough for DVD-Cloner for Mac 2019 is that it can copy Blu-ray/4K UHD Blu-ray movies to BD-R/REs or your Mac and rip DVD/Blu-ray/4K UHD movies to MKV format for easy storage.&#xD;
+        &#xD;
+         &#xD;&#xD;
+        DVD-Cloner for Mac 2019 is a fully upgraded professional DVD/Blu-ray/4K UHD copy/ripping/decryption software with ultra high quality. It can clone DVD to any blank disc including DVD+R/RW, DVD-R/RW, DVD+R DL and DVD-R DL with multiple copy modes. Besides, it can copy DVD to your Mac as an ISO file or DVD movie folder. The great breakthrough for DVD-Cloner for Mac 2019 is that it can copy Blu-ray/4K UHD Blu-ray movies to BD-R/REs or your Mac and rip DVD/Blu-ray/4K UHD movies to MKV format for easy storage.&#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+        &#xD;&#xD;
+      &#xD;
         &#xD;
         &#xD;
         &#xD;
@@ -115,49 +139,49 @@ split dvd, episodic dvd copy, H.264 encoder, H.265 encoder, blu-ray copy speed, 
         &#xD;
       
         <p>Perfect 1:1 DVD Copy</p>
-        <p>This best DVD copying software removes various DVD copy protections such as CSS, RC, RCE, APS, UOPs, ARccOS, etc.&#xD;
-Copy DVD-5 to DVD-5 in 1:1 ratio.&#xD;
-Copy DVD-9 to DVD-9 in 1:1 ratio.&#xD;
-Backup DVD to a DVD movie folder for playback on the player software or TV and a DVD player is not needed anymore.&#xD;
-Backup DVD to an ISO image file on the hard disk for later burning.&#xD;
+        <p>This best DVD copying software removes various DVD copy protections such as CSS, RC, RCE, APS, UOPs, ARccOS, etc.&#xD;&#xD;
+Copy DVD-5 to DVD-5 in 1:1 ratio.&#xD;&#xD;
+Copy DVD-9 to DVD-9 in 1:1 ratio.&#xD;&#xD;
+Backup DVD to a DVD movie folder for playback on the player software or TV and a DVD player is not needed anymore.&#xD;&#xD;
+Backup DVD to an ISO image file on the hard disk for later burning.&#xD;&#xD;
         </p>
         <p>Movie Complete Copy</p>
-        <p>Compress one DVD-9 movie to a blank DVD-5 disc, keeping menus and special features.&#xD;
+        <p>Compress one DVD-9 movie to a blank DVD-5 disc, keeping menus and special features.&#xD;&#xD;
 Manually adjust the compression rate to define the picture quality of your DVD copies.</p>
         <p>Movie-Only Copy</p>
-        <p>features.&#xD;
+        <p>features.&#xD;&#xD;
 Intelligently recognize the main movie from the source DVD to avoid copying a fake main movie.</p>
         <p>Split DVD Copy</p>
-        <p>Split one DVD-9 movie to two blank DVD-5 discs with original picture quality.&#xD;
+        <p>Split one DVD-9 movie to two blank DVD-5 discs with original picture quality.&#xD;&#xD;
 Optionally keep menus when splitting a DVD-9 movie to two DVD-5s.</p>
         <p>Movie Customized Copy</p>
-        <p>Episodic DVD copier software - Copy only a certain range of titles, specially designed for Episodic TV series DVDs and music video DVDs.&#xD;
+        <p>Episodic DVD copier software - Copy only a certain range of titles, specially designed for Episodic TV series DVDs and music video DVDs.&#xD;&#xD;
 Create multiple DVD copies without having to repeat the entire process again.</p>
         <p>Rip DVD to MKV</p>
-        <p>Rip high-capacity DVD movies to MKV format for easy storage, with high bitrate, high quality, and lower size.&#xD;
+        <p>Rip high-capacity DVD movies to MKV format for easy storage, with high bitrate, high quality, and lower size.&#xD;&#xD;
 Optionally compress a DVD movie in the ripping process by setting H.264 or H.265 as the encoder.</p>
         <p>Burn a DVD movie from the hard disk to a DVD±R (DL)</p>
         <p>Burn DVD movie folders or ISO image files on the hard disk to DVD±R (DL) with diverse copy modes.</p>
         <p>Combine 2 DVDs to one DVD±R DL</p>
-        <p>Combine 2 DVD movie discs onto one DVD±R DL.&#xD;
-Supports reading source DVD movie folders or ISO image files from the hard disk.&#xD;
+        <p>Combine 2 DVD movie discs onto one DVD±R DL.&#xD;&#xD;
+Supports reading source DVD movie folders or ISO image files from the hard disk.&#xD;&#xD;
 Select the menu template, background picture and set the movie titles.</p>
         <p>Copy Blu-ray/4K UHD Blu-ray movies</p>
-        <p>Remove various Blu-ray protections such as AACS, BD+, Cinavia, etc.&#xD;
-Copy a Blu-ray movie to a blank BD-25 with movie-only copy mode.&#xD;
-Copy a Blu-ray movie to the hard disk as a Blu-ray movie folder or ISO image file.&#xD;
+        <p>Remove various Blu-ray protections such as AACS, BD+, Cinavia, etc.&#xD;&#xD;
+Copy a Blu-ray movie to a blank BD-25 with movie-only copy mode.&#xD;&#xD;
+Copy a Blu-ray movie to the hard disk as a Blu-ray movie folder or ISO image file.&#xD;&#xD;
 Copy the main movie of UHD Blu-ray encrypted with AACS 2.0 to a blank BD-50 using a 4K UHD friendly drive. 4K, HDR features are supported.</p>
         <p>Rip Blu-ray/4K UHD Blu-ray to MKV</p>
-        <p>Besides Blu-ray disc copy, DVD-Cloner for Mac 2019 gives you another choice to rip the main movie of a high-capacity Blu-ray disc to MKV format saved on the hard disk.&#xD;
-Optionally compress a Blu-ray movie in the ripping process by setting H.264 or H.265 as the encoder.&#xD;
-With efficient H.265 codec technology, DVD-Cloner for Mac can rip UHD Blu-ray movies to MKV, keeping the same 4K/HDR image quality as the original UHD Blu-ray.&#xD;
+        <p>Besides Blu-ray disc copy, DVD-Cloner for Mac 2019 gives you another choice to rip the main movie of a high-capacity Blu-ray disc to MKV format saved on the hard disk.&#xD;&#xD;
+Optionally compress a Blu-ray movie in the ripping process by setting H.264 or H.265 as the encoder.&#xD;&#xD;
+With efficient H.265 codec technology, DVD-Cloner for Mac can rip UHD Blu-ray movies to MKV, keeping the same 4K/HDR image quality as the original UHD Blu-ray.&#xD;&#xD;
 Select to keep only one audio track and subtitle in the MKV ripping function, removing other unnecessary ones.</p>
         <p>Other Features:</p>
-        <p>Optimized the DVD burning engine. The copied DVD discs are compatible with more playback devices including PS4, Xbox, Blu-ray player, etc.&#xD;
-Make flawless copies of scratched DVDs, so you can bring your damaged movies back to life.&#xD;
-Select to add the .dvdmedia suffix to the DVD folder on the hard disk before copying for convenient playback on the DVD player.&#xD;
-Optimized the DVD copy function, improved the video quality.&#xD;
-Send us quick feedback in real time via the shortcut window within the software.&#xD;
+        <p>Optimized the DVD burning engine. The copied DVD discs are compatible with more playback devices including PS4, Xbox, Blu-ray player, etc.&#xD;&#xD;
+Make flawless copies of scratched DVDs, so you can bring your damaged movies back to life.&#xD;&#xD;
+Select to add the .dvdmedia suffix to the DVD folder on the hard disk before copying for convenient playback on the DVD player.&#xD;&#xD;
+Optimized the DVD copy function, improved the video quality.&#xD;&#xD;
+Send us quick feedback in real time via the shortcut window within the software.&#xD;&#xD;
 Use the full version of DVD-Cloner for Mac 7 days for free before purchasing.</p>
       </Char_Desc_2000>
     </English>

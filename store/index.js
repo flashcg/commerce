@@ -122,7 +122,7 @@ export const actions = {
         }
 
         if(saleItem) item.saleInfo = saleItem
-
+        if(!item.handleName)item.handleName = item.handle.handleName
         productData.push(item)
       }
 

@@ -4,6 +4,7 @@
    <jumbotron :jumbotronData="$t('jumbotronPromotion')" />   
    <iconBlock :iconData="mddata.advertising" />
    <icon-block  :iconData="mddata.WhyChoose" /> 
+   <MainBanner :data="mddata.sicBanner" />
    <carousel :data="mddata.carouselRecommend" /> 
     <icon-block  :iconData="mddata.releaseList" /> 
   </div>

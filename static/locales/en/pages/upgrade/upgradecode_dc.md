@@ -67,4 +67,4 @@ faqList:
 
 ## Upgrade now! 
 
-If you want to copy and burn up-to-date DVD/Blu-ray movies, we suggest you upgrade to DVD-Cloner Platinum or DVD-Cloner Gold, or you can just do a regular upgrade by selecting the upgrade year and clicking on the "Upgrade to  **<item-info :handlename="handleName"></item-info>**" button below.
+If you want to copy and burn up-to-date DVD/Blu-ray/UHD movies, we suggest you upgrade to DVD-Cloner Platinum or DVD-Cloner Gold, or you can just do a regular upgrade by selecting the upgrade year and clicking on the "Upgrade to  **<item-info :handlename="handleName"></item-info>**" button below.

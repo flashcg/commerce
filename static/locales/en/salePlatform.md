@@ -1,6 +1,8 @@
 ---
 softwareInfo:
   currency: $
+  50offUrl: /special-offer
+  50offUrlOcr: /special-offer-ocr-launch
   items:  
     - handleName: DVD-Cloner
       downloadUrl: dcloner.exe
@@ -54,6 +56,7 @@ softwareInfo:
     - handleName: Blue-Cloner
       downloadUrl: https://www.blue-cloner.com/download/blue-cloner.exe
       downloadUrl_64bit: blue-cloner-x64.exe
+      upgradeUrl: /blue-cloner/upgrade 
       standard:
         comparePrice:
         price: 59.99

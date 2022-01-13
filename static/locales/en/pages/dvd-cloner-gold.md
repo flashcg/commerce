@@ -13,14 +13,14 @@ handleName: DVD-Cloner Gold
 name: DVD-Cloner Gold
 type: DVD Copy 
 logo:
-  iconUrl: icon/dc2021-gold.png
+  iconUrl: icon/dg2022-gold.png
 boxes:
-  - imageUrl: dc2021-gold-box.png #默认盒子图
-  - imageUrl: dc2021-gold-box-ref.png #带阴影盒子图
+  - imageUrl: dg2022-box.png #默认盒子图
+  - imageUrl: dg2022-ref-box.png #带阴影盒子图
 desc:
   shortText: Perfect DVD/Blu-ray copy, burn and conversion software bundle, with all the features of DVD-Cloner and Open SmartBurner.
   longText: |
-    <p>DVD-Cloner Gold is the best DVD/Blu-ray copy, burn and conversion combo software. It has all the features of DVD-Cloner and Open SmartBurner. It enables you to copy, back up, clone and burn your DVD and Blu-ray collections, as well as rip DVD/Blu-ray/UHD to MKV format. Besides, it can burn data files and video files to DVD/Blu-ray discs. Give it a try and you'll find your almighty DVD/Blu-ray assistant!</p><p><strong>Key features:</strong></p><ul><li>6 diverse DVD copy modes</li><li>Copy Blu-ray/4K UHD Blu-ray to a blank BD-R/RE (DL) or to the hard disk.</li><li>Rip Blu-ray/UHD movies to MKV format for easy storage.</li><li>Burn various data and video files to a blank DVD/Blu-ray disc</li></ul>
+    <p>DVD-Cloner Gold is the best DVD/Blu-ray copy, burn and conversion combo software. It has all the features of DVD-Cloner and Open SmartBurner. It enables you to copy, back up, clone and burn your DVD and Blu-ray collections, as well as rip DVD/Blu-ray/UHD to MKV format. Besides, it can burn data files and video files to DVD/Blu-ray discs. Give it a try and you'll find your almighty DVD/Blu-ray assistant!</p><p><strong>Key features:</strong></p><ul><li>6 diverse DVD copy modes</li><li>Copy Blu-ray/4K UHD Blu-ray to a blank BD-R/RE (DL) or to the hard disk.</li><li>Rip Blu-ray/UHD movies to MKV format for easy storage.</li><li>Burn various data and video files to a blank DVD/Blu-ray disc</li><li>Compatible with Windows 11</li></ul>
   bgStyle: 
 areaTop:
   name: DG Desc
@@ -37,7 +37,7 @@ screenshot:
   additionClass: software-interface bg-dark-opacity-2
   itemContainer: container
   items:
-    - imageUrl: dc-2021-gold_screenshot.png
+    - imageUrl: dc-2022-gold_screenshot.png
     - imageUrl: os_screenshot.png
 bonus: 
   name: Free Software
@@ -52,7 +52,7 @@ bonus:
 
 ## Features
 
-**DVD-Cloner** is a powerful DVD copy/burn/decryption/conversion tool with diverse copy modes, no matter full disc copy or main movie copy. With only one click, you'll experience the most convenient DVD copy software.
+**DVD-Cloner 2022** is all-in-one professional DVD copy software with perfect output image quality. With DVD-Cloner, you can get a software combination of DVD copy, DVD to MKV, Blu-ray copy, Blu-ray to MKV, UHD copy and UHD to MKV. It is very valuable and save you a lot.
 
 **Features of DVD-Cloner:**
 
@@ -72,6 +72,7 @@ bonus:
 *   Send us quick feedback in real time via the shortcut window within the software.
 *   Zoom in/Zoom out the operation interface according to your preferences. The maximum is 200%.
 *   Free bonus software Stream-Cloner Lite and Open DVD Ripper Lite.
+*   Compatible with Windows 11.
 
 [More about DVD-Cloner &gt;&gt;](/dvd-cloner/)
 
