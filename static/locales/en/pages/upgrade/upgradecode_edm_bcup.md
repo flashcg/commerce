@@ -25,7 +25,7 @@ jumbotron:
     overlayBody: # template 样式为 overlay 时有效 , 设置内容区样式
       template: promotion
       active: true
-      href: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300863419]=1&affiliate=normalpromotion2020apr&ADD[300863419][ADDITIONAL1]=
+      href: https://secure.2checkout.com/order/checkout.php?PRODS=4537838&QTY=1&CART=1&CARD=1
       imageUrl: landing_upgrade_edm_dc.jpg
     additionClass: text-center
     blockSpacing: 0
