@@ -105,6 +105,7 @@ Despite the global health challenge we are facing, OpenCloner Inc. remains commi
 
 USA is one of the hardest-hit areas in the world. We pray that everybody stay safe and healthy. We really want to show how we can help. If you would like to extend your subscription by purchasing an upgrade below, please leave a USA shipping address in the order form, OpenCloner will send you 1 to 3 free face masks for your personal protection. Please note only limited quantity face masks available.
 
+
 And a good news for your DVD-Cloner:
 We've developed DVD-Cloner 2020 V17.30, which includes a free Player Plugin named "OpenCloner Decode Widget" for you to play encrypted Blu-ray/4K UHD movies with VLC and supports copying more newly-released DVD/Blu-ray/4K UHD movies.
 Upgrade to DVD-Cloner 2020 now. It's time to upgrade your Blu-ray/UHD media player and update your movie library!
