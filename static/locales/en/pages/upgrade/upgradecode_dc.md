@@ -27,16 +27,16 @@ upgradeItems:
       years:
         - name: One-year
           price: 29.99
-          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537838&QTY=1&CART=1&CARD=1      
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537838&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[4537838]=      
         - name: Two-year
           price: 49.99
-          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537839&QTY=1&CART=1&CARD=1   
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537839&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[4537839]=   
         - name: Three-year
           price: 59.99
-          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537840&QTY=1&CART=1&CARD=1     
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537840&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[4537840]=     
         - name: Lifetime
           price: 119.99
-          link: https://secure.2checkout.com/order/checkout.php?PRODS=37849114&QTY=1&CART=1&CARD=1  
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=37849114&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[37849114]=  
     - handleName: DVD-Cloner Gold
       years:
         - name: One-year
