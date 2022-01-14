@@ -27,22 +27,22 @@ upgradeItems:
       years:
         - name: One-year
           price: 29.99
-          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537838&QTY=1&CART=1&CARD=1      
+          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300900217]=1&ADD[300900217][ADDITIONAL1]=      
         - name: Two-year
           price: 49.99
-          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537839&QTY=1&CART=1&CARD=1   
+          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300900299]=1&ADD[300900299][ADDITIONAL1]=   
         - name: Three-year
           price: 59.99
-          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537840&QTY=1&CART=1&CARD=1     
+          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300900300]=1&ADD[300900300][ADDITIONAL1]=     
         - name: Lifetime
           price: 119.99
-          link: https://secure.2checkout.com/order/checkout.php?PRODS=37849114&QTY=1&CART=1&CARD=1  
+          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300900304]=1&ADD[300900304][ADDITIONAL1]=  
     - handleName: Blue-Cloner Diamond
       years:
         - name: One-year
           price: 47.99
           saving: 38%
-          link: https://secure.2checkout.com/order/checkout.php?PRODS=4619914&COUPON=b3v03kn
+          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300863424]=1&COUPON1=40OFF&cartcoupon=false
 faqList:
   name: product faq
   title: FAQ
