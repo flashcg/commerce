@@ -27,7 +27,7 @@ softwareInfo:
       standard:
         comparePrice:
         price: 59.99
-        buylink: https://secure.2checkout.com/order/checkout.php?PRODS=4537843&QTY=1&CART=1&CARD=1
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=4537843&QTY=1&CART=1&CARD=1
       lifetime:
         price: 299.99
         buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=37855432&QTY=1&CART=1&CARD=1            
@@ -37,7 +37,7 @@ softwareInfo:
       standard:
         comparePrice:
         price: 79.99
-        buylink: https://secure.2checkout.com/order/checkout.php?PRODS=4611015&QTY=1&CART=1&CARD=1
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=4611015&QTY=1&CART=1&CARD=1
       lifetime:
         price: 399.99
         buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=37855441&QTY=1&CART=1&CARD=1
@@ -48,7 +48,7 @@ softwareInfo:
       standard:
         comparePrice:
         price: 79.99
-        buylink: https://secure.2checkout.com/order/checkout.php?PRODS=4537842&QTY=1&CART=1&CARD=1
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=4537842&QTY=1&CART=1&CARD=1
       lifetime:
         price: 399.99
         buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=37855461&QTY=1&CART=1&CARD=1

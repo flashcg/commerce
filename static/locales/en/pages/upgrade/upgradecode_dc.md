@@ -48,7 +48,7 @@ upgradeItems:
         - name: One-year
           price: 47.99
           saving: 40%
-          link: https://secure.checkout.com/order/checkout.php?PRODS=4537842&QTY=1&CART=1&COUPON=ssv23fahg   
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537842&QTY=1&CART=1&COUPON=ssv23fahg   
 faqList:
   name: product faq
   title: FAQ
