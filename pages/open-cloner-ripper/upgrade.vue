@@ -59,8 +59,7 @@
 
               <a
                 id="upgradeBtn"
-                :href="
-                  'https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300960733]=1&ADD[300960733][ADDITIONAL1]=' +
+                :href="mddata.upgrade.upgradeLink +
                   code
                 "
                 class="btn btn-lg btn-primary"
@@ -77,7 +76,7 @@
             <div v-if="step == 'buy'">
               <a
                 id="upgradeBtn"
-                href="https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300960728]=1"
+                :href="item.saleInfo.standard.buyLink"
                 class="btn btn-lg btn-success rounded-0"
                 >Buy Now</a
               >
@@ -225,6 +224,7 @@ export default {
   },
   mounted() {
     if (this.$route.query.code) this.code = this.$route.query.code;
+    console.log(this.mddata.upgrade.upgradeLink);
   },
 };
 function adjusting(data) {

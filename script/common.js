@@ -151,6 +151,7 @@ const traverSync = (currentDirPath, callback)=> {
 
 function dateFormat(fmt = 'YYYY-mm-dd', date = new Date()) {
   let ret;
+  typeof(date) == 'string'?date = new Date(date):''
   const opt = {
       "Y+": date.getFullYear().toString(),        // 年
       "m+": (date.getMonth() + 1).toString(),     // 月
