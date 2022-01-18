@@ -11,7 +11,7 @@ upgrade:
   name: upgrade
   title: Upgrade
   handleName: OpenCloner Ripper
-  apiUrl: https://www.dvd-cloner.com/cgi-bin/upgradecode_api.cgi
+  upgradeLink: https://test.com
   formItems:
     title: 'Enter your registration information'
     code: true
