@@ -46,9 +46,9 @@ upgradeItems:
     - handleName: DVD-Cloner Platinum
       years:
         - name: One-year
-          price: 47.99
-          saving: 40%
-          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537842&QTY=1&CART=1&COUPON=ssv23fahg   
+          price: 49.59
+          saving: 38%
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537842&QTY=1&CART=1&COUPON=b3v03kn   
 faqList:
   name: product faq
   title: FAQ
