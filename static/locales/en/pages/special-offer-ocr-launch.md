@@ -32,18 +32,18 @@ screenshot:
     text: Get 7-Day Free Trial Now
     variant: success
 listProduct:
-  standardDiscount: 30%
+  standardDiscount: 20%
   lifetimeDiscount: 50%
   additionClass: 'shadow-box p-6 mb-6'
   type: 'spList'
   products:
     - handleName: OpenCloner Ripper
       standard:
-        price: 41.99
-        buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT%5B300960728%5D=1&cartcoupon=1&COUPON1=30OFFOCRS
+        price: 47.99
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=25223245&QTY=1&CART=1&CARD=1&COUPON=20erwgwe
       lifetime:
         price: 110.99
-        buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300961021]=1&cartcoupon=1&COUPON1=50OFFOCRL        
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=25223833&QTY=1&CART=1&CARD=1&COUPON=WSVCWALW5S        
 ---
 
 #### To reward your great support over the past years, we offer you time-limited 30% OFF for ordering <item-info handlename="OpenCloner Ripper"></item-info>. A lifetime license version is also available, saving you <span class="text-danger">50%</span>.
