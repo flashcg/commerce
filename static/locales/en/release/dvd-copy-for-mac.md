@@ -11,6 +11,13 @@ newver:
         bgColor: '#353535'
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级      
 release: 
+    - version: '9.00.727'
+      date: Jan.22, 2022     
+      list:
+        - Supported the newly released movies.
+        - You can get a professional DVD copy software with lower cost.
+        - Updated the user interface.
+        - Fixed some minor bugs.
     - version: '8.40.726'
       date: Nov.2, 2021     
       list:
