@@ -13,7 +13,7 @@ handleName: Blue-Cloner Diamond
 name: Blue-Cloner Diamond
 logo:
   iconUrl: icon/bd.png
-  imageUrl: bc-logo.png
+  imageUrl: bd-logo.png
 boxes:
   - imageUrl: bd2022-box.png #默认盒子图
   - imageUrl: bd2022-box-ref.png #带阴影盒子图

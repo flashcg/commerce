@@ -16,7 +16,7 @@ type:
   - Blu-ray Ripper
 logo:
   iconUrl: icon/ocr.png
-  imageUrl: dc-logo-2021.png
+  imageUrl: ocr-logo.png
 boxes:
   - imageUrl: ocr2021-box.png #默认盒子图
   - imageUrl: ocr2021-box-ref.png #带阴影盒子图

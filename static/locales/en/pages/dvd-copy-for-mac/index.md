@@ -84,7 +84,7 @@ systemRequirements:
           text: |
             <p>Minimum System Requirements:  </p>          
             <ul><li>CPU: Intel or PowerPC 1.0GHZ</li><li>Memory: 1G</li><li>Free hard disk space required: 10GB</li><li>One DVD/Blu-ray burner</li><li>Model: All Mac models released after 2010</li><li>Mac OS:10.10 or later versions</li></ul>
-            <p><img src="{imageUrl}win10.png" style="max-width:30px"> <a href="/dvd-copy-for-mac/">Click here to copy DVD/Blu-ray on Windows</a></p>
+            <p><img src="{imageUrl}win10.png" style="max-width:30px"> <a href="/dvd-cloner/">Click here to copy DVD/Blu-ray on Windows</a></p>
 ---
 
 ## Features

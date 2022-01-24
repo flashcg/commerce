@@ -269,8 +269,6 @@ bottomItems:
     path: index
   - name: Terms and Privacy
     path: privacy
-  - name: Link
-    path: linkout
   - name: Sitemap
     href: /sitemap.xml
 copyright: 
