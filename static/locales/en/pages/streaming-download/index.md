@@ -109,7 +109,9 @@ orderList:
     tips:
       - Automatic renewal, cancel at any time.
       - 12/7 Support
-  iconGirdMObile: 1 #覆写默认col规则            
+  iconGird: 2
+  iconGirdMObile: 1 #覆写默认col规则   
+  iconGirdClass: mb-lg-4         
   items:                      
     - text: 
       name: Streaming-Cloner NF Downloader
@@ -130,27 +132,7 @@ orderList:
           text: 6-Month Plan
         - price: 79.9
           id: 744741
-          text: Yearly Plan
-    - text: 
-      name: Streaming-Cloner Ultimate
-      imageUrl: sicu-box-ultimate.png
-      price: 179.50
-      buyLink: test
-      id: 744746
-      tips: #覆写
-        - All-In-One Online Streaming Video Downloader
-        - One-time payment
-        - Unlimited free upgrades for lifetime
-        - In addition to AMZN and NFLX, more platforms will be supported for free.
-        - 30 Days Money Back Guarantee
-        - 12/7 Support          
-#      subscriptions:
-#        - price: 179.9
-#          id: 744736
-#          text: Yearly Plan
-#          buyLink: test   
-#          title: Long-term VIP 
-#          subtitle: 7 Days Free Trial with Full Features                     
+          text: Yearly Plan  
     - text: 
       id: 744749
       name: Streaming-Cloner AZ Downloader
@@ -171,6 +153,46 @@ orderList:
         - price: 79.9
           id: 744745
           text: Yearly Plan
+    - text: 
+      id: 755362
+      name: Streaming-Cloner DP Downloader
+      imageUrl: sicaz-box.png  
+      iconUrl: sica2021-logo-a.png
+      price: 99.90
+      buyLink: test 
+      subscriptions:
+        - price: 9.9
+          id: 755364
+          text: Monthly Plan
+        - price: 24.9
+          id: 755365
+          text: 3-Month Plan
+        - price: 42.9
+          id: 755366
+          text: 6-Month Plan
+        - price: 79.9
+          id: 755367
+          text: Yearly Plan          
+    - text: 
+      name: Streaming-Cloner Ultimate
+      imageUrl: sicu-box-ultimate.png
+      price: 179.50
+      buyLink: test
+      id: 744746
+      tips: #覆写
+        - All-In-One Online Streaming Video Downloader
+        - One-time payment
+        - Unlimited free upgrades for lifetime
+        - In addition to AMZN and NFLX, more platforms will be supported for free.
+        - 30 Days Money Back Guarantee
+        - 12/7 Support          
+#      subscriptions:
+#        - price: 179.9
+#          id: 744736
+#          text: Yearly Plan
+#          buyLink: test   
+#          title: Long-term VIP 
+#          subtitle: 7 Days Free Trial with Full Features            
 banner:
   name: banner
   overflow: hidden
