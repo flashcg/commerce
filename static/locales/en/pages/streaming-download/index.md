@@ -156,7 +156,7 @@ orderList:
     - text: 
       id: 755362
       name: Streaming-Cloner DP Downloader
-      imageUrl: sicaz-box.png  
+      imageUrl: sicdp-box.png  
       iconUrl: sicd2021-logo.png
       price: 99.90
       buyLink: test 
