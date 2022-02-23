@@ -342,6 +342,20 @@ feedback:
     - text: I've never used such a powerful tool which saves me a lot of money and time. It downloads fast and the video has very good quality. Excellent software and customer service.
       name: Sarah Jonathan
       iconUrl: author/author3.jpg   
+youtubeArea:
+  name: Video Guide
+  active: true
+  container: container-fluid
+  title: Video Guide
+  additionClass: position-relative text-center text-light
+  bgStyle: 
+    default: dark
+    imageUrl: blue-creative-bg.gif  
+  icon:
+    - youtubeID: 8UtHJRzhpXg
+  iconGird: 2
+  iconClass: 
+  iconWidth: 75 #25 50 75 100 默认是100         
 faq:
   name: faq
   overflow: hidden

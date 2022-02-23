@@ -10,6 +10,7 @@
     <!-- <Section-Swiper :data="content.easyToUse" /> -->
     <Section-WhyChoose :data="content.whyChoose" />
     <Section-Feedback :data="content.feedback" />
+    <icon-block  :iconData="content.youtubeArea" />
     <Section-Faq :data="content.faq" />
     <Section-JumbotronHalfMask :data="content.contactUs" />
   </div>
