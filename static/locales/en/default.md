@@ -141,8 +141,31 @@ menuTop:
             path: blu-ray-copy
         additionClass: bg-dark-blue-opacity-5
   - name: Streaming Download
-    template: normal
-    path: streaming-download        
+    template: product
+    items:
+      - groupButtons: # hash(页面锚点) variant（按钮样式）属性可用
+          - text: Try it Now
+            variant: success
+            href: https://www.opencloner.com/download/streaming-cloner.exe
+          - text: Buy Now
+            variant: danger
+            path: streaming-download 
+            hash: order_list
+          - text: More Streaming Download
+            path: streaming-download 
+        children: 
+          - name: Streaming-Cloner Ultimate
+            iconUrl: sicu-box-ultimate.png
+            path: streaming-download         
+          - name: Streaming-Cloner NFLX Downloader
+            iconUrl: sicnf-box.png
+            path: streaming-download     
+          - name: Streaming-Cloner AMZN Downloader
+            iconUrl: sicaz-box.png
+            path: streaming-download     
+          - name: Streaming-Cloner DSNP Downloader
+            iconUrl: sicdp-box.png
+            path: streaming-download                                              
   - name: Video Ripper and Converter
     template: product
     items:
