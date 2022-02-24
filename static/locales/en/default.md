@@ -147,10 +147,7 @@ menuTop:
           - text: Try it Now
             variant: success
             href: https://www.opencloner.com/download/streaming-cloner.exe
-          - text: Buy Now
-            variant: danger
-            path: streaming-download 
-            hash: order_list
+            bottomText: Permanent Free Trial
           - text: More Streaming Download
             path: streaming-download 
         children: 
