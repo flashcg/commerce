@@ -57,7 +57,7 @@ bannerVideo:
       variant: dark
   video:
     title: Video Guide
-    url: https://static.opencloner.com/video/sic-promo-v1.0.mp4
+    url: https://static.opencloner.com/video/sic-promo-v1.1.mp4
   iconGird: 2
   iconClass: 
   iconWidth: 75 #25 50 75 100 默认是100          
@@ -94,6 +94,9 @@ videoPlatforms:
     - title: NFLX
       imageUrl: icons/nflx.png
       text: Streaming-Cloner NF Downloader is a powerful online video downloader for you to download movies, TV shows and previews from NFLX with Full HD 1080p quality very fast.
+    - title: DSNP
+      imageUrl: icons/disney.png
+      text: Streaming-Cloner DP Downloader is an excellent online video downloader for you to download movies, TV shows and trailers from DSNP streaming service with HD quality and EAC3 5.1 audio.      
 orderList:
   name: order_list
   overflow: hidden
@@ -112,9 +115,22 @@ orderList:
   iconGird: 2
   iconGirdMObile: 1 #覆写默认col规则   
   iconGirdClass: mb-lg-4         
-  items:                      
+  items: 
     - text: 
-      name: Streaming-Cloner NF Downloader
+      name: Streaming-Cloner Ultimate
+      imageUrl: sicu-box-ultimate.png
+      price: 179.50
+      buyLink: test
+      id: 744746
+      tips: #覆写
+        - All-In-One Online Streaming Video Downloader
+        - One-time payment
+        - Unlimited free upgrades for lifetime
+        - In addition to AMZN, NFLX and DSNP, more platforms will be supported for free.
+        - 30 Days Money Back Guarantee
+        - 12/7 Support                        
+    - text: 
+      name: Streaming-Cloner NF Downloader (NFLX)
       imageUrl: sicnf-box.png
       iconUrl: sicn2021-logo-n.png
       price: 99.9
@@ -135,7 +151,7 @@ orderList:
           text: Yearly Plan  
     - text: 
       id: 744749
-      name: Streaming-Cloner AZ Downloader
+      name: Streaming-Cloner AZ Downloader (AMZN)
       imageUrl: sicaz-box.png  
       iconUrl: sica2021-logo-a.png
       price: 99.90
@@ -155,7 +171,7 @@ orderList:
           text: Yearly Plan
     - text: 
       id: 755362
-      name: Streaming-Cloner DP Downloader
+      name: Streaming-Cloner DP Downloader (DSNP)
       imageUrl: sicdp-box.png  
       iconUrl: sicd2021-logo.png
       price: 99.90
@@ -173,19 +189,7 @@ orderList:
         - price: 79.9
           id: 755367
           text: Yearly Plan          
-    - text: 
-      name: Streaming-Cloner Ultimate
-      imageUrl: sicu-box-ultimate.png
-      price: 179.50
-      buyLink: test
-      id: 744746
-      tips: #覆写
-        - All-In-One Online Streaming Video Downloader
-        - One-time payment
-        - Unlimited free upgrades for lifetime
-        - In addition to AMZN and NFLX, more platforms will be supported for free.
-        - 30 Days Money Back Guarantee
-        - 12/7 Support          
+         
 #      subscriptions:
 #        - price: 179.9
 #          id: 744736
@@ -237,7 +241,7 @@ whyChoose:
   paddingY: 6
   additionClass: 
   title: Why Choose Streaming-Cloner
-  textTop: Compared with competing products, Streaming-Cloner is the most comprehensive online video downloading solution which allows you to download videos from AMZN Prime Video, NFLX and other streaming websites (More will be supported soon such as Disney+). It is convenient for you to create and build your own video library across multiple video platforms.
+  textTop: Compared with competing products, Streaming-Cloner is the most comprehensive online video downloading solution which allows you to download videos from AMZN Prime Video, NFLX, DSNP and other streaming websites. It is convenient for you to create and build your own video library across multiple video platforms.
   mainImage:
     imageUrl: why-choose-man.png
   widget:
@@ -322,7 +326,16 @@ topVideo:
         - text: The Expanse - Season 6 [2021 TV Series]
           kbUrl: how-to-download-amzn-prime-video-original-series-the-expanse-season-6.html
         - text: Shang-Chi and the Legend of the Ten Rings [2021 Movie]
-          kbUrl: how-to-download-amzn-prime-video-movie-shang-chi-and-the-legend-of-the-ten-rings.html                    
+          kbUrl: how-to-download-amzn-prime-video-movie-shang-chi-and-the-legend-of-the-ten-rings.html
+    - title: List of Supported DSNP Videos
+      more:
+        text: Learn More
+        kbUrl: disney-plus-movies-series-streaming-videos.html
+      list:
+        - text: The Ice Age Adventures of Buck Wild [2022 Movie]
+          kbUrl: how-to-download-the-disney-movie-the-ice-age-adventures-of-buck-wild.html
+        - text: Junior alices wonderland bakery [2022 TV Series]
+          kbUrl: how-to-download-the-disney-movie-junior-alices-wonderland-bakery.html                             
 feedback:
   name: feedback
   overflow: hidden
@@ -352,7 +365,9 @@ youtubeArea:
     default: dark
     imageUrl: blue-creative-bg.gif  
   icon:
-    - youtubeID: 8UtHJRzhpXg
+    - youtubeID: wxNECXcDGu8
+    - youtubeID: lmUTGSPJRuI
+    - youtubeID: _NyeFmiqHIc        
   iconGird: 2
   iconClass: 
   iconWidth: 75 #25 50 75 100 默认是100         
