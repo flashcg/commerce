@@ -101,8 +101,11 @@
             <div  v-if="subList.groupButtons" class="w-100">
             <hr style="opacity:0.3" />
               <div class="d-flex align-items-center">      
-                <div class="col-12">
-                <b-button @click="clickAction($event)" v-for="(groupButton,groupButtonIndex) in subList.groupButtons" :key="groupButtonIndex"   :variant="groupButton.variant?groupButton.variant:'outline-light'" class="rounded-0 mr-2" size="lg" :to="groupButton.path?groupButton.hash?'/'+groupButton.path+'/#'+$toLower(groupButton.hash):'/'+groupButton.path+'/':''" :href="groupButton.href">{{ groupButton.text }} </b-button>
+                <div class="col-12" >
+                  <span v-for="(groupButton,groupButtonIndex) in subList.groupButtons" :key="groupButtonIndex" class="d-inline-block align-top text-center mr-lg-4 mr-0">
+                <b-button @click="clickAction($event)"   :variant="groupButton.variant?groupButton.variant:'outline-light'" class="rounded-0 " size="lg" :to="groupButton.path?groupButton.hash?'/'+groupButton.path+'/#'+$toLower(groupButton.hash):'/'+groupButton.path+'/':''" :href="groupButton.href">{{ groupButton.text }} </b-button>
+                <p v-if="groupButton.bottomText">{{groupButton.bottomText}} </p>
+                  </span>
                 </div>
               </div> 
             </div>
