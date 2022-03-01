@@ -30,9 +30,6 @@ export default {
   },
   components: {
     headerNav,footerBlock,breadcrumb
-  },
-  beforeMount() {
-this.$store.dispatch('settledData')  
-  } 
+  }
 };
 </script>

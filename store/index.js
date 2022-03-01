@@ -39,7 +39,7 @@ export const getters = {
 export const mutations = {
   _localData(state, data) {
     state.localData.productData = data
-    localStorage.localData = JSON.stringify(state.localData);
+    //localStorage.localData = JSON.stringify(state.localData);
   },
   _localDataPush(state) {
     state.localData.productData.push(JSON.parse(localStorage.localData).productData)
@@ -68,12 +68,15 @@ export const actions = {
 
     let handleSetting = await this.$content('default').only('handleSetting').fetch(),
       productData = new Array;
-    const releaseState = await this.$axios('/releaseState.json');  
+    const releaseState = await this.$content('releaseState').fetch().catch(err=>{
+      console.log(err);
+    });  
+
     handleSetting = handleSetting.handleSetting;    
     if (handleSetting) {
       for (let i = 0; i < handleSetting.length; i++) {
 
-        const item = await this.$content('pages/' + handleSetting[i].path).only(['model', 'handleName', 'name', 'type', 'logo', 'boxes','listActive','desc','youtubeArea']).fetch(),
+        let item = await this.$content('pages/' + handleSetting[i].path).only(['model', 'handleName', 'name', 'type', 'logo', 'boxes','listActive','desc','youtubeArea']).fetch(),
           saleData = await this.$content('salePlatform').fetch();
 
         if (Array.isArray(item)) {
@@ -133,6 +136,8 @@ export const actions = {
     productData = await this.app.$initMD(productData, 'base');
     commit('_localData', productData)
   },
-
+  async nuxtServerInit({dispatch}){
+    await dispatch('settledData');
+  }
 
 }

@@ -25,7 +25,7 @@ export default {
     ICountUp,
   },
   data() {
-    return { screenHeight: 800 };
+    return { screenHeight: 800,initDate:'2022-2-28' };
   },
   methods: {
     handleScroll() {

@@ -18,10 +18,6 @@ export default {
         lang: this.$i18n.locale
       }
     };
-  },
-  beforeMount() {
-    this.$store.dispatch('settledData')  
-
   }
 };
 </script>
