@@ -13,6 +13,10 @@ newver:
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级
     
 release:
+    - version: 11.10.844
+      date: Mar.2, 2022     
+      list:
+        - Supported the newest released movies.
     - version: 11.00.843
       date: Jan.7, 2022     
       list:
