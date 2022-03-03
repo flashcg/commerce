@@ -1,8 +1,8 @@
 ---
 handleName: DVD-Cloner
-currentSize: 44.1
-currentSize_64bit: 51.6
-systemRequirement: Windows 10/7/Vista
+currentSize: 45.3
+currentSize_64bit: 50.5
+systemRequirement: Windows 11/10/7/Vista
 newver:
     active: true
     link:
@@ -12,6 +12,11 @@ newver:
         bgColor: '#353535'
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级      
 release: 
+    - version: 19.10.1470
+      date: Jan.19, 2022    
+      topText:
+      list: 
+        - Supports newly-released movies.
     - version: 19.00.1469
       date: Nov.26, 2021    
       topText:

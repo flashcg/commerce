@@ -11,7 +11,7 @@ upgrade:
   name: upgrade
   title: Upgrade
   handleName: OpenCloner Ripper
-  upgradeLink: https://test.com
+  upgradeLink: https://secure.2checkout.com/order/checkout.php?PRODS=37875942&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[37875942]=
   formItems:
     title: 'Enter your registration information'
     code: true

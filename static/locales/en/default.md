@@ -1,5 +1,5 @@
 ---
-name: Cloner Alliance
+name: DVD Cloner
 lang: en
 handleSetting:
   - handleName: Streaming-Cloner
@@ -281,16 +281,14 @@ menuFooter:
       path: video-guide       
 social:
   - name: facebook
-    url: https://www.facebook.com/ClonerAlliance
+    url: https://www.facebook.com/
   - name: twitter
-    url: https://twitter.com/ClonerAlliance
+    url: https://twitter.com/
 bottomItems:
   - name: Home
     path: index
   - name: Terms and Privacy
     path: privacy
-  - name: Link
-    path: linkout
   - name: Sitemap
     href: /sitemap.xml
 copyright: 

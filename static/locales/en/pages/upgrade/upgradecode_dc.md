@@ -27,28 +27,28 @@ upgradeItems:
       years:
         - name: One-year
           price: 29.99
-          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300863414]=1&ADD[300863414][ADDITIONAL1]=      
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537838&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[4537838]=      
         - name: Two-year
           price: 49.99
-          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300863415]=1&ADD[300863415][ADDITIONAL1]=   
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537839&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[4537839]=   
         - name: Three-year
           price: 59.99
-          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300863416]=1&ADD[300863416][ADDITIONAL1]=     
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537840&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[4537840]=     
         - name: Lifetime
           price: 119.99
-          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300863419]=1&ADD[300863419][ADDITIONAL1]=  
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=37849114&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[37849114]=  
     - handleName: DVD-Cloner Gold
       years:
         - name: One-year
           price: 49.59
           saving: 38%
-          link: https:////www.dvd-cloner.com/cgi-bin/orderlink.cgi?gold=y&code=upgradedg
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4611015&QTY=1&CART=1&COUPON=b3v03kn
     - handleName: DVD-Cloner Platinum
       years:
         - name: One-year
-          price: 47.99
-          saving: 40%
-          link: https://secure.avangate.com/order/checkout.php?PRODS=4537842&QTY=1&CART=1&COUPON=ssv23fahg   
+          price: 49.59
+          saving: 38%
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537842&QTY=1&CART=1&COUPON=b3v03kn   
 faqList:
   name: product faq
   title: FAQ

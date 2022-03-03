@@ -1,9 +1,9 @@
 ---
 handleName: DVD-Cloner Gold
-currentSize: 76.9
-systemRequirement: Windows 10/7/Vista
+currentSize: 77.0
+systemRequirement: Windows 11/10/7/Vista
 newver:
     active: true
     source: DVD-Cloner
-    size: 76.9 #MB
+    size: 77.0 #MB
 ---

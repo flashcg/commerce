@@ -44,43 +44,43 @@ listProduct:
     - handleName: DVD-Cloner
       standard:
         price: 47.99
-        buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300863407]=1&COUPON1=20OFF&cartcoupon=false
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=4537841&QTY=1&CART=1&CARD=1&COUPON=20erwgwe
       lifetime:
         price: 149.99
-        buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965249]=1&COUPON1=50OFFDCBC&cartcoupon=false 
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=37855314&QTY=1&CART=1&CARD=1&COUPON=WSVCWALW5S 
     - handleName: DVD-Cloner for Mac
       standard:
         price: 47.99
-        buyLink: https://secure.avangate.com/order/checkout.php?PRODS=4537843&QTY=1&CART=2&COUPON=20erwgwe
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=4537843&QTY=1&CART=1&CARD=1&COUPON=20erwgwe
       lifetime:
         price: 149.99
-        buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965250]=1&COUPON1=50OFFDCBC&cartcoupon=false    
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=37855432&QTY=1&CART=1&CARD=1&COUPON=WSVCWALW5S    
     - handleName: DVD-Cloner Gold
       standard:
         price: 63.99
-        buyLink: https://secure.avangate.com/order/checkout.php?PRODS=4611015&QTY=1&CART=2&COUPON=20erwgwe
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=4611015&QTY=1&CART=1&CARD=1&COUPON=20erwgwe
       lifetime:
         price: 199.99
-        buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965254]=1&COUPON1=50OFFDCBC&cartcoupon=false        
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=37855441&QTY=1&CART=1&CARD=1&COUPON=WSVCWALW5S        
     - handleName: DVD-Cloner Platinum
       standard:
         price: 63.99
-        buyLink: https://secure.avangate.com/order/checkout.php?PRODS=4537842&QTY=1&CART=2&COUPON=20erwgwe
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=4537842&QTY=1&CART=1&CARD=1&COUPON=20erwgwe
       lifetime:
         price: 199.99
-        buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965255]=1&COUPON1=50OFFDCBC&cartcoupon=false     
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=37855461&QTY=1&CART=1&CARD=1&COUPON=WSVCWALW5S     
     - handleName: Blue-Cloner
       standard:
         price: 47.99
-        buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300863423]=1&COUPON1=20OFF&cartcoupon=false
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=4537844&QTY=1&CART=1&CARD=1&COUPON=20erwgwe
       lifetime:
         price: 149.99
-        buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965252]=1&COUPON1=50OFFDCBC&cartcoupon=false      
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=37855510&QTY=1&CART=1&CARD=1&COUPON=WSVCWALW5S      
     - handleName: Blue-Cloner Diamond
       standard:
         price: 63.99
-        buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300863424]=1&COUPON1=20OFF&cartcoupon=false
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=4619914&QTY=1&CART=1&CARD=1&COUPON=20erwgwe
       lifetime:
         price: 199.99
-        buyLink: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300965253]=1&COUPON1=50OFFDCBC&cartcoupon=false           
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=37855513&QTY=1&CART=1&CARD=1&COUPON=WSVCWALW5S           
 ---

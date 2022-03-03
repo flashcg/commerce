@@ -27,16 +27,16 @@ upgradeItems:
       years:
         - name: One-year
           price: 29.99
-          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300900328]=1&cartcoupon=false&ADD[300900328][ADDITIONAL1]=
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537838&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[4537838]=      
         - name: Two-year
           price: 49.99
-          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300900336]=1&cartcoupon=false&ADD[300900336][ADDITIONAL1]=
-        - name: Three-year  
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537839&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[4537839]=   
+        - name: Three-year
           price: 59.99
-          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300900337]=1&cartcoupon=false&ADD[300900337][ADDITIONAL1]=
-        - name: Lifetime  
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=4537840&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[4537840]=     
+        - name: Lifetime
           price: 119.99
-          link: https://order.shareit.com/cart/add?vendorid=200278181&PRODUCT[300900338]=1&cartcoupon=false&ADD[300900338][ADDITIONAL1]=
+          link: https://secure.2checkout.com/order/checkout.php?PRODS=37849114&QTY=1&CART=1&CARD=1&ADDITIONAL_acode[37849114]=  
 faqList:          
   name: product faq
   title: FAQ
@@ -50,7 +50,9 @@ faqList:
     - title: My registration code is still in the free upgrade period, why did your system want to charge me again?
       kbUrl: my-registration-code-is-still-in-the-free-upgrade-period-why-did-your-system-want-to-charge-me-again_421.html
     - title: Can I try the latest version first? What’s the limitation of the free trial version?
-      kbUrl: can-i-try-the-latest-version-first-whats-the-limitation-of-the-free-trial-version_415.html              
+      kbUrl: can-i-try-the-latest-version-first-whats-the-limitation-of-the-free-trial-version_415.html 
+    - title: Is there a trial version of DVD-Cloner for Mac which can be tried before buying?
+      kbUrl: is-there-a-trial-version-of-dvd-cloner-for-mac-which-can-be-tried-before-buying_294.html            
 ---
 
 ## Upgrade now! 
