@@ -82,7 +82,7 @@ interface ReleaseFetch extends IContentDocument {
 }
 interface ContentDoc extends IContentDocument {
   head: { title: string; meta: any };
-  [key: string]: string | object | [];
+  [key: string]: any;
 }
 
 interface SubscriptionPlans {
