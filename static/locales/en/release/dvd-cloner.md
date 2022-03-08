@@ -12,6 +12,11 @@ newver:
         bgColor: '#353535'
     release: #newver 和 页面内容不一样时，可以在这里覆写，比如软件大版本升级      
 release: 
+    - version: 19.20.1471
+      date: Mar.8, 2022    
+      topText:
+      list: 
+        - Fixed some minor bugs.
     - version: 19.10.1470
       date: Jan.19, 2022    
       topText:
