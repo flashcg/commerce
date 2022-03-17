@@ -14,7 +14,8 @@ export const state = () => ({
     countryCode: 'US',
   },
   localData: {
-    productData: []
+    productData: [],
+    defaultData:{}
   },
   shopifyData: {
     productsMerged: [],
@@ -38,7 +39,7 @@ export const getters = {
 }
 export const mutations = {
   _localData(state, data) {
-    state.localData.productData = data
+    state.localData = data
     //localStorage.localData = JSON.stringify(state.localData);
   },
   _localDataPush(state) {
@@ -66,38 +67,62 @@ export const actions = {
   }) {
     //if(state.localData.productData.length<=0)commit('_localDataPush')
 
-    let handleSetting = await this.$content('default').only('handleSetting').fetch(),
+    let defaultData = await this.$content('default').fetch(),salePlatform = await this.$content('salePlatform').fetch(),
       productData = new Array;
     const releaseState = await this.$content('releaseState').fetch().catch(err=>{
       console.log(err);
-    });  
-
-    handleSetting = handleSetting.handleSetting;    
+    }),  
+    handleSetting = defaultData.handleSetting
     if (handleSetting) {
       for (let i = 0; i < handleSetting.length; i++) {
 
-        let item = await this.$content('pages/' + handleSetting[i].path).only(['model', 'handleName', 'name', 'type', 'logo', 'boxes','listActive','desc','youtubeArea']).fetch(),
+        let item = await this.$content('pages' + handleSetting[i].path).only(['model', 'handleName', 'name', 'type', 'logo', 'boxes','listActive','desc','youtubeArea','orderList']).fetch(),
           saleData = await this.$content('salePlatform').fetch();
 
         if (Array.isArray(item)) {
-          item = await this.$content('pages/' + handleSetting[i].path + '/index').only(['model', 'handleName', 'name', 'type', 'logo', 'boxes','listActive','desc','youtubeArea']).fetch();
+          item = await this.$content('pages' + handleSetting[i].path + '/index').only(['model', 'handleName', 'name', 'type', 'logo', 'boxes','listActive','desc','youtubeArea','orderList']).fetch();
         }
         const releaseFn = (path =handleSetting[i].path ) => {
           return new Promise((resolve, reject) => {
-            let data = this.$content('release/' + path).fetch()
+            let data = this.$content('release' + path).fetch()
             
             data?resolve(data):reject();            
           })
         };
 
-        let ishasRelease = releaseState.data.some(res=>handleSetting[i].path == res.path)
-        ,releaseData,
+        if (item.model == 'sic') {
+          let sicHandle =  handleSetting.find(res=>res.model == 'sic')
+          
+          item.children = sicHandle.children
+          let children = item.children          
+
+          for (let i = 0; i < children.length; i++) {            
+            let saleData = await this.$content(`pages${children[i].path}`).fetch();
+
+            if(!saleData.iconUrl) saleData.iconUrl = item.logo.iconUrl
+
+            children[i].logo = {iconUrl:saleData.iconUrl}
+            children[i].boxes = saleData.boxes      
+            children[i].handle ={
+              path:children[i].path,
+              handleName:children[i].handleName,
+              model:children[i].model,
+            }      
+          }
+        }
+
+        let ishasRelease = releaseState.data.some(res=>{          
+          if (handleSetting[i].path == '/streaming-download') handleSetting[i].path = '/streaming-cloner'          
+          return handleSetting[i].path == '/'+res.path
+        })
+        console.log(ishasRelease);
+        let releaseData,
         saleItem = saleData.softwareInfo.items.find(res=>res.handleName.toLowerCase() == handleSetting[i].handleName.toLowerCase())
 
         if(ishasRelease)releaseData = await releaseFn().then(res => {          
           return res
         }).catch(err => undefined);
-        
+
         const releaseTransfer = async (data)=> {          
           if(data&&data.newver&&data.newver.source){
           let sourceHandle =  handleSetting.find(res=>res.handleName.toLowerCase() == data.newver.source.toLowerCase()),
@@ -129,15 +154,12 @@ export const actions = {
         productData.push(item)
       }
 
-    }
-
-
-
-    productData = await this.app.$initMD(productData, 'base');
-    commit('_localData', productData)
+    }    
+    commit('_localData', {productData,defaultData,salePlatform})
   },
-  async nuxtServerInit({dispatch}){
+  async nuxtServerInit({state,dispatch}){
     await dispatch('settledData');
+    // console.log(state.localData.productData);
   }
 
 }

@@ -2,8 +2,9 @@
   <div
     :id="slugify(iconData.name||'')"
     :class="`section position-relative  py-lg-${handlePaddingY} py-${
-      handlePaddingY - 2} ${iconData.sectionClass || ''} section-${slugify(iconData.name)}`"
+      handlePaddingY - 2} ${iconData.sectionClass || ''} ${iconData.sectionClass||''} section-${slugify(iconData.name)}`"
   >
+  
     <div
       :class="`section-body ${iconData.bodyZindex?'zIndex':''} ${textColor(iconData.bgstyle)||''} ${iconData.additionClass||''} ${iconData.container||''}`"
     >

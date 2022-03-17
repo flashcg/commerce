@@ -85,6 +85,7 @@ dist
 # Service worker
 sw.*
 !components/Section/*.vue
+!components/Base/*.vue
 !components/*.vue
 !pages/streaming-download/*.vue
 !pages/upgrade/*.vue
@@ -98,3 +99,17 @@ jsCache
 releaseState.json
 source
 newver*.zip
+static/blue-cloner-diamond.xml
+static/blue-cloner.xml
+static/dvd-cloner-gold.xml
+static/dvd-cloner-platinum.xml
+static/dvd-cloner.xml
+static/dvd-copy-for-mac.xml
+package-lock.json
+yarn.lock
+static/blue-cloner-diamond.xml
+static/blue-cloner.xml
+static/dvd-cloner-gold.xml
+static/dvd-cloner-platinum.xml
+static/dvd-cloner.xml
+static/dvd-copy-for-mac.xml

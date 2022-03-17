@@ -94,7 +94,7 @@ class ReleaseProcess extends FilesProcess {
       }
       
       return {
-        boxSrc: defaultData.imagesPath + boxSrc,
+        boxSrc: defaultData.basePath.imageUrl + boxSrc,
         name: itemData.name || 'OpenCloner',
         model: itemData.model,
         handleName: itemData.handleName,

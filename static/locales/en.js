@@ -5,9 +5,10 @@ var salePlatform = require("!raw-loader!@/static/locales/en/salePlatform.md");
 enMenu = yamlFront.loadFront(enMenu.default);
 salePlatform = yamlFront.loadFront(salePlatform.default);
 // 给指定变量加上全局定义
-let imagesPathData = enMenu.imagesPath
-let kbUrlData = enMenu.KB_basePath
-let downloadUrlData = enMenu.download_basePath
+
+let imagesPathData = enMenu.basePath.imageUrl
+let kbUrlData = enMenu.basePath.kbUrl
+let downloadUrlData = enMenu.basePath.downloadUrl
 
 function foreachObj(obj) {
     for (let key in obj) {

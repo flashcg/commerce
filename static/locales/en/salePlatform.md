@@ -20,7 +20,21 @@ softwareInfo:
       standard:
         comparePrice:
         price: 59.99
-        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=4537841&QTY=1&CART=1&CARD=1       
+        buyLink: https://secure.2checkout.com/order/checkout.php?PRODS=4537841&QTY=1&CART=1&CARD=1     
+
+    - handleName: Streaming-Cloner
+      model: sic
+      downloadUrl: https://www.opencloner.com/download/streaming-cloner.exe
+      downloadUrl_64bit: 
+      standard:
+        comparePrice:
+        price: 9.99
+        buyLink: /streaming-download
+        hash: order_list
+        info: 
+          text: More Choice for Subscriptions
+          variant: danger
+     
     - handleName: DVD-Cloner for Mac   
       upgradeUrl: /dvd-copy-for-mac/upgrade
       downloadUrl: dvd-cloner-for-mac.dmg

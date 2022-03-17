@@ -105,7 +105,7 @@ const docYamlInit = (docParsed, basePath) => {
   // adjust meta info
   var head = {};
   var fnMeta = (metaItems) => metaItems.map(res => {
-    res.hid = res.name
+    res.hid = res.name 
     return res
   });
 

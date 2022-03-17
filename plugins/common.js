@@ -152,12 +152,18 @@ export default ({
   Vue.prototype.$fetchItem=(model)=>{
 
     let productData = store&&store.state.localData.productData;
-    
+
     if (productData.length>0) {
       let item =  productData.find(res=>res.handleName.toLowerCase() == model.toLowerCase()) 
       if(!item) item = productData.find(res => {
         if(res.model) return res.model.toLowerCase() == model.toLowerCase()      
       });
+      
+      if ( model.indexOf('sic') != -1&& model != 'sic') {
+        let sicItem = productData.find(res=>res.model == 'sic')
+        item = sicItem.children.find(res=>res.model == model)
+        // console.log(item);
+      }
       return item
     }    
   }
@@ -165,87 +171,8 @@ export default ({
   //inject $initMD to context.app
   
   Vue.prototype.$initMD = async (data, method = 'page') => {
-
-    let pathData = await $content('default').only(['imagesPath', 'KB_basePath', 'download_basePath', 'manual_basePath', 'video_basePath', 'videoProduct_basePath']).fetch();
-    let pathHandle=(value,globalPath)=>{
-      if(value&&value.substr(0,4) == 'http'){
-        return value
-      } else {
-        return globalPath+value
-      }
-    } 
-    // 给指定变量加上全局定义
-    function foreachObj(obj) {
-      for (let key in obj) {
-        key == 'imageUrl' || key == 'iconUrl' ?obj[key]= pathHandle(obj[key],pathData.imagesPath): '';
-        key == 'kbUrl' ? obj[key]= pathHandle(obj[key],pathData.KB_basePath): '';
-        key == 'downloadUrl' ?obj[key]= pathHandle(obj[key],pathData.download_basePath): '';
-        key == 'downloadUrl_64bit' ?obj[key]= pathHandle(obj[key],pathData.download_basePath): '';
-        key == 'videoUrl' ?obj[key]= pathHandle(obj[key],pathData.video_basePath): '';
-        key == 'videoProductUrl' ?obj[key]= pathHandle(obj[key],pathData.videoProduct_basePath): '';
-        key == 'manualUrl' ?obj[key]= pathHandle(obj[key],pathData.manual_basePath): '';
-        if (typeof (obj[key]) == 'object') {
-          foreachObj(obj[key]);
-        }
-      }
-    }
-    foreachObj(data)
-
-    if (method == 'page') {
-
-      // adjust meta info
-      var head = {};
-      var fnMeta = (data) => data.map(res => {
-        res.hid = res.name
-        return res
-      });
-
-      if (data.metaItems && data.title) {
-        head = {
-          title: data.title,
-          meta: fnMeta(data.metaItems)
-        }
-      } else if (data.metaItems) {
-        head = {
-          meta: fnMeta(data.metaItems)
-        }
-      } else if (data.title) {
-        head = {
-          title: data.title
-        }
-      }
-
-      data.head = head;
-      delete data.metaItems;
-
-      //data.body.children
-
-      // MD文档区替换全局定义
-      let globalValue = {
-        imageUrl: pathData.imagesPath,
-        kbUrl: pathData.KB_basePath,
-        downloadUrl: pathData.download_basePath
-      }
-
-      function replaceObj(obj, string, path) {
-        let sourceSrt = escape("{" + string + "}");
-        
-        for (let i in obj) {
-
-          // 这里使用递归，属性类型为对象则进一步遍历
-          if (typeof (obj[i]) == 'object') {
-            replaceObj(obj[i], string, path);
-          } else if (typeof (obj[i]) == 'string') {
-            obj[i] = obj[i].replace(new RegExp("{" + string + "}", 'g'), path)
-            obj[i] = obj[i].replace(new RegExp(sourceSrt, 'g'), path)
-          }
-        }
-      }
-      Object.keys(globalValue).map(res => {
-        replaceObj(data, res, globalValue[res])
-      })
-    }
     return data
+
   }
   if (app) app.$initMD =  Vue.prototype.$initMD
   Date.prototype.format = function(fmt) { 

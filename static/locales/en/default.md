@@ -4,76 +4,95 @@ lang: en
 handleSetting:
   - handleName: Streaming-Cloner
     model: sic
-    path: streaming-download
+    path: /streaming-download
+    children:
+      - handleName: Streaming-Cloner Ultimate
+        path: /streaming-download/streaming-cloner-ultimate
+        model: sic-u
+        slug: streaming-cloner-ultimate
+      - handleName: Streaming-Cloner NF Downloader
+        path: /streaming-download/netflix-video-downloader
+        model: sic-nf
+        slug: netflix-video-downloader
+      - handleName: Streaming-Cloner AZ Downloader
+        path: /streaming-download/amazon-prime-video-downloader
+        model: sic-az
+        slug: amazon-prime-video-downloader
+      - handleName: Streaming-Cloner DP Downloader
+        path: /streaming-download/disney-plus-downloader
+        model: sic-dp
+        slug: disney-plus-downloader   
+
   - handleName: DVD-Cloner
     model: dc
-    path: dvd-cloner
+    path: /dvd-cloner
   - handleName: DVD-Cloner 64bit
     model: dc64bit
-    path: dvd-cloner/dvd-copy-64bit   
+    path: /dvd-cloner/dvd-copy-64bit   
   - handleName: DVD-Cloner Gold
     model: dg
-    path: dvd-cloner-gold
+    path: /dvd-cloner-gold
   - handleName: DVD-Cloner Platinum
     model: dp
-    path: dvd-cloner-platinum
+    path: /dvd-cloner-platinum
   - handleName: DVD-Cloner for Mac
     model: mc
-    path: dvd-copy-for-mac  
+    path: /dvd-copy-for-mac  
   - handleName: OpenCloner UltraBox
     model: ou
-    path: opencloner-ultrabox
+    path: /opencloner-ultrabox
   - handleName: Blue-Cloner
     model: bc
-    path: blue-cloner
+    path: /blue-cloner
   - handleName: Blue-Cloner Diamond
     model: bd
-    path: blue-cloner-diamond
+    path: /blue-cloner-diamond
   - handleName: OpenCloner Ripper
     model: ocr
-    path: open-cloner-ripper       
+    path: /open-cloner-ripper       
   - handleName: Stream-Cloner Lite
     model: scl
-    path: stream-cloner-lite 
+    path: /stream-cloner-lite 
   - handleName: Open DVD Ripper Lite
     model: odrl
-    path: open-dvd-ripper-lite    
+    path: /open-dvd-ripper-lite    
   - handleName: Open PassDCP
     model: ocp
-    path: open-passdcp  
+    path: /open-passdcp  
   - handleName: Open DVD Ripper
     model: odr
-    path: open-dvd-ripper     
+    path: /open-dvd-ripper     
   - handleName: Open DVD Ripper for Mac
-    model: odrmac
-    path: open-dvd-ripper-for-mac 
+    model: odrformac
+    path: /open-dvd-ripper-for-mac 
   - handleName: Open Blu-ray ripper
     model: obr
-    path: open-blu-ray-ripper      
+    path: /open-blu-ray-ripper      
   - handleName: Open SmartBurner
     model: osb
-    path: open-smartburner
+    path: /open-smartburner
   - handleName: Open SuperConverter
     model: osc
-    path: open-superconverter             
+    path: /open-superconverter             
   - handleName: Stream-Cloner
     model: sc
-    path: stream-cloner   
+    path: /stream-cloner   
   - handleName: Blu-ray to DVD
     model: btd
-    path: blu-ray-to-dvd
+    path: /blu-ray-to-dvd
   - handleName: Blu-ray to HDD
     model: bth
-    path: blu-ray-to-hdd     
+    path: /blu-ray-to-hdd     
   - handleName: iPod-Cloner
     model: ic
-    path: dvd-to-ipod-converter 
+    path: /dvd-to-ipod-converter 
   - handleName: Game-Cloner
     model: gc
-    path: game-cloner
+    path: /game-cloner
 globalName:
   ok: OK
   submit: Submit
+  subscribe: Subscribe
   confirm: Confirm
   cancel: Cancel
   search: Search
@@ -142,6 +161,7 @@ menuTop:
         additionClass: bg-dark-blue-opacity-5
   - name: Streaming Download
     template: product
+    path: /streaming-download
     items:
       - groupButtons: # hash(页面锚点) variant（按钮样式）属性可用
           - text: Try it Now
@@ -149,20 +169,12 @@ menuTop:
             href: https://www.opencloner.com/download/streaming-cloner.exe
             bottomText: Permanent Free Trial
           - text: More Streaming Download
-            path: streaming-download 
+            path: /streaming-download 
         children: 
-          - name: Streaming-Cloner Ultimate
-            iconUrl: sicu-box-ultimate.png
-            path: streaming-download         
-          - name: Streaming-Cloner NFLX Downloader
-            iconUrl: sicnf-box.png
-            path: streaming-download     
-          - name: Streaming-Cloner AMZN Downloader
-            iconUrl: sicaz-box.png
-            path: streaming-download     
-          - name: Streaming-Cloner DSNP Downloader
-            iconUrl: sicdp-box.png
-            path: streaming-download                                              
+          - sic-u     
+          - sic-az
+          - sic-nf
+          - sic-dp                               
   - name: Video Ripper and Converter
     template: product
     items:
@@ -173,28 +185,27 @@ menuTop:
         children: #handleName
           - model: ocr 
             limitHeight: 225
-            path: open-cloner-ripper
-          - handleName: Open DVD Ripper
-            path: dvd-ripper
+          - model: odr
+            path: /dvd-ripper
             limitHeight: 125
-          - handleName: Open DVD Ripper for Mac 
-            path: dvd-ripper
+          - model: odrformac
+            path: /dvd-ripper
             limitHeight: 125
-          - handleName: Open Blu-ray ripper
-            path: blu-ray-ripper
+          - model: obr
+            path: /blu-ray-ripper
             limitHeight: 125
         additionClass: bg-dark-red-opacity-5
       - groupButtons: # hash(页面锚点) variant（按钮样式）属性可用
           - text: More Video Converter Software
-            path: video-converter
+            path: /video-converter
             variant: #primary
         children: #handleName
           - model: sc
-            path: video-converter 
-          - handleName: Open SmartBurner
-            path: video-converter
-          - handleName: Open SuperConverter
-            path: video-converter
+            path: /video-converter 
+          - model: osb
+            path: /video-converter
+          - model: osc
+            path: /video-converter
         additionClass: bg-dark-blue-opacity-5
   - name: UHD Solutions
     template: product 
@@ -205,34 +216,34 @@ menuTop:
       - children: 
           - name: UHD Friendly Drives and Softwware Copying
             iconUrl: uhd-friendly-drives-and-softwware-copying.png
-            path: uhd-video-copy-recording         
+            path: /uhd-video-copy-recording         
   - name: Download
     additionClass: ml-xl-4
     template: normal
-    path: download
+    path: /download
   - name: Order
     template: normal
-    path: order                 
+    path: /order                 
   - name: Support
     template: normal
     promotion:
       imageUrl: pr/ca2020nov/nav_poptup_bar.gif
-      path: store
+      path: /store
       hash: Promo Area
     items:
       - children: 
           - name: Knowledge Base
             iconUrl: knowledge-base.png
-            href: https://www.dvd-cloner.com/knowledge/
+            path: https://www.dvd-cloner.com/knowledge/
           - name: Video Guide
             iconUrl: video-guide.png
-            path: video-guide
+            path: /video-guide
           - name: Upgrade Center
             iconUrl: upgrade-center.png
-            path: upgrade
+            path: /upgrade
           - name: Contact Us
             iconUrl: contact-us.png
-            path: contact   
+            path: /contact   
 menuFooter: 
   - name: Company
     children: 
@@ -240,8 +251,8 @@ menuFooter:
       path: aboutus
     - name: Affiliate
       path: affiliate
-    # - name: Blog
-    #   path: blog
+    - name: Blog
+      path: blog
     - name: Contact Us
       path: contact
   - name: Products
@@ -298,12 +309,14 @@ copyright:
 
 
 #网站通用变量区
-imagesPath: https://s1.occld.com/image/dc_com_web/
-KB_basePath: https://www.dvd-cloner.com/knowledge/
-download_basePath: https://www.opencloner.com/download/
-manual_basePath: https://s1.occld.com/manual/
-video_basePath: https://s1.occld.com/video/dc_com_web/
-videoProduct_basePath: https://s1.occld.com/video/products/
+basePath:
+  imageUrl: https://s1.occld.com/image/dc_com_web/
+  thumbnail_imageUrl: https://s1.occld.com/image/dc_com_web/
+  kbUrl: https://www.dvd-cloner.com/knowledge/
+  downloadUrl: https://www.opencloner.com/download/
+  manualUrl: https://s1.occld.com/manual/
+  videoUrl: https://s1.occld.com/video/dc_com_web/
+  videoProductUrl: https://s1.occld.com/video/products/
 
 
 #页面通用组件定义区
