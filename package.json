@@ -1,6 +1,6 @@
 {
   "name": "dvd-cloner",
-  "version": "1.60.073",
+  "version": "1.62.075",
   "description": "DVD Copy becomes easier with DVD-Cloner now. The new burning engine can make perfect 1:1 DVD copy",
   "author": "lzc",
   "private": true,
@@ -16,11 +16,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "@nuxt/content": "^1.14.0",
+    "@nuxt/content": "^1.15.0",
     "@nuxt/types": "^2.15.0",
     "@nuxt/typescript-build": "^2.0.4",
     "@nuxtjs/axios": "^5.4.1",
-    "@nuxtjs/composition-api": "^0.23.3",
+    "@nuxtjs/composition-api": "^0.32.0",
     "@nuxtjs/google-tag-manager": "^2.3.1",
     "@nuxtjs/markdownit": "^2.0.0",
     "@nuxtjs/sitemap": "^2.4.0",

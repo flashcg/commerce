@@ -76,7 +76,9 @@ interface fileSetting {
     fileProcess(mdPath: string) {
       
       fs.readdirSync(mdPath).forEach((resFileName: string) => {
-  
+
+        if(mdPath == 'static/locales/en/pages/streaming-download') return
+
         let mdFileFullPath = this.mdFileFullPath({ mdDirPath: mdPath, fileName: resFileName }),
           relativePagePath = this.relativePagePath({ mdDirPath: mdPath, fileName: resFileName });
   
@@ -86,6 +88,8 @@ interface fileSetting {
           let fileSettle = new FileCreator({ mdPath: mdFileFullPath, pagesFiles: relativePagePath + '.vue' })
           //console.log(fileSettle);
           fileSettle.writeVueFile()
+        } else if (mdPath == 'static/locales/en/pages/streaming-download') {        
+          
   
         } else {
           dirOperate(relativePagePath);

@@ -10,9 +10,9 @@ template: product
 pagify: true #页面化
 type: software
 model: sic
-name: Streaming-Cloner Ultimate
+name: Streaming-Cloner
 logo:
-  iconUrl: 
+  iconUrl: sic-logo.png
 boxes:
   - imageUrl: sicu-box-ultimate.png #默认盒子图
 desc:
@@ -40,9 +40,7 @@ mainBanner:
     text: Try it Now
     path: https://www.opencloner.com/download/streaming-cloner.exe
     note: Permanent Free Trial    
-  learnMore: 
-    text: Learn More
-    path: https://www.dvd-cloner.com/streaming-download/
+
 bannerVideo:
   name: video
   active: true
@@ -106,9 +104,7 @@ orderList:
   additionClass: 
   switchText: Buy Life-Time
   subscription:
-    separationText: Or
     switchText: Choose a Plan
-    bottomText: Starting at $9.9/Mon
     tips:
       - Automatic renewal, cancel at any time.
       - 12/7 Support
@@ -119,6 +115,7 @@ orderList:
     - text: 
       name: Streaming-Cloner Ultimate
       imageUrl: sicu-box-ultimate.png
+      model: sic-u
       price: 179.50
       buyLink: test
       id: 744746
@@ -130,6 +127,7 @@ orderList:
         - 30 Days Money Back Guarantee
         - 12/7 Support                        
     - text: 
+      model: sic-nf
       name: Streaming-Cloner NF Downloader (NFLX)
       imageUrl: sicnf-box.png
       iconUrl: sicn2021-logo-n.png
@@ -151,6 +149,7 @@ orderList:
           text: Yearly Plan  
     - text: 
       id: 744749
+      model: sic-az
       name: Streaming-Cloner AZ Downloader (AMZN)
       imageUrl: sicaz-box.png  
       iconUrl: sica2021-logo-a.png
@@ -171,6 +170,7 @@ orderList:
           text: Yearly Plan
     - text: 
       id: 755362
+      model: sic-dp
       name: Streaming-Cloner DP Downloader (DSNP)
       imageUrl: sicdp-box.png  
       iconUrl: sicd2021-logo.png

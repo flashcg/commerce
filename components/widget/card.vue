@@ -48,20 +48,21 @@
             </div>          
           </template>
 
-          <p class="fs-3 text-danger" v-if="item.saleInfo.standard">{{standard?$t('softwareInfo.currency')+item.saleInfo.standard.price:$t('softwareInfo.currency')+item.saleInfo.lifetime.price}}<br />
-
+          <p  class="fs-3 text-danger" v-if="item.saleInfo.standard&&item.saleInfo.standard.price">{{standard?$t('softwareInfo.currency')+item.saleInfo.standard.price:$t('softwareInfo.currency')+item.saleInfo.lifetime.price}}<br />
+          
           <b-link v-if="!standard" :to="item.model.toLowerCase()==='ocr'?$t('softwareInfo.50offUrlOcr')+'/':$t('softwareInfo.50offUrl')+'/'" class="fs-6 text-red-light">{{$t('globalName.get50off')}} </b-link>
            </p>
-
+        
+           <p v-if="item.saleInfo.standard.info" :class="`fs-6 ${item.saleInfo.standard.info.variant?'text-'+item.saleInfo.standard.info.variant:''}`">{{item.saleInfo.standard.info.text}} </p>
         </b-card-body>
         <b-card-footer class="bg-transparent pt-0 border-0">
-          <b-button
-            :href="standard?item.saleInfo.standard.buyLink:item.saleInfo.lifetime.buyLink"
-            variant="danger"
-            size="xl"
+          <BaseLink
+            :to="standard?item.saleInfo.standard.buyLink:item.saleInfo.lifetime.buyLink"
+            :hash="item.saleInfo.standard.hash||null"
+             class="btn btn-xl btn-danger"            
           >
             {{ $t("globalName.buy") }}
-          </b-button>
+          </BaseLink>
         </b-card-footer>      
     </div>
   

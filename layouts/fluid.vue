@@ -12,16 +12,13 @@
 <script>
 
 export default {
+  name: "default",
   head() {
     return {
       htmlAttrs: {
         lang: this.$i18n.locale
       }
     };
-  },
-  beforeMount() {
-    this.$store.dispatch('settledData')  
-
   }
 };
 </script>

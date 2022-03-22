@@ -1,3 +1,9 @@
+import {docStringInit,docYamlInit,yamlCategroyInit} from "./script/common";
+const fs = require('fs');
+const {loadFront} = require("yaml-front-matter"),path = require('path'),defaultMD = fs.readFileSync('static/locales/en/default.md','utf-8'),defaultData = loadFront(defaultMD);
+let {basePath} = defaultData; 
+basePath = {...basePath,iconUrl:basePath.imageUrl}
+console.log(basePath);
 export default {
   /** universal spa*/
   //mode: 'universal',
@@ -155,7 +161,24 @@ export default {
       })
     }
   },
+  hooks: {
+    'content:file:beforeParse': (file) => {
+      if (file.extension === '.md') {
+        file.data =  docStringInit(file.data,basePath)
 
+      } else if(file.extension === '.yaml'){
+        if(file.path.indexOf('_categroies') != -1)file.data =  yamlCategroyInit(file.data)        
+      } else {
+        return
+      }      
+    },
+    'content:file:beforeInsert': (document) => {
+      
+      if (document.extension === '.md') {
+      document=docYamlInit(document,basePath)
+      }
+    }
+  },
   bootstrapVue: {
     bootstrapCSS: false, // or `css`
     bootstrapVueCSS: false, // or `bvCSS`

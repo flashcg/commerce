@@ -5,7 +5,7 @@ import { toLower } from '../tools';
 
 const fs = require('fs'), archiver = require('archiver'), request = require('request'),
   path = require('path'), myDate = new Date(), mdBasePath = "./static/locales/", zipBasePath = "./static/", xmlBasePath = "./static/",
-  yamlFront = require("yaml-front-matter"), xml2js = require('xml2js'), releaseJsonPath = `${zipBasePath}releaseState.json`;
+  yamlFront = require("yaml-front-matter"), xml2js = require('xml2js'), releaseJsonPath = `${mdBasePath}en/releaseState.json`;
 
 interface DefaultData {
   handleSetting: { [prop: string]: string }[];
@@ -94,7 +94,7 @@ class ReleaseProcess extends FilesProcess {
       }
       
       return {
-        boxSrc: defaultData.imagesPath + boxSrc,
+        boxSrc: defaultData.basePath.imageUrl + boxSrc,
         name: itemData.name || 'OpenCloner',
         model: itemData.model,
         handleName: itemData.handleName,
@@ -117,13 +117,14 @@ class ReleaseProcess extends FilesProcess {
         break;
     }
 
-    fs.writeFileSync(releaseJsonPath, JSON.stringify(jsonArray))
+    fs.writeFileSync(releaseJsonPath, JSON.stringify({data:jsonArray}))
     
     writeLog('Updata ' + item.path +' written to ' + releaseJsonPath)
   }
   get jsonArray():releaseJsonConfig[]|undefined {
     if (fs.existsSync(releaseJsonPath)) {
-      return JSON.parse(fs.readFileSync(releaseJsonPath))
+      let dataJson = JSON.parse(fs.readFileSync(releaseJsonPath))
+      return dataJson.data
     } 
   }
   jsonHandle(fileName: string,releaseJsonActive= false){

@@ -25,10 +25,6 @@ export default {
   components: {
     headerNav,
     footerBlock, itemTab   
-  },  
-  beforeMount() {
-    this.$store.dispatch('settledData')  
-
   }
 };
 </script>

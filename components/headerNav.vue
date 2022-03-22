@@ -41,13 +41,13 @@
                 <li v-for="(item,itemIndex) in subList.children" :key="itemIndex" >
                   <template v-if="typeof(item)=='string'">
 
-                  <b-link v-if="$fetchItem(item)" :to="'/'+$fetchItem(item).handle.path+'/'"> {{$fetchItem(item).handleName}}
-                  </b-link>
+                  <BaseLink v-if="$fetchItem(item)" :to="$fetchItem(item).handle.path"> {{$fetchItem(item).handleName}}
+                  </BaseLink>
                   </template>
                   <template v-else-if="typeof(item)=='object'">
-                    <b-link :to="item.path?'/'+item.path+'/':''" :href="item.href">                  
+                    <BaseLink :to="item.path">                  
                       {{item.model?$fetchItem(item.model)&&$fetchItem(item.model).handleName:item.handleName||item.name}}
-                    </b-link>	
+                    </BaseLink>	
                    
                   </template>
                   </li>
@@ -60,7 +60,7 @@
 		<b-collapse  is-nav>
 		<ul v-if="!isMobile" class="navbar-nav ml-auto">
 			<li :class="`dropdown ${object.additionClass?object.additionClass:''}`" v-for="(object,index) in $t('menuTop')"  @mouseover="overAction($event,index)" @mouseleave="leaveAction($event,index)" :key="index">
-				<b-link class="level1" :to="object.path?'/'+object.path+'/':object.path">{{object.name}}</b-link>
+				<BaseLink class="level1" :to="object.path">{{object.name}}</BaseLink>
         <div class="subNavbar-nav position-md-fixed fill-to-up-position">
    
           <div v-if="object.items" :ref="'subNav'+index" :style="'transform:translateX('+stepWidth+'px)'" class=" d-flex justify-content-center pt-4 pt-md-12"> 
@@ -70,15 +70,15 @@
                 
                 <template v-if="typeof(item)=='string'">
                   
-                <b-link v-if="$fetchItem(item)" :to="'/'+$fetchItem(item).handle.path+'/'" class="nav-link" @click="clickAction($event)">                  
+                <BaseLink v-if="$fetchItem(item)" :to="$fetchItem(item).handle.path" class="nav-link" @click="clickAction($event)">                  
                   <p><b-img fluid class="d-none d-md-inline-block" :src="$fetchItem(item).boxes[0].imageUrl" style="max-height:180px" /></p>
                   <p>{{$fetchItem(item).handleName}}</p>
-                </b-link>	
+                </BaseLink>	
                 </template>
                 
                 <template v-else-if="typeof(item)=='object'">
                   
-                  <b-link :to="item.path?'/'+item.path+'/':''" :href="item.href" class="nav-link" @click="clickAction($event)"> 
+                  <BaseLink :to="item.path||(item.model?$fetchItem(item.model).handle.path:'')" class="nav-link" @click="clickAction($event)"> 
 
                     <template v-if="(item.handleName||item.model)&&$fetchItem(item.handleName||item.model)">                
                     <p><b-img fluid class="d-none d-md-inline-block" :src="$fetchItem(item.handleName||item.model).boxes[0].imageUrl" :style="`max-height:${item.limitHeight||180}px`" /></p>
@@ -92,7 +92,7 @@
                     <p>{{item.name}}</p>
                     </template>
 
-                  </b-link>                  
+                  </BaseLink>                  
                 </template>
                 <p v-if="subList.text" v-html="subList.text"></p>                
               </li> 
